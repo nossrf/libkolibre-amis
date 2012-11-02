@@ -1,0 +1,1278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE smil PUBLIC "-//NISO//DTD dtbsmil 2005-2//EN"
+"http://www.daisy.org/z3986/2005/dtbsmil-2005-2.dtd">
+<smil xmlns="http://www.w3.org/2001/SMIL20/" xml:lang="en">
+<head>
+<meta name="dtb:uid" content="ghBOOK1211212736" />
+<meta name="dtb:generator" content="gh DTB Maker 4.0" />
+<meta name="dtb:totalElapsedTime" content="00:00:00" />
+<customAttributes>
+	<customTest id="pagenum" defaultState="true" override="visible" />
+	<customTest id="prodnote" defaultState="true" override="visible" />
+</customAttributes>
+</head>
+<body>
+<seq id="baseseq" dur="14:49.866">
+	<par  id="ghGen2" class="doctitle">
+		<text src="Chimpanzees.xml#ghGen2" />
+	</par>
+	<par  id="gh_pageRef1" customTest="pagenum" class="pagenum">
+		<text src="Chimpanzees.xml#gh_pageRef1" />
+		<audio src="audio/Page01.mp3" clipBegin="00:00.00" clipEnd="00:02.483" />
+	</par>
+	<par  id="ghGen3" class="h1">
+		<text src="Chimpanzees.xml#ghGen3" />
+		<audio src="audio/Page01.mp3" clipBegin="00:02.483" clipEnd="00:04.829" />
+	</par>
+	<seq  id="ghGen5" class="p">
+		<par  id="ghGen6" class="sent">
+			<text src="Chimpanzees.xml#ghGen6" />
+			<audio src="audio/Page01.mp3" clipBegin="00:04.829" clipEnd="00:07.876" />
+		</par>
+	</seq>
+	<seq  id="ghGen7" class="p">
+		<par  id="ghGen8" class="sent">
+			<text src="Chimpanzees.xml#ghGen8" />
+			<audio src="audio/Page01.mp3" clipBegin="00:07.544" clipEnd="00:10.736" />
+		</par>
+	</seq>
+	<par  id="gh_pageRef2" customTest="pagenum" class="pagenum">
+		<text src="Chimpanzees.xml#gh_pageRef2" />
+		<audio src="audio/Page02.mp3" clipBegin="00:00.00" clipEnd="00:02.533" />
+	</par>
+	<seq  id="ghGen9" class="p">
+		<par  id="ghGen10" class="sent">
+			<text src="Chimpanzees.xml#ghGen10" />
+			<audio src="audio/Page02.mp3" clipBegin="00:02.533" clipEnd="00:11.519" />
+		</par>
+	</seq>
+	<seq  id="ghGen11" class="p">
+		<par  id="ghGen12" class="sent">
+			<text src="Chimpanzees.xml#ghGen12" />
+			<audio src="audio/Page02.mp3" clipBegin="00:11.519" clipEnd="00:25.145" />
+		</par>
+		<par  id="ghGen13" class="sent">
+			<text src="Chimpanzees.xml#ghGen13" />
+			<audio src="audio/Page02.mp3" clipBegin="00:25.145" clipEnd="00:35.673" />
+		</par>
+		<par  id="ghGen14" class="sent">
+			<text src="Chimpanzees.xml#ghGen14" />
+			<audio src="audio/Page02.mp3" clipBegin="00:35.673" clipEnd="00:41.880" />
+		</par>
+	</seq>
+	<seq  id="ghGen15" class="p">
+		<par  id="ghGen16" class="sent">
+			<text src="Chimpanzees.xml#ghGen16" />
+			<audio src="audio/Page02.mp3" clipBegin="00:41.880" clipEnd="00:44.956" />
+		</par>
+	</seq>
+	<seq  id="ghGen17" class="p">
+		<par  id="ghGen18" class="sent">
+			<text src="Chimpanzees.xml#ghGen18" />
+			<audio src="audio/Page02.mp3" clipBegin="00:44.956" clipEnd="00:48.873" />
+		</par>
+	</seq>
+	<seq  id="ghGen19" class="p">
+		<par  id="ghGen20" class="sent">
+			<text src="Chimpanzees.xml#ghGen20" />
+			<audio src="audio/Page02.mp3" clipBegin="00:48.873" clipEnd="00:54.892" />
+		</par>
+	</seq>
+	<seq  id="ghGen21" class="p">
+		<par  id="ghGen22" class="sent">
+			<text src="Chimpanzees.xml#ghGen22" />
+			<audio src="audio/Page02.mp3" clipBegin="00:54.892" clipEnd="00:58.774" />
+		</par>
+	</seq>
+	<seq  id="ghGen23" class="p">
+		<par  id="ghGen24" class="sent">
+			<text src="Chimpanzees.xml#ghGen24" />
+			<audio src="audio/Page02.mp3" clipBegin="00:58.774" clipEnd="01:03.351" />
+		</par>
+	</seq>
+	<seq  id="ghGen25" class="p">
+		<par  id="ghGen26" class="sent">
+			<text src="Chimpanzees.xml#ghGen26" />
+			<audio src="audio/Page02.mp3" clipBegin="01:03.351" clipEnd="01:08.200" />
+		</par>
+	</seq>
+	<par  id="ghGen27" class="h1">
+		<text src="Chimpanzees.xml#ghGen27" />
+		<audio src="audio/Page02.mp3" clipBegin="01:08.200" clipEnd="01:13.350" />
+	</par>
+	<seq  id="ghGen28" class="p">
+		<par  id="ghGen29" class="sent">
+			<text src="Chimpanzees.xml#ghGen29" />
+			<audio src="audio/Page02.mp3" clipBegin="01:13.350" clipEnd="01:16.734" />
+		</par>
+	</seq>
+	<seq  id="ghGen30" class="p">
+		<par  id="ghGen31" class="sent">
+			<text src="Chimpanzees.xml#ghGen31" />
+			<audio src="audio/Page02.mp3" clipBegin="01:16.734" clipEnd="01:19.180" />
+		</par>
+	</seq>
+	<seq  id="ghGen32" class="p">
+		<par  id="ghGen33" class="sent">
+			<text src="Chimpanzees.xml#ghGen33" />
+			<audio src="audio/Page02.mp3" clipBegin="01:19.180" clipEnd="01:24.610" />
+		</par>
+	</seq>
+	<seq  id="ghGen34" class="p">
+		<par  id="ghGen35" class="sent">
+			<text src="Chimpanzees.xml#ghGen35" />
+			<audio src="audio/Page02.mp3" clipBegin="01:24.610" clipEnd="01:34.897" />
+		</par>
+	</seq>
+	<seq  id="ghGen36" class="p">
+		<par  id="ghGen37" class="sent">
+			<text src="Chimpanzees.xml#ghGen37" />
+			<audio src="audio/Page02.mp3" clipBegin="01:34.897" clipEnd="01:45.223" />
+		</par>
+	</seq>
+	<seq  id="ghGen38" class="p">
+		<par  id="ghGen39" class="sent">
+			<text src="Chimpanzees.xml#ghGen39" />
+			<audio src="audio/Page02.mp3" clipBegin="01:45.223" clipEnd="01:49.698" />
+		</par>
+		<par  id="ghGen40" class="sent">
+			<text src="Chimpanzees.xml#ghGen40" />
+			<audio src="audio/Page02.mp3" clipBegin="01:49.698" clipEnd="01:54.837" />
+		</par>
+		<par  id="ghGen41" class="sent">
+			<text src="Chimpanzees.xml#ghGen41" />
+			<audio src="audio/Page02.mp3" clipBegin="01:54.837" clipEnd="01:59.336" />
+		</par>
+	</seq>
+	<seq  id="ghGen42" class="p">
+		<par  id="ghGen43" class="sent">
+			<text src="Chimpanzees.xml#ghGen43" />
+			<audio src="audio/Page02.mp3" clipBegin="01:59.336" clipEnd="02:09.222" />
+		</par>
+	</seq>
+	<seq  id="ghGen44" class="p">
+		<par  id="ghGen45" class="sent">
+			<text src="Chimpanzees.xml#ghGen45" />
+			<audio src="audio/Page02.mp3" clipBegin="02:09.222" clipEnd="02:16.366" />
+		</par>
+	</seq>
+	<seq  id="ghGen46" class="p">
+		<par  id="ghGen47" class="sent">
+			<text src="Chimpanzees.xml#ghGen47" />
+			<audio src="audio/Page02.mp3" clipBegin="02:16.366" clipEnd="02:22.301" />
+		</par>
+	</seq>
+	<par  id="gh_pageRef3" customTest="pagenum" class="pagenum">
+		<text src="Chimpanzees.xml#gh_pageRef3" />
+		<audio src="audio/Page03.mp3" clipBegin="00:00.00" clipEnd="00:02.466" />
+	</par>
+	<par  id="ghGen48" class="h1">
+		<text src="Chimpanzees.xml#ghGen48" />
+		<audio src="audio/Page03.mp3" clipBegin="00:02.466" clipEnd="00:03.955" />
+	</par>
+	<seq  id="ghGen50" class="p">
+		<par  id="ghGen51" class="sent">
+			<text src="Chimpanzees.xml#ghGen51" />
+			<audio src="audio/Page03.mp3" clipBegin="00:03.955" clipEnd="00:05.319" />
+		</par>
+		<par  id="ghGen52" class="sent">
+			<text src="Chimpanzees.xml#ghGen52" />
+			<audio src="audio/Page03.mp3" clipBegin="00:05.319" clipEnd="00:06.217" />
+		</par>
+	</seq>
+	<seq  id="ghGen53" class="p">
+		<par  id="ghGen54" class="sent">
+			<text src="Chimpanzees.xml#ghGen54" />
+			<audio src="audio/Page03.mp3" clipBegin="00:06.217" clipEnd="00:08.903" />
+		</par>
+		<par  id="ghGen55" class="sent">
+			<text src="Chimpanzees.xml#ghGen55" />
+			<audio src="audio/Page03.mp3" clipBegin="00:08.903" clipEnd="00:10.334" />
+		</par>
+	</seq>
+	<seq  id="ghGen56" class="p">
+		<par  id="ghGen57" class="sent">
+			<text src="Chimpanzees.xml#ghGen57" />
+			<audio src="audio/Page03.mp3" clipBegin="00:10.334" clipEnd="00:12.515" />
+		</par>
+		<par  id="ghGen58" class="sent">
+			<text src="Chimpanzees.xml#ghGen58" />
+			<audio src="audio/Page03.mp3" clipBegin="00:12.515" clipEnd="00:13.485" />
+		</par>
+	</seq>
+	<seq  id="ghGen59" class="p">
+		<par  id="ghGen60" class="sent">
+			<text src="Chimpanzees.xml#ghGen60" />
+			<audio src="audio/Page03.mp3" clipBegin="00:13.485" clipEnd="00:16.148" />
+		</par>
+		<par  id="ghGen61" class="sent">
+			<text src="Chimpanzees.xml#ghGen61" />
+			<audio src="audio/Page03.mp3" clipBegin="00:16.148" clipEnd="00:17.314" />
+		</par>
+	</seq>
+	<seq  id="ghGen62" class="p">
+		<par  id="ghGen63" class="sent">
+			<text src="Chimpanzees.xml#ghGen63" />
+			<audio src="audio/Page03.mp3" clipBegin="00:17.314" clipEnd="00:19.815" />
+		</par>
+		<par  id="ghGen64" class="sent">
+			<text src="Chimpanzees.xml#ghGen64" />
+			<audio src="audio/Page03.mp3" clipBegin="00:19.815" clipEnd="00:21.148" />
+		</par>
+	</seq>
+	<seq  id="ghGen65" class="p">
+		<par  id="ghGen66" class="sent">
+			<text src="Chimpanzees.xml#ghGen66" />
+			<audio src="audio/Page03.mp3" clipBegin="00:21.148" clipEnd="00:23.825" />
+		</par>
+		<par  id="ghGen67" class="sent">
+			<text src="Chimpanzees.xml#ghGen67" />
+			<audio src="audio/Page03.mp3" clipBegin="00:23.825" clipEnd="00:25.173" />
+		</par>
+	</seq>
+	<seq  id="ghGen68" class="p">
+		<par  id="ghGen69" class="sent">
+			<text src="Chimpanzees.xml#ghGen69" />
+			<audio src="audio/Page03.mp3" clipBegin="00:25.173" clipEnd="00:27.500" />
+		</par>
+		<par  id="ghGen70" class="sent">
+			<text src="Chimpanzees.xml#ghGen70" />
+			<audio src="audio/Page03.mp3" clipBegin="00:27.500" clipEnd="00:29.100" />
+		</par>
+	</seq>
+	<seq  id="ghGen71" class="p">
+		<par  id="ghGen72" class="sent">
+			<text src="Chimpanzees.xml#ghGen72" />
+			<audio src="audio/Page03.mp3" clipBegin="00:29.100" clipEnd="00:31.00" />
+		</par>
+		<par  id="ghGen73" class="sent">
+			<text src="Chimpanzees.xml#ghGen73" />
+			<audio src="audio/Page03.mp3" clipBegin="00:31.00" clipEnd="00:32.375" />
+		</par>
+	</seq>
+	<seq  id="ghGen74" class="p">
+		<par  id="ghGen75" class="sent">
+			<text src="Chimpanzees.xml#ghGen75" />
+			<audio src="audio/Page03.mp3" clipBegin="00:32.375" clipEnd="00:34.740" />
+		</par>
+		<par  id="ghGen76" class="sent">
+			<text src="Chimpanzees.xml#ghGen76" />
+			<audio src="audio/Page03.mp3" clipBegin="00:34.740" clipEnd="00:36.215" />
+		</par>
+	</seq>
+	<seq  id="ghGen77" class="p">
+		<par  id="ghGen78" class="sent">
+			<text src="Chimpanzees.xml#ghGen78" />
+			<audio src="audio/Page03.mp3" clipBegin="00:36.215" clipEnd="00:38.407" />
+		</par>
+		<par  id="ghGen79" class="sent">
+			<text src="Chimpanzees.xml#ghGen79" />
+			<audio src="audio/Page03.mp3" clipBegin="00:38.407" clipEnd="00:39.929" />
+		</par>
+	</seq>
+	<seq  id="ghGen80" class="p">
+		<par  id="ghGen81" class="sent">
+			<text src="Chimpanzees.xml#ghGen81" />
+			<audio src="audio/Page03.mp3" clipBegin="00:39.929" clipEnd="00:41.712" />
+		</par>
+		<par  id="ghGen82" class="sent">
+			<text src="Chimpanzees.xml#ghGen82" />
+			<audio src="audio/Page03.mp3" clipBegin="00:41.712" clipEnd="00:43.268" />
+		</par>
+	</seq>
+	<par  id="gh_pageRef4" customTest="pagenum" class="pagenum">
+		<text src="Chimpanzees.xml#gh_pageRef4" />
+		<audio src="audio/Page04.mp3" clipBegin="00:00.00" clipEnd="00:02.300" />
+	</par>
+	<par  id="ghGen83" class="h1">
+		<text src="Chimpanzees.xml#ghGen83" />
+		<audio src="audio/Page04.mp3" clipBegin="00:02.300" clipEnd="00:04.518" />
+	</par>
+	<seq  id="ghGen85" class="p">
+		<par  id="ghGen86" class="sent">
+			<text src="Chimpanzees.xml#ghGen86" />
+			<audio src="audio/Page04.mp3" clipBegin="00:04.518" clipEnd="00:11.212" />
+		</par>
+		<par  id="ghGen87" class="sent">
+			<text src="Chimpanzees.xml#ghGen87" />
+			<audio src="audio/Page04.mp3" clipBegin="00:11.212" clipEnd="00:14.529" />
+		</par>
+		<par  id="ghGen88" class="sent">
+			<text src="Chimpanzees.xml#ghGen88" />
+			<audio src="audio/Page04.mp3" clipBegin="00:14.529" clipEnd="00:18.210" />
+		</par>
+		<par  id="ghGen89" class="sent">
+			<text src="Chimpanzees.xml#ghGen89" />
+			<audio src="audio/Page04.mp3" clipBegin="00:18.210" clipEnd="00:21.310" />
+		</par>
+		<par  id="ghGen90" class="sent">
+			<text src="Chimpanzees.xml#ghGen90" />
+			<audio src="audio/Page04.mp3" clipBegin="00:21.310" clipEnd="00:24.894" />
+		</par>
+		<par  id="ghGen91" class="sent">
+			<text src="Chimpanzees.xml#ghGen91" />
+			<audio src="audio/Page04.mp3" clipBegin="00:24.894" clipEnd="00:28.300" />
+		</par>
+	</seq>
+	<par  id="gh_pageRef5" customTest="pagenum" class="pagenum">
+		<text src="Chimpanzees.xml#gh_pageRef5" />
+		<audio src="audio/Page05.mp3" clipBegin="00:00.00" clipEnd="00:02.247" />
+	</par>
+	<par  id="ghGen92" class="img">
+		<img src="img/page05a.jpg" />
+	</par>
+	<seq  id="ghGen93" customTest="prodnote" class="prodnote" end="DTBuserEscape;ghGen93Tar.end">
+		<par  id="ghGen93Tar" customTest="prodnote" class="prodnote">
+			<text src="Chimpanzees.xml#ghGen93" />
+		</par>
+	</seq>
+	<par  id="gh_pageRef6" customTest="pagenum" class="pagenum">
+		<text src="Chimpanzees.xml#gh_pageRef6" />
+		<audio src="audio/Page06.mp3" clipBegin="00:00.00" clipEnd="00:02.442" />
+	</par>
+	<par  id="ghGen96" class="h1">
+		<text src="Chimpanzees.xml#ghGen96" />
+		<audio src="audio/Page06.mp3" clipBegin="00:02.442" clipEnd="00:05.00" />
+	</par>
+	<seq  id="ghGen98" class="p">
+		<par  id="ghGen99" class="sent">
+			<text src="Chimpanzees.xml#ghGen99" />
+			<audio src="audio/Page06.mp3" clipBegin="00:05.00" clipEnd="00:07.668" />
+		</par>
+		<par  id="ghGen100" class="sent">
+			<text src="Chimpanzees.xml#ghGen100" />
+			<audio src="audio/Page06.mp3" clipBegin="00:07.668" clipEnd="00:09.994" />
+		</par>
+		<par  id="ghGen101" class="sent">
+			<text src="Chimpanzees.xml#ghGen101" />
+			<audio src="audio/Page06.mp3" clipBegin="00:09.994" clipEnd="00:12.853" />
+		</par>
+		<par  id="ghGen102" class="sent">
+			<text src="Chimpanzees.xml#ghGen102" />
+			<audio src="audio/Page06.mp3" clipBegin="00:12.853" clipEnd="00:16.111" />
+		</par>
+	</seq>
+	<seq  id="ghGen103" class="p">
+		<par  id="ghGen104" class="sent">
+			<text src="Chimpanzees.xml#ghGen104" />
+			<audio src="audio/Page06.mp3" clipBegin="00:16.111" clipEnd="00:20.980" />
+		</par>
+		<par  id="ghGen105" class="sent">
+			<text src="Chimpanzees.xml#ghGen105" />
+			<audio src="audio/Page06.mp3" clipBegin="00:20.980" clipEnd="00:24.155" />
+		</par>
+		<par  id="ghGen106" class="sent">
+			<text src="Chimpanzees.xml#ghGen106" />
+			<audio src="audio/Page06.mp3" clipBegin="00:24.155" clipEnd="00:27.777" />
+		</par>
+		<par  id="ghGen107" class="sent">
+			<text src="Chimpanzees.xml#ghGen107" />
+			<audio src="audio/Page06.mp3" clipBegin="00:27.776" clipEnd="00:30.100" />
+		</par>
+		<par  id="ghGen108" class="sent">
+			<text src="Chimpanzees.xml#ghGen108" />
+			<audio src="audio/Page06.mp3" clipBegin="00:30.100" clipEnd="00:33.388" />
+		</par>
+	</seq>
+	<par  id="gh_pageRef7" customTest="pagenum" class="pagenum">
+		<text src="Chimpanzees.xml#gh_pageRef7" />
+		<audio src="audio/Page07.mp3" clipBegin="00:00.00" clipEnd="00:02.372" />
+	</par>
+	<par  id="ghGen109" class="img">
+		<img src="img/page07a.jpg" />
+	</par>
+	<seq  id="ghGen110" customTest="prodnote" class="prodnote" end="DTBuserEscape;ghGen110Tar.end">
+		<par  id="ghGen110Tar" customTest="prodnote" class="prodnote">
+			<text src="Chimpanzees.xml#ghGen110" />
+		</par>
+	</seq>
+	<seq  id="ghGen113" class="p">
+		<par  id="ghGen114" class="sent">
+			<text src="Chimpanzees.xml#ghGen114" />
+			<audio src="audio/Page07.mp3" clipBegin="00:09.176" clipEnd="00:12.374" />
+		</par>
+		<par  id="ghGen115" class="sent">
+			<text src="Chimpanzees.xml#ghGen115" />
+			<audio src="audio/Page07.mp3" clipBegin="00:12.374" clipEnd="00:15.00" />
+		</par>
+		<par  id="ghGen116" class="sent">
+			<text src="Chimpanzees.xml#ghGen116" />
+			<audio src="audio/Page07.mp3" clipBegin="00:15.00" clipEnd="00:20.515" />
+		</par>
+	</seq>
+	<par  id="gh_pageRef8" customTest="pagenum" class="pagenum">
+		<text src="Chimpanzees.xml#gh_pageRef8" />
+		<audio src="audio/Page08.mp3" clipBegin="00:00.00" clipEnd="00:02.294" />
+	</par>
+	<par  id="ghGen117" class="h1">
+		<text src="Chimpanzees.xml#ghGen117" />
+		<audio src="audio/Page08.mp3" clipBegin="00:02.294" clipEnd="00:04.505" />
+	</par>
+	<seq  id="ghGen118" class="p">
+		<par  id="ghGen119" class="sent">
+			<text src="Chimpanzees.xml#ghGen119" />
+			<audio src="audio/Page08.mp3" clipBegin="00:04.505" clipEnd="00:08.627" />
+		</par>
+		<par  id="ghGen120" class="sent">
+			<text src="Chimpanzees.xml#ghGen120" />
+			<audio src="audio/Page08.mp3" clipBegin="00:08.627" clipEnd="00:12.763" />
+		</par>
+		<par  id="ghGen121" class="sent">
+			<text src="Chimpanzees.xml#ghGen121" />
+			<audio src="audio/Page08.mp3" clipBegin="00:12.763" clipEnd="00:17.549" />
+		</par>
+	</seq>
+	<par  id="ghGen122" class="img">
+		<img src="img/page08a.png" />
+	</par>
+	<seq  id="ghGen123" customTest="prodnote" class="prodnote" end="DTBuserEscape;ghGen123Tar.end">
+		<par  id="ghGen123Tar" customTest="prodnote" class="prodnote">
+			<text src="Chimpanzees.xml#ghGen123" />
+		</par>
+	</seq>
+	<par  id="gh_pageRef9" customTest="pagenum" class="pagenum">
+		<text src="Chimpanzees.xml#gh_pageRef9" />
+		<audio src="audio/Page09.mp3" clipBegin="00:00.00" clipEnd="00:02.187" />
+	</par>
+	<par  id="ghGen126" class="h1">
+		<text src="Chimpanzees.xml#ghGen126" />
+		<audio src="audio/Page09.mp3" clipBegin="00:02.187" clipEnd="00:04.247" />
+	</par>
+	<seq  id="ghGen128" class="p">
+		<par  id="ghGen129" class="sent">
+			<text src="Chimpanzees.xml#ghGen129" />
+			<audio src="audio/Page09.mp3" clipBegin="00:04.247" clipEnd="00:08.01" />
+		</par>
+		<par  id="ghGen130" class="sent">
+			<text src="Chimpanzees.xml#ghGen130" />
+			<audio src="audio/Page09.mp3" clipBegin="00:08.01" clipEnd="00:12.155" />
+		</par>
+		<par  id="ghGen131" class="sent">
+			<text src="Chimpanzees.xml#ghGen131" />
+			<audio src="audio/Page09.mp3" clipBegin="00:12.155" clipEnd="00:16.101" />
+		</par>
+	</seq>
+	<par  id="ghGen132" class="img">
+		<img src="img/page09b.jpg" />
+	</par>
+	<seq  id="ghGen133" customTest="prodnote" class="prodnote" end="DTBuserEscape;ghGen133Tar.end">
+		<par  id="ghGen133Tar" customTest="prodnote" class="prodnote">
+			<text src="Chimpanzees.xml#ghGen133" />
+		</par>
+	</seq>
+	<par  id="gh_pageRef10" customTest="pagenum" class="pagenum">
+		<text src="Chimpanzees.xml#gh_pageRef10" />
+		<audio src="audio/Page10.mp3" clipBegin="00:00.00" clipEnd="00:02.403" />
+	</par>
+	<seq  id="ghGen136" class="p">
+		<par  id="ghGen137" class="sent">
+			<text src="Chimpanzees.xml#ghGen137" />
+			<audio src="audio/Page10.mp3" clipBegin="00:02.403" clipEnd="00:07.822" />
+		</par>
+		<par  id="ghGen138" class="sent">
+			<text src="Chimpanzees.xml#ghGen138" />
+			<audio src="audio/Page10.mp3" clipBegin="00:07.822" clipEnd="00:14.917" />
+		</par>
+		<par  id="ghGen139" class="sent">
+			<text src="Chimpanzees.xml#ghGen139" />
+			<audio src="audio/Page10.mp3" clipBegin="00:14.917" clipEnd="00:17.465" />
+		</par>
+	</seq>
+	<seq  id="ghGen140" class="p">
+		<par  id="ghGen141" class="sent">
+			<text src="Chimpanzees.xml#ghGen141" />
+			<audio src="audio/Page10.mp3" clipBegin="00:17.465" clipEnd="00:21.309" />
+		</par>
+		<par  id="ghGen142" class="sent">
+			<text src="Chimpanzees.xml#ghGen142" />
+			<audio src="audio/Page10.mp3" clipBegin="00:21.309" clipEnd="00:24.568" />
+		</par>
+	</seq>
+	<par  id="ghGen143" class="img">
+		<img src="img/page10a.png" />
+	</par>
+	<seq  id="ghGen144" customTest="prodnote" class="prodnote" end="DTBuserEscape;ghGen144Tar.end">
+		<par  id="ghGen144Tar" customTest="prodnote" class="prodnote">
+			<text src="Chimpanzees.xml#ghGen144" />
+		</par>
+	</seq>
+	<par  id="gh_pageRef11" customTest="pagenum" class="pagenum">
+		<text src="Chimpanzees.xml#gh_pageRef11" />
+		<audio src="audio/Page11.mp3" clipBegin="00:00.00" clipEnd="00:02.258" />
+	</par>
+	<par  id="ghGen147" class="h1">
+		<text src="Chimpanzees.xml#ghGen147" />
+		<audio src="audio/Page11.mp3" clipBegin="00:02.258" clipEnd="00:04.833" />
+	</par>
+	<par  id="ghGen150" class="img">
+		<img src="img/page11b.jpg" />
+	</par>
+	<seq  id="ghGen151" customTest="prodnote" class="prodnote" end="DTBuserEscape;ghGen151Tar.end">
+		<par  id="ghGen151Tar" customTest="prodnote" class="prodnote">
+			<text src="Chimpanzees.xml#ghGen151" />
+		</par>
+	</seq>
+	<seq  id="ghGen154" class="p">
+		<par  id="ghGen155" class="sent">
+			<text src="Chimpanzees.xml#ghGen155" />
+			<audio src="audio/Page11.mp3" clipBegin="00:10.951" clipEnd="00:15.453" />
+		</par>
+		<par  id="ghGen156" class="sent">
+			<text src="Chimpanzees.xml#ghGen156" />
+			<audio src="audio/Page11.mp3" clipBegin="00:15.453" clipEnd="00:20.112" />
+		</par>
+	</seq>
+	<par  id="gh_pageRef12" customTest="pagenum" class="pagenum">
+		<text src="Chimpanzees.xml#gh_pageRef12" />
+		<audio src="audio/Page12.mp3" clipBegin="00:00.08" clipEnd="00:02.441" />
+	</par>
+	<seq  id="ghGen157" class="p">
+		<par  id="ghGen158" class="sent">
+			<text src="Chimpanzees.xml#ghGen158" />
+			<audio src="audio/Page12.mp3" clipBegin="00:02.441" clipEnd="00:06.100" />
+		</par>
+		<par  id="ghGen159" class="sent">
+			<text src="Chimpanzees.xml#ghGen159" />
+			<audio src="audio/Page12.mp3" clipBegin="00:06.100" clipEnd="00:10.393" />
+		</par>
+		<par  id="ghGen160" class="sent">
+			<text src="Chimpanzees.xml#ghGen160" />
+			<audio src="audio/Page12.mp3" clipBegin="00:10.393" clipEnd="00:13.579" />
+		</par>
+		<par  id="ghGen161" class="sent">
+			<text src="Chimpanzees.xml#ghGen161" />
+			<audio src="audio/Page12.mp3" clipBegin="00:13.579" clipEnd="00:18.572" />
+		</par>
+	</seq>
+	<par  id="gh_pageRef13" customTest="pagenum" class="pagenum">
+		<text src="Chimpanzees.xml#gh_pageRef13" />
+		<audio src="audio/Page13.mp3" clipBegin="00:00.00" clipEnd="00:02.496" />
+	</par>
+	<par  id="ghGen162" class="img">
+		<img src="img/page13a.jpg" />
+	</par>
+	<seq  id="ghGen163" customTest="prodnote" class="prodnote" end="DTBuserEscape;ghGen163Tar.end">
+		<par  id="ghGen163Tar" customTest="prodnote" class="prodnote">
+			<text src="Chimpanzees.xml#ghGen163" />
+		</par>
+	</seq>
+	<seq  id="ghGen166" class="p">
+		<par  id="ghGen167" class="sent">
+			<text src="Chimpanzees.xml#ghGen167" />
+			<audio src="audio/Page13.mp3" clipBegin="00:09.651" clipEnd="00:13.301" />
+		</par>
+		<par  id="ghGen168" class="sent">
+			<text src="Chimpanzees.xml#ghGen168" />
+			<audio src="audio/Page13.mp3" clipBegin="00:13.301" clipEnd="00:16.919" />
+		</par>
+		<par  id="ghGen169" class="sent">
+			<text src="Chimpanzees.xml#ghGen169" />
+			<audio src="audio/Page13.mp3" clipBegin="00:16.923" clipEnd="00:21.930" />
+		</par>
+	</seq>
+	<par  id="gh_pageRef14" customTest="pagenum" class="pagenum">
+		<text src="Chimpanzees.xml#gh_pageRef14" />
+		<audio src="audio/Page14.mp3" clipBegin="00:00.00" clipEnd="00:02.582" />
+	</par>
+	<par  id="ghGen170" class="h1">
+		<text src="Chimpanzees.xml#ghGen170" />
+		<audio src="audio/Page14.mp3" clipBegin="00:02.582" clipEnd="00:04.761" />
+	</par>
+	<seq  id="ghGen172" class="p">
+		<par  id="ghGen173" class="sent">
+			<text src="Chimpanzees.xml#ghGen173" />
+			<audio src="audio/Page14.mp3" clipBegin="00:04.761" clipEnd="00:08.139" />
+		</par>
+		<par  id="ghGen174" class="sent">
+			<text src="Chimpanzees.xml#ghGen174" />
+			<audio src="audio/Page14.mp3" clipBegin="00:08.139" clipEnd="00:10.958" />
+		</par>
+		<par  id="ghGen175" class="sent">
+			<text src="Chimpanzees.xml#ghGen175" />
+			<audio src="audio/Page14.mp3" clipBegin="00:10.958" clipEnd="00:15.266" />
+		</par>
+		<par  id="ghGen176" class="sent">
+			<text src="Chimpanzees.xml#ghGen176" />
+			<audio src="audio/Page14.mp3" clipBegin="00:15.266" clipEnd="00:18.00" />
+		</par>
+		<par  id="ghGen177" class="sent">
+			<text src="Chimpanzees.xml#ghGen177" />
+			<audio src="audio/Page14.mp3" clipBegin="00:18.00" clipEnd="00:21.987" />
+		</par>
+		<par  id="ghGen178" class="sent">
+			<text src="Chimpanzees.xml#ghGen178" />
+			<audio src="audio/Page14.mp3" clipBegin="00:21.987" clipEnd="00:25.568" />
+		</par>
+	</seq>
+	<par  id="gh_pageRef15" customTest="pagenum" class="pagenum">
+		<text src="Chimpanzees.xml#gh_pageRef15" />
+		<audio src="audio/Page15.mp3" clipBegin="00:00.00" clipEnd="00:02.496" />
+	</par>
+	<par  id="ghGen179" class="img">
+		<img src="img/page15a.jpg" />
+	</par>
+	<seq  id="ghGen180" customTest="prodnote" class="prodnote" end="DTBuserEscape;ghGen180Tar.end">
+		<par  id="ghGen180Tar" customTest="prodnote" class="prodnote">
+			<text src="Chimpanzees.xml#ghGen180" />
+		</par>
+	</seq>
+	<seq  id="ghGen183" class="p">
+		<par  id="ghGen184" class="sent">
+			<text src="Chimpanzees.xml#ghGen184" />
+			<audio src="audio/Page15.mp3" clipBegin="00:09.265" clipEnd="00:13.224" />
+		</par>
+		<par  id="ghGen185" class="sent">
+			<text src="Chimpanzees.xml#ghGen185" />
+			<audio src="audio/Page15.mp3" clipBegin="00:13.224" clipEnd="00:20.175" />
+		</par>
+		<par  id="ghGen186" class="sent">
+			<text src="Chimpanzees.xml#ghGen186" />
+			<audio src="audio/Page15.mp3" clipBegin="00:20.175" clipEnd="00:24.424" />
+		</par>
+		<par  id="ghGen187" class="sent">
+			<text src="Chimpanzees.xml#ghGen187" />
+			<audio src="audio/Page15.mp3" clipBegin="00:24.424" clipEnd="00:27.876" />
+		</par>
+		<par  id="ghGen188" class="sent">
+			<text src="Chimpanzees.xml#ghGen188" />
+			<audio src="audio/Page15.mp3" clipBegin="00:27.876" clipEnd="00:32.219" />
+		</par>
+	</seq>
+	<par  id="gh_pageRef16" customTest="pagenum" class="pagenum">
+		<text src="Chimpanzees.xml#gh_pageRef16" />
+		<audio src="audio/Page16.mp3" clipBegin="00:00.00" clipEnd="00:02.500" />
+	</par>
+	<par  id="ghGen189" class="h1">
+		<text src="Chimpanzees.xml#ghGen189" />
+		<audio src="audio/Page16.mp3" clipBegin="00:02.500" clipEnd="00:04.806" />
+	</par>
+	<seq  id="ghGen191" class="p">
+		<par  id="ghGen192" class="sent">
+			<text src="Chimpanzees.xml#ghGen192" />
+			<audio src="audio/Page16.mp3" clipBegin="00:04.806" clipEnd="00:13.223" />
+		</par>
+		<par  id="ghGen193" class="sent">
+			<text src="Chimpanzees.xml#ghGen193" />
+			<audio src="audio/Page16.mp3" clipBegin="00:13.223" clipEnd="00:17.732" />
+		</par>
+		<par  id="ghGen194" class="sent">
+			<text src="Chimpanzees.xml#ghGen194" />
+			<audio src="audio/Page16.mp3" clipBegin="00:17.732" clipEnd="00:21.988" />
+		</par>
+	</seq>
+	<par  id="gh_pageRef17" customTest="pagenum" class="pagenum">
+		<text src="Chimpanzees.xml#gh_pageRef17" />
+		<audio src="audio/Page17.mp3" clipBegin="00:00.00" clipEnd="00:02.677" />
+	</par>
+	<par  id="ghGen195" class="img">
+		<img src="img/page17a.jpg" />
+	</par>
+	<seq  id="ghGen196" customTest="prodnote" class="prodnote" end="DTBuserEscape;ghGen196Tar.end">
+		<par  id="ghGen196Tar" customTest="prodnote" class="prodnote">
+			<text src="Chimpanzees.xml#ghGen196" />
+		</par>
+	</seq>
+	<seq  id="ghGen199" class="p">
+		<par  id="ghGen200" class="sent">
+			<text src="Chimpanzees.xml#ghGen200" />
+			<audio src="audio/Page17.mp3" clipBegin="00:09.428" clipEnd="00:17.604" />
+		</par>
+		<par  id="ghGen201" class="sent">
+			<text src="Chimpanzees.xml#ghGen201" />
+			<audio src="audio/Page17.mp3" clipBegin="00:17.604" clipEnd="00:24.485" />
+		</par>
+		<par  id="ghGen202" class="sent">
+			<text src="Chimpanzees.xml#ghGen202" />
+			<audio src="audio/Page17.mp3" clipBegin="00:24.485" clipEnd="00:28.445" />
+		</par>
+	</seq>
+	<par  id="gh_pageRef18" customTest="pagenum" class="pagenum">
+		<text src="Chimpanzees.xml#gh_pageRef18" />
+		<audio src="audio/Page18.mp3" clipBegin="00:00.00" clipEnd="00:02.402" />
+	</par>
+	<par  id="ghGen203" class="h1">
+		<text src="Chimpanzees.xml#ghGen203" />
+		<audio src="audio/Page18.mp3" clipBegin="00:02.402" clipEnd="00:04.361" />
+	</par>
+	<seq  id="ghGen205" class="p">
+		<par  id="ghGen206" class="sent">
+			<text src="Chimpanzees.xml#ghGen206" />
+			<audio src="audio/Page18.mp3" clipBegin="00:04.361" clipEnd="00:07.896" />
+		</par>
+		<par  id="ghGen207" class="sent">
+			<text src="Chimpanzees.xml#ghGen207" />
+			<audio src="audio/Page18.mp3" clipBegin="00:07.896" clipEnd="00:12.234" />
+		</par>
+		<par  id="ghGen208" class="sent">
+			<text src="Chimpanzees.xml#ghGen208" />
+			<audio src="audio/Page18.mp3" clipBegin="00:12.234" clipEnd="00:15.927" />
+		</par>
+		<par  id="ghGen209" class="sent">
+			<text src="Chimpanzees.xml#ghGen209" />
+			<audio src="audio/Page18.mp3" clipBegin="00:15.927" clipEnd="00:19.837" />
+		</par>
+	</seq>
+	<seq  id="ghGen210" class="p">
+		<par  id="ghGen211" class="sent">
+			<text src="Chimpanzees.xml#ghGen211" />
+			<audio src="audio/Page18.mp3" clipBegin="00:19.837" clipEnd="00:24.00" />
+		</par>
+		<par  id="ghGen212" class="sent">
+			<text src="Chimpanzees.xml#ghGen212" />
+			<audio src="audio/Page18.mp3" clipBegin="00:24.00" clipEnd="00:28.507" />
+		</par>
+	</seq>
+	<par  id="gh_pageRef19" customTest="pagenum" class="pagenum">
+		<text src="Chimpanzees.xml#gh_pageRef19" />
+		<audio src="audio/Page19.mp3" clipBegin="00:00.00" clipEnd="00:02.400" />
+	</par>
+	<par  id="ghGen213" class="img">
+		<img src="img/page19a.jpg" />
+	</par>
+	<seq  id="ghGen214" customTest="prodnote" class="prodnote" end="DTBuserEscape;ghGen214Tar.end">
+		<par  id="ghGen214Tar" customTest="prodnote" class="prodnote">
+			<text src="Chimpanzees.xml#ghGen214" />
+		</par>
+	</seq>
+	<par  id="gh_pageRef20" customTest="pagenum" class="pagenum">
+		<text src="Chimpanzees.xml#gh_pageRef20" />
+		<audio src="audio/Page20.mp3" clipBegin="00:00.00" clipEnd="00:02.277" />
+	</par>
+	<par  id="ghGen217" class="h1">
+		<text src="Chimpanzees.xml#ghGen217" />
+		<audio src="audio/Page20.mp3" clipBegin="00:02.277" clipEnd="00:04.109" />
+	</par>
+	<seq  id="ghGen218" class="p">
+		<par  id="ghGen219" class="sent">
+			<text src="Chimpanzees.xml#ghGen219" />
+			<audio src="audio/Page20.mp3" clipBegin="00:04.109" clipEnd="00:10.485" />
+		</par>
+		<par  id="ghGen220" class="sent">
+			<text src="Chimpanzees.xml#ghGen220" />
+			<audio src="audio/Page20.mp3" clipBegin="00:10.485" clipEnd="00:15.342" />
+		</par>
+		<par  id="ghGen221" class="sent">
+			<text src="Chimpanzees.xml#ghGen221" />
+			<audio src="audio/Page20.mp3" clipBegin="00:15.342" clipEnd="00:19.996" />
+		</par>
+		<par  id="ghGen222" class="sent">
+			<text src="Chimpanzees.xml#ghGen222" />
+			<audio src="audio/Page20.mp3" clipBegin="00:19.996" clipEnd="00:24.492" />
+		</par>
+	</seq>
+	<seq  id="ghGen223" class="p">
+		<par  id="ghGen224" class="sent">
+			<text src="Chimpanzees.xml#ghGen224" />
+			<audio src="audio/Page20.mp3" clipBegin="00:24.492" clipEnd="00:29.469" />
+		</par>
+		<par  id="ghGen225" class="sent">
+			<text src="Chimpanzees.xml#ghGen225" />
+			<audio src="audio/Page20.mp3" clipBegin="00:29.469" clipEnd="00:34.462" />
+		</par>
+	</seq>
+	<par  id="gh_pageRef21" customTest="pagenum" class="pagenum">
+		<text src="Chimpanzees.xml#gh_pageRef21" />
+		<audio src="audio/Page21.mp3" clipBegin="00:00.00" clipEnd="00:02.602" />
+	</par>
+	<par  id="ghGen226" class="img">
+		<img src="img/page21a.jpg" />
+	</par>
+	<seq  id="ghGen227" customTest="prodnote" class="prodnote" end="DTBuserEscape;ghGen227Tar.end">
+		<par  id="ghGen227Tar" customTest="prodnote" class="prodnote">
+			<text src="Chimpanzees.xml#ghGen227" />
+		</par>
+	</seq>
+	<par  id="gh_pageRef22" customTest="pagenum" class="pagenum">
+		<text src="Chimpanzees.xml#gh_pageRef22" />
+		<audio src="audio/Page22.mp3" clipBegin="00:00.00" clipEnd="00:02.680" />
+	</par>
+	<par  id="ghGen230" class="h1">
+		<text src="Chimpanzees.xml#ghGen230" />
+		<audio src="audio/Page22.mp3" clipBegin="00:02.680" clipEnd="00:04.934" />
+	</par>
+	<seq  id="ghGen232" class="p">
+		<par  id="ghGen233" class="sent">
+			<text src="Chimpanzees.xml#ghGen233" />
+			<audio src="audio/Page22.mp3" clipBegin="00:04.934" clipEnd="00:09.774" />
+		</par>
+	</seq>
+	<seq  id="ghGen234" class="p">
+		<par  id="ghGen235" class="sent">
+			<text src="Chimpanzees.xml#ghGen235" />
+			<audio src="audio/Page22.mp3" clipBegin="00:09.774" clipEnd="00:15.474" />
+		</par>
+	</seq>
+	<seq  id="ghGen236" class="p">
+		<par  id="ghGen237" class="sent">
+			<text src="Chimpanzees.xml#ghGen237" />
+			<audio src="audio/Page22.mp3" clipBegin="00:15.474" clipEnd="00:20.296" />
+		</par>
+		<par  id="ghGen238" class="sent">
+			<text src="Chimpanzees.xml#ghGen238" />
+			<audio src="audio/Page22.mp3" clipBegin="00:20.296" clipEnd="00:23.799" />
+		</par>
+	</seq>
+	<seq  id="ghGen239" class="p">
+		<par  id="ghGen240" class="sent">
+			<text src="Chimpanzees.xml#ghGen240" />
+			<audio src="audio/Page22.mp3" clipBegin="00:23.799" clipEnd="00:28.869" />
+		</par>
+	</seq>
+	<seq  id="ghGen241" class="p">
+		<par  id="ghGen242" class="sent">
+			<text src="Chimpanzees.xml#ghGen242" />
+			<audio src="audio/Page22.mp3" clipBegin="00:28.869" clipEnd="00:32.859" />
+		</par>
+	</seq>
+	<seq  id="ghGen243" class="p">
+		<par  id="ghGen244" class="sent">
+			<text src="Chimpanzees.xml#ghGen244" />
+			<audio src="audio/Page22.mp3" clipBegin="00:32.859" clipEnd="00:38.486" />
+		</par>
+	</seq>
+	<seq  id="ghGen245" class="p">
+		<par  id="ghGen246" class="sent">
+			<text src="Chimpanzees.xml#ghGen246" />
+			<audio src="audio/Page22.mp3" clipBegin="00:38.486" clipEnd="00:45.100" />
+		</par>
+	</seq>
+	<par  id="gh_pageRef23" customTest="pagenum" class="pagenum">
+		<text src="Chimpanzees.xml#gh_pageRef23" />
+		<audio src="audio/Page23.mp3" clipBegin="00:00.00" clipEnd="00:02.741" />
+	</par>
+	<par  id="ghGen247" class="h1">
+		<text src="Chimpanzees.xml#ghGen247" />
+		<audio src="audio/Page23.mp3" clipBegin="00:02.741" clipEnd="00:05.242" />
+	</par>
+	<par  id="ghGen249" class="h2">
+		<text src="Chimpanzees.xml#ghGen249" />
+		<audio src="audio/Page23.mp3" clipBegin="00:05.242" clipEnd="00:07.716" />
+	</par>
+	<seq  id="ghGen250" class="p">
+		<par  id="ghGen251" class="sent">
+			<text src="Chimpanzees.xml#ghGen251" />
+			<audio src="audio/Page23.mp3" clipBegin="00:07.716" clipEnd="00:18.863" />
+		</par>
+	</seq>
+	<seq  id="ghGen252" class="p">
+		<par  id="ghGen253" class="sent">
+			<text src="Chimpanzees.xml#ghGen253" />
+			<audio src="audio/Page23.mp3" clipBegin="00:18.863" clipEnd="00:26.613" />
+		</par>
+	</seq>
+	<par  id="ghGen254" class="h2">
+		<text src="Chimpanzees.xml#ghGen254" />
+		<audio src="audio/Page23.mp3" clipBegin="00:26.613" clipEnd="00:29.169" />
+	</par>
+	<seq  id="ghGen255" class="p">
+		<par  id="ghGen256" class="sent">
+			<text src="Chimpanzees.xml#ghGen256" />
+			<audio src="audio/Page23.mp3" clipBegin="00:29.169" clipEnd="00:44.193" />
+		</par>
+	</seq>
+	<seq  id="ghGen257" class="p">
+		<par  id="ghGen258" class="sent">
+			<text src="Chimpanzees.xml#ghGen258" />
+			<audio src="audio/Page23.mp3" clipBegin="00:44.193" clipEnd="00:47.601" />
+		</par>
+	</seq>
+	<par  id="ghGen259" class="h2">
+		<text src="Chimpanzees.xml#ghGen259" />
+		<audio src="audio/Page23.mp3" clipBegin="00:47.601" clipEnd="00:51.293" />
+	</par>
+	<seq  id="ghGen260" class="p">
+		<par  id="ghGen261" class="sent">
+			<text src="Chimpanzees.xml#ghGen261" />
+			<audio src="audio/Page23.mp3" clipBegin="00:51.293" clipEnd="01:04.129" />
+		</par>
+	</seq>
+	<par  id="gh_pageRef24" customTest="pagenum" class="pagenum">
+		<text src="Chimpanzees.xml#gh_pageRef24" />
+		<audio src="audio/Page24.mp3" clipBegin="00:00.00" clipEnd="00:02.527" />
+	</par>
+	<par  id="ghGen262" class="h1">
+		<text src="Chimpanzees.xml#ghGen262" />
+		<audio src="audio/Page24.mp3" clipBegin="00:02.527" clipEnd="00:04.596" />
+	</par>
+	<seq  id="ghGen264" class="p">
+		<par  id="ghGen265" class="sent">
+			<text src="Chimpanzees.xml#ghGen265" />
+			<audio src="audio/Page24.mp3" clipBegin="00:04.596" clipEnd="00:09.138" />
+		</par>
+	</seq>
+	<seq  id="ghGen266" class="p">
+		<par  id="ghGen267" class="sent">
+			<text src="Chimpanzees.xml#ghGen267" />
+			<audio src="audio/Page24.mp3" clipBegin="00:09.138" clipEnd="00:13.473" />
+		</par>
+	</seq>
+	<seq  id="ghGen268" class="p">
+		<par  id="ghGen269" class="sent">
+			<text src="Chimpanzees.xml#ghGen269" />
+			<audio src="audio/Page24.mp3" clipBegin="00:13.473" clipEnd="00:17.536" />
+		</par>
+	</seq>
+	<seq  id="ghGen270" class="p">
+		<par  id="ghGen271" class="sent">
+			<text src="Chimpanzees.xml#ghGen271" />
+			<audio src="audio/Page24.mp3" clipBegin="00:17.536" clipEnd="00:20.800" />
+		</par>
+	</seq>
+	<seq  id="ghGen272" class="p">
+		<par  id="ghGen273" class="sent">
+			<text src="Chimpanzees.xml#ghGen273" />
+			<audio src="audio/Page24.mp3" clipBegin="00:20.800" clipEnd="00:23.897" />
+		</par>
+	</seq>
+	<seq  id="ghGen274" class="p">
+		<par  id="ghGen275" class="sent">
+			<text src="Chimpanzees.xml#ghGen275" />
+			<audio src="audio/Page24.mp3" clipBegin="00:23.897" clipEnd="00:27.439" />
+		</par>
+	</seq>
+	<seq  id="ghGen276" class="p">
+		<par  id="ghGen277" class="sent">
+			<text src="Chimpanzees.xml#ghGen277" />
+			<audio src="audio/Page24.mp3" clipBegin="00:27.439" clipEnd="00:32.255" />
+		</par>
+	</seq>
+	<seq  id="ghGen278" class="p">
+		<par  id="ghGen279" class="sent">
+			<text src="Chimpanzees.xml#ghGen279" />
+			<audio src="audio/Page24.mp3" clipBegin="00:32.255" clipEnd="00:36.969" />
+		</par>
+	</seq>
+	<seq  id="ghGen280" class="p">
+		<par  id="ghGen281" class="sent">
+			<text src="Chimpanzees.xml#ghGen281" />
+			<audio src="audio/Page24.mp3" clipBegin="00:36.969" clipEnd="00:40.100" />
+		</par>
+	</seq>
+	<seq  id="ghGen282" class="p">
+		<par  id="ghGen283" class="sent">
+			<text src="Chimpanzees.xml#ghGen283" />
+			<audio src="audio/Page24.mp3" clipBegin="00:40.100" clipEnd="00:43.414" />
+		</par>
+	</seq>
+	<seq  id="ghGen284" class="p">
+		<par  id="ghGen285" class="sent">
+			<text src="Chimpanzees.xml#ghGen285" />
+			<audio src="audio/Page24.mp3" clipBegin="00:43.414" clipEnd="00:48.143" />
+		</par>
+	</seq>
+	<seq  id="ghGen286" class="p">
+		<par  id="ghGen287" class="sent">
+			<text src="Chimpanzees.xml#ghGen287" />
+			<audio src="audio/Page24.mp3" clipBegin="00:48.143" clipEnd="00:51.425" />
+		</par>
+	</seq>
+	<seq  id="ghGen288" class="p">
+		<par  id="ghGen289" class="sent">
+			<text src="Chimpanzees.xml#ghGen289" />
+			<audio src="audio/Page24.mp3" clipBegin="00:51.425" clipEnd="00:54.395" />
+		</par>
+	</seq>
+	<seq  id="ghGen290" class="p">
+		<par  id="ghGen291" class="sent">
+			<text src="Chimpanzees.xml#ghGen291" />
+			<audio src="audio/Page24.mp3" clipBegin="00:54.395" clipEnd="00:57.641" />
+		</par>
+	</seq>
+	<seq  id="ghGen292" class="p">
+		<par  id="ghGen293" class="sent">
+			<text src="Chimpanzees.xml#ghGen293" />
+			<audio src="audio/Page24.mp3" clipBegin="00:57.641" clipEnd="01:00.733" />
+		</par>
+	</seq>
+	<seq  id="ghGen294" class="p">
+		<par  id="ghGen295" class="sent">
+			<text src="Chimpanzees.xml#ghGen295" />
+			<audio src="audio/Page24.mp3" clipBegin="01:00.733" clipEnd="01:04.01" />
+		</par>
+	</seq>
+	<seq  id="ghGen296" class="p">
+		<par  id="ghGen297" class="sent">
+			<text src="Chimpanzees.xml#ghGen297" />
+			<audio src="audio/Page24.mp3" clipBegin="01:04.01" clipEnd="01:08.760" />
+		</par>
+	</seq>
+	<seq  id="ghGen298" class="p">
+		<par  id="ghGen299" class="sent">
+			<text src="Chimpanzees.xml#ghGen299" />
+			<audio src="audio/Page24.mp3" clipBegin="01:08.760" clipEnd="01:12.100" />
+		</par>
+	</seq>
+	<seq  id="ghGen300" class="p">
+		<par  id="ghGen301" class="sent">
+			<text src="Chimpanzees.xml#ghGen301" />
+			<audio src="audio/Page24.mp3" clipBegin="01:12.100" clipEnd="01:15.965" />
+		</par>
+	</seq>
+	<seq  id="ghGen302" class="p">
+		<par  id="ghGen303" class="sent">
+			<text src="Chimpanzees.xml#ghGen303" />
+			<audio src="audio/Page24.mp3" clipBegin="01:15.965" clipEnd="01:20.948" />
+		</par>
+	</seq>
+	<seq  id="ghGen304" class="p">
+		<par  id="ghGen305" class="sent">
+			<text src="Chimpanzees.xml#ghGen305" />
+			<audio src="audio/Page24.mp3" clipBegin="01:20.948" clipEnd="01:23.830" />
+		</par>
+	</seq>
+	<par  id="ghGen306" class="h1">
+		<text src="Chimpanzees.xml#ghGen306" />
+		<audio src="audio/questions/questions.mp3" clipBegin="00:00.00" clipEnd="00:01.068" />
+	</par>
+	<seq  id="ghGen307" class="p">
+		<par  id="ghGen308" class="sent">
+			<text src="Chimpanzees.xml#ghGen308" />
+			<audio src="audio/questions/01.mp3" clipBegin="00:00.00" clipEnd="00:04.675" />
+		</par>
+	</seq>
+	<seq  id="ghGen309" class="p">
+		<par  id="ghGen310" class="sent">
+			<text src="Chimpanzees.xml#ghGen310" />
+			<audio src="audio/questions/01.mp3" clipBegin="00:04.675" clipEnd="00:07.957" />
+		</par>
+	</seq>
+	<seq  id="ghGen311" class="p">
+		<par  id="ghGen312" class="sent">
+			<text src="Chimpanzees.xml#ghGen312" />
+			<audio src="audio/questions/01.mp3" clipBegin="00:07.957" clipEnd="00:11.409" />
+		</par>
+	</seq>
+	<seq  id="ghGen313" class="p">
+		<par  id="ghGen314" class="sent">
+			<text src="Chimpanzees.xml#ghGen314" />
+			<audio src="audio/questions/01.mp3" clipBegin="00:11.409" clipEnd="00:14.700" />
+		</par>
+	</seq>
+	<seq  id="ghGen315" class="p">
+		<par  id="ghGen316" class="sent">
+			<text src="Chimpanzees.xml#ghGen316" />
+			<audio src="audio/questions/02.mp3" clipBegin="00:00.00" clipEnd="00:05.00" />
+		</par>
+	</seq>
+	<seq  id="ghGen317" class="p">
+		<par  id="ghGen318" class="sent">
+			<text src="Chimpanzees.xml#ghGen318" />
+			<audio src="audio/questions/02.mp3" clipBegin="00:05.00" clipEnd="00:08.00" />
+		</par>
+	</seq>
+	<seq  id="ghGen319" class="p">
+		<par  id="ghGen320" class="sent">
+			<text src="Chimpanzees.xml#ghGen320" />
+			<audio src="audio/questions/02.mp3" clipBegin="00:08.00" clipEnd="00:11.231" />
+		</par>
+	</seq>
+	<seq  id="ghGen321" class="p">
+		<par  id="ghGen322" class="sent">
+			<text src="Chimpanzees.xml#ghGen322" />
+			<audio src="audio/questions/02.mp3" clipBegin="00:11.231" clipEnd="00:14.520" />
+		</par>
+	</seq>
+	<seq  id="ghGen323" class="p">
+		<par  id="ghGen324" class="sent">
+			<text src="Chimpanzees.xml#ghGen324" />
+			<audio src="audio/questions/03.mp3" clipBegin="00:00.00" clipEnd="00:05.415" />
+		</par>
+	</seq>
+	<seq  id="ghGen325" class="p">
+		<par  id="ghGen326" class="sent">
+			<text src="Chimpanzees.xml#ghGen326" />
+			<audio src="audio/questions/03.mp3" clipBegin="00:05.415" clipEnd="00:08.507" />
+		</par>
+	</seq>
+	<seq  id="ghGen327" class="p">
+		<par  id="ghGen328" class="sent">
+			<text src="Chimpanzees.xml#ghGen328" />
+			<audio src="audio/questions/03.mp3" clipBegin="00:08.507" clipEnd="00:11.770" />
+		</par>
+	</seq>
+	<seq  id="ghGen329" class="p">
+		<par  id="ghGen330" class="sent">
+			<text src="Chimpanzees.xml#ghGen330" />
+			<audio src="audio/questions/03.mp3" clipBegin="00:11.770" clipEnd="00:15.100" />
+		</par>
+	</seq>
+	<seq  id="ghGen331" class="p">
+		<par  id="ghGen332" class="sent">
+			<text src="Chimpanzees.xml#ghGen332" />
+			<audio src="audio/questions/04.mp3" clipBegin="00:00.00" clipEnd="00:06.215" />
+		</par>
+	</seq>
+	<seq  id="ghGen333" class="p">
+		<par  id="ghGen334" class="sent">
+			<text src="Chimpanzees.xml#ghGen334" />
+			<audio src="audio/questions/04.mp3" clipBegin="00:06.215" clipEnd="00:09.156" />
+		</par>
+	</seq>
+	<seq  id="ghGen335" class="p">
+		<par  id="ghGen336" class="sent">
+			<text src="Chimpanzees.xml#ghGen336" />
+			<audio src="audio/questions/04.mp3" clipBegin="00:09.156" clipEnd="00:12.316" />
+		</par>
+	</seq>
+	<seq  id="ghGen337" class="p">
+		<par  id="ghGen338" class="sent">
+			<text src="Chimpanzees.xml#ghGen338" />
+			<audio src="audio/questions/04.mp3" clipBegin="00:12.316" clipEnd="00:15.302" />
+		</par>
+	</seq>
+	<seq  id="ghGen339" class="p">
+		<par  id="ghGen340" class="sent">
+			<text src="Chimpanzees.xml#ghGen340" />
+			<audio src="audio/questions/05.mp3" clipBegin="00:00.00" clipEnd="00:05.294" />
+		</par>
+	</seq>
+	<seq  id="ghGen341" class="p">
+		<par  id="ghGen342" class="sent">
+			<text src="Chimpanzees.xml#ghGen342" />
+			<audio src="audio/questions/05.mp3" clipBegin="00:05.294" clipEnd="00:08.434" />
+		</par>
+	</seq>
+	<seq  id="ghGen343" class="p">
+		<par  id="ghGen344" class="sent">
+			<text src="Chimpanzees.xml#ghGen344" />
+			<audio src="audio/questions/05.mp3" clipBegin="00:08.434" clipEnd="00:11.515" />
+		</par>
+	</seq>
+	<seq  id="ghGen345" class="p">
+		<par  id="ghGen346" class="sent">
+			<text src="Chimpanzees.xml#ghGen346" />
+			<audio src="audio/questions/05.mp3" clipBegin="00:11.515" clipEnd="00:15.100" />
+		</par>
+	</seq>
+	<seq  id="ghGen347" class="p">
+		<par  id="ghGen348" class="sent">
+			<text src="Chimpanzees.xml#ghGen348" />
+			<audio src="audio/questions/06.mp3" clipBegin="00:00.00" clipEnd="00:05.362" />
+		</par>
+	</seq>
+	<seq  id="ghGen349" class="p">
+		<par  id="ghGen350" class="sent">
+			<text src="Chimpanzees.xml#ghGen350" />
+			<audio src="audio/questions/06.mp3" clipBegin="00:05.362" clipEnd="00:08.479" />
+		</par>
+	</seq>
+	<seq  id="ghGen351" class="p">
+		<par  id="ghGen352" class="sent">
+			<text src="Chimpanzees.xml#ghGen352" />
+			<audio src="audio/questions/06.mp3" clipBegin="00:08.479" clipEnd="00:11.903" />
+		</par>
+	</seq>
+	<seq  id="ghGen353" class="p">
+		<par  id="ghGen354" class="sent">
+			<text src="Chimpanzees.xml#ghGen354" />
+			<audio src="audio/questions/06.mp3" clipBegin="00:11.903" clipEnd="00:15.279" />
+		</par>
+	</seq>
+	<seq  id="ghGen355" class="p">
+		<par  id="ghGen356" class="sent">
+			<text src="Chimpanzees.xml#ghGen356" />
+			<audio src="audio/questions/07.mp3" clipBegin="00:00.00" clipEnd="00:05.103" />
+		</par>
+	</seq>
+	<seq  id="ghGen357" class="p">
+		<par  id="ghGen358" class="sent">
+			<text src="Chimpanzees.xml#ghGen358" />
+			<audio src="audio/questions/07.mp3" clipBegin="00:05.103" clipEnd="00:08.534" />
+		</par>
+	</seq>
+	<seq  id="ghGen359" class="p">
+		<par  id="ghGen360" class="sent">
+			<text src="Chimpanzees.xml#ghGen360" />
+			<audio src="audio/questions/07.mp3" clipBegin="00:08.534" clipEnd="00:11.740" />
+		</par>
+	</seq>
+	<seq  id="ghGen361" class="p">
+		<par  id="ghGen362" class="sent">
+			<text src="Chimpanzees.xml#ghGen362" />
+			<audio src="audio/questions/both.alt.mp3" clipBegin="00:00.00" clipEnd="00:03.421" />
+		</par>
+	</seq>
+	<seq  id="ghGen363" class="p">
+		<par  id="ghGen364" class="sent">
+			<text src="Chimpanzees.xml#ghGen364" />
+			<audio src="audio/questions/08.mp3" clipBegin="00:00.00" clipEnd="00:05.217" />
+		</par>
+	</seq>
+	<seq  id="ghGen365" class="p">
+		<par  id="ghGen366" class="sent">
+			<text src="Chimpanzees.xml#ghGen366" />
+			<audio src="audio/questions/08.mp3" clipBegin="00:05.217" clipEnd="00:08.919" />
+		</par>
+	</seq>
+	<seq  id="ghGen367" class="p">
+		<par  id="ghGen368" class="sent">
+			<text src="Chimpanzees.xml#ghGen368" />
+			<audio src="audio/questions/08.mp3" clipBegin="00:08.919" clipEnd="00:12.480" />
+		</par>
+	</seq>
+	<seq  id="ghGen369" class="p">
+		<par  id="ghGen370" class="sent">
+			<text src="Chimpanzees.xml#ghGen370" />
+			<audio src="audio/questions/08.mp3" clipBegin="00:12.480" clipEnd="00:16.657" />
+		</par>
+	</seq>
+	<seq  id="ghGen371" class="p">
+		<par  id="ghGen372" class="sent">
+			<text src="Chimpanzees.xml#ghGen372" />
+			<audio src="audio/questions/09.mp3" clipBegin="00:00.00" clipEnd="00:05.777" />
+		</par>
+	</seq>
+	<seq  id="ghGen373" class="p">
+		<par  id="ghGen374" class="sent">
+			<text src="Chimpanzees.xml#ghGen374" />
+			<audio src="audio/questions/09.mp3" clipBegin="00:05.777" clipEnd="00:08.731" />
+		</par>
+	</seq>
+	<seq  id="ghGen375" class="p">
+		<par  id="ghGen376" class="sent">
+			<text src="Chimpanzees.xml#ghGen376" />
+			<audio src="audio/questions/09.mp3" clipBegin="00:08.731" clipEnd="00:12.259" />
+		</par>
+	</seq>
+	<seq  id="ghGen377" class="p">
+		<par  id="ghGen378" class="sent">
+			<text src="Chimpanzees.xml#ghGen378" />
+			<audio src="audio/questions/09.mp3" clipBegin="00:12.259" clipEnd="00:15.679" />
+		</par>
+	</seq>
+	<seq  id="ghGen379" class="p">
+		<par  id="ghGen380" class="sent">
+			<text src="Chimpanzees.xml#ghGen380" />
+			<audio src="audio/questions/10.mp3" clipBegin="00:00.00" clipEnd="00:05.540" />
+		</par>
+	</seq>
+	<seq  id="ghGen381" class="p">
+		<par  id="ghGen382" class="sent">
+			<text src="Chimpanzees.xml#ghGen382" />
+			<audio src="audio/questions/10.mp3" clipBegin="00:05.540" clipEnd="00:08.534" />
+		</par>
+	</seq>
+	<seq  id="ghGen383" class="p">
+		<par  id="ghGen384" class="sent">
+			<text src="Chimpanzees.xml#ghGen384" />
+			<audio src="audio/questions/10.mp3" clipBegin="00:08.534" clipEnd="00:12.229" />
+		</par>
+	</seq>
+	<seq  id="ghGen385" class="p">
+		<par  id="ghGen386" class="sent">
+			<text src="Chimpanzees.xml#ghGen386" />
+			<audio src="audio/questions/10.mp3" clipBegin="00:12.229" clipEnd="00:15.739" />
+		</par>
+	</seq>
+</seq>
+</body>
+</smil>
+  		    
+ 			  	 
+  		 	  
+  	 	 		
+  		 	  
+ 					  
+ 	 			  
+  	 				
+ 					  

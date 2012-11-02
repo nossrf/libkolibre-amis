@@ -1,0 +1,10 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: @PACKAGE_NAME@
+Description: Selected parts out of the Amis-next project.
+Version: @PACKAGE_VERSION@
+Libs: -L${libdir} -lkolibre-amis 
+Cflags: -I${includedir}/libkolibre/amis-@PACKAGE_VERSION@ 

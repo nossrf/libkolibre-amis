@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE smil PUBLIC "-//W3C//DTD SMIL 1.0//EN" "SMIL10.dtd">
+<smil>
+	<head>
+		<meta name="dc:format" content="Daisy 2.02"/>
+		<meta name="ncc:timeInThisSmil" content="00:00:45.622"/>
+		<meta name="ncc:totalElapsedTime" content="00:08:41.924"/>
+		<layout>
+			<region id="txt-view"/>
+		</layout>
+		<meta name="ncc:generator" content="EasePublisher 2.13 Build 163 # 044FSI210083735"/>
+    <meta name="title" content="Open Source and Open Standards"/>
+    <meta name="dc:title" content="DAISY: A GLOBAL EFFORT TO PROVIDE ACCESSIBLE INFORMATION"/>
+    <meta name="dc:identifier" content="AUTO-UID-5230414073153262592"/>
+  </head>
+	<body>
+		<seq dur="45.622s">
+			<par endsync="last" id="par_90">
+				<text src="DAISYBrochureForStickV3.html#dol_1_9_d2e329" id="txt_90"/>
+				<seq>
+					<audio src="d2000d.mp3" clip-begin="npt=0.000s" clip-end="npt=2.189s" id="audio_0001"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_91">
+				<text src="DAISYBrochureForStickV3.html#dol_1_9_id_184" id="txt_91"/>
+				<seq>
+					<audio src="d2000d.mp3" clip-begin="npt=2.189s" clip-end="npt=10.006s" id="audio_0002"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_92">
+				<text src="DAISYBrochureForStickV3.html#dol_1_9_id_185" id="txt_92"/>
+				<seq>
+					<audio src="d2000d.mp3" clip-begin="npt=10.006s" clip-end="npt=23.862s" id="audio_0003"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_93">
+				<text src="DAISYBrochureForStickV3.html#dol_1_9_id_186" id="txt_93"/>
+				<seq>
+					<audio src="d2000d.mp3" clip-begin="npt=23.862s" clip-end="npt=27.344s" id="audio_0004"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_94">
+				<text src="DAISYBrochureForStickV3.html#dol_1_9_id_187" id="txt_94"/>
+				<seq>
+					<audio src="d2000d.mp3" clip-begin="npt=27.344s" clip-end="npt=36.512s" id="audio_0005"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_95">
+				<text src="DAISYBrochureForStickV3.html#dol_1_9_id_188" id="txt_95"/>
+				<seq>
+					<audio src="d2000d.mp3" clip-begin="npt=36.512s" clip-end="npt=45.622s" id="audio_0006"/>
+				</seq>
+			</par>
+		</seq>
+	</body>
+</smil>

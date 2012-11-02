@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE smil PUBLIC "-//W3C//DTD SMIL 1.0//EN" "http://www.w3.org/TR/REC-smil/SMIL10.dtd">
+<smil>
+	<head>
+		<meta name="dc:identifier" content="theorybehindplayers"/>
+		<meta name="dc:title" content="White paper: Theory Behind Players and Intelligent Reading Systems"/>
+		<meta name="dc:format" content="Daisy 2.02"/>
+		<meta name="title" content="Intelligent Reading Systems"/>
+		<meta name="ncc:totalElapsedTime" content="00:03:20"/>
+		<meta name="ncc:timeInThisSmil" content="00:00:39"/>
+		<meta name="ncc:generator" content="Regenerator 1.0.27"/>
+		<layout>
+			<region id="txtView"/>
+		</layout>
+	</head>
+	<body>
+		<seq dur="38.782s">
+			<par id="p37" endsync="last">
+				<text src="content.html#rgn_cnt_0037" id="rgn_txt_0006_0001"/>
+				<seq>
+					<audio src="dtb_0006.mp3" clip-begin="npt=0.000s" clip-end="npt=2.320s" id="rgn_aud_0006_0001"/>
+				</seq>
+			</par>
+			<par id="p38" endsync="last">
+				<text src="content.html#rgn_cnt_0038" id="rgn_txt_0006_0002"/>
+				<seq>
+					<audio src="dtb_0006.mp3" clip-begin="npt=2.320s" clip-end="npt=11.474s" id="rgn_aud_0006_0002"/>
+				</seq>
+			</par>
+			<par id="p39" endsync="last">
+				<text src="content.html#rgn_cnt_0039" id="rgn_txt_0006_0003"/>
+				<seq>
+					<audio src="dtb_0006.mp3" clip-begin="npt=11.474s" clip-end="npt=16.409s" id="rgn_aud_0006_0003"/>
+				</seq>
+			</par>
+			<par id="p40" endsync="last">
+				<text src="content.html#rgn_cnt_0040" id="rgn_txt_0006_0004"/>
+				<seq>
+					<audio src="dtb_0006.mp3" clip-begin="npt=16.409s" clip-end="npt=23.067s" id="rgn_aud_0006_0004"/>
+				</seq>
+			</par>
+			<par id="p41" endsync="last">
+				<text src="content.html#rgn_cnt_0041" id="rgn_txt_0006_0005"/>
+				<seq>
+					<audio src="dtb_0006.mp3" clip-begin="npt=23.067s" clip-end="npt=32.161s" id="rgn_aud_0006_0005"/>
+				</seq>
+			</par>
+			<par id="p42" endsync="last">
+				<text src="content.html#rgn_cnt_0042" id="rgn_txt_0006_0006"/>
+				<seq>
+					<audio src="dtb_0006.mp3" clip-begin="npt=32.161s" clip-end="npt=38.782s" id="rgn_aud_0006_0006"/>
+				</seq>
+			</par>
+		</seq>
+	</body>
+</smil>

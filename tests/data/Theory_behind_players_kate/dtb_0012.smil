@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE smil PUBLIC "-//W3C//DTD SMIL 1.0//EN" "http://www.w3.org/TR/REC-smil/SMIL10.dtd">
+<smil>
+	<head>
+		<meta name="dc:identifier" content="theorybehindplayers"/>
+		<meta name="dc:title" content="White paper: Theory Behind Players and Intelligent Reading Systems"/>
+		<meta name="dc:format" content="Daisy 2.02"/>
+		<meta name="title" content="Some Strategic Implications"/>
+		<meta name="ncc:totalElapsedTime" content="00:07:29"/>
+		<meta name="ncc:timeInThisSmil" content="00:01:42"/>
+		<meta name="ncc:generator" content="Regenerator 1.0.27"/>
+		<layout>
+			<region id="txtView"/>
+		</layout>
+	</head>
+	<body>
+		<seq dur="101.783s">
+			<par id="p76" endsync="last">
+				<text src="content.html#rgn_cnt_0076" id="rgn_txt_0012_0001"/>
+				<seq>
+					<audio src="dtb_0012.mp3" clip-begin="npt=0.000s" clip-end="npt=2.571s" id="rgn_aud_0012_0001"/>
+				</seq>
+			</par>
+			<par id="p77" endsync="last">
+				<text src="content.html#rgn_cnt_0077" id="rgn_txt_0012_0002"/>
+				<seq>
+					<audio src="dtb_0012.mp3" clip-begin="npt=2.571s" clip-end="npt=14.824s" id="rgn_aud_0012_0002"/>
+				</seq>
+			</par>
+			<par id="p78" endsync="last">
+				<text src="content.html#rgn_cnt_0078" id="rgn_txt_0012_0003"/>
+				<seq>
+					<audio src="dtb_0012.mp3" clip-begin="npt=14.824s" clip-end="npt=17.771s" id="rgn_aud_0012_0003"/>
+				</seq>
+			</par>
+			<par id="p79" endsync="last">
+				<text src="content.html#rgn_cnt_0079" id="rgn_txt_0012_0004"/>
+				<seq>
+					<audio src="dtb_0012.mp3" clip-begin="npt=17.771s" clip-end="npt=24.204s" id="rgn_aud_0012_0004"/>
+				</seq>
+			</par>
+			<par id="p80" endsync="last">
+				<text src="content.html#rgn_cnt_0080" id="rgn_txt_0012_0005"/>
+				<seq>
+					<audio src="dtb_0012.mp3" clip-begin="npt=24.204s" clip-end="npt=34.399s" id="rgn_aud_0012_0005"/>
+				</seq>
+			</par>
+			<par id="p81" endsync="last">
+				<text src="content.html#rgn_cnt_0081" id="rgn_txt_0012_0006"/>
+				<seq>
+					<audio src="dtb_0012.mp3" clip-begin="npt=34.399s" clip-end="npt=46.810s" id="rgn_aud_0012_0006"/>
+				</seq>
+			</par>
+			<par id="p82" endsync="last">
+				<text src="content.html#rgn_cnt_0082" id="rgn_txt_0012_0007"/>
+				<seq>
+					<audio src="dtb_0012.mp3" clip-begin="npt=46.810s" clip-end="npt=53.695s" id="rgn_aud_0012_0007"/>
+				</seq>
+			</par>
+			<par id="p83" endsync="last">
+				<text src="content.html#rgn_cnt_0083" id="rgn_txt_0012_0008"/>
+				<seq>
+					<audio src="dtb_0012.mp3" clip-begin="npt=53.695s" clip-end="npt=61.961s" id="rgn_aud_0012_0008"/>
+				</seq>
+			</par>
+			<par id="p84" endsync="last">
+				<text src="content.html#rgn_cnt_0084" id="rgn_txt_0012_0009"/>
+				<seq>
+					<audio src="dtb_0012.mp3" clip-begin="npt=61.961s" clip-end="npt=71.508s" id="rgn_aud_0012_0009"/>
+				</seq>
+			</par>
+			<par id="p85" endsync="last">
+				<text src="content.html#rgn_cnt_0085" id="rgn_txt_0012_0010"/>
+				<seq>
+					<audio src="dtb_0012.mp3" clip-begin="npt=71.508s" clip-end="npt=81.708s" id="rgn_aud_0012_0010"/>
+				</seq>
+			</par>
+			<par id="p86" endsync="last">
+				<text src="content.html#rgn_cnt_0086" id="rgn_txt_0012_0011"/>
+				<seq>
+					<audio src="dtb_0012.mp3" clip-begin="npt=81.708s" clip-end="npt=92.510s" id="rgn_aud_0012_0011"/>
+				</seq>
+			</par>
+			<par id="p87" endsync="last">
+				<text src="content.html#rgn_cnt_0087" id="rgn_txt_0012_0012"/>
+				<seq>
+					<audio src="dtb_0012.mp3" clip-begin="npt=92.510s" clip-end="npt=101.783s" id="rgn_aud_0012_0012"/>
+				</seq>
+			</par>
+		</seq>
+	</body>
+</smil>

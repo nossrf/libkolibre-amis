@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN"
+"http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
+
+<ncx version="2005-1" xml:lang="en" xmlns="http://www.daisy.org/z3986/2005/ncx/">
+<head>
+	<smilCustomTest id="pagenum" defaultState="true" override="visible" bookStruct="PAGE_NUMBER" />
+	<smilCustomTest id="prodnote" defaultState="true" override="visible" bookStruct="OPTIONAL_PRODUCER_NOTE" />
+	<meta name="dtb:uid" content="ghBOOK1211212736" />
+	<meta name="dtb:depth" content="2" />
+	<meta name="dtb:generator" content="gh DTB Maker 4.0" />
+	<meta name="dtb:maxPageNumber" content="24" />
+	<meta name="dtb:totalPageCount" content="24" />
+</head>
+<docTitle><text>Chimpanzees</text></docTitle>
+<docAuthor><text>Julie Murray</text></docAuthor><navMap>
+	<navPoint id="ghGen3" class="h1" playOrder="2">
+		<navLabel>
+			<text>Chimpanzees</text>
+			<audio src="audio/Page01.mp3" clipBegin="00:02.483" clipEnd="00:04.829" />
+		</navLabel>
+		<content src="Chimpanzees.smil#ghGen3" />
+	</navPoint>
+
+	<navPoint id="ghGen27" class="h1" playOrder="4">
+		<navLabel>
+			<text>Library of Congress Cataloging-in-Publication Data</text>
+			<audio src="audio/Page02.mp3" clipBegin="01:08.200" clipEnd="01:13.350" />
+		</navLabel>
+		<content src="Chimpanzees.smil#ghGen27" />
+	</navPoint>
+
+	<navPoint id="ghGen48" class="h1" playOrder="6">
+		<navLabel>
+			<text>Contents</text>
+			<audio src="audio/Page03.mp3" clipBegin="00:02.466" clipEnd="00:03.955" />
+		</navLabel>
+		<content src="Chimpanzees.smil#ghGen48" />
+	</navPoint>
+
+	<navPoint id="ghGen83" class="h1" playOrder="8">
+		<navLabel>
+			<text>Great Apes</text>
+			<audio src="audio/Page04.mp3" clipBegin="00:02.300" clipEnd="00:04.518" />
+		</navLabel>
+		<content src="Chimpanzees.smil#ghGen83" />
+	</navPoint>
+
+	<navPoint id="ghGen96" class="h1" playOrder="11">
+		<navLabel>
+			<text>Chimpanzees And People</text>
+			<audio src="audio/Page06.mp3" clipBegin="00:02.442" clipEnd="00:05.00" />
+		</navLabel>
+		<content src="Chimpanzees.smil#ghGen96" />
+	</navPoint>
+
+	<navPoint id="ghGen117" class="h1" playOrder="14">
+		<navLabel>
+			<text>Talking To Chimps</text>
+			<audio src="audio/Page08.mp3" clipBegin="00:02.294" clipEnd="00:04.505" />
+		</navLabel>
+		<content src="Chimpanzees.smil#ghGen117" />
+	</navPoint>
+
+	<navPoint id="ghGen126" class="h1" playOrder="16">
+		<navLabel>
+			<text>What They Look Like</text>
+			<audio src="audio/Page09.mp3" clipBegin="00:02.187" clipEnd="00:04.247" />
+		</navLabel>
+		<content src="Chimpanzees.smil#ghGen126" />
+	</navPoint>
+
+	<navPoint id="ghGen147" class="h1" playOrder="19">
+		<navLabel>
+			<text>The Chimpanzee's Home</text>
+			<audio src="audio/Page11.mp3" clipBegin="00:02.258" clipEnd="00:04.833" />
+		</navLabel>
+		<content src="Chimpanzees.smil#ghGen147" />
+	</navPoint>
+
+	<navPoint id="ghGen170" class="h1" playOrder="23">
+		<navLabel>
+			<text>Everyday Life</text>
+			<audio src="audio/Page14.mp3" clipBegin="00:02.582" clipEnd="00:04.761" />
+		</navLabel>
+		<content src="Chimpanzees.smil#ghGen170" />
+	</navPoint>
+
+	<navPoint id="ghGen189" class="h1" playOrder="26">
+		<navLabel>
+			<text>Chimp Communities</text>
+			<audio src="audio/Page16.mp3" clipBegin="00:02.500" clipEnd="00:04.806" />
+		</navLabel>
+		<content src="Chimpanzees.smil#ghGen189" />
+	</navPoint>
+
+	<navPoint id="ghGen203" class="h1" playOrder="29">
+		<navLabel>
+			<text>Baby Chimps</text>
+			<audio src="audio/Page18.mp3" clipBegin="00:02.402" clipEnd="00:04.361" />
+		</navLabel>
+		<content src="Chimpanzees.smil#ghGen203" />
+	</navPoint>
+
+	<navPoint id="ghGen217" class="h1" playOrder="32">
+		<navLabel>
+			<text>Jane Goodall</text>
+			<audio src="audio/Page20.mp3" clipBegin="00:02.277" clipEnd="00:04.109" />
+		</navLabel>
+		<content src="Chimpanzees.smil#ghGen217" />
+	</navPoint>
+
+	<navPoint id="ghGen230" class="h1" playOrder="35">
+		<navLabel>
+			<text>Important Words</text>
+			<audio src="audio/Page22.mp3" clipBegin="00:02.680" clipEnd="00:04.934" />
+		</navLabel>
+		<content src="Chimpanzees.smil#ghGen230" />
+	</navPoint>
+
+	<navPoint id="ghGen247" class="h1" playOrder="37">
+		<navLabel>
+			<text>Web Sites</text>
+			<audio src="audio/Page23.mp3" clipBegin="00:02.741" clipEnd="00:05.242" />
+		</navLabel>
+		<content src="Chimpanzees.smil#ghGen247" />
+		<navPoint id="ghGen249" class="h2" playOrder="38">
+			<navLabel>
+				<text>All about Chimpanzees</text>
+				<audio src="audio/Page23.mp3" clipBegin="00:05.242" clipEnd="00:07.716" />
+			</navLabel>
+			<content src="Chimpanzees.smil#ghGen249" />
+		</navPoint>
+
+		<navPoint id="ghGen254" class="h2" playOrder="39">
+			<navLabel>
+				<text>African Primates at Home</text>
+				<audio src="audio/Page23.mp3" clipBegin="00:26.613" clipEnd="00:29.169" />
+			</navLabel>
+			<content src="Chimpanzees.smil#ghGen254" />
+		</navPoint>
+
+		<navPoint id="ghGen259" class="h2" playOrder="40">
+			<navLabel>
+				<text>Animal Bytes: Chimpanzee</text>
+				<audio src="audio/Page23.mp3" clipBegin="00:47.601" clipEnd="00:51.293" />
+			</navLabel>
+			<content src="Chimpanzees.smil#ghGen259" />
+		</navPoint>
+
+	</navPoint>
+
+	<navPoint id="ghGen262" class="h1" playOrder="42">
+		<navLabel>
+			<text>Index</text>
+			<audio src="audio/Page24.mp3" clipBegin="00:02.527" clipEnd="00:04.596" />
+		</navLabel>
+		<content src="Chimpanzees.smil#ghGen262" />
+	</navPoint>
+
+	<navPoint id="ghGen306" class="h1" playOrder="43">
+		<navLabel>
+			<text>Questions</text>
+			<audio src="audio/questions/questions.mp3" clipBegin="00:00.00" clipEnd="00:01.068" />
+		</navLabel>
+		<content src="Chimpanzees.smil#ghGen306" />
+	</navPoint>
+
+</navMap>
+
+
+<pageList id="pages">
+	<navLabel>
+		<text></text>
+	</navLabel>
+	<pageTarget id="gh_pageRef1" class="pagenum" value="1" type="normal" playOrder="1">
+		<navLabel>
+			<text>1</text>
+			<audio src="audio/Page01.mp3" clipBegin="00:00.00" clipEnd="00:02.483" />
+		</navLabel>
+		<content src="Chimpanzees.smil#gh_pageRef1" />
+	</pageTarget>
+
+	<pageTarget id="gh_pageRef2" class="pagenum" value="2" type="normal" playOrder="3">
+		<navLabel>
+			<text>2</text>
+			<audio src="audio/Page02.mp3" clipBegin="00:00.00" clipEnd="00:02.533" />
+		</navLabel>
+		<content src="Chimpanzees.smil#gh_pageRef2" />
+	</pageTarget>
+
+	<pageTarget id="gh_pageRef3" class="pagenum" value="3" type="normal" playOrder="5">
+		<navLabel>
+			<text>3</text>
+			<audio src="audio/Page03.mp3" clipBegin="00:00.00" clipEnd="00:02.466" />
+		</navLabel>
+		<content src="Chimpanzees.smil#gh_pageRef3" />
+	</pageTarget>
+
+	<pageTarget id="gh_pageRef4" class="pagenum" value="4" type="normal" playOrder="7">
+		<navLabel>
+			<text>4</text>
+			<audio src="audio/Page04.mp3" clipBegin="00:00.00" clipEnd="00:02.300" />
+		</navLabel>
+		<content src="Chimpanzees.smil#gh_pageRef4" />
+	</pageTarget>
+
+	<pageTarget id="gh_pageRef5" class="pagenum" value="5" type="normal" playOrder="9">
+		<navLabel>
+			<text>5</text>
+			<audio src="audio/Page05.mp3" clipBegin="00:00.00" clipEnd="00:02.247" />
+		</navLabel>
+		<content src="Chimpanzees.smil#gh_pageRef5" />
+	</pageTarget>
+
+	<pageTarget id="gh_pageRef6" class="pagenum" value="6" type="normal" playOrder="10">
+		<navLabel>
+			<text>6</text>
+			<audio src="audio/Page06.mp3" clipBegin="00:00.00" clipEnd="00:02.442" />
+		</navLabel>
+		<content src="Chimpanzees.smil#gh_pageRef6" />
+	</pageTarget>
+
+	<pageTarget id="gh_pageRef7" class="pagenum" value="7" type="normal" playOrder="12">
+		<navLabel>
+			<text>7</text>
+			<audio src="audio/Page07.mp3" clipBegin="00:00.00" clipEnd="00:02.372" />
+		</navLabel>
+		<content src="Chimpanzees.smil#gh_pageRef7" />
+	</pageTarget>
+
+	<pageTarget id="gh_pageRef8" class="pagenum" value="8" type="normal" playOrder="13">
+		<navLabel>
+			<text>8</text>
+			<audio src="audio/Page08.mp3" clipBegin="00:00.00" clipEnd="00:02.294" />
+		</navLabel>
+		<content src="Chimpanzees.smil#gh_pageRef8" />
+	</pageTarget>
+
+	<pageTarget id="gh_pageRef9" class="pagenum" value="9" type="normal" playOrder="15">
+		<navLabel>
+			<text>9</text>
+			<audio src="audio/Page09.mp3" clipBegin="00:00.00" clipEnd="00:02.187" />
+		</navLabel>
+		<content src="Chimpanzees.smil#gh_pageRef9" />
+	</pageTarget>
+
+	<pageTarget id="gh_pageRef10" class="pagenum" value="10" type="normal" playOrder="17">
+		<navLabel>
+			<text>10</text>
+			<audio src="audio/Page10.mp3" clipBegin="00:00.00" clipEnd="00:02.403" />
+		</navLabel>
+		<content src="Chimpanzees.smil#gh_pageRef10" />
+	</pageTarget>
+
+	<pageTarget id="gh_pageRef11" class="pagenum" value="11" type="normal" playOrder="18">
+		<navLabel>
+			<text>11</text>
+			<audio src="audio/Page11.mp3" clipBegin="00:00.00" clipEnd="00:02.258" />
+		</navLabel>
+		<content src="Chimpanzees.smil#gh_pageRef11" />
+	</pageTarget>
+
+	<pageTarget id="gh_pageRef12" class="pagenum" value="12" type="normal" playOrder="20">
+		<navLabel>
+			<text>12</text>
+			<audio src="audio/Page12.mp3" clipBegin="00:00.08" clipEnd="00:02.441" />
+		</navLabel>
+		<content src="Chimpanzees.smil#gh_pageRef12" />
+	</pageTarget>
+
+	<pageTarget id="gh_pageRef13" class="pagenum" value="13" type="normal" playOrder="21">
+		<navLabel>
+			<text>13</text>
+			<audio src="audio/Page13.mp3" clipBegin="00:00.00" clipEnd="00:02.496" />
+		</navLabel>
+		<content src="Chimpanzees.smil#gh_pageRef13" />
+	</pageTarget>
+
+	<pageTarget id="gh_pageRef14" class="pagenum" value="14" type="normal" playOrder="22">
+		<navLabel>
+			<text>14</text>
+			<audio src="audio/Page14.mp3" clipBegin="00:00.00" clipEnd="00:02.582" />
+		</navLabel>
+		<content src="Chimpanzees.smil#gh_pageRef14" />
+	</pageTarget>
+
+	<pageTarget id="gh_pageRef15" class="pagenum" value="15" type="normal" playOrder="24">
+		<navLabel>
+			<text>15</text>
+			<audio src="audio/Page15.mp3" clipBegin="00:00.00" clipEnd="00:02.496" />
+		</navLabel>
+		<content src="Chimpanzees.smil#gh_pageRef15" />
+	</pageTarget>
+
+	<pageTarget id="gh_pageRef16" class="pagenum" value="16" type="normal" playOrder="25">
+		<navLabel>
+			<text>16</text>
+			<audio src="audio/Page16.mp3" clipBegin="00:00.00" clipEnd="00:02.500" />
+		</navLabel>
+		<content src="Chimpanzees.smil#gh_pageRef16" />
+	</pageTarget>
+
+	<pageTarget id="gh_pageRef17" class="pagenum" value="17" type="normal" playOrder="27">
+		<navLabel>
+			<text>17</text>
+			<audio src="audio/Page17.mp3" clipBegin="00:00.00" clipEnd="00:02.677" />
+		</navLabel>
+		<content src="Chimpanzees.smil#gh_pageRef17" />
+	</pageTarget>
+
+	<pageTarget id="gh_pageRef18" class="pagenum" value="18" type="normal" playOrder="28">
+		<navLabel>
+			<text>18</text>
+			<audio src="audio/Page18.mp3" clipBegin="00:00.00" clipEnd="00:02.402" />
+		</navLabel>
+		<content src="Chimpanzees.smil#gh_pageRef18" />
+	</pageTarget>
+
+	<pageTarget id="gh_pageRef19" class="pagenum" value="19" type="normal" playOrder="30">
+		<navLabel>
+			<text>19</text>
+			<audio src="audio/Page19.mp3" clipBegin="00:00.00" clipEnd="00:02.400" />
+		</navLabel>
+		<content src="Chimpanzees.smil#gh_pageRef19" />
+	</pageTarget>
+
+	<pageTarget id="gh_pageRef20" class="pagenum" value="20" type="normal" playOrder="31">
+		<navLabel>
+			<text>20</text>
+			<audio src="audio/Page20.mp3" clipBegin="00:00.00" clipEnd="00:02.277" />
+		</navLabel>
+		<content src="Chimpanzees.smil#gh_pageRef20" />
+	</pageTarget>
+
+	<pageTarget id="gh_pageRef21" class="pagenum" value="21" type="normal" playOrder="33">
+		<navLabel>
+			<text>21</text>
+			<audio src="audio/Page21.mp3" clipBegin="00:00.00" clipEnd="00:02.602" />
+		</navLabel>
+		<content src="Chimpanzees.smil#gh_pageRef21" />
+	</pageTarget>
+
+	<pageTarget id="gh_pageRef22" class="pagenum" value="22" type="normal" playOrder="34">
+		<navLabel>
+			<text>22</text>
+			<audio src="audio/Page22.mp3" clipBegin="00:00.00" clipEnd="00:02.680" />
+		</navLabel>
+		<content src="Chimpanzees.smil#gh_pageRef22" />
+	</pageTarget>
+
+	<pageTarget id="gh_pageRef23" class="pagenum" value="23" type="normal" playOrder="36">
+		<navLabel>
+			<text>23</text>
+			<audio src="audio/Page23.mp3" clipBegin="00:00.00" clipEnd="00:02.741" />
+		</navLabel>
+		<content src="Chimpanzees.smil#gh_pageRef23" />
+	</pageTarget>
+
+	<pageTarget id="gh_pageRef24" class="pagenum" value="24" type="normal" playOrder="41">
+		<navLabel>
+			<text>24</text>
+			<audio src="audio/Page24.mp3" clipBegin="00:00.00" clipEnd="00:02.527" />
+		</navLabel>
+		<content src="Chimpanzees.smil#gh_pageRef24" />
+	</pageTarget>
+
+</pageList>
+
+</ncx>
+  		    
+ 			  	 
+  		 	  
+  	 	 		
+  		 	  
+ 					  
+ 	 			  
+  	 				
+ 					  

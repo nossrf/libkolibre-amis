@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE smil
+  PUBLIC "-//NISO//DTD dtbsmil 2005-2//EN" "http://www.daisy.org/z3986/2005/dtbsmil-2005-2.dtd">
+<smil xmlns="http://www.w3.org/2001/SMIL20/">
+	  <head>
+		    <meta content="Vbl11092012" name="dtb:uid"/>
+		    <meta content="TPB Narrator" name="dtb:generator"/>
+		    <meta content="1:34:40.283" name="dtb:totalElapsedTime"/>
+		
+	  </head>
+	  <body>
+		    <seq dur="0:00:49.356" fill="remove" id="mseq">
+		       <par id="tcp1147">
+            <text id="text1147" src="dtbook.xml#dtb1147"/>
+            <audio clipBegin="0:00:00" clipEnd="0:00:05.359" src="speechgen0071.mp3"/>
+         </par>
+         <par id="tcp1148">
+            <text id="text1148" src="dtbook.xml#dtb1148"/>
+            <audio clipBegin="0:00:05.359" clipEnd="0:00:12.102" src="speechgen0071.mp3"/>
+         </par>
+         <par id="tcp1149">
+            <text id="text1149" src="dtbook.xml#dtb1149"/>
+            <audio clipBegin="0:00:12.102" clipEnd="0:00:18.917" src="speechgen0071.mp3"/>
+         </par>
+         <par id="tcp1150">
+            <text id="text1150" src="dtbook.xml#dtb1150"/>
+            <audio clipBegin="0:00:18.917" clipEnd="0:00:27.976" src="speechgen0071.mp3"/>
+         </par>
+         <par id="tcp1151">
+            <text id="text1151" src="dtbook.xml#dtb1151"/>
+            <audio clipBegin="0:00:27.976" clipEnd="0:00:37.269" src="speechgen0071.mp3"/>
+         </par>
+         <par id="tcp1152">
+            <text id="text1152" src="dtbook.xml#dtb1152"/>
+            <audio clipBegin="0:00:37.269" clipEnd="0:00:41.499" src="speechgen0071.mp3"/>
+         </par>
+         <par id="tcp1153">
+            <text id="text1153" src="dtbook.xml#dtb1153"/>
+            <audio clipBegin="0:00:41.499" clipEnd="0:00:45.354" src="speechgen0071.mp3"/>
+         </par>
+         <par id="tcp1154">
+            <text id="text1154" src="dtbook.xml#dtb1154"/>
+            <audio clipBegin="0:00:45.354" clipEnd="0:00:47.991" src="speechgen0071.mp3"/>
+         </par>
+         <par id="tcp1155">
+            <text id="text1155" src="dtbook.xml#dtb1155"/>
+            <audio clipBegin="0:00:47.991" clipEnd="0:00:49.356" src="speechgen0071.mp3"/>
+         </par>
+      </seq>
+	  </body>
+</smil>

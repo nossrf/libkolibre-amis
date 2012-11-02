@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE smil PUBLIC "-//W3C//DTD SMIL 1.0//EN" "http://www.w3.org/TR/REC-smil/SMIL10.dtd">
+<smil>
+	<head>
+		<meta name="dc:identifier" content="theorybehindplayers"/>
+		<meta name="dc:title" content="White paper: Theory Behind Players and Intelligent Reading Systems"/>
+		<meta name="dc:format" content="Daisy 2.02"/>
+		<meta name="title" content="White paper: Theory Behind Players and Intelligent Reading Systems"/>
+		<meta name="ncc:totalElapsedTime" content="00:00:00"/>
+		<meta name="ncc:timeInThisSmil" content="00:00:18"/>
+		<meta name="ncc:generator" content="Regenerator 1.0.27"/>
+		<layout>
+			<region id="txtView"/>
+		</layout>
+	</head>
+	<body>
+		<seq dur="18.013s">
+			<par id="p1" endsync="last">
+				<text src="content.html#rgn_cnt_0001" id="rgn_txt_0001_0001"/>
+				<seq>
+					<audio src="dtb_0001.mp3" clip-begin="npt=0.000s" clip-end="npt=1.332s" id="rgn_aud_0001_0001"/>
+				</seq>
+			</par>
+			<par id="p2" endsync="last">
+				<text src="content.html#rgn_cnt_0002" id="rgn_txt_0001_0002"/>
+				<seq>
+					<audio src="dtb_0001.mp3" clip-begin="npt=1.332s" clip-end="npt=5.193s" id="rgn_aud_0001_0002"/>
+				</seq>
+			</par>
+			<par id="p3" endsync="last">
+				<text src="content.html#rgn_cnt_0003" id="rgn_txt_0001_0003"/>
+				<seq>
+					<audio src="dtb_0001.mp3" clip-begin="npt=5.193s" clip-end="npt=6.267s" id="rgn_aud_0001_0003"/>
+				</seq>
+			</par>
+			<par id="p4" endsync="last">
+				<text src="content.html#rgn_cnt_0004" id="rgn_txt_0001_0004"/>
+				<seq>
+					<audio src="dtb_0001.mp3" clip-begin="npt=6.267s" clip-end="npt=7.790s" id="rgn_aud_0001_0004"/>
+				</seq>
+			</par>
+			<par id="p5" endsync="last">
+				<text src="content.html#rgn_cnt_0005" id="rgn_txt_0001_0005"/>
+				<seq>
+					<audio src="dtb_0001.mp3" clip-begin="npt=7.790s" clip-end="npt=9.489s" id="rgn_aud_0001_0005"/>
+				</seq>
+			</par>
+			<par id="p6" endsync="last">
+				<text src="content.html#rgn_cnt_0006" id="rgn_txt_0001_0006"/>
+				<seq>
+					<audio src="dtb_0001.mp3" clip-begin="npt=9.489s" clip-end="npt=12.004s" id="rgn_aud_0001_0006"/>
+				</seq>
+			</par>
+			<par id="p7" endsync="last">
+				<text src="content.html#rgn_cnt_0007" id="rgn_txt_0001_0007"/>
+				<seq>
+					<audio src="dtb_0001.mp3" clip-begin="npt=12.004s" clip-end="npt=18.013s" id="rgn_aud_0001_0007"/>
+				</seq>
+			</par>
+		</seq>
+	</body>
+</smil>

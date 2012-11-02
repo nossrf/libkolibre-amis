@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE smil
+  PUBLIC "-//NISO//DTD dtbsmil 2005-2//EN" "http://www.daisy.org/z3986/2005/dtbsmil-2005-2.dtd">
+<smil xmlns="http://www.w3.org/2001/SMIL20/">
+	  <head>
+		    <meta content="Vbl11092012" name="dtb:uid"/>
+		    <meta content="TPB Narrator" name="dtb:generator"/>
+		    <meta content="1:25:04.087" name="dtb:totalElapsedTime"/>
+		
+	  </head>
+	  <body>
+		    <seq dur="0:00:21.037" fill="remove" id="mseq">
+		       <par id="tcp1016">
+            <text id="text1016" src="dtbook.xml#dtb1016"/>
+            <audio clipBegin="0:00:00" clipEnd="0:00:05.421" src="speechgen0065.mp3"/>
+         </par>
+         <par id="tcp1017">
+            <text id="text1017" src="dtbook.xml#dtb1017"/>
+            <audio clipBegin="0:00:05.421" clipEnd="0:00:06.770" src="speechgen0065.mp3"/>
+         </par>
+         <par id="tcp1018">
+            <text id="text1018" src="dtbook.xml#dtb1018"/>
+            <audio clipBegin="0:00:06.770" clipEnd="0:00:11.012" src="speechgen0065.mp3"/>
+         </par>
+         <par id="tcp1019">
+            <text id="text1019" src="dtbook.xml#dtb1019"/>
+            <audio clipBegin="0:00:11.012" clipEnd="0:00:13.990" src="speechgen0065.mp3"/>
+         </par>
+         <par id="tcp1020">
+            <text id="text1020" src="dtbook.xml#dtb1020"/>
+            <audio clipBegin="0:00:13.990" clipEnd="0:00:19.672" src="speechgen0065.mp3"/>
+         </par>
+         <par id="tcp1021">
+            <text id="text1021" src="dtbook.xml#dtb1021"/>
+            <audio clipBegin="0:00:19.672" clipEnd="0:00:21.037" src="speechgen0065.mp3"/>
+         </par>
+      </seq>
+	  </body>
+</smil>

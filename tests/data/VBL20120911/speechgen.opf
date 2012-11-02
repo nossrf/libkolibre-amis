@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE package
+  PUBLIC "+//ISBN 0-9673008-1-9//DTD OEB 1.2 Package//EN" "http://openebook.org/dtds/oeb-1.2/oebpkg12.dtd">
+<package xmlns="http://openebook.org/namespaces/oeb-package/1.0/" unique-identifier="uid">
+	  <metadata>
+	
+		    <dc-metadata xmlns:dc="http://purl.org/dc/elements/1.1/"
+                   xmlns:oebpackage="http://openebook.org/namespaces/oeb-package/1.0/">
+			      <dc:Format>ANSI/NISO Z39.86-2005</dc:Format>
+		       <dc:Date>2012-09-11</dc:Date>
+         <dc:Language>SV</dc:Language>
+         <dc:Creator>Pratsam</dc:Creator>
+         <dc:Publisher>Unknown</dc:Publisher>
+         <dc:Title>Vasabladet tisdag 11 september 2012</dc:Title>
+         <dc:Identifier id="uid">Vbl11092012</dc:Identifier>
+      </dc-metadata>
+	
+		    <x-metadata>
+			      <meta content="audioFullText" name="dtb:multimediaType"/>
+			      <meta content="DAISY Pipeline Narrator" name="dtb:narrator"/>
+		       <meta content="2:45:47.659" name="dtb:totalTime"/>
+         <meta content="audio,text" name="dtb:multimediaContent"/>
+         <meta content="1.9.2" name="wml2dtbook:version"/>
+         <meta content="18 March 2008" name="wml2dtbook:date"/>
+      </x-metadata>
+	
+	  </metadata>
+	
+	  <manifest>
+	     <item href="speechgen0001.smil" id="smil-1" media-type="application/smil"/>
+      <item href="speechgen0002.smil" id="smil-2" media-type="application/smil"/>
+      <item href="speechgen0003.smil" id="smil-3" media-type="application/smil"/>
+      <item href="speechgen0004.smil" id="smil-4" media-type="application/smil"/>
+      <item href="speechgen0005.smil" id="smil-5" media-type="application/smil"/>
+      <item href="speechgen0006.smil" id="smil-6" media-type="application/smil"/>
+      <item href="speechgen0007.smil" id="smil-7" media-type="application/smil"/>
+      <item href="speechgen0008.smil" id="smil-8" media-type="application/smil"/>
+      <item href="speechgen0009.smil" id="smil-9" media-type="application/smil"/>
+      <item href="speechgen0010.smil" id="smil-10" media-type="application/smil"/>
+      <item href="speechgen0011.smil" id="smil-11" media-type="application/smil"/>
+      <item href="speechgen0012.smil" id="smil-12" media-type="application/smil"/>
+      <item href="speechgen0013.smil" id="smil-13" media-type="application/smil"/>
+      <item href="speechgen0014.smil" id="smil-14" media-type="application/smil"/>
+      <item href="speechgen0015.smil" id="smil-15" media-type="application/smil"/>
+      <item href="speechgen0016.smil" id="smil-16" media-type="application/smil"/>
+      <item href="speechgen0017.smil" id="smil-17" media-type="application/smil"/>
+      <item href="speechgen0018.smil" id="smil-18" media-type="application/smil"/>
+      <item href="speechgen0019.smil" id="smil-19" media-type="application/smil"/>
+      <item href="speechgen0020.smil" id="smil-20" media-type="application/smil"/>
+      <item href="speechgen0021.smil" id="smil-21" media-type="application/smil"/>
+      <item href="speechgen0022.smil" id="smil-22" media-type="application/smil"/>
+      <item href="speechgen0023.smil" id="smil-23" media-type="application/smil"/>
+      <item href="speechgen0024.smil" id="smil-24" media-type="application/smil"/>
+      <item href="speechgen0025.smil" id="smil-25" media-type="application/smil"/>
+      <item href="speechgen0026.smil" id="smil-26" media-type="application/smil"/>
+      <item href="speechgen0027.smil" id="smil-27" media-type="application/smil"/>
+      <item href="speechgen0028.smil" id="smil-28" media-type="application/smil"/>
+      <item href="speechgen0029.smil" id="smil-29" media-type="application/smil"/>
+      <item href="speechgen0030.smil" id="smil-30" media-type="application/smil"/>
+      <item href="speechgen0031.smil" id="smil-31" media-type="application/smil"/>
+      <item href="speechgen0032.smil" id="smil-32" media-type="application/smil"/>
+      <item href="speechgen0033.smil" id="smil-33" media-type="application/smil"/>
+      <item href="speechgen0034.smil" id="smil-34" media-type="application/smil"/>
+      <item href="speechgen0035.smil" id="smil-35" media-type="application/smil"/>
+      <item href="speechgen0036.smil" id="smil-36" media-type="application/smil"/>
+      <item href="speechgen0037.smil" id="smil-37" media-type="application/smil"/>
+      <item href="speechgen0038.smil" id="smil-38" media-type="application/smil"/>
+      <item href="speechgen0039.smil" id="smil-39" media-type="application/smil"/>
+      <item href="speechgen0040.smil" id="smil-40" media-type="application/smil"/>
+      <item href="speechgen0041.smil" id="smil-41" media-type="application/smil"/>
+      <item href="speechgen0042.smil" id="smil-42" media-type="application/smil"/>
+      <item href="speechgen0043.smil" id="smil-43" media-type="application/smil"/>
+      <item href="speechgen0044.smil" id="smil-44" media-type="application/smil"/>
+      <item href="speechgen0045.smil" id="smil-45" media-type="application/smil"/>
+      <item href="speechgen0046.smil" id="smil-46" media-type="application/smil"/>
+      <item href="speechgen0047.smil" id="smil-47" media-type="application/smil"/>
+      <item href="speechgen0048.smil" id="smil-48" media-type="application/smil"/>
+      <item href="speechgen0049.smil" id="smil-49" media-type="application/smil"/>
+      <item href="speechgen0050.smil" id="smil-50" media-type="application/smil"/>
+      <item href="speechgen0051.smil" id="smil-51" media-type="application/smil"/>
+      <item href="speechgen0052.smil" id="smil-52" media-type="application/smil"/>
+      <item href="speechgen0053.smil" id="smil-53" media-type="application/smil"/>
+      <item href="speechgen0054.smil" id="smil-54" media-type="application/smil"/>
+      <item href="speechgen0055.smil" id="smil-55" media-type="application/smil"/>
+      <item href="speechgen0056.smil" id="smil-56" media-type="application/smil"/>
+      <item href="speechgen0057.smil" id="smil-57" media-type="application/smil"/>
+      <item href="speechgen0058.smil" id="smil-58" media-type="application/smil"/>
+      <item href="speechgen0059.smil" id="smil-59" media-type="application/smil"/>
+      <item href="speechgen0060.smil" id="smil-60" media-type="application/smil"/>
+      <item href="speechgen0061.smil" id="smil-61" media-type="application/smil"/>
+      <item href="speechgen0062.smil" id="smil-62" media-type="application/smil"/>
+      <item href="speechgen0063.smil" id="smil-63" media-type="application/smil"/>
+      <item href="speechgen0064.smil" id="smil-64" media-type="application/smil"/>
+      <item href="speechgen0065.smil" id="smil-65" media-type="application/smil"/>
+      <item href="speechgen0066.smil" id="smil-66" media-type="application/smil"/>
+      <item href="speechgen0067.smil" id="smil-67" media-type="application/smil"/>
+      <item href="speechgen0068.smil" id="smil-68" media-type="application/smil"/>
+      <item href="speechgen0069.smil" id="smil-69" media-type="application/smil"/>
+      <item href="speechgen0070.smil" id="smil-70" media-type="application/smil"/>
+      <item href="speechgen0071.smil" id="smil-71" media-type="application/smil"/>
+      <item href="speechgen0072.smil" id="smil-72" media-type="application/smil"/>
+      <item href="speechgen0073.smil" id="smil-73" media-type="application/smil"/>
+      <item href="speechgen0074.smil" id="smil-74" media-type="application/smil"/>
+      <item href="speechgen0075.smil" id="smil-75" media-type="application/smil"/>
+      <item href="speechgen0076.smil" id="smil-76" media-type="application/smil"/>
+      <item href="speechgen0077.smil" id="smil-77" media-type="application/smil"/>
+      <item href="speechgen0078.smil" id="smil-78" media-type="application/smil"/>
+      <item href="speechgen0079.smil" id="smil-79" media-type="application/smil"/>
+      <item href="speechgen0080.smil" id="smil-80" media-type="application/smil"/>
+      <item href="speechgen0081.smil" id="smil-81" media-type="application/smil"/>
+      <item href="speechgen0082.smil" id="smil-82" media-type="application/smil"/>
+      <item href="speechgen0083.smil" id="smil-83" media-type="application/smil"/>
+      <item href="speechgen0084.smil" id="smil-84" media-type="application/smil"/>
+      <item href="speechgen0085.smil" id="smil-85" media-type="application/smil"/>
+      <item href="speechgen0086.smil" id="smil-86" media-type="application/smil"/>
+      <item href="speechgen0087.smil" id="smil-87" media-type="application/smil"/>
+      <item href="speechgen0088.smil" id="smil-88" media-type="application/smil"/>
+      <item href="speechgen0089.smil" id="smil-89" media-type="application/smil"/>
+      <item href="speechgen0090.smil" id="smil-90" media-type="application/smil"/>
+      <item href="speechgen0091.smil" id="smil-91" media-type="application/smil"/>
+      <item href="speechgen0092.smil" id="smil-92" media-type="application/smil"/>
+      <item href="speechgen0093.smil" id="smil-93" media-type="application/smil"/>
+      <item href="speechgen0094.smil" id="smil-94" media-type="application/smil"/>
+      <item href="speechgen0095.smil" id="smil-95" media-type="application/smil"/>
+      <item href="speechgen0096.smil" id="smil-96" media-type="application/smil"/>
+      <item href="speechgen0097.smil" id="smil-97" media-type="application/smil"/>
+      <item href="speechgen0098.smil" id="smil-98" media-type="application/smil"/>
+      <item href="speechgen0099.smil" id="smil-99" media-type="application/smil"/>
+      <item href="speechgen0100.smil" id="smil-100" media-type="application/smil"/>
+      <item href="speechgen0101.smil" id="smil-101" media-type="application/smil"/>
+      <item href="speechgen0102.smil" id="smil-102" media-type="application/smil"/>
+      <item href="speechgen0103.smil" id="smil-103" media-type="application/smil"/>
+      <item href="speechgen0104.smil" id="smil-104" media-type="application/smil"/>
+      <item href="speechgen0105.smil" id="smil-105" media-type="application/smil"/>
+      <item href="speechgen0106.smil" id="smil-106" media-type="application/smil"/>
+      <item href="speechgen0107.smil" id="smil-107" media-type="application/smil"/>
+      <item href="speechgen0108.smil" id="smil-108" media-type="application/smil"/>
+      <item href="speechgen0109.smil" id="smil-109" media-type="application/smil"/>
+      <item href="speechgen0110.smil" id="smil-110" media-type="application/smil"/>
+      <item href="speechgen0111.smil" id="smil-111" media-type="application/smil"/>
+      <item href="speechgen0112.smil" id="smil-112" media-type="application/smil"/>
+      <item href="speechgen0113.smil" id="smil-113" media-type="application/smil"/>
+      <item href="speechgen0114.smil" id="smil-114" media-type="application/smil"/>
+      <item href="speechgen0115.smil" id="smil-115" media-type="application/smil"/>
+      <item href="speechgen0116.smil" id="smil-116" media-type="application/smil"/>
+      <item href="speechgen0117.smil" id="smil-117" media-type="application/smil"/>
+      <item href="speechgen0118.smil" id="smil-118" media-type="application/smil"/>
+      <item href="speechgen0119.smil" id="smil-119" media-type="application/smil"/>
+      <item href="speechgen0120.smil" id="smil-120" media-type="application/smil"/>
+      <item href="speechgen0121.smil" id="smil-121" media-type="application/smil"/>
+      <item href="speechgen0122.smil" id="smil-122" media-type="application/smil"/>
+      <item href="speechgen0123.smil" id="smil-123" media-type="application/smil"/>
+      <item href="speechgen0002.mp3" id="opf-124" media-type="audio/mpeg"/>
+      <item href="speechgen0014.mp3" id="opf-125" media-type="audio/mpeg"/>
+      <item href="speechgen0041.mp3" id="opf-126" media-type="audio/mpeg"/>
+      <item href="speechgen0088.mp3" id="opf-127" media-type="audio/mpeg"/>
+      <item href="speechgen0037.mp3" id="opf-128" media-type="audio/mpeg"/>
+      <item href="speechgen0081.mp3" id="opf-129" media-type="audio/mpeg"/>
+      <item href="speechgen0022.mp3" id="opf-130" media-type="audio/mpeg"/>
+      <item href="speechgen0123.mp3" id="opf-131" media-type="audio/mpeg"/>
+      <item href="speechgen0013.mp3" id="opf-132" media-type="audio/mpeg"/>
+      <item href="speechgen0023.mp3" id="opf-133" media-type="audio/mpeg"/>
+      <item href="speechgen0043.mp3" id="opf-134" media-type="audio/mpeg"/>
+      <item href="speechgen0117.mp3" id="opf-135" media-type="audio/mpeg"/>
+      <item href="speechgen0044.mp3" id="opf-136" media-type="audio/mpeg"/>
+      <item href="speechgen0007.mp3" id="opf-137" media-type="audio/mpeg"/>
+      <item href="speechgen0047.mp3" id="opf-138" media-type="audio/mpeg"/>
+      <item href="speechgen0101.mp3" id="opf-139" media-type="audio/mpeg"/>
+      <item href="speechgen0042.mp3" id="opf-140" media-type="audio/mpeg"/>
+      <item href="speechgen0012.mp3" id="opf-141" media-type="audio/mpeg"/>
+      <item href="speechgen0110.mp3" id="opf-142" media-type="audio/mpeg"/>
+      <item href="speechgen0020.mp3" id="opf-143" media-type="audio/mpeg"/>
+      <item href="speechgen.opf" id="opf-144" media-type="text/xml"/>
+      <item href="speechgen0082.mp3" id="opf-145" media-type="audio/mpeg"/>
+      <item href="speechgen0054.mp3" id="opf-146" media-type="audio/mpeg"/>
+      <item href="speechgen0100.mp3" id="opf-147" media-type="audio/mpeg"/>
+      <item href="speechgen0028.mp3" id="opf-148" media-type="audio/mpeg"/>
+      <item href="speechgen0071.mp3" id="opf-149" media-type="audio/mpeg"/>
+      <item href="speechgen0095.mp3" id="opf-150" media-type="audio/mpeg"/>
+      <item href="speechgen0122.mp3" id="opf-151" media-type="audio/mpeg"/>
+      <item href="speechgen0111.mp3" id="opf-152" media-type="audio/mpeg"/>
+      <item href="speechgen0003.mp3" id="opf-153" media-type="audio/mpeg"/>
+      <item href="speechgen0059.mp3" id="opf-154" media-type="audio/mpeg"/>
+      <item href="speechgen0073.mp3" id="opf-155" media-type="audio/mpeg"/>
+      <item href="speechgen0021.mp3" id="opf-156" media-type="audio/mpeg"/>
+      <item href="speechgen0105.mp3" id="opf-157" media-type="audio/mpeg"/>
+      <item href="speechgen0039.mp3" id="opf-158" media-type="audio/mpeg"/>
+      <item href="speechgen0087.mp3" id="opf-159" media-type="audio/mpeg"/>
+      <item href="speechgen0119.mp3" id="opf-160" media-type="audio/mpeg"/>
+      <item href="speechgen0035.mp3" id="opf-161" media-type="audio/mpeg"/>
+      <item href="speechgen0076.mp3" id="opf-162" media-type="audio/mpeg"/>
+      <item href="speechgen0121.mp3" id="opf-163" media-type="audio/mpeg"/>
+      <item href="dtbook.xml" id="opf-164" media-type="application/x-dtbook+xml"/>
+      <item href="speechgen0011.mp3" id="opf-165" media-type="audio/mpeg"/>
+      <item href="speechgen0080.mp3" id="opf-166" media-type="audio/mpeg"/>
+      <item href="speechgen0004.mp3" id="opf-167" media-type="audio/mpeg"/>
+      <item href="speechgen0077.mp3" id="opf-168" media-type="audio/mpeg"/>
+      <item href="speechgen0083.mp3" id="opf-169" media-type="audio/mpeg"/>
+      <item href="speechgen0086.mp3" id="opf-170" media-type="audio/mpeg"/>
+      <item href="speechgen0061.mp3" id="opf-171" media-type="audio/mpeg"/>
+      <item href="speechgen0019.mp3" id="opf-172" media-type="audio/mpeg"/>
+      <item href="speechgen0053.mp3" id="opf-173" media-type="audio/mpeg"/>
+      <item href="speechgen0038.mp3" id="opf-174" media-type="audio/mpeg"/>
+      <item href="speechgen0090.mp3" id="opf-175" media-type="audio/mpeg"/>
+      <item href="speechgen0096.mp3" id="opf-176" media-type="audio/mpeg"/>
+      <item href="speechgen0067.mp3" id="opf-177" media-type="audio/mpeg"/>
+      <item href="speechgen0010.mp3" id="opf-178" media-type="audio/mpeg"/>
+      <item href="speechgen0046.mp3" id="opf-179" media-type="audio/mpeg"/>
+      <item href="speechgen0025.mp3" id="opf-180" media-type="audio/mpeg"/>
+      <item href="speechgen0084.mp3" id="opf-181" media-type="audio/mpeg"/>
+      <item href="speechgen0057.mp3" id="opf-182" media-type="audio/mpeg"/>
+      <item href="speechgen0068.mp3" id="opf-183" media-type="audio/mpeg"/>
+      <item href="speechgen0052.mp3" id="opf-184" media-type="audio/mpeg"/>
+      <item href="speechgen0089.mp3" id="opf-185" media-type="audio/mpeg"/>
+      <item href="speechgen0079.mp3" id="opf-186" media-type="audio/mpeg"/>
+      <item href="speechgen0108.mp3" id="opf-187" media-type="audio/mpeg"/>
+      <item href="speechgen0064.mp3" id="opf-188" media-type="audio/mpeg"/>
+      <item href="speechgen0069.mp3" id="opf-189" media-type="audio/mpeg"/>
+      <item href="speechgen0051.mp3" id="opf-190" media-type="audio/mpeg"/>
+      <item href="speechgen0118.mp3" id="opf-191" media-type="audio/mpeg"/>
+      <item href="speechgen.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
+      <item href="speechgen0050.mp3" id="opf-192" media-type="audio/mpeg"/>
+      <item href="speechgen0093.mp3" id="opf-193" media-type="audio/mpeg"/>
+      <item href="speechgen0006.mp3" id="opf-194" media-type="audio/mpeg"/>
+      <item href="speechgen0113.mp3" id="opf-195" media-type="audio/mpeg"/>
+      <item href="speechgen0030.mp3" id="opf-196" media-type="audio/mpeg"/>
+      <item href="dtbook2xhtml.xsl" id="opf-197" media-type="application/xslt+xml"/>
+      <item href="speechgen0018.mp3" id="opf-198" media-type="audio/mpeg"/>
+      <item href="speechgen0045.mp3" id="opf-199" media-type="audio/mpeg"/>
+      <item href="speechgen0060.mp3" id="opf-200" media-type="audio/mpeg"/>
+      <item href="speechgen0074.mp3" id="opf-201" media-type="audio/mpeg"/>
+      <item href="speechgen0094.mp3" id="opf-202" media-type="audio/mpeg"/>
+      <item href="speechgen0066.mp3" id="opf-203" media-type="audio/mpeg"/>
+      <item href="speechgen0107.mp3" id="opf-204" media-type="audio/mpeg"/>
+      <item href="speechgen0033.mp3" id="opf-205" media-type="audio/mpeg"/>
+      <item href="speechgen0058.mp3" id="opf-206" media-type="audio/mpeg"/>
+      <item href="speechgen0109.mp3" id="opf-207" media-type="audio/mpeg"/>
+      <item href="speechgen0063.mp3" id="opf-208" media-type="audio/mpeg"/>
+      <item href="speechgen0092.mp3" id="opf-209" media-type="audio/mpeg"/>
+      <item href="speechgen0016.mp3" id="opf-210" media-type="audio/mpeg"/>
+      <item href="speechgen0078.mp3" id="opf-211" media-type="audio/mpeg"/>
+      <item href="speechgen0062.mp3" id="opf-212" media-type="audio/mpeg"/>
+      <item href="speechgen0024.mp3" id="opf-213" media-type="audio/mpeg"/>
+      <item href="speechgen0048.mp3" id="opf-214" media-type="audio/mpeg"/>
+      <item href="speechgen0034.mp3" id="opf-215" media-type="audio/mpeg"/>
+      <item href="tpbnarrator_res.mp3" id="opf-216" media-type="audio/mpeg"/>
+      <item href="speechgen0091.mp3" id="opf-217" media-type="audio/mpeg"/>
+      <item href="speechgen0065.mp3" id="opf-218" media-type="audio/mpeg"/>
+      <item href="speechgen0112.mp3" id="opf-219" media-type="audio/mpeg"/>
+      <item href="speechgen0114.mp3" id="opf-220" media-type="audio/mpeg"/>
+      <item href="speechgen0097.mp3" id="opf-221" media-type="audio/mpeg"/>
+      <item href="speechgen0040.mp3" id="opf-222" media-type="audio/mpeg"/>
+      <item href="speechgen0017.mp3" id="opf-223" media-type="audio/mpeg"/>
+      <item href="speechgen0056.mp3" id="opf-224" media-type="audio/mpeg"/>
+      <item href="speechgen0103.mp3" id="opf-225" media-type="audio/mpeg"/>
+      <item href="speechgen0015.mp3" id="opf-226" media-type="audio/mpeg"/>
+      <item href="speechgen0116.mp3" id="opf-227" media-type="audio/mpeg"/>
+      <item href="speechgen0031.mp3" id="opf-228" media-type="audio/mpeg"/>
+      <item href="speechgen0102.mp3" id="opf-229" media-type="audio/mpeg"/>
+      <item href="speechgen0009.mp3" id="opf-230" media-type="audio/mpeg"/>
+      <item href="speechgen0055.mp3" id="opf-231" media-type="audio/mpeg"/>
+      <item href="speechgen0072.mp3" id="opf-232" media-type="audio/mpeg"/>
+      <item href="speechgen0099.mp3" id="opf-233" media-type="audio/mpeg"/>
+      <item href="speechgen0070.mp3" id="opf-234" media-type="audio/mpeg"/>
+      <item href="speechgen0075.mp3" id="opf-235" media-type="audio/mpeg"/>
+      <item href="speechgen0115.mp3" id="opf-236" media-type="audio/mpeg"/>
+      <item href="speechgen0104.mp3" id="opf-237" media-type="audio/mpeg"/>
+      <item href="speechgen0032.mp3" id="opf-238" media-type="audio/mpeg"/>
+      <item href="tpbnarrator.res" id="resource" media-type="application/x-dtbresource+xml"/>
+      <item href="speechgen0001.mp3" id="opf-239" media-type="audio/mpeg"/>
+      <item href="speechgen0036.mp3" id="opf-240" media-type="audio/mpeg"/>
+      <item href="speechgen0008.mp3" id="opf-241" media-type="audio/mpeg"/>
+      <item href="speechgen0027.mp3" id="opf-242" media-type="audio/mpeg"/>
+      <item href="speechgen0005.mp3" id="opf-243" media-type="audio/mpeg"/>
+      <item href="speechgen0029.mp3" id="opf-244" media-type="audio/mpeg"/>
+      <item href="speechgen0106.mp3" id="opf-245" media-type="audio/mpeg"/>
+      <item href="speechgen0085.mp3" id="opf-246" media-type="audio/mpeg"/>
+      <item href="speechgen0098.mp3" id="opf-247" media-type="audio/mpeg"/>
+      <item href="speechgen0026.mp3" id="opf-248" media-type="audio/mpeg"/>
+      <item href="speechgen0049.mp3" id="opf-249" media-type="audio/mpeg"/>
+      <item href="speechgen0120.mp3" id="opf-250" media-type="audio/mpeg"/>
+   </manifest>
+	
+	  <spine>
+	     <itemref idref="smil-1"/>
+      <itemref idref="smil-2"/>
+      <itemref idref="smil-3"/>
+      <itemref idref="smil-4"/>
+      <itemref idref="smil-5"/>
+      <itemref idref="smil-6"/>
+      <itemref idref="smil-7"/>
+      <itemref idref="smil-8"/>
+      <itemref idref="smil-9"/>
+      <itemref idref="smil-10"/>
+      <itemref idref="smil-11"/>
+      <itemref idref="smil-12"/>
+      <itemref idref="smil-13"/>
+      <itemref idref="smil-14"/>
+      <itemref idref="smil-15"/>
+      <itemref idref="smil-16"/>
+      <itemref idref="smil-17"/>
+      <itemref idref="smil-18"/>
+      <itemref idref="smil-19"/>
+      <itemref idref="smil-20"/>
+      <itemref idref="smil-21"/>
+      <itemref idref="smil-22"/>
+      <itemref idref="smil-23"/>
+      <itemref idref="smil-24"/>
+      <itemref idref="smil-25"/>
+      <itemref idref="smil-26"/>
+      <itemref idref="smil-27"/>
+      <itemref idref="smil-28"/>
+      <itemref idref="smil-29"/>
+      <itemref idref="smil-30"/>
+      <itemref idref="smil-31"/>
+      <itemref idref="smil-32"/>
+      <itemref idref="smil-33"/>
+      <itemref idref="smil-34"/>
+      <itemref idref="smil-35"/>
+      <itemref idref="smil-36"/>
+      <itemref idref="smil-37"/>
+      <itemref idref="smil-38"/>
+      <itemref idref="smil-39"/>
+      <itemref idref="smil-40"/>
+      <itemref idref="smil-41"/>
+      <itemref idref="smil-42"/>
+      <itemref idref="smil-43"/>
+      <itemref idref="smil-44"/>
+      <itemref idref="smil-45"/>
+      <itemref idref="smil-46"/>
+      <itemref idref="smil-47"/>
+      <itemref idref="smil-48"/>
+      <itemref idref="smil-49"/>
+      <itemref idref="smil-50"/>
+      <itemref idref="smil-51"/>
+      <itemref idref="smil-52"/>
+      <itemref idref="smil-53"/>
+      <itemref idref="smil-54"/>
+      <itemref idref="smil-55"/>
+      <itemref idref="smil-56"/>
+      <itemref idref="smil-57"/>
+      <itemref idref="smil-58"/>
+      <itemref idref="smil-59"/>
+      <itemref idref="smil-60"/>
+      <itemref idref="smil-61"/>
+      <itemref idref="smil-62"/>
+      <itemref idref="smil-63"/>
+      <itemref idref="smil-64"/>
+      <itemref idref="smil-65"/>
+      <itemref idref="smil-66"/>
+      <itemref idref="smil-67"/>
+      <itemref idref="smil-68"/>
+      <itemref idref="smil-69"/>
+      <itemref idref="smil-70"/>
+      <itemref idref="smil-71"/>
+      <itemref idref="smil-72"/>
+      <itemref idref="smil-73"/>
+      <itemref idref="smil-74"/>
+      <itemref idref="smil-75"/>
+      <itemref idref="smil-76"/>
+      <itemref idref="smil-77"/>
+      <itemref idref="smil-78"/>
+      <itemref idref="smil-79"/>
+      <itemref idref="smil-80"/>
+      <itemref idref="smil-81"/>
+      <itemref idref="smil-82"/>
+      <itemref idref="smil-83"/>
+      <itemref idref="smil-84"/>
+      <itemref idref="smil-85"/>
+      <itemref idref="smil-86"/>
+      <itemref idref="smil-87"/>
+      <itemref idref="smil-88"/>
+      <itemref idref="smil-89"/>
+      <itemref idref="smil-90"/>
+      <itemref idref="smil-91"/>
+      <itemref idref="smil-92"/>
+      <itemref idref="smil-93"/>
+      <itemref idref="smil-94"/>
+      <itemref idref="smil-95"/>
+      <itemref idref="smil-96"/>
+      <itemref idref="smil-97"/>
+      <itemref idref="smil-98"/>
+      <itemref idref="smil-99"/>
+      <itemref idref="smil-100"/>
+      <itemref idref="smil-101"/>
+      <itemref idref="smil-102"/>
+      <itemref idref="smil-103"/>
+      <itemref idref="smil-104"/>
+      <itemref idref="smil-105"/>
+      <itemref idref="smil-106"/>
+      <itemref idref="smil-107"/>
+      <itemref idref="smil-108"/>
+      <itemref idref="smil-109"/>
+      <itemref idref="smil-110"/>
+      <itemref idref="smil-111"/>
+      <itemref idref="smil-112"/>
+      <itemref idref="smil-113"/>
+      <itemref idref="smil-114"/>
+      <itemref idref="smil-115"/>
+      <itemref idref="smil-116"/>
+      <itemref idref="smil-117"/>
+      <itemref idref="smil-118"/>
+      <itemref idref="smil-119"/>
+      <itemref idref="smil-120"/>
+      <itemref idref="smil-121"/>
+      <itemref idref="smil-122"/>
+      <itemref idref="smil-123"/>
+   </spine>
+
+</package>

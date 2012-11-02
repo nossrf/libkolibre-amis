@@ -1,0 +1,26 @@
+body {background-image: url("http://www.daisy.org/daisylogo.jpg"); background-repeat: no-repeat; background-position: 95% 10px;}
+        body {font-style: normal; font-weight: normal; font-family: arial, verdana, sans-serif; margin-right: 15%; margin-left: 10%;}
+        h6 {font-weight: bold; font-size: 75%; margin-top: 1.2em; color: #000099;  margin-bottom: 0.2em;}
+        h5 {font-weight: bold; font-size: 80%; margin-top: 1.2em; color: #000099; margin-bottom: 0.2em;}
+        h4 {font-weight: bold; font-size: 88%; color: #000099; margin-top: 2.5em; margin-bottom: 0.4em;}
+        h3 {font-weight: bold; font-size: 100%; color: #000099; letter-spacing: 0.04em; margin-top: 2.5em; margin-bottom: 1em;}
+        h2 {font-weight: bold; font-size: 115%; color: #000099; letter-spacing: 0.15em; margin-top: 4em;}
+        h1 {font-weight: bold; font-size: 130%; color: #000099; margin-top: 3em; margin-bottom: 1em; letter-spacing: 0.2em;}
+
+        h6 a{font-weight: bold; font-size: 75%; margin-top: 1.2em; color: #000099;  margin-bottom: 0.2em;}
+        h5 a{font-weight: bold; font-size: 80%; margin-top: 1.2em; color: #000099; margin-bottom: 0.2em;}
+        h4 a{font-weight: bold; font-size: 88%; color: #000099; margin-top: 2.5em; margin-bottom: 0.4em;}
+        h3 a{font-weight: bold; font-size: 100%; color: #000099; letter-spacing: 0.04em; margin-top: 2.5em; margin-bottom: 1em;}
+        h2 a{font-weight: bold; font-size: 115%; color: #000099; letter-spacing: 0.15em; margin-top: 4em;}
+        h1 a{font-weight: bold; font-size: 130%; color: #000099; margin-top: 3em; margin-bottom: 1em; letter-spacing: 0.2em;}
+
+        ul.linklist {list-style: none; margin-left: 0em;}
+        ul.linklist ul {list-style: none; margin-left: 2em;}
+        .top {font-size: 80%; display: block;}
+        img {border-width: inherit; border-style: none; border-color: inherit; float: right;}
+        *.box {font-size:95%; border: 1px solid rgb(100,100,100); padding:0.3em}
+        *.author {color:#000099; font-size:80%;}
+        *.comment {color:#000099; font-size:80%;}
+        *.alert {border: 1px solid red; padding: 0.2em; font-size:95%; font-weight:bold;}
+        *.action {color: rgb(0,0,153); font-size:90%; border: 1px solid rgb(0,0,50); padding: 0.2em; background-color: rgb(240,240,240); font-weight:bold;}
+a {text-decoration: none; color: black;}

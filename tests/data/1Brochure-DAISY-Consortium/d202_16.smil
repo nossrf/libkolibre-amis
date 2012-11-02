@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE smil PUBLIC "-//W3C//DTD SMIL 1.0//EN" "SMIL10.dtd">
+<smil>
+	<head>
+		<meta name="dc:format" content="Daisy 2.02"/>
+		<meta name="ncc:timeInThisSmil" content="00:00:21.355"/>
+		<meta name="ncc:totalElapsedTime" content="00:19:00.934"/>
+		<layout>
+			<region id="txt-view"/>
+		</layout>
+		<meta name="ncc:generator" content="EasePublisher 2.13 Build 163 # 044FSI210083735"/>
+    <meta name="title" content="Join a collective voice around the world."/>
+    <meta name="dc:title" content="DAISY: A GLOBAL EFFORT TO PROVIDE ACCESSIBLE INFORMATION"/>
+    <meta name="dc:identifier" content="AUTO-UID-5230414073153262592"/>
+  </head>
+	<body>
+		<seq dur="21.355s">
+			<par endsync="last" id="par_186">
+				<text src="DAISYBrochureForStickV3.html#dol_1_16_d2e732" id="txt_186"/>
+				<seq>
+					<audio src="d200008.mp3" clip-begin="npt=0.000s" clip-end="npt=2.373s" id="audio_0001"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_187">
+				<text src="DAISYBrochureForStickV3.html#dol_1_16_id_428" id="txt_187"/>
+				<seq>
+					<audio src="d200008.mp3" clip-begin="npt=2.373s" clip-end="npt=9.947s" id="audio_0002"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_188">
+				<text src="DAISYBrochureForStickV3.html#dol_1_16_id_432" id="txt_188"/>
+				<seq>
+					<audio src="d200008.mp3" clip-begin="npt=9.947s" clip-end="npt=14.751s" id="audio_0003"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_189">
+				<text src="DAISYBrochureForStickV3.html#dol_1_16_id_436" id="txt_189"/>
+				<seq>
+					<audio src="d200008.mp3" clip-begin="npt=14.751s" clip-end="npt=21.355s" id="audio_0004"/>
+				</seq>
+			</par>
+		</seq>
+	</body>
+</smil>

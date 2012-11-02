@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE smil PUBLIC "-//W3C//DTD SMIL 1.0//EN" "SMIL10.dtd">
+<smil>
+	<head>
+		<meta name="dc:format" content="Daisy 2.02"/>
+		<meta name="ncc:timeInThisSmil" content="00:01:45.401"/>
+		<meta name="ncc:totalElapsedTime" content="00:20:51.163"/>
+		<layout>
+			<region id="txt-view"/>
+		</layout>
+		<meta name="ncc:generator" content="EasePublisher 2.13 Build 163 # 044FSI210083735"/>
+    <meta name="title" content="and/or distribute accessible (multi)media for people with print disabilities or may serve the community in other related ways. Included are large educational institutes wishing to participate in the Consortium at this level, associations representing individuals with a print disability, or other service providers. Associate Members share the Full Members' dedication to the worldwide DAISY movement but may serve smaller populations or have fewer available resources. Associate Member annual dues are $2,755. Associate Members in developing countries benefit from the Consortium's graduated membership fee structure which is based on the World Bank classifications (determined by the per capita income of the country). Friends of DAISY Consortium"/>
+    <meta name="dc:title" content="DAISY: A GLOBAL EFFORT TO PROVIDE ACCESSIBLE INFORMATION"/>
+    <meta name="dc:identifier" content="AUTO-UID-5230414073153262592"/>
+  </head>
+	<body>
+		<seq dur="105.401s">
+			<par endsync="last" id="par_209">
+				<text src="DAISYBrochureForStickV3.html#dol_1_22_d2e880" id="txt_209"/>
+				<seq>
+					<audio src="d200014.mp3" clip-begin="npt=0.000s" clip-end="npt=45.286s" id="audio_0001"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_210">
+				<text src="DAISYBrochureForStickV3.html#dol_1_22_id_512" id="txt_210"/>
+				<seq>
+					<audio src="d200014.mp3" clip-begin="npt=45.286s" clip-end="npt=49.943s" id="audio_0002"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_211">
+				<text src="DAISYBrochureForStickV3.html#dol_1_22_id_518" id="txt_211"/>
+				<seq>
+					<audio src="d200014.mp3" clip-begin="npt=49.943s" clip-end="npt=59.964s" id="audio_0003"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_212">
+				<text src="DAISYBrochureForStickV3.html#dol_1_22_id_519" id="txt_212"/>
+				<seq>
+					<audio src="d200014.mp3" clip-begin="npt=59.964s" clip-end="npt=64.695s" id="audio_0004"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_213">
+				<text src="DAISYBrochureForStickV3.html#dol_1_22_id_520" id="txt_213"/>
+				<seq>
+					<audio src="d200014.mp3" clip-begin="npt=64.695s" clip-end="npt=68.831s" id="audio_0005"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_214">
+				<text src="DAISYBrochureForStickV3.html#dol_1_22_id_524" id="txt_214"/>
+				<seq>
+					<audio src="d200014.mp3" clip-begin="npt=68.831s" clip-end="npt=79.550s" id="audio_0006"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_215">
+				<text src="DAISYBrochureForStickV3.html#dol_1_22_id_525" id="txt_215"/>
+				<seq>
+					<audio src="d200014.mp3" clip-begin="npt=79.550s" clip-end="npt=86.169s" id="audio_0007"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_216">
+				<text src="DAISYBrochureForStickV3.html#dol_1_22_id_526" id="txt_216"/>
+				<seq>
+					<audio src="d200014.mp3" clip-begin="npt=86.169s" clip-end="npt=88.982s" id="audio_0008"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_217">
+				<text src="DAISYBrochureForStickV3.html#dol_1_22_id_530" id="txt_217"/>
+				<seq>
+					<audio src="d200014.mp3" clip-begin="npt=88.982s" clip-end="npt=102.463s" id="audio_0009"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_218">
+				<text src="DAISYBrochureForStickV3.html#dol_1_22_id_532" id="txt_218"/>
+				<seq>
+					<audio src="d200014.mp3" clip-begin="npt=102.463s" clip-end="npt=105.401s" id="audio_0010"/>
+				</seq>
+			</par>
+		</seq>
+	</body>
+</smil>

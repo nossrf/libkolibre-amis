@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE smil
+  PUBLIC "-//NISO//DTD dtbsmil 2005-2//EN" "http://www.daisy.org/z3986/2005/dtbsmil-2005-2.dtd">
+<smil xmlns="http://www.w3.org/2001/SMIL20/">
+	  <head>
+		    <meta content="Vbl11092012" name="dtb:uid"/>
+		    <meta content="TPB Narrator" name="dtb:generator"/>
+		    <meta content="0:15:20.842" name="dtb:totalElapsedTime"/>
+		
+	  </head>
+	  <body>
+		    <seq dur="0:00:15.070" fill="remove" id="mseq">
+		       <par id="tcp180">
+            <text id="text180" src="dtbook.xml#dtb180"/>
+            <audio clipBegin="0:00:00" clipEnd="0:00:04.399" src="speechgen0019.mp3"/>
+         </par>
+         <par id="tcp181">
+            <text id="text181" src="dtbook.xml#dtb181"/>
+            <audio clipBegin="0:00:04.399" clipEnd="0:00:10.192" src="speechgen0019.mp3"/>
+         </par>
+         <par id="tcp182">
+            <text id="text182" src="dtbook.xml#dtb182"/>
+            <audio clipBegin="0:00:10.192" clipEnd="0:00:13.705" src="speechgen0019.mp3"/>
+         </par>
+         <par id="tcp183">
+            <text id="text183" src="dtbook.xml#dtb183"/>
+            <audio clipBegin="0:00:13.705" clipEnd="0:00:15.070" src="speechgen0019.mp3"/>
+         </par>
+      </seq>
+	  </body>
+</smil>

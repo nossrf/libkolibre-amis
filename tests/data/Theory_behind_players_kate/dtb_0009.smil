@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE smil PUBLIC "-//W3C//DTD SMIL 1.0//EN" "http://www.w3.org/TR/REC-smil/SMIL10.dtd">
+<smil>
+	<head>
+		<meta name="dc:identifier" content="theorybehindplayers"/>
+		<meta name="dc:title" content="White paper: Theory Behind Players and Intelligent Reading Systems"/>
+		<meta name="dc:format" content="Daisy 2.02"/>
+		<meta name="title" content="Resource File provides Book Specific Prompts "/>
+		<meta name="ncc:totalElapsedTime" content="00:04:25"/>
+		<meta name="ncc:timeInThisSmil" content="00:00:49"/>
+		<meta name="ncc:generator" content="Regenerator 1.0.27"/>
+		<layout>
+			<region id="txtView"/>
+		</layout>
+	</head>
+	<body>
+		<seq dur="49.398s">
+			<par id="p48" endsync="last">
+				<text src="content.html#rgn_cnt_0048" id="rgn_txt_0009_0001"/>
+				<seq>
+					<audio src="dtb_0009.mp3" clip-begin="npt=0.000s" clip-end="npt=3.465s" id="rgn_aud_0009_0001"/>
+				</seq>
+			</par>
+			<par id="p49" endsync="last">
+				<text src="content.html#rgn_cnt_0049" id="rgn_txt_0009_0002"/>
+				<seq>
+					<audio src="dtb_0009.mp3" clip-begin="npt=3.465s" clip-end="npt=11.144s" id="rgn_aud_0009_0002"/>
+				</seq>
+			</par>
+			<par id="p50" endsync="last">
+				<text src="content.html#rgn_cnt_0050" id="rgn_txt_0009_0003"/>
+				<seq>
+					<audio src="dtb_0009.mp3" clip-begin="npt=11.144s" clip-end="npt=20.402s" id="rgn_aud_0009_0003"/>
+				</seq>
+			</par>
+			<par id="p51" endsync="last">
+				<text src="content.html#rgn_cnt_0051" id="rgn_txt_0009_0004"/>
+				<seq>
+					<audio src="dtb_0009.mp3" clip-begin="npt=20.402s" clip-end="npt=25.955s" id="rgn_aud_0009_0004"/>
+				</seq>
+			</par>
+			<par id="p52" endsync="last">
+				<text src="content.html#rgn_cnt_0052" id="rgn_txt_0009_0005"/>
+				<seq>
+					<audio src="dtb_0009.mp3" clip-begin="npt=25.955s" clip-end="npt=31.704s" id="rgn_aud_0009_0005"/>
+				</seq>
+			</par>
+			<par id="p53" endsync="last">
+				<text src="content.html#rgn_cnt_0053" id="rgn_txt_0009_0006"/>
+				<seq>
+					<audio src="dtb_0009.mp3" clip-begin="npt=31.704s" clip-end="npt=33.732s" id="rgn_aud_0009_0006"/>
+				</seq>
+			</par>
+			<par id="p54" endsync="last">
+				<text src="content.html#rgn_cnt_0054" id="rgn_txt_0009_0007"/>
+				<seq>
+					<audio src="dtb_0009.mp3" clip-begin="npt=33.732s" clip-end="npt=41.181s" id="rgn_aud_0009_0007"/>
+				</seq>
+			</par>
+			<par id="p55" endsync="last">
+				<text src="content.html#rgn_cnt_0055" id="rgn_txt_0009_0008"/>
+				<seq>
+					<audio src="dtb_0009.mp3" clip-begin="npt=41.181s" clip-end="npt=49.398s" id="rgn_aud_0009_0008"/>
+				</seq>
+			</par>
+		</seq>
+	</body>
+</smil>

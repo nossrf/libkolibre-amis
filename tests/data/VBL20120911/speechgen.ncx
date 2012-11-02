@@ -1,0 +1,886 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ncx
+  PUBLIC "-//NISO//DTD ncx 2005-1//EN" "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="SV">
+	  <head>
+		    <meta content="Vbl11092012" name="dtb:uid"/>
+		    <meta content="3" name="dtb:depth"/>
+		
+		    <meta content="TPB Narrator" name="dtb:generator"/>
+		    <meta content="0" name="dtb:totalPageCount"/>
+		    <meta content="0" name="dtb:maxPageNumber"/>
+	  </head>
+  
+	  <docTitle>
+	     <text> Vasabladet tisdag 11 september 2012</text>
+   </docTitle>
+  
+	
+	
+	  <navMap id="navMap">
+      <navPoint class="h1" id="ncx-1" playOrder="1">
+         <navLabel>
+            <text>VASABLADET: TISDAG 11:e SEPTEMBER 2012</text>
+            <audio clipBegin="0:00:00" clipEnd="0:00:07.034" src="speechgen0001.mp3"/>
+         </navLabel>
+         <content src="speechgen0001.smil#tcp1"/>
+         <navPoint class="h2" id="ncx-2" playOrder="2">
+            <navLabel>
+               <text>Hej och välkommen till Vasabladets taltidning inläst med talsyntesen Samuel</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:07.823" src="speechgen0002.mp3"/>
+            </navLabel>
+            <content src="speechgen0002.smil#tcp2"/>
+         </navPoint>
+      </navPoint>
+      <navPoint class="h1" id="ncx-3" playOrder="3">
+         <navLabel>
+            <text>Första sidan</text>
+            <audio clipBegin="0:00:00" clipEnd="0:00:04.350" src="speechgen0003.mp3"/>
+         </navLabel>
+         <content src="speechgen0003.smil#tcp5"/>
+         <navPoint class="h2" id="ncx-4" playOrder="4">
+            <navLabel>
+               <text>I dagens tidning</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:04.576" src="speechgen0004.mp3"/>
+            </navLabel>
+            <content src="speechgen0004.smil#tcp6"/>
+            <navPoint class="h3" id="ncx-5" playOrder="5">
+               <navLabel>
+                  <text>Socialarbetare i Vasa kan ha hand om 80 barn</text>
+                  <audio clipBegin="0:00:00" clipEnd="0:00:06.235" src="speechgen0005.mp3"/>
+               </navLabel>
+               <content src="speechgen0005.smil#tcp7"/>
+            </navPoint>
+            <navPoint class="h3" id="ncx-6" playOrder="6">
+               <navLabel>
+                  <text>Fem till sjukhus efter frontalkrock</text>
+                  <audio clipBegin="0:00:00" clipEnd="0:00:05.726" src="speechgen0006.mp3"/>
+               </navLabel>
+               <content src="speechgen0006.smil#tcp19"/>
+            </navPoint>
+            <navPoint class="h3" id="ncx-7" playOrder="7">
+               <navLabel>
+                  <text>FULLMÄKTIGEORDFÖRANDEN GER TUMMEN UPP FÖR KOMMUNEN ÖSTERBOTTEN.</text>
+                  <audio clipBegin="0:00:00" clipEnd="0:00:07.189" src="speechgen0007.mp3"/>
+               </navLabel>
+               <content src="speechgen0007.smil#tcp32"/>
+            </navPoint>
+            <navPoint class="h3" id="ncx-8" playOrder="8">
+               <navLabel>
+                  <text>FINNAIRS VD SLIPPER ATAL. </text>
+                  <audio clipBegin="0:00:00" clipEnd="0:00:05.332" src="speechgen0008.mp3"/>
+               </navLabel>
+               <content src="speechgen0008.smil#tcp34"/>
+            </navPoint>
+            <navPoint class="h3" id="ncx-9" playOrder="9">
+               <navLabel>
+                  <text>Jakten på Sport blir stenhård</text>
+                  <audio clipBegin="0:00:00" clipEnd="0:00:05.228" src="speechgen0009.mp3"/>
+               </navLabel>
+               <content src="speechgen0009.smil#tcp37"/>
+            </navPoint>
+            <navPoint class="h3" id="ncx-10" playOrder="10">
+               <navLabel>
+                  <text>Här vandrade orgelbyggaren</text>
+                  <audio clipBegin="0:00:00" clipEnd="0:00:05.034" src="speechgen0010.mp3"/>
+               </navLabel>
+               <content src="speechgen0010.smil#tcp43"/>
+            </navPoint>
+            <navPoint class="h3" id="ncx-11" playOrder="11">
+               <navLabel>
+                  <text>Vacker 100-åring</text>
+                  <audio clipBegin="0:00:00" clipEnd="0:00:04.673" src="speechgen0011.mp3"/>
+               </navLabel>
+               <content src="speechgen0011.smil#tcp48"/>
+            </navPoint>
+            <navPoint class="h3" id="ncx-12" playOrder="12">
+               <navLabel>
+                  <text>Opinion</text>
+                  <audio clipBegin="0:00:00" clipEnd="0:00:04.098" src="speechgen0012.mp3"/>
+               </navLabel>
+               <content src="speechgen0012.smil#tcp54"/>
+            </navPoint>
+            <navPoint class="h3" id="ncx-13" playOrder="13">
+               <navLabel>
+                  <text>BENÅDADE. </text>
+                  <audio clipBegin="0:00:00" clipEnd="0:00:04.045" src="speechgen0013.mp3"/>
+               </navLabel>
+               <content src="speechgen0013.smil#tcp59"/>
+            </navPoint>
+         </navPoint>
+         <navPoint class="h2" id="ncx-14" playOrder="14">
+            <navLabel>
+               <text>DAGENS LEDARE: Tornhusfebern rasar också i Finland</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:06.761" src="speechgen0014.mp3"/>
+            </navLabel>
+            <content src="speechgen0014.smil#tcp63"/>
+         </navPoint>
+      </navPoint>
+      <navPoint class="h1" id="ncx-15" playOrder="15">
+         <navLabel>
+            <text>nyheter</text>
+            <audio clipBegin="0:00:00" clipEnd="0:00:04.141" src="speechgen0015.mp3"/>
+         </navLabel>
+         <content src="speechgen0015.smil#tcp99"/>
+         <navPoint class="h2" id="ncx-16" playOrder="16">
+            <navLabel>
+               <text>HÄNDER I DAG</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:04.361" src="speechgen0016.mp3"/>
+            </navLabel>
+            <content src="speechgen0016.smil#tcp100"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-17" playOrder="17">
+            <navLabel>
+               <text>55-80 barn per socialarbetare</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:06.358" src="speechgen0017.mp3"/>
+            </navLabel>
+            <content src="speechgen0017.smil#tcp104"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-18" playOrder="18">
+            <navLabel>
+               <text>Sotare föll från tak, arbetsgivare åtalas</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:06.692" src="speechgen0018.mp3"/>
+            </navLabel>
+            <content src="speechgen0018.smil#tcp148"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-19" playOrder="19">
+            <navLabel>
+               <text>Namn föll bort</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:04.399" src="speechgen0019.mp3"/>
+            </navLabel>
+            <content src="speechgen0019.smil#tcp180"/>
+         </navPoint>
+      </navPoint>
+      <navPoint class="h1" id="ncx-20" playOrder="20">
+         <navLabel>
+            <text>nyheter: lokalt</text>
+            <audio clipBegin="0:00:00" clipEnd="0:00:04.971" src="speechgen0020.mp3"/>
+         </navLabel>
+         <content src="speechgen0020.smil#tcp184"/>
+         <navPoint class="h2" id="ncx-21" playOrder="21">
+            <navLabel>
+               <text>Fem skadade i frontalkrock</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:05.292" src="speechgen0021.mp3"/>
+            </navLabel>
+            <content src="speechgen0021.smil#tcp185"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-22" playOrder="22">
+            <navLabel>
+               <text>Alla kommuner vill utreda tillsammans</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:05.598" src="speechgen0022.mp3"/>
+            </navLabel>
+            <content src="speechgen0022.smil#tcp208"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-23" playOrder="23">
+            <navLabel>
+               <text>Dialekt ledde till böter i asylärende</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:05.764" src="speechgen0023.mp3"/>
+            </navLabel>
+            <content src="speechgen0023.smil#tcp273"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-24" playOrder="24">
+            <navLabel>
+               <text>Nytt trafikmärke för sevärdheter</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:05.545" src="speechgen0024.mp3"/>
+            </navLabel>
+            <content src="speechgen0024.smil#tcp288"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-25" playOrder="25">
+            <navLabel>
+               <text>Gröna vill ha kvar Osala i Pikipruukki</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:05.923" src="speechgen0025.mp3"/>
+            </navLabel>
+            <content src="speechgen0025.smil#tcp310"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-26" playOrder="26">
+            <navLabel>
+               <text>Frost i nästan hela landet</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:05.135" src="speechgen0026.mp3"/>
+            </navLabel>
+            <content src="speechgen0026.smil#tcp317"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-27" playOrder="27">
+            <navLabel>
+               <text>Minkhanar sålde bra, honorna lite sämre</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:06.008" src="speechgen0027.mp3"/>
+            </navLabel>
+            <content src="speechgen0027.smil#tcp327"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-28" playOrder="28">
+            <navLabel>
+               <text>Nya gröna namn i Vasa</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:05.062" src="speechgen0028.mp3"/>
+            </navLabel>
+            <content src="speechgen0028.smil#tcp338"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-29" playOrder="29">
+            <navLabel>
+               <text>Förare i skåpbil krockade med älg</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:05.344" src="speechgen0029.mp3"/>
+            </navLabel>
+            <content src="speechgen0029.smil#tcp344"/>
+         </navPoint>
+      </navPoint>
+      <navPoint class="h1" id="ncx-30" playOrder="30">
+         <navLabel>
+            <text>nyheter: lokalt, samhälle</text>
+            <audio clipBegin="0:00:00" clipEnd="0:00:05.728" src="speechgen0030.mp3"/>
+         </navLabel>
+         <content src="speechgen0030.smil#tcp353"/>
+         <navPoint class="h2" id="ncx-31" playOrder="31">
+            <navLabel>
+               <text>Räsänen: Viktigt utbilda lärare i södra Finland</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:06.529" src="speechgen0031.mp3"/>
+            </navLabel>
+            <content src="speechgen0031.smil#tcp354"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-32" playOrder="32">
+            <navLabel>
+               <text>Väätäinen bjöd på tio liter blandsaft</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:05.865" src="speechgen0032.mp3"/>
+            </navLabel>
+            <content src="speechgen0032.smil#tcp411"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-33" playOrder="33">
+            <navLabel>
+               <text>Socialdemokraterna försöker ta mandat</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:05.887" src="speechgen0033.mp3"/>
+            </navLabel>
+            <content src="speechgen0033.smil#tcp463"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-34" playOrder="34">
+            <navLabel>
+               <text>Trög nominering i Kaskö</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:05.253" src="speechgen0034.mp3"/>
+            </navLabel>
+            <content src="speechgen0034.smil#tcp481"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-35" playOrder="35">
+            <navLabel>
+               <text>Avlopp aktuellt igen</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:04.825" src="speechgen0035.mp3"/>
+            </navLabel>
+            <content src="speechgen0035.smil#tcp503"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-36" playOrder="36">
+            <navLabel>
+               <text>Ingen crowdfunding för Fröken Senja-bok</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:05.768" src="speechgen0036.mp3"/>
+            </navLabel>
+            <content src="speechgen0036.smil#tcp516"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-37" playOrder="37">
+            <navLabel>
+               <text>Haglund stöder allmän värnplikt</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:05.303" src="speechgen0037.mp3"/>
+            </navLabel>
+            <content src="speechgen0037.smil#tcp524"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-38" playOrder="38">
+            <navLabel>
+               <text>Misstänkt bluffläkare åtalas för narkotikabrott</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:06.500" src="speechgen0038.mp3"/>
+            </navLabel>
+            <content src="speechgen0038.smil#tcp533"/>
+         </navPoint>
+      </navPoint>
+      <navPoint class="h1" id="ncx-39" playOrder="39">
+         <navLabel>
+            <text>nyheter: ekonomi</text>
+            <audio clipBegin="0:00:00" clipEnd="0:00:04.888" src="speechgen0039.mp3"/>
+         </navLabel>
+         <content src="speechgen0039.smil#tcp546"/>
+         <navPoint class="h2" id="ncx-40" playOrder="40">
+            <navLabel>
+               <text>Dagens siffra</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:04.358" src="speechgen0040.mp3"/>
+            </navLabel>
+            <content src="speechgen0040.smil#tcp547"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-41" playOrder="41">
+            <navLabel>
+               <text>Rättslärda: Rätt beslut inte åtala Finnairs vd</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:06.755" src="speechgen0041.mp3"/>
+            </navLabel>
+            <content src="speechgen0041.smil#tcp552"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-42" playOrder="42">
+            <navLabel>
+               <text>Katainen ska tala ekonomi i Spanien</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:05.508" src="speechgen0042.mp3"/>
+            </navLabel>
+            <content src="speechgen0042.smil#tcp598"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-43" playOrder="43">
+            <navLabel>
+               <text>BÖRSANALYSEN: Positiv reaktion på lättnader från ECB</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:07.346" src="speechgen0043.mp3"/>
+            </navLabel>
+            <content src="speechgen0043.smil#tcp615"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-44" playOrder="44">
+            <navLabel>
+               <text>Kemiras samarbetsförfarande kritiseras av de anställda</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:06.791" src="speechgen0044.mp3"/>
+            </navLabel>
+            <content src="speechgen0044.smil#tcp641"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-45" playOrder="45">
+            <navLabel>
+               <text>MTV skär ner 80 årsverken</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:05.745" src="speechgen0045.mp3"/>
+            </navLabel>
+            <content src="speechgen0045.smil#tcp655"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-46" playOrder="46">
+            <navLabel>
+               <text>Anvia Securi på uppköp i Åbo</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:05.464" src="speechgen0046.mp3"/>
+            </navLabel>
+            <content src="speechgen0046.smil#tcp662"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-47" playOrder="47">
+            <navLabel>
+               <text>Rekordmånga gårdar övergick till ekologisk produktion</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:06.554" src="speechgen0047.mp3"/>
+            </navLabel>
+            <content src="speechgen0047.smil#tcp674"/>
+         </navPoint>
+      </navPoint>
+      <navPoint class="h1" id="ncx-48" playOrder="48">
+         <navLabel>
+            <text>sport</text>
+            <audio clipBegin="0:00:00" clipEnd="0:00:04.076" src="speechgen0048.mp3"/>
+         </navLabel>
+         <content src="speechgen0048.smil#tcp681"/>
+         <navPoint class="h2" id="ncx-49" playOrder="49">
+            <navLabel>
+               <text> TV-TIPSET</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:04.472" src="speechgen0049.mp3"/>
+            </navLabel>
+            <content src="speechgen0049.smil#tcp682"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-50" playOrder="50">
+            <navLabel>
+               <text> HOCKEYVECKAN</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:04.406" src="speechgen0050.mp3"/>
+            </navLabel>
+            <content src="speechgen0050.smil#tcp685"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-51" playOrder="51">
+            <navLabel>
+               <text>Jakten på örnarna börjar</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:04.822" src="speechgen0051.mp3"/>
+            </navLabel>
+            <content src="speechgen0051.smil#tcp689"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-52" playOrder="52">
+            <navLabel>
+               <text>Kummola vill ha ordentligt straff</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:05.247" src="speechgen0052.mp3"/>
+            </navLabel>
+            <content src="speechgen0052.smil#tcp776"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-53" playOrder="53">
+            <navLabel>
+               <text>VM-slutspelet gav miljoner i kassan</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:05.948" src="speechgen0053.mp3"/>
+            </navLabel>
+            <content src="speechgen0053.smil#tcp790"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-54" playOrder="54">
+            <navLabel>
+               <text>NHL hotande nära lockout på lördag</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:05.890" src="speechgen0054.mp3"/>
+            </navLabel>
+            <content src="speechgen0054.smil#tcp804"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-55" playOrder="55">
+            <navLabel>
+               <text>KRÖNIKA: Allt svårare att vinna allt</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:05.836" src="speechgen0055.mp3"/>
+            </navLabel>
+            <content src="speechgen0055.smil#tcp816"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-56" playOrder="56">
+            <navLabel>
+               <text>Finland favorit mot Schweiz</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:05.202" src="speechgen0056.mp3"/>
+            </navLabel>
+            <content src="speechgen0056.smil#tcp865"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-57" playOrder="57">
+            <navLabel>
+               <text>Pärssinen ser fram emot spel i ligan</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:05.669" src="speechgen0057.mp3"/>
+            </navLabel>
+            <content src="speechgen0057.smil#tcp880"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-58" playOrder="58">
+            <navLabel>
+               <text>Fantastisk sommar för Serena Williams</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:05.713" src="speechgen0058.mp3"/>
+            </navLabel>
+            <content src="speechgen0058.smil#tcp919"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-59" playOrder="59">
+            <navLabel>
+               <text>Paralympierna hem med flera medaljer</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:05.451" src="speechgen0059.mp3"/>
+            </navLabel>
+            <content src="speechgen0059.smil#tcp935"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-60" playOrder="60">
+            <navLabel>
+               <text>Juha Malinen tränar Haka</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:04.953" src="speechgen0060.mp3"/>
+            </navLabel>
+            <content src="speechgen0060.smil#tcp965"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-61" playOrder="61">
+            <navLabel>
+               <text>Lejonchefen klar till jul</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:05.133" src="speechgen0061.mp3"/>
+            </navLabel>
+            <content src="speechgen0061.smil#tcp980"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-62" playOrder="62">
+            <navLabel>
+               <text>Två Vasaspelare på landslagsläger</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:05.659" src="speechgen0062.mp3"/>
+            </navLabel>
+            <content src="speechgen0062.smil#tcp991"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-63" playOrder="63">
+            <navLabel>
+               <text>Öjbergslunken löps på söndag</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:05.401" src="speechgen0063.mp3"/>
+            </navLabel>
+            <content src="speechgen0063.smil#tcp1000"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-64" playOrder="64">
+            <navLabel>
+               <text>Wayne Rooneys karriär var i fara</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:05.156" src="speechgen0064.mp3"/>
+            </navLabel>
+            <content src="speechgen0064.smil#tcp1008"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-65" playOrder="65">
+            <navLabel>
+               <text>Skärmträffen hålls i Kvevlax</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:05.421" src="speechgen0065.mp3"/>
+            </navLabel>
+            <content src="speechgen0065.smil#tcp1016"/>
+         </navPoint>
+      </navPoint>
+      <navPoint class="h1" id="ncx-66" playOrder="66">
+         <navLabel>
+            <text>Eftertext</text>
+            <audio clipBegin="0:00:00" clipEnd="0:00:04.345" src="speechgen0066.mp3"/>
+         </navLabel>
+         <content src="speechgen0066.smil#tcp1022"/>
+         <navPoint class="h2" id="ncx-67" playOrder="67">
+            <navLabel>
+               <text>Sammanträden</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:04.330" src="speechgen0067.mp3"/>
+            </navLabel>
+            <content src="speechgen0067.smil#tcp1023"/>
+         </navPoint>
+      </navPoint>
+      <navPoint class="h1" id="ncx-68" playOrder="68">
+         <navLabel>
+            <text>kultur</text>
+            <audio clipBegin="0:00:00" clipEnd="0:00:04.039" src="speechgen0068.mp3"/>
+         </navLabel>
+         <content src="speechgen0068.smil#tcp1048"/>
+         <navPoint class="h2" id="ncx-69" playOrder="69">
+            <navLabel>
+               <text>Ensemble följer fiktiva fotspår</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:05.613" src="speechgen0069.mp3"/>
+            </navLabel>
+            <content src="speechgen0069.smil#tcp1049"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-70" playOrder="70">
+            <navLabel>
+               <text>”K V Åkerblom hade värnat närsamhället”</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:05.598" src="speechgen0070.mp3"/>
+            </navLabel>
+            <content src="speechgen0070.smil#tcp1124"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-71" playOrder="71">
+            <navLabel>
+               <text>Sångworkshop på Wasa Teater</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:05.359" src="speechgen0071.mp3"/>
+            </navLabel>
+            <content src="speechgen0071.smil#tcp1147"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-72" playOrder="72">
+            <navLabel>
+               <text>HIM ger ut samlingsskiva</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:04.831" src="speechgen0072.mp3"/>
+            </navLabel>
+            <content src="speechgen0072.smil#tcp1156"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-73" playOrder="73">
+            <navLabel>
+               <text>VBL rättar</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:04.560" src="speechgen0073.mp3"/>
+            </navLabel>
+            <content src="speechgen0073.smil#tcp1164"/>
+         </navPoint>
+      </navPoint>
+      <navPoint class="h1" id="ncx-74" playOrder="74">
+         <navLabel>
+            <text>kultur</text>
+            <audio clipBegin="0:00:00" clipEnd="0:00:04.039" src="speechgen0074.mp3"/>
+         </navLabel>
+         <content src="speechgen0074.smil#tcp1172"/>
+         <navPoint class="h2" id="ncx-75" playOrder="75">
+            <navLabel>
+               <text>Ståtligt hus fyller hundra</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:05.161" src="speechgen0075.mp3"/>
+            </navLabel>
+            <content src="speechgen0075.smil#tcp1173"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-76" playOrder="76">
+            <navLabel>
+               <text>Stadsorkestern kör igång</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:05.074" src="speechgen0076.mp3"/>
+            </navLabel>
+            <content src="speechgen0076.smil#tcp1240"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-77" playOrder="77">
+            <navLabel>
+               <text>”Paddington” första gången utanför England</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:05.942" src="speechgen0077.mp3"/>
+            </navLabel>
+            <content src="speechgen0077.smil#tcp1285"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-78" playOrder="78">
+            <navLabel>
+               <text>Patricia Kaas sjunger Piaf på Finlandsturné i vår</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:06.601" src="speechgen0078.mp3"/>
+            </navLabel>
+            <content src="speechgen0078.smil#tcp1301"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-79" playOrder="79">
+            <navLabel>
+               <text>HÄNDER I DAG</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:04.361" src="speechgen0079.mp3"/>
+            </navLabel>
+            <content src="speechgen0079.smil#tcp1310"/>
+            <navPoint class="h3" id="ncx-80" playOrder="80">
+               <navLabel>
+                  <text>BIO</text>
+                  <audio clipBegin="0:00:00" clipEnd="0:00:03.896" src="speechgen0080.mp3"/>
+               </navLabel>
+               <content src="speechgen0080.smil#tcp1311"/>
+            </navPoint>
+            <navPoint class="h3" id="ncx-81" playOrder="81">
+               <navLabel>
+                  <text>ÖVRIGT</text>
+                  <audio clipBegin="0:00:00" clipEnd="0:00:04.058" src="speechgen0081.mp3"/>
+               </navLabel>
+               <content src="speechgen0081.smil#tcp1332"/>
+            </navPoint>
+         </navPoint>
+      </navPoint>
+      <navPoint class="h1" id="ncx-82" playOrder="82">
+         <navLabel>
+            <text>opinion</text>
+            <audio clipBegin="0:00:00" clipEnd="0:00:04.098" src="speechgen0082.mp3"/>
+         </navLabel>
+         <content src="speechgen0082.smil#tcp1341"/>
+         <navPoint class="h2" id="ncx-83" playOrder="83">
+            <navLabel>
+               <text>KOLUMNEN: Nån som minns varför Sovjet kollapsade?</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:06.480" src="speechgen0083.mp3"/>
+            </navLabel>
+            <content src="speechgen0083.smil#tcp1342"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-84" playOrder="84">
+            <navLabel>
+               <text>Artikel: Får Obama sina fyra år till?</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:05.926" src="speechgen0084.mp3"/>
+            </navLabel>
+            <content src="speechgen0084.smil#tcp1379"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-85" playOrder="85">
+            <navLabel>
+               <text>Insändare: Begravningsväsendet är boven i dramat</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:06.712" src="speechgen0085.mp3"/>
+            </navLabel>
+            <content src="speechgen0085.smil#tcp1464"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-86" playOrder="86">
+            <navLabel>
+               <text>Insändare: Attitydförändring behövs</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:05.913" src="speechgen0086.mp3"/>
+            </navLabel>
+            <content src="speechgen0086.smil#tcp1499"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-87" playOrder="87">
+            <navLabel>
+               <text>Insändare: Ska man inte få hjälp på sitt modersmål i Finland?</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:06.944" src="speechgen0087.mp3"/>
+            </navLabel>
+            <content src="speechgen0087.smil#tcp1522"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-88" playOrder="88">
+            <navLabel>
+               <text>ANDRAS MENING: Politiskt spel</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:05.598" src="speechgen0088.mp3"/>
+            </navLabel>
+            <content src="speechgen0088.smil#tcp1536"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-89" playOrder="89">
+            <navLabel>
+               <text>Andras mening: Hållbar lösning?</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:05.694" src="speechgen0089.mp3"/>
+            </navLabel>
+            <content src="speechgen0089.smil#tcp1551"/>
+         </navPoint>
+      </navPoint>
+      <navPoint class="h1" id="ncx-90" playOrder="90">
+         <navLabel>
+            <text>livets gång</text>
+            <audio clipBegin="0:00:00" clipEnd="0:00:04.262" src="speechgen0090.mp3"/>
+         </navLabel>
+         <content src="speechgen0090.smil#tcp1557"/>
+         <navPoint class="h2" id="ncx-91" playOrder="91">
+            <navLabel>
+               <text>NAMNSDAGAR</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:04.273" src="speechgen0091.mp3"/>
+            </navLabel>
+            <content src="speechgen0091.smil#tcp1558"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-92" playOrder="92">
+            <navLabel>
+               <text>LÖSENORDET</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:04.349" src="speechgen0092.mp3"/>
+            </navLabel>
+            <content src="speechgen0092.smil#tcp1562"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-93" playOrder="93">
+            <navLabel>
+               <text>Vöråbor färdas 400 år bakåt i tiden</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:06.190" src="speechgen0093.mp3"/>
+            </navLabel>
+            <content src="speechgen0093.smil#tcp1567"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-94" playOrder="94">
+            <navLabel>
+               <text>Cancerföreningen vill samla in 400000 euro</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:06.293" src="speechgen0094.mp3"/>
+            </navLabel>
+            <content src="speechgen0094.smil#tcp1598"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-95" playOrder="95">
+            <navLabel>
+               <text>Ragga som de stora diktarna</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:05.052" src="speechgen0095.mp3"/>
+            </navLabel>
+            <content src="speechgen0095.smil#tcp1627"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-96" playOrder="96">
+            <navLabel>
+               <text>Kom med och sjung i Helsingbykören</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:05.154" src="speechgen0096.mp3"/>
+            </navLabel>
+            <content src="speechgen0096.smil#tcp1652"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-97" playOrder="97">
+            <navLabel>
+               <text>Dygnsrytmen viktig för hälsan</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:05.360" src="speechgen0097.mp3"/>
+            </navLabel>
+            <content src="speechgen0097.smil#tcp1663"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-98" playOrder="98">
+            <navLabel>
+               <text>Visste du att du behöver äta sju kilo gurka för att få i dig lika mycket antioxidanter som i 100 gram blåbär?</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:09.483" src="speechgen0098.mp3"/>
+            </navLabel>
+            <content src="speechgen0098.smil#tcp1670"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-99" playOrder="99">
+            <navLabel>
+               <text>Familjeannonser</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:04.427" src="speechgen0099.mp3"/>
+            </navLabel>
+            <content src="speechgen0099.smil#tcp1673"/>
+            <navPoint class="h3" id="ncx-100" playOrder="100">
+               <navLabel>
+                  <text>Förlovade</text>
+                  <audio clipBegin="0:00:00" clipEnd="0:00:04.192" src="speechgen0100.mp3"/>
+               </navLabel>
+               <content src="speechgen0100.smil#tcp1674"/>
+            </navPoint>
+            <navPoint class="h3" id="ncx-101" playOrder="101">
+               <navLabel>
+                  <text>Bemärkelsedagar</text>
+                  <audio clipBegin="0:00:00" clipEnd="0:00:04.570" src="speechgen0101.mp3"/>
+               </navLabel>
+               <content src="speechgen0101.smil#tcp1679"/>
+            </navPoint>
+            <navPoint class="h3" id="ncx-102" playOrder="102">
+               <navLabel>
+                  <text>Födda</text>
+                  <audio clipBegin="0:00:00" clipEnd="0:00:03.947" src="speechgen0102.mp3"/>
+               </navLabel>
+               <content src="speechgen0102.smil#tcp1692"/>
+            </navPoint>
+            <navPoint class="h3" id="ncx-103" playOrder="103">
+               <navLabel>
+                  <text>Dödsfall</text>
+                  <audio clipBegin="0:00:00" clipEnd="0:00:04.015" src="speechgen0103.mp3"/>
+               </navLabel>
+               <content src="speechgen0103.smil#tcp1713"/>
+            </navPoint>
+         </navPoint>
+      </navPoint>
+      <navPoint class="h1" id="ncx-104" playOrder="104">
+         <navLabel>
+            <text>i dag: tisdag 11:e september, vecka 37</text>
+            <audio clipBegin="0:00:00" clipEnd="0:00:06.998" src="speechgen0104.mp3"/>
+         </navLabel>
+         <content src="speechgen0104.smil#tcp1744"/>
+         <navPoint class="h2" id="ncx-105" playOrder="105">
+            <navLabel>
+               <text>Vädret i Finland i dag</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:04.905" src="speechgen0105.mp3"/>
+            </navLabel>
+            <content src="speechgen0105.smil#tcp1745"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-106" playOrder="106">
+            <navLabel>
+               <text>SOLEN upp OCH NED</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:04.548" src="speechgen0106.mp3"/>
+            </navLabel>
+            <content src="speechgen0106.smil#tcp1759"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-107" playOrder="107">
+            <navLabel>
+               <text>ToRGpLATsEN: centret för livslångt lärande vid ÅA och Yrkeshögskolan Novia har ordet: Se här alla studiesugna!</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:10.372" src="speechgen0107.mp3"/>
+            </navLabel>
+            <content src="speechgen0107.smil#tcp1766"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-108" playOrder="108">
+            <navLabel>
+               <text>FÖRENINGARNAS MINNESLISTA</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:05.066" src="speechgen0108.mp3"/>
+            </navLabel>
+            <content src="speechgen0108.smil#tcp1779"/>
+            <navPoint class="h3" id="ncx-109" playOrder="109">
+               <navLabel>
+                  <text>VASA</text>
+                  <audio clipBegin="0:00:00" clipEnd="0:00:03.941" src="speechgen0109.mp3"/>
+               </navLabel>
+               <content src="speechgen0109.smil#tcp1780"/>
+            </navPoint>
+            <navPoint class="h3" id="ncx-110" playOrder="110">
+               <navLabel>
+                  <text>KORSHOLM</text>
+                  <audio clipBegin="0:00:00" clipEnd="0:00:04.149" src="speechgen0110.mp3"/>
+               </navLabel>
+               <content src="speechgen0110.smil#tcp1804"/>
+            </navPoint>
+            <navPoint class="h3" id="ncx-111" playOrder="111">
+               <navLabel>
+                  <text>MALAX</text>
+                  <audio clipBegin="0:00:00" clipEnd="0:00:04.218" src="speechgen0111.mp3"/>
+               </navLabel>
+               <content src="speechgen0111.smil#tcp1818"/>
+            </navPoint>
+            <navPoint class="h3" id="ncx-112" playOrder="112">
+               <navLabel>
+                  <text>VÖRÅ</text>
+                  <audio clipBegin="0:00:00" clipEnd="0:00:03.870" src="speechgen0112.mp3"/>
+               </navLabel>
+               <content src="speechgen0112.smil#tcp1820"/>
+            </navPoint>
+            <navPoint class="h3" id="ncx-113" playOrder="113">
+               <navLabel>
+                  <text>NYKARLEBY</text>
+                  <audio clipBegin="0:00:00" clipEnd="0:00:04.256" src="speechgen0113.mp3"/>
+               </navLabel>
+               <content src="speechgen0113.smil#tcp1835"/>
+            </navPoint>
+            <navPoint class="h3" id="ncx-114" playOrder="114">
+               <navLabel>
+                  <text>KRONOBY</text>
+                  <audio clipBegin="0:00:00" clipEnd="0:00:04.130" src="speechgen0114.mp3"/>
+               </navLabel>
+               <content src="speechgen0114.smil#tcp1840"/>
+            </navPoint>
+            <navPoint class="h3" id="ncx-115" playOrder="115">
+               <navLabel>
+                  <text>ÖVRIGA</text>
+                  <audio clipBegin="0:00:00" clipEnd="0:00:04.018" src="speechgen0115.mp3"/>
+               </navLabel>
+               <content src="speechgen0115.smil#tcp1844"/>
+            </navPoint>
+         </navPoint>
+      </navPoint>
+      <navPoint class="h1" id="ncx-116" playOrder="116">
+         <navLabel>
+            <text>nyheter: utrikes</text>
+            <audio clipBegin="0:00:00" clipEnd="0:00:05.061" src="speechgen0116.mp3"/>
+         </navLabel>
+         <content src="speechgen0116.smil#tcp1869"/>
+         <navPoint class="h2" id="ncx-117" playOrder="117">
+            <navLabel>
+               <text>Svenska journalister benådade</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:05.150" src="speechgen0117.mp3"/>
+            </navLabel>
+            <content src="speechgen0117.smil#tcp1870"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-118" playOrder="118">
+            <navLabel>
+               <text>Afghanistan tar över Bagram-fängelset</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:05.833" src="speechgen0118.mp3"/>
+            </navLabel>
+            <content src="speechgen0118.smil#tcp1904"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-119" playOrder="119">
+            <navLabel>
+               <text>Kinesisk tidning kritiserar ledare</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:05.668" src="speechgen0119.mp3"/>
+            </navLabel>
+            <content src="speechgen0119.smil#tcp1924"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-120" playOrder="120">
+            <navLabel>
+               <text>al-Qaidaledare dödades i Jemen</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:05.228" src="speechgen0120.mp3"/>
+            </navLabel>
+            <content src="speechgen0120.smil#tcp1942"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-121" playOrder="121">
+            <navLabel>
+               <text>Kosovo får full självständighet</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:05.374" src="speechgen0121.mp3"/>
+            </navLabel>
+            <content src="speechgen0121.smil#tcp1955"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-122" playOrder="122">
+            <navLabel>
+               <text>Somalia fick ny president</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:05.127" src="speechgen0122.mp3"/>
+            </navLabel>
+            <content src="speechgen0122.smil#tcp1964"/>
+         </navPoint>
+         <navPoint class="h2" id="ncx-123" playOrder="123">
+            <navLabel>
+               <text>En fånge dog i Guantanamo</text>
+               <audio clipBegin="0:00:00" clipEnd="0:00:04.973" src="speechgen0123.mp3"/>
+            </navLabel>
+            <content src="speechgen0123.smil#tcp1970"/>
+         </navPoint>
+      </navPoint>
+   </navMap>
+	
+	
+  
+</ncx>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<book_info>
+    <smil_info>
+        <smil nr="1" Name="d202_1.smil" dur="9.835"/>
+        <smil nr="2" Name="d202_2.smil" dur="22.853"/>
+        <smil nr="3" Name="d202_3.smil" dur="1.829"/>
+        <smil nr="4" Name="d202_4.smil" dur="9.623"/>
+        <smil nr="5" Name="d202_5.smil" dur="13.098"/>
+        <smil nr="6" Name="d202_6.smil" dur="221.894"/>
+        <smil nr="7" Name="d202_7.smil" dur="143.423"/>
+        <smil nr="8" Name="d202_8.smil" dur="99.369"/>
+        <smil nr="9" Name="d202_9.smil" dur="45.622"/>
+        <smil nr="10" Name="d202_10.smil" dur="109.655"/>
+        <smil nr="11" Name="d202_11.smil" dur="179.746"/>
+        <smil nr="12" Name="d202_12.smil" dur="132.058"/>
+        <smil nr="13" Name="d202_13.smil" dur="9.491"/>
+        <smil nr="14" Name="d202_14.smil" dur="116.873"/>
+        <smil nr="15" Name="d202_15.smil" dur="25.565"/>
+        <smil nr="16" Name="d202_16.smil" dur="21.355"/>
+        <smil nr="17" Name="d202_17.smil" dur="21.334"/>
+        <smil nr="18" Name="d202_18.smil" dur="24.081"/>
+        <smil nr="19" Name="d202_19.smil" dur="1.873"/>
+        <smil nr="20" Name="d202_20.smil" dur="34.380"/>
+        <smil nr="21" Name="d202_21.smil" dur="7.206"/>
+        <smil nr="22" Name="d202_22.smil" dur="105.401"/>
+    </smil_info>
+</book_info>

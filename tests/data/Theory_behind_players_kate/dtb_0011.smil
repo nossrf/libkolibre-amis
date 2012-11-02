@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE smil PUBLIC "-//W3C//DTD SMIL 1.0//EN" "http://www.w3.org/TR/REC-smil/SMIL10.dtd">
+<smil>
+	<head>
+		<meta name="dc:identifier" content="theorybehindplayers"/>
+		<meta name="dc:title" content="White paper: Theory Behind Players and Intelligent Reading Systems"/>
+		<meta name="dc:format" content="Daisy 2.02"/>
+		<meta name="title" content="Semantic Reading, the True Test of an Intelligent Reading System"/>
+		<meta name="ncc:totalElapsedTime" content="00:05:48"/>
+		<meta name="ncc:timeInThisSmil" content="00:01:41"/>
+		<meta name="ncc:generator" content="Regenerator 1.0.27"/>
+		<layout>
+			<region id="txtView"/>
+		</layout>
+	</head>
+	<body>
+		<seq dur="101.283s">
+			<par id="p61" endsync="last">
+				<text src="content.html#rgn_cnt_0061" id="rgn_txt_0011_0001"/>
+				<seq>
+					<audio src="dtb_0011.mp3" clip-begin="npt=0.000s" clip-end="npt=4.639s" id="rgn_aud_0011_0001"/>
+				</seq>
+			</par>
+			<par id="p62" endsync="last">
+				<text src="content.html#rgn_cnt_0062" id="rgn_txt_0011_0002"/>
+				<seq>
+					<audio src="dtb_0011.mp3" clip-begin="npt=4.639s" clip-end="npt=15.856s" id="rgn_aud_0011_0002"/>
+				</seq>
+			</par>
+			<par id="p63" endsync="last">
+				<text src="content.html#rgn_cnt_0063" id="rgn_txt_0011_0003"/>
+				<seq>
+					<audio src="dtb_0011.mp3" clip-begin="npt=15.856s" clip-end="npt=18.152s" id="rgn_aud_0011_0003"/>
+				</seq>
+			</par>
+			<par id="p64" endsync="last">
+				<text src="content.html#rgn_cnt_0064" id="rgn_txt_0011_0004"/>
+				<seq>
+					<audio src="dtb_0011.mp3" clip-begin="npt=18.152s" clip-end="npt=21.362s" id="rgn_aud_0011_0004"/>
+				</seq>
+			</par>
+			<par id="p65" endsync="last">
+				<text src="content.html#rgn_cnt_0065" id="rgn_txt_0011_0005"/>
+				<seq>
+					<audio src="dtb_0011.mp3" clip-begin="npt=21.362s" clip-end="npt=25.147s" id="rgn_aud_0011_0005"/>
+				</seq>
+			</par>
+			<par id="p66" endsync="last">
+				<text src="content.html#rgn_cnt_0066" id="rgn_txt_0011_0006"/>
+				<seq>
+					<audio src="dtb_0011.mp3" clip-begin="npt=25.147s" clip-end="npt=35.434s" id="rgn_aud_0011_0006"/>
+				</seq>
+			</par>
+			<par id="p67" endsync="last">
+				<text src="content.html#rgn_cnt_0067" id="rgn_txt_0011_0007"/>
+				<seq>
+					<audio src="dtb_0011.mp3" clip-begin="npt=35.434s" clip-end="npt=44.139s" id="rgn_aud_0011_0007"/>
+				</seq>
+			</par>
+			<par id="p68" endsync="last">
+				<text src="content.html#rgn_cnt_0068" id="rgn_txt_0011_0008"/>
+				<seq>
+					<audio src="dtb_0011.mp3" clip-begin="npt=44.139s" clip-end="npt=53.667s" id="rgn_aud_0011_0008"/>
+				</seq>
+			</par>
+			<par id="p69" endsync="last">
+				<text src="content.html#rgn_cnt_0069" id="rgn_txt_0011_0009"/>
+				<seq>
+					<audio src="dtb_0011.mp3" clip-begin="npt=53.667s" clip-end="npt=61.388s" id="rgn_aud_0011_0009"/>
+				</seq>
+			</par>
+			<par id="p70" endsync="last">
+				<text src="content.html#rgn_cnt_0070" id="rgn_txt_0011_0010"/>
+				<seq>
+					<audio src="dtb_0011.mp3" clip-begin="npt=61.388s" clip-end="npt=68.211s" id="rgn_aud_0011_0010"/>
+				</seq>
+			</par>
+			<par id="p71" endsync="last">
+				<text src="content.html#rgn_cnt_0071" id="rgn_txt_0011_0011"/>
+				<seq>
+					<audio src="dtb_0011.mp3" clip-begin="npt=68.211s" clip-end="npt=73.106s" id="rgn_aud_0011_0011"/>
+				</seq>
+			</par>
+			<par id="p72" endsync="last">
+				<text src="content.html#rgn_cnt_0072" id="rgn_txt_0011_0012"/>
+				<seq>
+					<audio src="dtb_0011.mp3" clip-begin="npt=73.106s" clip-end="npt=79.380s" id="rgn_aud_0011_0012"/>
+				</seq>
+			</par>
+			<par id="p73" endsync="last">
+				<text src="content.html#rgn_cnt_0073" id="rgn_txt_0011_0013"/>
+				<seq>
+					<audio src="dtb_0011.mp3" clip-begin="npt=79.380s" clip-end="npt=82.446s" id="rgn_aud_0011_0013"/>
+				</seq>
+			</par>
+			<par id="p74" endsync="last">
+				<text src="content.html#rgn_cnt_0074" id="rgn_txt_0011_0014"/>
+				<seq>
+					<audio src="dtb_0011.mp3" clip-begin="npt=82.446s" clip-end="npt=93.874s" id="rgn_aud_0011_0014"/>
+				</seq>
+			</par>
+			<par id="p75" endsync="last">
+				<text src="content.html#rgn_cnt_0075" id="rgn_txt_0011_0015"/>
+				<seq>
+					<audio src="dtb_0011.mp3" clip-begin="npt=93.874s" clip-end="npt=101.283s" id="rgn_aud_0011_0015"/>
+				</seq>
+			</par>
+		</seq>
+	</body>
+</smil>

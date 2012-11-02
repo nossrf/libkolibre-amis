@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE smil PUBLIC "-//W3C//DTD SMIL 1.0//EN" "http://www.w3.org/TR/REC-smil/SMIL10.dtd">
+<smil>
+	<head>
+		<meta name="dc:identifier" content="theorybehindplayers"/>
+		<meta name="dc:title" content="White paper: Theory Behind Players and Intelligent Reading Systems"/>
+		<meta name="dc:format" content="Daisy 2.02"/>
+		<meta name="title" content="Easier to Implement"/>
+		<meta name="ncc:totalElapsedTime" content="00:04:02"/>
+		<meta name="ncc:timeInThisSmil" content="00:00:22"/>
+		<meta name="ncc:generator" content="Regenerator 1.0.27"/>
+		<layout>
+			<region id="txtView"/>
+		</layout>
+	</head>
+	<body>
+		<seq dur="22.365s">
+			<par id="p44" endsync="last">
+				<text src="content.html#rgn_cnt_0044" id="rgn_txt_0008_0001"/>
+				<seq>
+					<audio src="dtb_0008.mp3" clip-begin="npt=0.000s" clip-end="npt=1.717s" id="rgn_aud_0008_0001"/>
+				</seq>
+			</par>
+			<par id="p45" endsync="last">
+				<text src="content.html#rgn_cnt_0045" id="rgn_txt_0008_0002"/>
+				<seq>
+					<audio src="dtb_0008.mp3" clip-begin="npt=1.717s" clip-end="npt=9.679s" id="rgn_aud_0008_0002"/>
+				</seq>
+			</par>
+			<par id="p46" endsync="last">
+				<text src="content.html#rgn_cnt_0046" id="rgn_txt_0008_0003"/>
+				<seq>
+					<audio src="dtb_0008.mp3" clip-begin="npt=9.679s" clip-end="npt=16.258s" id="rgn_aud_0008_0003"/>
+				</seq>
+			</par>
+			<par id="p47" endsync="last">
+				<text src="content.html#rgn_cnt_0047" id="rgn_txt_0008_0004"/>
+				<seq>
+					<audio src="dtb_0008.mp3" clip-begin="npt=16.258s" clip-end="npt=22.365s" id="rgn_aud_0008_0004"/>
+				</seq>
+			</par>
+		</seq>
+	</body>
+</smil>

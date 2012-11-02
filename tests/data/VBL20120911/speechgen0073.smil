@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE smil
+  PUBLIC "-//NISO//DTD dtbsmil 2005-2//EN" "http://www.daisy.org/z3986/2005/dtbsmil-2005-2.dtd">
+<smil xmlns="http://www.w3.org/2001/SMIL20/">
+	  <head>
+		    <meta content="Vbl11092012" name="dtb:uid"/>
+		    <meta content="TPB Narrator" name="dtb:generator"/>
+		    <meta content="1:35:55.532" name="dtb:totalElapsedTime"/>
+		
+	  </head>
+	  <body>
+		    <seq dur="0:00:45.933" fill="remove" id="mseq">
+		       <par id="tcp1164">
+            <text id="text1164" src="dtbook.xml#dtb1164"/>
+            <audio clipBegin="0:00:00" clipEnd="0:00:04.560" src="speechgen0073.mp3"/>
+         </par>
+         <par id="tcp1165">
+            <text id="text1165" src="dtbook.xml#dtb1165"/>
+            <audio clipBegin="0:00:04.560" clipEnd="0:00:06.697" src="speechgen0073.mp3"/>
+         </par>
+         <par id="tcp1166">
+            <text id="text1166" src="dtbook.xml#dtb1166"/>
+            <audio clipBegin="0:00:06.697" clipEnd="0:00:19.273" src="speechgen0073.mp3"/>
+         </par>
+         <par id="tcp1167">
+            <text id="text1167" src="dtbook.xml#dtb1167"/>
+            <audio clipBegin="0:00:19.273" clipEnd="0:00:25.148" src="speechgen0073.mp3"/>
+         </par>
+         <par id="tcp1168">
+            <text id="text1168" src="dtbook.xml#dtb1168"/>
+            <audio clipBegin="0:00:25.148" clipEnd="0:00:33.904" src="speechgen0073.mp3"/>
+         </par>
+         <par id="tcp1169">
+            <text id="text1169" src="dtbook.xml#dtb1169"/>
+            <audio clipBegin="0:00:33.904" clipEnd="0:00:38.870" src="speechgen0073.mp3"/>
+         </par>
+         <par id="tcp1170">
+            <text id="text1170" src="dtbook.xml#dtb1170"/>
+            <audio clipBegin="0:00:38.870" clipEnd="0:00:43.945" src="speechgen0073.mp3"/>
+         </par>
+         <par id="tcp1171">
+            <text id="text1171" src="dtbook.xml#dtb1171"/>
+            <audio clipBegin="0:00:43.945" clipEnd="0:00:45.933" src="speechgen0073.mp3"/>
+         </par>
+      </seq>
+	  </body>
+</smil>

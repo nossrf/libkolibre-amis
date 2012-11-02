@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE smil PUBLIC "-//W3C//DTD SMIL 1.0//EN" "SMIL10.dtd">
+<smil>
+    <head>
+        <meta name="ncc:generator" content="EasePublisher 2.13 Build 163 # 044FSI210083735"/>
+        <meta name="dc:format" content="Daisy 2.02"/>
+        <meta name="dc:title" content="DAISY: A GLOBAL EFFORT TO PROVIDE ACCESSIBLE INFORMATION"/>
+        <meta name="dc:identifier" content="AUTO-UID-5230414073153262592"/>
+        <meta name="ncc:timeInThisSmil" content="00:22:36.564"/>
+        <layout>
+            <region id="txtView"/>
+        </layout>
+    </head>
+    <body>
+        <ref title="DAISY: A GLOBAL EFFORT TO PROVIDE ACCESSIBLE INFORMATION" src="d202_1.smil#txt_1" id="smil_0001"/>
+        <ref title="DAISY: A Global Effort to Provide Accessible Information" src="d202_2.smil#txt_5" id="smil_0002"/>
+        <ref title="GENERAL OVERVIEW OF DAISY" src="d202_3.smil#txt_11" id="smil_0003"/>
+        <ref title="Vision" src="d202_4.smil#txt_12" id="smil_0004"/>
+        <ref title="Mission" src="d202_5.smil#txt_14" id="smil_0005"/>
+        <ref title="Navigation" src="d202_6.smil#txt_16" id="smil_0006"/>
+        <ref title="Perception and Multimedia Synchronization" src="d202_7.smil#txt_53" id="smil_0007"/>
+        <ref title="Standardization" src="d202_8.smil#txt_75" id="smil_0008"/>
+        <ref title="Open Source and Open Standards" src="d202_9.smil#txt_90" id="smil_0009"/>
+        <ref title="The DAISY Standard and DAISY Tools" src="d202_10.smil#txt_96" id="smil_0010"/>
+        <ref title="DAISY for Everyone, Everywhere" src="d202_11.smil#txt_118" id="smil_0011"/>
+        <ref title="8DAISY Pipeline" src="d202_12.smil#txt_140" id="smil_0012"/>
+        <ref title="Several Flavours of DAISY Pipeline" src="d202_13.smil#txt_159" id="smil_0013"/>
+        <ref title="Command Line" src="d202_14.smil#txt_161" id="smil_0014"/>
+        <ref title="DAISY Membership Benefits" src="d202_15.smil#txt_182" id="smil_0015"/>
+        <ref title="Join a collective voice around the world." src="d202_16.smil#txt_186" id="smil_0016"/>
+        <ref title="Expand your organization’s reach. Gain exposure. Find new customers." src="d202_17.smil#txt_190" id="smil_0017"/>
+        <ref title="Gain knowledge and support for competitive advantage" src="d202_18.smil#txt_194" id="smil_0018"/>
+        <ref title="DAISY Membership Options:" src="d202_19.smil#txt_199" id="smil_0019"/>
+        <ref title="Full Membership" src="d202_20.smil#txt_200" id="smil_0020"/>
+        <ref title="Associate membership" src="d202_21.smil#txt_206" id="smil_0021"/>
+        <ref title="and/or distribute accessible (multi)media for people with print disabilities or may serve the community in other related ways. Included are large educational institutes wishing to participate in the Consortium at this level, associations representing individuals with a print disability, or other service providers. Associate Members share the Full Members' dedication to the worldwide DAISY movement but may serve smaller populations or have fewer available resources. Associate Member annual dues are $2,755. Associate Members in developing countries benefit from the Consortium's graduated membership fee structure which is based on the World Bank classifications (determined by the per capita income of the country). Friends of DAISY Consortium" src="d202_22.smil#txt_209" id="smil_0022"/>
+    </body>
+</smil>

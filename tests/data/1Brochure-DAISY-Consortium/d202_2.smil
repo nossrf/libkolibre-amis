@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE smil PUBLIC "-//W3C//DTD SMIL 1.0//EN" "SMIL10.dtd">
+<smil>
+	<head>
+		<meta name="dc:format" content="Daisy 2.02"/>
+		<meta name="ncc:timeInThisSmil" content="00:00:22.853"/>
+		<meta name="ncc:totalElapsedTime" content="00:00:09.835"/>
+		<layout>
+			<region id="txt-view"/>
+		</layout>
+		<meta name="ncc:generator" content="EasePublisher 2.13 Build 163 # 044FSI210083735"/>
+    <meta name="title" content="DAISY: A Global Effort to Provide Accessible Information"/>
+    <meta name="dc:title" content="DAISY: A GLOBAL EFFORT TO PROVIDE ACCESSIBLE INFORMATION"/>
+    <meta name="dc:identifier" content="AUTO-UID-5230414073153262592"/>
+  </head>
+	<body>
+		<seq dur="22.853s">
+			<par endsync="last" id="par_5">
+				<text src="DAISYBrochureForStickV3.html#dol_1_2_d2e29" id="txt_5"/>
+				<seq>
+					<audio src="d20009.mp3" clip-begin="npt=0.000s" clip-end="npt=3.893s" id="audio_0001"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_6">
+				<text src="DAISYBrochureForStickV3.html#dol_1_2_id_12" id="txt_6"/>
+				<seq>
+					<audio src="d20009.mp3" clip-begin="npt=3.893s" clip-end="npt=7.147s" id="audio_0002"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_7">
+				<text src="DAISYBrochureForStickV3.html#dol_1_2_id_19" id="txt_7"/>
+				<seq>
+					<audio src="d20009.mp3" clip-begin="npt=7.147s" clip-end="npt=8.609s" id="audio_0003"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_8">
+				<text src="DAISYBrochureForStickV3.html#dol_1_2_id_21" id="txt_8"/>
+				<seq>
+					<audio src="d20009.mp3" clip-begin="npt=8.609s" clip-end="npt=18.365s" id="audio_0004"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_9">
+				<text src="DAISYBrochureForStickV3.html#dol_1_2_id_27" id="txt_9"/>
+				<seq>
+					<audio src="d20009.mp3" clip-begin="npt=18.365s" clip-end="npt=22.141s" id="audio_0005"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_10" system-required="pagenumber-on">
+				<text src="DAISYBrochureForStickV3.html#dol_1_2_page1" id="txt_10"/>
+				<seq>
+					<audio src="d20009.mp3" clip-begin="npt=22.141s" clip-end="npt=22.853s" id="audio_0006"/>
+				</seq>
+			</par>
+		</seq>
+	</body>
+</smil>

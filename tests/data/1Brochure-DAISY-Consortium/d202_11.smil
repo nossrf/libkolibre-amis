@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE smil PUBLIC "-//W3C//DTD SMIL 1.0//EN" "SMIL10.dtd">
+<smil>
+	<head>
+		<meta name="dc:format" content="Daisy 2.02"/>
+		<meta name="ncc:timeInThisSmil" content="00:02:59.746"/>
+		<meta name="ncc:totalElapsedTime" content="00:11:17.201"/>
+		<layout>
+			<region id="txt-view"/>
+		</layout>
+		<meta name="ncc:generator" content="EasePublisher 2.13 Build 163 # 044FSI210083735"/>
+    <meta name="title" content="DAISY for Everyone, Everywhere"/>
+    <meta name="dc:title" content="DAISY: A GLOBAL EFFORT TO PROVIDE ACCESSIBLE INFORMATION"/>
+    <meta name="dc:identifier" content="AUTO-UID-5230414073153262592"/>
+  </head>
+	<body>
+		<seq dur="179.746s">
+			<par endsync="last" id="par_118">
+				<text src="DAISYBrochureForStickV3.html#dol_1_11_d2e450" id="txt_118"/>
+				<seq>
+					<audio src="d200019.mp3" clip-begin="npt=0.000s" clip-end="npt=2.483s" id="audio_0001"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_119">
+				<text src="DAISYBrochureForStickV3.html#dol_1_11_id_255" id="txt_119"/>
+				<seq>
+					<audio src="d200019.mp3" clip-begin="npt=2.483s" clip-end="npt=11.100s" id="audio_0002"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_120">
+				<text src="DAISYBrochureForStickV3.html#dol_1_11_id_256" id="txt_120"/>
+				<seq>
+					<audio src="d200019.mp3" clip-begin="npt=11.100s" clip-end="npt=21.708s" id="audio_0003"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_121">
+				<text src="DAISYBrochureForStickV3.html#dol_1_11_id_259" id="txt_121"/>
+				<seq>
+					<audio src="d200019.mp3" clip-begin="npt=21.708s" clip-end="npt=34.734s" id="audio_0004"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_122">
+				<text src="DAISYBrochureForStickV3.html#dol_1_11_id_261" id="txt_122"/>
+				<seq>
+					<audio src="d200019.mp3" clip-begin="npt=34.734s" clip-end="npt=50.831s" id="audio_0005"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_123">
+				<text src="DAISYBrochureForStickV3.html#dol_1_11_id_262" id="txt_123"/>
+				<seq>
+					<audio src="d200019.mp3" clip-begin="npt=50.831s" clip-end="npt=57.986s" id="audio_0006"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_124" system-required="pagenumber-on">
+				<text src="DAISYBrochureForStickV3.html#dol_1_11_page7" id="txt_124"/>
+				<seq>
+					<audio src="d200019.mp3" clip-begin="npt=57.986s" clip-end="npt=58.845s" id="audio_0007"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_125">
+				<text src="DAISYBrochureForStickV3.html#dol_1_11_id_267" id="txt_125"/>
+				<seq>
+					<audio src="d200019.mp3" clip-begin="npt=58.845s" clip-end="npt=66.551s" id="audio_0008"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_126">
+				<text src="DAISYBrochureForStickV3.html#dol_1_11_id_268" id="txt_126"/>
+				<seq>
+					<audio src="d200019.mp3" clip-begin="npt=66.551s" clip-end="npt=79.591s" id="audio_0009"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_127">
+				<text src="DAISYBrochureForStickV3.html#dol_1_11_id_270" id="txt_127"/>
+				<seq>
+					<audio src="d200019.mp3" clip-begin="npt=79.591s" clip-end="npt=88.150s" id="audio_0010"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_128">
+				<text src="DAISYBrochureForStickV3.html#dol_1_11_id_271" id="txt_128"/>
+				<seq>
+					<audio src="d200019.mp3" clip-begin="npt=88.150s" clip-end="npt=92.903s" id="audio_0011"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_129">
+				<text src="DAISYBrochureForStickV3.html#dol_1_11_id_272" id="txt_129"/>
+				<seq>
+					<audio src="d200019.mp3" clip-begin="npt=92.903s" clip-end="npt=98.229s" id="audio_0012"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_130">
+				<text src="DAISYBrochureForStickV3.html#dol_1_11_id_275" id="txt_130"/>
+				<seq>
+					<audio src="d200019.mp3" clip-begin="npt=98.229s" clip-end="npt=105.245s" id="audio_0013"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_131">
+				<text src="DAISYBrochureForStickV3.html#dol_1_11_id_276" id="txt_131"/>
+				<seq>
+					<audio src="d200019.mp3" clip-begin="npt=105.245s" clip-end="npt=115.464s" id="audio_0014"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_132">
+				<text src="DAISYBrochureForStickV3.html#dol_1_11_id_281" id="txt_132"/>
+				<seq>
+					<audio src="d200019.mp3" clip-begin="npt=115.464s" clip-end="npt=123.677s" id="audio_0015"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_133">
+				<text src="DAISYBrochureForStickV3.html#dol_1_11_id_284" id="txt_133"/>
+				<seq>
+					<audio src="d200019.mp3" clip-begin="npt=123.677s" clip-end="npt=136.262s" id="audio_0016"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_134">
+				<text src="DAISYBrochureForStickV3.html#dol_1_11_id_287" id="txt_134"/>
+				<seq>
+					<audio src="d200019.mp3" clip-begin="npt=136.262s" clip-end="npt=141.353s" id="audio_0017"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_135">
+				<text src="DAISYBrochureForStickV3.html#dol_1_11_id_290" id="txt_135"/>
+				<seq>
+					<audio src="d200019.mp3" clip-begin="npt=141.353s" clip-end="npt=149.243s" id="audio_0018"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_136">
+				<text src="DAISYBrochureForStickV3.html#dol_1_11_id_291" id="txt_136"/>
+				<seq>
+					<audio src="d200019.mp3" clip-begin="npt=149.243s" clip-end="npt=154.459s" id="audio_0019"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_137">
+				<text src="DAISYBrochureForStickV3.html#dol_1_11_id_293" id="txt_137"/>
+				<seq>
+					<audio src="d200019.mp3" clip-begin="npt=154.459s" clip-end="npt=157.463s" id="audio_0020"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_138">
+				<text src="DAISYBrochureForStickV3.html#dol_1_11_id_297" id="txt_138"/>
+				<seq>
+					<audio src="d200019.mp3" clip-begin="npt=157.463s" clip-end="npt=166.169s" id="audio_0021"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_139">
+				<text src="DAISYBrochureForStickV3.html#dol_1_11_id_300" id="txt_139"/>
+				<seq>
+					<audio src="d200019.mp3" clip-begin="npt=166.169s" clip-end="npt=179.746s" id="audio_0022"/>
+				</seq>
+			</par>
+		</seq>
+	</body>
+</smil>

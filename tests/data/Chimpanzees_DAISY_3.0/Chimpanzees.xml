@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dtbook PUBLIC "-//NISO//DTD dtbook 2005-2//EN" "http://www.daisy.org/z3986/2005/dtbook-2005-2.dtd" [ 
+   <!ENTITY % MATHML.prefixed "INCLUDE" > 
+   <!ATTLIST w 
+       gh:voiceS   CDATA        #IMPLIED 
+       gh:voiceR   CDATA        #IMPLIED 
+       gh:pronR   CDATA        #IMPLIED 
+     > 
+   <!ATTLIST w 
+       gh:pronS   CDATA        #IMPLIED 
+     > 
+   <!ATTLIST dtbook 
+       xmlns:gh   CDATA        #IMPLIED 
+     > 
+   <!ATTLIST list 
+       style   CDATA        #IMPLIED 
+     > 
+      <!ATTLIST td 
+       style   CDATA        #IMPLIED 
+     > 
+]>
+<dtbook version="2005-2" xmlns="http://www.daisy.org/z3986/2005/dtbook/" xmlns:gh="SYSTEM">
+	<head>
+	<meta name="dtb:uid" content="ghBOOK1211212736"/><meta name="dc:Title" content="Chimpanzees"/></head>
+	<book>
+		<frontmatter><doctitle id="ghGen2" smilref="Chimpanzees.smil#ghGen2">Chimpanzees</doctitle>
+			<level1>
+				<pagenum id="gh_pageRef1" smilref="Chimpanzees.smil#gh_pageRef1">1</pagenum>
+				<h1 id="ghGen3" smilref="Chimpanzees.smil#ghGen3">Chimpanzees</h1>
+
+				<img src="img/page01a.jpg" alt="A chimpanzee's face." id="ghGen4"/>
+
+				<p id="ghGen5">
+					<sent id="ghGen6" smilref="Chimpanzees.smil#ghGen6">ABDO Publishing Company</sent>
+				</p>
+				<p id="ghGen7">
+					<sent id="ghGen8" smilref="Chimpanzees.smil#ghGen8">A Buddy Book by Julie Murray</sent>
+				</p>
+				<pagenum id="gh_pageRef2" smilref="Chimpanzees.smil#gh_pageRef2">2</pagenum>
+
+				<p id="ghGen9">
+					<sent id="ghGen10" smilref="Chimpanzees.smil#ghGen10">Visit us at: <w gh:pronS="w w w dot abdo pub dot com" gh:pronR="w w w dot abdo pub dot com">www.abdopub.com</w></sent>
+				</p>
+				<p id="ghGen11">
+					<sent id="ghGen12" smilref="Chimpanzees.smil#ghGen12">Published by Buddy Books, an imprint of ABDO Publishing Company, 4940 Viking Drive, Suite <w gh:pronS="six twenty two" gh:pronR="six twenty two">622</w>, Edina, Minnesota <w gh:pronS="5 5 4 3 5 " gh:pronR="5 5 4 3 5 ">55435</w>. </sent>
+					<sent id="ghGen13" smilref="Chimpanzees.smil#ghGen13">Copyright © 2002 by Abdo Consulting Group, Inc. International copyrights reserved in all countries. </sent>
+					<sent id="ghGen14" smilref="Chimpanzees.smil#ghGen14">No part of this book may be reproduced in any form without written permission from the publisher. </sent>
+				</p>
+				<p id="ghGen15">
+					<sent id="ghGen16" smilref="Chimpanzees.smil#ghGen16">Printed in the United States. </sent>
+				</p>
+				<p id="ghGen17">
+					<sent id="ghGen18" smilref="Chimpanzees.smil#ghGen18">Edited by: Christy DeVillier</sent>
+				</p>
+				<p id="ghGen19">
+					<sent id="ghGen20" smilref="Chimpanzees.smil#ghGen20">Contributing Editors: Matt Ray, Michael <w gh:pronS="p " gh:pronR="p ">P.</w> Goecke</sent>
+				</p>
+				<p id="ghGen21">
+					<sent id="ghGen22" smilref="Chimpanzees.smil#ghGen22">Graphic Design: <w gh:pronS="mar ee uh ">Maria</w> <w gh:pronS="hose lee " gh:pronR="hose lee ">Hosley</w></sent>
+				</p>
+				<p id="ghGen23">
+					<sent id="ghGen24" smilref="Chimpanzees.smil#ghGen24">Image Research: Deborah <w gh:pronS="cold iron " gh:pronR="cold iron ">Coldiron</w></sent>
+				</p>
+				<p id="ghGen25">
+					<sent id="ghGen26" smilref="Chimpanzees.smil#ghGen26">Photographs: Eyewire, Minden Pictures</sent>
+				</p>
+			</level1>
+			<level1>
+				<h1 id="ghGen27" smilref="Chimpanzees.smil#ghGen27">Library of Congress Cataloging-in-Publication Data</h1>
+				<p id="ghGen28">
+					<sent id="ghGen29" smilref="Chimpanzees.smil#ghGen29">Murray, Julie, 1969-</sent>
+				</p>
+				<p id="ghGen30">
+					<sent id="ghGen31" smilref="Chimpanzees.smil#ghGen31">Chimpanzees/Julie Murray. </sent>
+				</p>
+				<p id="ghGen32">
+					<sent id="ghGen33" smilref="Chimpanzees.smil#ghGen33"><w gh:pronS="p " gh:pronR="p ">p.</w> <w gh:pronS="see emm " gh:pronR="see emm ">cm.</w> - (Animal kingdom)</sent>
+				</p>
+				<p id="ghGen34">
+					<sent id="ghGen35" smilref="Chimpanzees.smil#ghGen35">Summary: Introduces the habitat and characteristics of chimpanzees, and briefly describes Jane Goodall's work with them. </sent>
+				</p>
+				<p id="ghGen36">
+					<sent id="ghGen37" smilref="Chimpanzees.smil#ghGen37">ISBN <w gh:pronS="1 dash 5 7 7 6 5 dash 7 1 3 dash 6 " gh:pronR="1 dash 5 7 7 6 5 dash 7 1 3 dash 6 ">1-57765-713-6</w></sent>
+				</p>
+				<p id="ghGen38">
+					<sent id="ghGen39" smilref="Chimpanzees.smil#ghGen39">1. Chimpanzee<w gh:pronS=" dash " gh:pronR=" dash ">-</w>Juvenile literature. </sent>
+					<sent id="ghGen40" smilref="Chimpanzees.smil#ghGen40">[1. Chimpanzee.] <w gh:pronS="one " gh:pronR="one ">I.</w> Title. </sent>
+					<sent id="ghGen41" smilref="Chimpanzees.smil#ghGen41"><w gh:pronS="two " gh:pronR="two ">II.</w> Animal kingdom (Edina, <w gh:pronS="Minnesota " gh:pronR="Minnesota ">Minn.</w>)</sent>
+				</p>
+				<p id="ghGen42">
+					<sent id="ghGen43" smilref="Chimpanzees.smil#ghGen43"><w gh:pronS="q l 7 3 7 point pee 9 6 " gh:pronR="q l 7 3 7 point p 9 6 ">QL737.P96</w> <w gh:pronS="emm, 8 7 3 " gh:pronR="emm 8 7 3 ">M873</w> 2002</sent>
+				</p>
+				<p id="ghGen44">
+					<sent id="ghGen45" smilref="Chimpanzees.smil#ghGen45"><w gh:pronS="5 9 9 point 8 8 5 " gh:pronR="5 9 9 point 8 8 5 ">599.885</w><w gh:pronS=" dash " gh:pronR=" dash ">-</w><w gh:pronS="d c 2 1 " gh:pronR="d c 2 1 ">dc21</w></sent>
+				</p>
+				<p id="ghGen46">
+					<sent id="ghGen47" smilref="Chimpanzees.smil#ghGen47"><w gh:pronS="2 0 0 1 0 4 5 8 9 1 " gh:pronR="2 0 0 1 0 4 5 8 9 1 ">2001045891</w></sent>
+				</p>
+				<pagenum id="gh_pageRef3" smilref="Chimpanzees.smil#gh_pageRef3">3</pagenum>
+			</level1>
+			<level1>
+				<h1 id="ghGen48" smilref="Chimpanzees.smil#ghGen48">Contents</h1>
+				<img src="img/bamboo_short.png" alt="Bamboo clipart." id="ghGen49"/>
+
+
+
+
+				<p id="ghGen50">
+					<sent id="ghGen51" smilref="Chimpanzees.smil#ghGen51">Great Apes</sent>
+
+					<sent id="ghGen52" smilref="Chimpanzees.smil#ghGen52">4</sent>
+				</p>
+
+
+
+
+				<p id="ghGen53">
+					<sent id="ghGen54" smilref="Chimpanzees.smil#ghGen54">Chimpanzees And People</sent>
+
+					<sent id="ghGen55" smilref="Chimpanzees.smil#ghGen55">6</sent>
+				</p>
+
+
+
+
+				<p id="ghGen56">
+					<sent id="ghGen57" smilref="Chimpanzees.smil#ghGen57">What They Look Like</sent>
+
+					<sent id="ghGen58" smilref="Chimpanzees.smil#ghGen58">9</sent>
+				</p>
+
+
+
+
+				<p id="ghGen59">
+					<sent id="ghGen60" smilref="Chimpanzees.smil#ghGen60">The Chimpanzee's Home</sent>
+
+					<sent id="ghGen61" smilref="Chimpanzees.smil#ghGen61">11</sent>
+				</p>
+
+
+
+
+				<p id="ghGen62">
+					<sent id="ghGen63" smilref="Chimpanzees.smil#ghGen63">Everyday Life</sent>
+
+					<sent id="ghGen64" smilref="Chimpanzees.smil#ghGen64">14</sent>
+				</p>
+
+
+
+
+				<p id="ghGen65">
+					<sent id="ghGen66" smilref="Chimpanzees.smil#ghGen66">Chimp Communities</sent>
+
+					<sent id="ghGen67" smilref="Chimpanzees.smil#ghGen67">16</sent>
+				</p>
+
+
+
+
+				<p id="ghGen68">
+					<sent id="ghGen69" smilref="Chimpanzees.smil#ghGen69">Baby Chimps</sent>
+
+					<sent id="ghGen70" smilref="Chimpanzees.smil#ghGen70">18</sent>
+				</p>
+
+
+
+
+				<p id="ghGen71">
+					<sent id="ghGen72" smilref="Chimpanzees.smil#ghGen72">Jane Goodall</sent>
+
+					<sent id="ghGen73" smilref="Chimpanzees.smil#ghGen73">20</sent>
+				</p>
+
+
+
+
+				<p id="ghGen74">
+					<sent id="ghGen75" smilref="Chimpanzees.smil#ghGen75">Important Words</sent>
+
+					<sent id="ghGen76" smilref="Chimpanzees.smil#ghGen76">22</sent>
+				</p>
+
+
+
+
+				<p id="ghGen77">
+					<sent id="ghGen78" smilref="Chimpanzees.smil#ghGen78">Web Sites</sent>
+
+					<sent id="ghGen79" smilref="Chimpanzees.smil#ghGen79">23</sent>
+				</p>
+
+
+
+
+				<p id="ghGen80">
+					<sent id="ghGen81" smilref="Chimpanzees.smil#ghGen81">Index</sent>
+
+					<sent id="ghGen82" smilref="Chimpanzees.smil#ghGen82">24</sent>
+				</p>
+</level1>
+</frontmatter>
+<bodymatter>
+				
+			
+			<level1>
+<pagenum id="gh_pageRef4" smilref="Chimpanzees.smil#gh_pageRef4">4</pagenum>
+				<h1 id="ghGen83" smilref="Chimpanzees.smil#ghGen83">Great Apes</h1>
+				<img src="img/bamboo_long.png" alt="Bamboo clipart." id="ghGen84"/>
+
+
+				<p id="ghGen85">
+					<sent id="ghGen86" smilref="Chimpanzees.smil#ghGen86">What do chimpanzees, gorillas, orangutans, and bonobos have in common? </sent>
+					<sent id="ghGen87" smilref="Chimpanzees.smil#ghGen87">All of these animals are great apes. </sent>
+					<sent id="ghGen88" smilref="Chimpanzees.smil#ghGen88">Great apes are bigger than monkeys and lemurs. </sent>
+					<sent id="ghGen89" smilref="Chimpanzees.smil#ghGen89">Great apes do not have tails. </sent>
+					<sent id="ghGen90" smilref="Chimpanzees.smil#ghGen90">Chimpanzees are the smallest of the great apes. </sent>
+					<sent id="ghGen91" smilref="Chimpanzees.smil#ghGen91">Chimpanzees may also be the smartest. </sent>
+				</p>
+				<pagenum id="gh_pageRef5" smilref="Chimpanzees.smil#gh_pageRef5">5</pagenum>
+				<img src="img/page05a.jpg" alt="Three Chimpanzees sitting in a tree." id="ghGen92"/>
+				<prodnote render="optional" id="ghGen93" smilref="Chimpanzees.smil#ghGen93">
+					<p id="ghGen94">
+						<sent id="ghGen95">Picture shown with the caption, "Chimpanzees are great apes."</sent>
+					</p>
+				</prodnote>
+				<pagenum id="gh_pageRef6" smilref="Chimpanzees.smil#gh_pageRef6">6</pagenum>
+			</level1>
+			<level1>
+				<h1 id="ghGen96" smilref="Chimpanzees.smil#ghGen96">Chimpanzees And People</h1>
+				<img src="img/bamboo_long.png" alt="Bamboo clipart." id="ghGen97"/>
+				<p id="ghGen98">
+					<sent id="ghGen99" smilref="Chimpanzees.smil#ghGen99">Great apes are <strong><w gh:pronR="prime-eights ">primates</w></strong>. </sent>
+					<sent id="ghGen100" smilref="Chimpanzees.smil#ghGen100"><w gh:pronR="prime-eights ">Primates</w> have large brains. </sent>
+					<sent id="ghGen101" smilref="Chimpanzees.smil#ghGen101">They have eyes that look forward. </sent>
+					<sent id="ghGen102" smilref="Chimpanzees.smil#ghGen102">People belong to the primate group, too. </sent>
+				</p>
+				<p id="ghGen103">
+					<sent id="ghGen104" smilref="Chimpanzees.smil#ghGen104">Chimpanzees, or chimps, have a lot in common with people. </sent>
+					<sent id="ghGen105" smilref="Chimpanzees.smil#ghGen105">Can you grab things with your hands? </sent>
+					<sent id="ghGen106" smilref="Chimpanzees.smil#ghGen106">Can you <strong>communicate</strong> with your family and friends? </sent>
+					<sent id="ghGen107" smilref="Chimpanzees.smil#ghGen107">Can you use tools? </sent>
+					<sent id="ghGen108" smilref="Chimpanzees.smil#ghGen108">Chimps can do all of these things, too. </sent>
+				</p>
+				<pagenum id="gh_pageRef7" smilref="Chimpanzees.smil#gh_pageRef7">7</pagenum>
+				<img src="img/page07a.jpg" alt="Three Chimpanzees sitting in a tree." id="ghGen109"/>
+				<prodnote render="optional" id="ghGen110" smilref="Chimpanzees.smil#ghGen110">
+					<p id="ghGen111">
+						<sent id="ghGen112">Two pictures shown with the caption, "Do chimps have some of the same feelings as people?"</sent>
+					</p>
+				</prodnote>
+				<p id="ghGen113">
+					<sent id="ghGen114" smilref="Chimpanzees.smil#ghGen114">Like people, chimps tickle each other. </sent>
+					<sent id="ghGen115" smilref="Chimpanzees.smil#ghGen115">Chimps hug and kiss each other. </sent>
+					<sent id="ghGen116" smilref="Chimpanzees.smil#ghGen116">Many people believe chimps feel joy, sadness, and fear. </sent>
+				</p>
+				<pagenum id="gh_pageRef8" smilref="Chimpanzees.smil#gh_pageRef8">8</pagenum>
+			</level1>
+			<level1>
+				<h1 id="ghGen117" smilref="Chimpanzees.smil#ghGen117">Talking To Chimps</h1>
+				<p id="ghGen118">
+					<sent id="ghGen119" smilref="Chimpanzees.smil#ghGen119">Some people teach chimps American Sign Language. </sent>
+					<sent id="ghGen120" smilref="Chimpanzees.smil#ghGen120">American Sign Language is talking with your hands. </sent>
+					<sent id="ghGen121" smilref="Chimpanzees.smil#ghGen121">Chimps can talk to people and other chimps through "signing."</sent>
+				</p>
+				<img src="img/page08a.png" alt="Examples of American Sign language symbols made with the hand." id="ghGen122"/>
+				<prodnote render="optional" id="ghGen123" smilref="Chimpanzees.smil#ghGen123">
+					<p id="ghGen124">
+						<sent id="ghGen125">Diagram examples of American Sign Language are shown. </sent>
+					</p>
+				</prodnote>
+				<pagenum id="gh_pageRef9" smilref="Chimpanzees.smil#gh_pageRef9">9</pagenum>
+			</level1>
+			<level1>
+				<h1 id="ghGen126" smilref="Chimpanzees.smil#ghGen126">What They Look Like</h1>
+				<img src="img/bamboo_long.png" alt="Bamboo clipart." id="ghGen127"/>
+				<p id="ghGen128">
+					<sent id="ghGen129" smilref="Chimpanzees.smil#ghGen129">Chimpanzees have dark fur all over. </sent>
+					<sent id="ghGen130" smilref="Chimpanzees.smil#ghGen130">This hair does not grow on a chimp's face and ears. </sent>
+					<sent id="ghGen131" smilref="Chimpanzees.smil#ghGen131">Parts of a chimp's hands and feet are hairless, too. </sent>
+				</p>
+				<img src="img/page09b.jpg" alt="A chimp with black fur, sitting in a tree." id="ghGen132"/>
+				<prodnote render="optional" id="ghGen133" smilref="Chimpanzees.smil#ghGen133">
+					<p id="ghGen134">
+						<sent id="ghGen135">Picture shown with the caption, "A chimp's fur can be black or brown."</sent>
+					</p>
+				</prodnote>
+				<pagenum id="gh_pageRef10" smilref="Chimpanzees.smil#gh_pageRef10">10</pagenum>
+				<p id="ghGen136">
+					<sent id="ghGen137" smilref="Chimpanzees.smil#ghGen137">Chimpanzees are about four feet (one meter) tall. </sent>
+					<sent id="ghGen138" smilref="Chimpanzees.smil#ghGen138">A grown male chimp can weigh as much as 120 pounds (54 kg). </sent>
+					<sent id="ghGen139" smilref="Chimpanzees.smil#ghGen139">Female chimps are smaller. </sent>
+				</p>
+				<p id="ghGen140">
+					<sent id="ghGen141" smilref="Chimpanzees.smil#ghGen141">These <strong><w gh:pronR="prime-eights ">primates</w></strong> are strong for their size. </sent>
+					<sent id="ghGen142" smilref="Chimpanzees.smil#ghGen142">Chimps are three times stronger than people!</sent>
+				</p>
+				<img src="img/page10a.png" alt="Shadow outlines of a male and female chimps, showing the male to be a bit bigger at about 4 feet (1 meter) high." id="ghGen143"/>
+				<prodnote render="optional" id="ghGen144" smilref="Chimpanzees.smil#ghGen144">
+					<p id="ghGen145">
+						<sent id="ghGen146">A diagram shows the size difference between male and female chimps with the caption, "Male chimps are a little bigger than female chimps."</sent>
+					</p>
+				</prodnote>
+				<pagenum id="gh_pageRef11" smilref="Chimpanzees.smil#gh_pageRef11">11</pagenum>
+			</level1>
+			<level1>
+				<h1 id="ghGen147" smilref="Chimpanzees.smil#ghGen147">The Chimpanzee's Home</h1>
+				<img src="img/bamboo_long.png" alt="Bamboo clipart." id="ghGen148"/>
+				<p id="ghGen149">
+					<br/>
+					<br/>
+				</p>
+				<img src="img/page11b.jpg" alt="Chimp in a tree, hanging from branches by the feet and hands." id="ghGen150"/>
+				<prodnote render="optional" id="ghGen151" smilref="Chimpanzees.smil#ghGen151">
+					<p id="ghGen152">
+						<sent id="ghGen153">Picture shown with the caption, "Chimps spend a lot of time in trees."</sent>
+					</p>
+				</prodnote>
+				<p id="ghGen154">
+					<sent id="ghGen155" smilref="Chimpanzees.smil#ghGen155">Chimpanzees live in parts of central and western Africa. </sent>
+					<sent id="ghGen156" smilref="Chimpanzees.smil#ghGen156">They like rain forests, grasslands, and woodlands. </sent>
+				</p>
+				<pagenum id="gh_pageRef12" smilref="Chimpanzees.smil#gh_pageRef12">12</pagenum>
+				<p id="ghGen157">
+					<sent id="ghGen158" smilref="Chimpanzees.smil#ghGen158">Chimpanzees are <strong>arboreal</strong> animals. </sent>
+					<sent id="ghGen159" smilref="Chimpanzees.smil#ghGen159">An arboreal animal spends most of its life in trees. </sent>
+					<sent id="ghGen160" smilref="Chimpanzees.smil#ghGen160">Trees are a safe place for chimps. </sent>
+					<sent id="ghGen161" smilref="Chimpanzees.smil#ghGen161"><strong>Predators</strong> cannot always catch chimps high in the trees. </sent>
+				</p>
+				<pagenum id="gh_pageRef13" smilref="Chimpanzees.smil#gh_pageRef13">13</pagenum>
+				<img src="img/page13a.jpg" alt="A mother chimp rests with her baby in their treetop nest." id="ghGen162"/>
+				<prodnote render="optional" id="ghGen163" smilref="Chimpanzees.smil#ghGen163">
+					<p id="ghGen164">
+						<sent id="ghGen165">Picture shown with the caption, "A mother chimp rests with her baby in their treetop nest."</sent>
+					</p>
+				</prodnote>
+				<p id="ghGen166">
+					<sent id="ghGen167" smilref="Chimpanzees.smil#ghGen167">At night, chimps sleep in the trees. </sent>
+					<sent id="ghGen168" smilref="Chimpanzees.smil#ghGen168">They build nests with branches and leaves. </sent>
+					<sent id="ghGen169" smilref="Chimpanzees.smil#ghGen169">These nests are soft beds for the sleeping chimps. </sent>
+				</p>
+				<pagenum id="gh_pageRef14" smilref="Chimpanzees.smil#gh_pageRef14">14</pagenum>
+			</level1>
+			<level1>
+				<h1 id="ghGen170" smilref="Chimpanzees.smil#ghGen170">Everyday Life</h1>
+				<img src="img/bamboo_long.png" alt="Bamboo clipart." id="ghGen171"/>
+				<p id="ghGen172">
+					<sent id="ghGen173" smilref="Chimpanzees.smil#ghGen173">Chimpanzees <strong>groom</strong> each other often. </sent>
+					<sent id="ghGen174" smilref="Chimpanzees.smil#ghGen174">They stroke each other's fur. </sent>
+					<sent id="ghGen175" smilref="Chimpanzees.smil#ghGen175">They pick out insects, dirt, and seeds. </sent>
+					<sent id="ghGen176" smilref="Chimpanzees.smil#ghGen176">Grooming keeps them clean. </sent>
+					<sent id="ghGen177" smilref="Chimpanzees.smil#ghGen177">Chimps often groom each other after a fight. </sent>
+					<sent id="ghGen178" smilref="Chimpanzees.smil#ghGen178">Grooming calms an excited chimp. </sent>
+				</p>
+				<pagenum id="gh_pageRef15" smilref="Chimpanzees.smil#gh_pageRef15">15</pagenum>
+				<img src="img/page15a.jpg" alt="Each chimp holda a stick or another long object by their mouth to eat off of it. " id="ghGen179"/>
+				<prodnote render="optional" id="ghGen180" smilref="Chimpanzees.smil#ghGen180">
+					<p id="ghGen181">
+						<sent id="ghGen182">Two pictures shown with the caption, "Chimps make and use stick tools to catch termites."</sent>
+					</p>
+				</prodnote>
+				<p id="ghGen183">
+					<sent id="ghGen184" smilref="Chimpanzees.smil#ghGen184">Finding food is a big part of a chimpanzee's day. </sent>
+					<sent id="ghGen185" smilref="Chimpanzees.smil#ghGen185">Chimps eat leaves, flowers, seeds, fruits, insects, nuts, and meat. </sent>
+					<sent id="ghGen186" smilref="Chimpanzees.smil#ghGen186">Chimps can use a stick as a tool to catch termites. </sent>
+					<sent id="ghGen187" smilref="Chimpanzees.smil#ghGen187">They use rocks to crack open nuts. </sent>
+					<sent id="ghGen188" smilref="Chimpanzees.smil#ghGen188">Chimpanzees hunt small animals for meat, too. </sent>
+				</p>
+				<pagenum id="gh_pageRef16" smilref="Chimpanzees.smil#gh_pageRef16">16</pagenum>
+			</level1>
+			<level1>
+				<h1 id="ghGen189" smilref="Chimpanzees.smil#ghGen189">Chimp Communities</h1>
+				<img src="img/bamboo_long.png" alt="Bamboo clipart." id="ghGen190"/>
+				<p id="ghGen191">
+					<sent id="ghGen192" smilref="Chimpanzees.smil#ghGen192">Chimpanzees live in groups, or <strong>communities.</strong> These communities can have as many as 120 chimps. </sent>
+					<sent id="ghGen193" smilref="Chimpanzees.smil#ghGen193">A male chimp stays in one community his whole life. </sent>
+					<sent id="ghGen194" smilref="Chimpanzees.smil#ghGen194">Some female chimps join new communities when they become adults. </sent>
+				</p>
+				<pagenum id="gh_pageRef17" smilref="Chimpanzees.smil#gh_pageRef17">17</pagenum>
+				<img src="img/page17a.jpg" alt="Younger chimp participates with an older chimp to grab insects from a mount of dirt." id="ghGen195"/>
+				<prodnote render="optional" id="ghGen196" smilref="Chimpanzees.smil#ghGen196">
+					<p id="ghGen197">
+						<sent id="ghGen198">Picture shown with the caption, "Young chimps learn from the older chimps in their community."</sent>
+					</p>
+				</prodnote>
+				<p id="ghGen199">
+					<sent id="ghGen200" smilref="Chimpanzees.smil#ghGen200">Each chimp has a place, or rank, in its <strong>community.</strong> The community's leader is always a male chimp. </sent>
+					<sent id="ghGen201" smilref="Chimpanzees.smil#ghGen201">This chimp leader is the <strong>alpha male.</strong> The alpha male is the toughest chimp. </sent>
+					<sent id="ghGen202" smilref="Chimpanzees.smil#ghGen202">He wins his role by scaring the other chimps. </sent>
+				</p>
+				<pagenum id="gh_pageRef18" smilref="Chimpanzees.smil#gh_pageRef18">18</pagenum>
+			</level1>
+			<level1>
+				<h1 id="ghGen203" smilref="Chimpanzees.smil#ghGen203">Baby Chimps</h1>
+				<img src="img/bamboo_long.png" alt="Bamboo clipart." id="ghGen204"/>
+
+				<p id="ghGen205">
+					<sent id="ghGen206" smilref="Chimpanzees.smil#ghGen206">It takes years for a chimpanzee to grow up. </sent>
+					<sent id="ghGen207" smilref="Chimpanzees.smil#ghGen207">Young chimps stay close to their mothers for many years. </sent>
+					<sent id="ghGen208" smilref="Chimpanzees.smil#ghGen208">A baby chimp sleeps in its mother's nest. </sent>
+					<sent id="ghGen209" smilref="Chimpanzees.smil#ghGen209">It drinks its mother's milk until age five or older. </sent>
+				</p>
+				<p id="ghGen210">
+					<sent id="ghGen211" smilref="Chimpanzees.smil#ghGen211">Most chimps are adults by the age of 15. </sent>
+					<sent id="ghGen212" smilref="Chimpanzees.smil#ghGen212">Chimpanzees can live for more than 50 years. </sent>
+				</p>
+				<pagenum id="gh_pageRef19" smilref="Chimpanzees.smil#gh_pageRef19">19</pagenum>
+				<img src="img/page19a.jpg" alt="Mother chimp holding a young chimp." id="ghGen213"/>
+				<prodnote render="optional" id="ghGen214" smilref="Chimpanzees.smil#ghGen214">
+					<p id="ghGen215">
+						<sent id="ghGen216">Picture shown with the caption, "Young chimps stay close to their mothers."</sent>
+					</p>
+				</prodnote>
+				<pagenum id="gh_pageRef20" smilref="Chimpanzees.smil#gh_pageRef20">20</pagenum>
+			</level1>
+			<level1>
+				<h1 id="ghGen217" smilref="Chimpanzees.smil#ghGen217">Jane Goodall</h1>
+				<p id="ghGen218">
+					<sent id="ghGen219" smilref="Chimpanzees.smil#ghGen219">Jane Goodall spent almost 30 years studying chimpanzees in Tanzania, Africa. </sent>
+					<sent id="ghGen220" smilref="Chimpanzees.smil#ghGen220">She was the first to discover that chimps used tools and hunted. </sent>
+					<sent id="ghGen221" smilref="Chimpanzees.smil#ghGen221">Jane's studies show that chimps are like us in many ways. </sent>
+					<sent id="ghGen222" smilref="Chimpanzees.smil#ghGen222">Her discovery has changed everyone's ideas about <strong><w gh:pronR="prime-eights ">primates</w>.</strong></sent>
+				</p>
+				<p id="ghGen223">
+					<sent id="ghGen224" smilref="Chimpanzees.smil#ghGen224">Today, Jane works hard giving speeches and writing letters. </sent>
+					<sent id="ghGen225" smilref="Chimpanzees.smil#ghGen225">She hopes to make the world a better place for all living things. </sent>
+				</p>
+				<pagenum id="gh_pageRef21" smilref="Chimpanzees.smil#gh_pageRef21">21</pagenum>
+				<img src="img/page21a.jpg" alt="Jane Goodall being with a chimpanzee and laughing." id="ghGen226"/>
+				<prodnote render="optional" id="ghGen227" smilref="Chimpanzees.smil#ghGen227">
+					<p id="ghGen228">
+						<sent id="ghGen229">Picture shown with the caption, “Let us develop respect for all living things.” - Jane Goodall</sent>
+					</p>
+				</prodnote>
+
+			</level1>
+</bodymatter>
+<rearmatter>
+			<level1>
+				<pagenum id="gh_pageRef22" smilref="Chimpanzees.smil#gh_pageRef22">22</pagenum>
+				<h1 id="ghGen230" smilref="Chimpanzees.smil#ghGen230">Important Words</h1>
+				<img src="img/bamboo_short.png" alt="Bamboo clipart." id="ghGen231"/>
+				<p id="ghGen232">
+					<sent id="ghGen233" smilref="Chimpanzees.smil#ghGen233"><strong>alpha male</strong> - a chimpanzee community's leader. </sent>
+				</p>
+				<p id="ghGen234">
+					<sent id="ghGen235" smilref="Chimpanzees.smil#ghGen235"><strong>arboreal</strong> - animals that spend most of their lives in trees. </sent>
+				</p>
+				<p id="ghGen236">
+					<sent id="ghGen237" smilref="Chimpanzees.smil#ghGen237"><strong>communicate</strong> - giving and receiving information. </sent>
+					<sent id="ghGen238" smilref="Chimpanzees.smil#ghGen238">Talking and writing are two ways to communicate. </sent>
+				</p>
+				<p id="ghGen239">
+					<sent id="ghGen240" smilref="Chimpanzees.smil#ghGen240"><strong>community</strong> - a group of chimpanzees living together. </sent>
+				</p>
+				<p id="ghGen241">
+					<sent id="ghGen242" smilref="Chimpanzees.smil#ghGen242"><strong>groom</strong> - to clean and care for. </sent>
+				</p>
+				<p id="ghGen243">
+					<sent id="ghGen244" smilref="Chimpanzees.smil#ghGen244"><strong>predator</strong> - an animal that hunts other animals (prey) for food. </sent>
+				</p>
+				<p id="ghGen245">
+					<sent id="ghGen246" smilref="Chimpanzees.smil#ghGen246"><strong>primate</strong> - a group that people, great apes, and monkeys belong to. </sent>
+				</p>
+				<pagenum id="gh_pageRef23" smilref="Chimpanzees.smil#gh_pageRef23">23</pagenum>
+			</level1>
+			<level1>
+				<h1 id="ghGen247" smilref="Chimpanzees.smil#ghGen247">Web Sites</h1>
+				<img src="img/bamboo_short.png" alt="Bamboo clipart." id="ghGen248"/>
+				<level2>
+					<h2 id="ghGen249" smilref="Chimpanzees.smil#ghGen249">All about Chimpanzees</h2>
+					<p id="ghGen250">
+						<sent id="ghGen251" smilref="Chimpanzees.smil#ghGen251"><w gh:pronS="w w w dot enchanted learning dot com slash subjects slash apes slash chimp slash " gh:pronR="w w w dot enchanted learning dot com slash subjects slash apes slash chimp slash ">www.enchantedlearning.com/subjects/apes/chimp/</w></sent>
+					</p>
+					<p id="ghGen252">
+						<sent id="ghGen253" smilref="Chimpanzees.smil#ghGen253">In addition to many facts about chimps, this web site offers a quiz and a chimp picture to print out and color. </sent>
+					</p>
+				</level2>
+				<level2>
+					<h2 id="ghGen254" smilref="Chimpanzees.smil#ghGen254">African <w gh:pronR="prime-eights ">Primates</w> at Home</h2>
+					<p id="ghGen255">
+						<sent id="ghGen256" smilref="Chimpanzees.smil#ghGen256"><w gh:pronS="w w w dot indiana dot e d u slash percent, 7, E, prime eight slash prime eights dot h t m l " gh:pronR="w w w dot indiana dot e d u slash percent, 7, E, prime eight slash prime eights dot h t m l ">www.indiana.edu/%7Eprimate/primates.html</w></sent>
+					</p>
+					<p id="ghGen257">
+						<sent id="ghGen258" smilref="Chimpanzees.smil#ghGen258">See and hear chimps at this web site. </sent>
+					</p>
+				</level2>
+				<level2>
+					<h2 id="ghGen259" smilref="Chimpanzees.smil#ghGen259">Animal Bytes: Chimpanzee</h2>
+					<p id="ghGen260">
+						<sent id="ghGen261" smilref="Chimpanzees.smil#ghGen261"><w gh:pronS="w w w dot sea world dot org slash Animal Bytes slash chimpanzee " gh:pronR="w w w dot sea world dot org slash Animal Bytes slash chimpanzee ">www.seaworld.org/AnimalBytes/chimpanzee</w><w gh:voiceR="e&amp;I_" gh:voiceS="ey _">a</w><w gh:pronS="b dot h t m l " gh:pronR="b dot h t m l ">b.html</w></sent>
+					</p>
+					<pagenum id="gh_pageRef24" smilref="Chimpanzees.smil#gh_pageRef24">24</pagenum>
+				</level2>
+			</level1>
+			<level1>
+				<h1 id="ghGen262" smilref="Chimpanzees.smil#ghGen262">Index</h1>
+				<img src="img/bamboo_short.png" alt="Bamboo clipart." id="ghGen263"/>
+				<p id="ghGen264">
+					<sent id="ghGen265" smilref="Chimpanzees.smil#ghGen265">Africa: 11, 20</sent>
+				</p>
+				<p id="ghGen266">
+					<sent id="ghGen267" smilref="Chimpanzees.smil#ghGen267">alpha male: 17</sent>
+				</p>
+				<p id="ghGen268">
+					<sent id="ghGen269" smilref="Chimpanzees.smil#ghGen269">American Sign Language: 8</sent>
+				</p>
+				<p id="ghGen270">
+					<sent id="ghGen271" smilref="Chimpanzees.smil#ghGen271">arboreal: 12</sent>
+				</p>
+				<p id="ghGen272">
+					<sent id="ghGen273" smilref="Chimpanzees.smil#ghGen273">bonobos: 4</sent>
+				</p>
+				<p id="ghGen274">
+					<sent id="ghGen275" smilref="Chimpanzees.smil#ghGen275">communicate: 6</sent>
+				</p>
+				<p id="ghGen276">
+					<sent id="ghGen277" smilref="Chimpanzees.smil#ghGen277">community: 16, 17</sent>
+				</p>
+				<p id="ghGen278">
+					<sent id="ghGen279" smilref="Chimpanzees.smil#ghGen279">Goodall, Jane: 20, 21</sent>
+				</p>
+				<p id="ghGen280">
+					<sent id="ghGen281" smilref="Chimpanzees.smil#ghGen281">gorillas: 4</sent>
+				</p>
+				<p id="ghGen282">
+					<sent id="ghGen283" smilref="Chimpanzees.smil#ghGen283">grassland: 11</sent>
+				</p>
+				<p id="ghGen284">
+					<sent id="ghGen285" smilref="Chimpanzees.smil#ghGen285">great apes: 4, 5, 6</sent>
+				</p>
+				<p id="ghGen286">
+					<sent id="ghGen287" smilref="Chimpanzees.smil#ghGen287">groom: 14</sent>
+				</p>
+				<p id="ghGen288">
+					<sent id="ghGen289" smilref="Chimpanzees.smil#ghGen289">lemurs: 4</sent>
+				</p>
+				<p id="ghGen290">
+					<sent id="ghGen291" smilref="Chimpanzees.smil#ghGen291">monkeys: 4</sent>
+				</p>
+				<p id="ghGen292">
+					<sent id="ghGen293" smilref="Chimpanzees.smil#ghGen293">orangutans: 4</sent>
+				</p>
+				<p id="ghGen294">
+					<sent id="ghGen295" smilref="Chimpanzees.smil#ghGen295">predator: 12</sent>
+				</p>
+				<p id="ghGen296">
+					<sent id="ghGen297" smilref="Chimpanzees.smil#ghGen297">primate: 6, 10, 20</sent>
+				</p>
+				<p id="ghGen298">
+					<sent id="ghGen299" smilref="Chimpanzees.smil#ghGen299">rain forest: 11</sent>
+				</p>
+				<p id="ghGen300">
+					<sent id="ghGen301" smilref="Chimpanzees.smil#ghGen301">Tanzania, Africa: 20</sent>
+				</p>
+				<p id="ghGen302">
+					<sent id="ghGen303" smilref="Chimpanzees.smil#ghGen303">tool: 6, 15, 20</sent>
+				</p>
+				<p id="ghGen304">
+					<sent id="ghGen305" smilref="Chimpanzees.smil#ghGen305">woodland: 11</sent>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+				</p>
+			</level1>
+			<level1>
+				<h1 id="ghGen306" smilref="Chimpanzees.smil#ghGen306">Questions</h1>
+				<p id="ghGen307">
+					<sent id="ghGen308" smilref="Chimpanzees.smil#ghGen308">1. <strong>What is the smallest Great ape?</strong></sent>
+				</p>
+				<p id="ghGen309">
+					<sent id="ghGen310" smilref="Chimpanzees.smil#ghGen310"> a. orangutan</sent>
+				</p>
+				<p id="ghGen311">
+					<sent id="ghGen312" smilref="Chimpanzees.smil#ghGen312"> b. chimpanzee</sent>
+				</p>
+				<p id="ghGen313">
+					<sent id="ghGen314" smilref="Chimpanzees.smil#ghGen314"> c. gorilla</sent>
+				</p>
+
+
+				<p id="ghGen315">
+					<sent id="ghGen316" smilref="Chimpanzees.smil#ghGen316">2. <strong>Great apes do not have what?</strong></sent>
+				</p>
+				<p id="ghGen317">
+					<sent id="ghGen318" smilref="Chimpanzees.smil#ghGen318"> a. a tail</sent>
+				</p>
+				<p id="ghGen319">
+					<sent id="ghGen320" smilref="Chimpanzees.smil#ghGen320"> b. hands</sent>
+				</p>
+				<p id="ghGen321">
+					<sent id="ghGen322" smilref="Chimpanzees.smil#ghGen322"> c. ears</sent>
+				</p>
+
+
+				<p id="ghGen323">
+					<sent id="ghGen324" smilref="Chimpanzees.smil#ghGen324">3. <strong>Chimpanzees have a lot in common with?</strong></sent>
+				</p>
+				<p id="ghGen325">
+					<sent id="ghGen326" smilref="Chimpanzees.smil#ghGen326"> a. fish</sent>
+				</p>
+				<p id="ghGen327">
+					<sent id="ghGen328" smilref="Chimpanzees.smil#ghGen328"> b. humans</sent>
+				</p>
+				<p id="ghGen329">
+					<sent id="ghGen330" smilref="Chimpanzees.smil#ghGen330"> c. horses</sent>
+				</p>
+				<p id="ghGen331">
+					<sent id="ghGen332" smilref="Chimpanzees.smil#ghGen332">4. <strong> Chimpanzees do not grow hair on what part of their body?</strong></sent>
+				</p>
+				<p id="ghGen333">
+					<sent id="ghGen334" smilref="Chimpanzees.smil#ghGen334"> a. arms</sent>
+				</p>
+				<p id="ghGen335">
+					<sent id="ghGen336" smilref="Chimpanzees.smil#ghGen336"> b. stomach</sent>
+				</p>
+				<p id="ghGen337">
+					<sent id="ghGen338" smilref="Chimpanzees.smil#ghGen338"> c. face</sent>
+				</p>
+				<p id="ghGen339">
+					<sent id="ghGen340" smilref="Chimpanzees.smil#ghGen340">5. <strong>Chimpanzees grow to be how tall?</strong></sent>
+				</p>
+				<p id="ghGen341">
+					<sent id="ghGen342" smilref="Chimpanzees.smil#ghGen342"> a. four feet</sent>
+				</p>
+				<p id="ghGen343">
+					<sent id="ghGen344" smilref="Chimpanzees.smil#ghGen344"> b. two feet</sent>
+				</p>
+				<p id="ghGen345">
+					<sent id="ghGen346" smilref="Chimpanzees.smil#ghGen346"> c. six feet</sent>
+				</p>
+				<p id="ghGen347">
+					<sent id="ghGen348" smilref="Chimpanzees.smil#ghGen348">6. <strong> Where do chimpanzees spend most of their time?</strong></sent>
+				</p>
+				<p id="ghGen349">
+					<sent id="ghGen350" smilref="Chimpanzees.smil#ghGen350"> a. in the water</sent>
+				</p>
+				<p id="ghGen351">
+					<sent id="ghGen352" smilref="Chimpanzees.smil#ghGen352"> b. in the trees</sent>
+				</p>
+				<p id="ghGen353">
+					<sent id="ghGen354" smilref="Chimpanzees.smil#ghGen354"> c. on the ground</sent>
+				</p>
+				<p id="ghGen355">
+					<sent id="ghGen356" smilref="Chimpanzees.smil#ghGen356">7. <strong>Why do chimpanzees groom each other?</strong></sent>
+				</p>
+				<p id="ghGen357">
+					<sent id="ghGen358" smilref="Chimpanzees.smil#ghGen358"> a. to keep clean</sent>
+				</p>
+				<p id="ghGen359">
+					<sent id="ghGen360" smilref="Chimpanzees.smil#ghGen360"> b. to keep calm</sent>
+				</p>
+				<p id="ghGen361">
+					<sent id="ghGen362" smilref="Chimpanzees.smil#ghGen362"> c. both a and b</sent>
+				</p>
+				<p id="ghGen363">
+					<sent id="ghGen364" smilref="Chimpanzees.smil#ghGen364">8. <strong>What do chimpanzees use as tools?</strong></sent>
+				</p>
+				<p id="ghGen365">
+					<sent id="ghGen366" smilref="Chimpanzees.smil#ghGen366"> a. hammer and nails</sent>
+				</p>
+				<p id="ghGen367">
+					<sent id="ghGen368" smilref="Chimpanzees.smil#ghGen368"> b. pots and pans</sent>
+				</p>
+				<p id="ghGen369">
+					<sent id="ghGen370" smilref="Chimpanzees.smil#ghGen370"> c. sticks and rocks</sent>
+				</p>
+				<p id="ghGen371">
+					<sent id="ghGen372" smilref="Chimpanzees.smil#ghGen372">9. <strong>Who is the leader in a chimpanzee community?</strong></sent>
+				</p>
+				<p id="ghGen373">
+					<sent id="ghGen374" smilref="Chimpanzees.smil#ghGen374"> a. a male </sent>
+				</p>
+				<p id="ghGen375">
+					<sent id="ghGen376" smilref="Chimpanzees.smil#ghGen376"> b. a female</sent>
+				</p>
+				<p id="ghGen377">
+					<sent id="ghGen378" smilref="Chimpanzees.smil#ghGen378"> c. a baby</sent>
+				</p>
+				<p id="ghGen379">
+					<sent id="ghGen380" smilref="Chimpanzees.smil#ghGen380"> 10. <strong>Where did Jane Goodall study chimpanzees?</strong></sent>
+				</p>
+				<p id="ghGen381">
+					<sent id="ghGen382" smilref="Chimpanzees.smil#ghGen382"> a. Europe</sent>
+				</p>
+				<p id="ghGen383">
+					<sent id="ghGen384" smilref="Chimpanzees.smil#ghGen384"> b. United States</sent>
+				</p>
+				<p id="ghGen385">
+					<sent id="ghGen386" smilref="Chimpanzees.smil#ghGen386"> c. Africa</sent>
+				</p>
+			</level1>
+		</rearmatter>
+	</book>
+</dtbook>
+  		    
+ 			  	 
+  		 	  
+  	 	 		
+  		 	  
+ 					  
+ 	 			  
+  	 				
+ 					  

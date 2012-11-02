@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE smil
+  PUBLIC "-//NISO//DTD dtbsmil 2005-2//EN" "http://www.daisy.org/z3986/2005/dtbsmil-2005-2.dtd">
+<smil xmlns="http://www.w3.org/2001/SMIL20/">
+	  <head>
+		    <meta content="Vbl11092012" name="dtb:uid"/>
+		    <meta content="TPB Narrator" name="dtb:generator"/>
+		    <meta content="2:30:02.648" name="dtb:totalElapsedTime"/>
+		
+	  </head>
+	  <body>
+		    <seq dur="0:01:08.260" fill="remove" id="mseq">
+		       <par id="tcp1820">
+            <text id="text1820" src="dtbook.xml#dtb1820"/>
+            <audio clipBegin="0:00:00" clipEnd="0:00:03.870" src="speechgen0112.mp3"/>
+         </par>
+         <par id="tcp1821">
+            <text id="text1821" src="dtbook.xml#dtb1821"/>
+            <audio clipBegin="0:00:03.870" clipEnd="0:00:10.075" src="speechgen0112.mp3"/>
+         </par>
+         <par id="tcp1822">
+            <text id="text1822" src="dtbook.xml#dtb1822"/>
+            <audio clipBegin="0:00:10.075" clipEnd="0:00:12.204" src="speechgen0112.mp3"/>
+         </par>
+         <par id="tcp1823">
+            <text id="text1823" src="dtbook.xml#dtb1823"/>
+            <audio clipBegin="0:00:12.204" clipEnd="0:00:19.578" src="speechgen0112.mp3"/>
+         </par>
+         <par id="tcp1824">
+            <text id="text1824" src="dtbook.xml#dtb1824"/>
+            <audio clipBegin="0:00:19.578" clipEnd="0:00:23.920" src="speechgen0112.mp3"/>
+         </par>
+         <par id="tcp1825">
+            <text id="text1825" src="dtbook.xml#dtb1825"/>
+            <audio clipBegin="0:00:23.920" clipEnd="0:00:26.202" src="speechgen0112.mp3"/>
+         </par>
+         <par id="tcp1826">
+            <text id="text1826" src="dtbook.xml#dtb1826"/>
+            <audio clipBegin="0:00:26.202" clipEnd="0:00:29.885" src="speechgen0112.mp3"/>
+         </par>
+         <par id="tcp1827">
+            <text id="text1827" src="dtbook.xml#dtb1827"/>
+            <audio clipBegin="0:00:29.885" clipEnd="0:00:43.160" src="speechgen0112.mp3"/>
+         </par>
+         <par id="tcp1828">
+            <text id="text1828" src="dtbook.xml#dtb1828"/>
+            <audio clipBegin="0:00:43.160" clipEnd="0:00:47.732" src="speechgen0112.mp3"/>
+         </par>
+         <par id="tcp1829">
+            <text id="text1829" src="dtbook.xml#dtb1829"/>
+            <audio clipBegin="0:00:47.732" clipEnd="0:00:50.180" src="speechgen0112.mp3"/>
+         </par>
+         <par id="tcp1830">
+            <text id="text1830" src="dtbook.xml#dtb1830"/>
+            <audio clipBegin="0:00:50.180" clipEnd="0:00:55.495" src="speechgen0112.mp3"/>
+         </par>
+         <par id="tcp1831">
+            <text id="text1831" src="dtbook.xml#dtb1831"/>
+            <audio clipBegin="0:00:55.495" clipEnd="0:00:57.320" src="speechgen0112.mp3"/>
+         </par>
+         <par id="tcp1832">
+            <text id="text1832" src="dtbook.xml#dtb1832"/>
+            <audio clipBegin="0:00:57.320" clipEnd="0:01:02.750" src="speechgen0112.mp3"/>
+         </par>
+         <par id="tcp1833">
+            <text id="text1833" src="dtbook.xml#dtb1833"/>
+            <audio clipBegin="0:01:02.750" clipEnd="0:01:06.925" src="speechgen0112.mp3"/>
+         </par>
+         <par id="tcp1834">
+            <text id="text1834" src="dtbook.xml#dtb1834"/>
+            <audio clipBegin="0:01:06.925" clipEnd="0:01:08.260" src="speechgen0112.mp3"/>
+         </par>
+      </seq>
+	  </body>
+</smil>

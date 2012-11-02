@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE package
+PUBLIC "+//ISBN 0-9673008-1-9//DTD OEB 1.2 Package//EN"
+"oebpkg12.dtd">
+<package xmlns="http://openebook.org/namespaces/oeb-package/1.0/" unique-identifier="uid" xml:lang="en">
+<metadata>
+<dc-metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oebpackage="http://openebook.org/namespaces/oeb-package/1.0/">
+	<dc:Creator>Julie Murray</dc:Creator>
+	<dc:Date>2004-04-13</dc:Date>
+	<dc:Description>Introduces the habitat and characteristics of chimpanzees, and briefly describes Jane Goodall's work with them.</dc:Description>
+	<dc:Format>ANSI/NISO Z39.86-2005</dc:Format>
+	<dc:Language>EN-US</dc:Language>
+	<dc:Publisher>gh LLC.</dc:Publisher>
+	<dc:Subject>Chimpanzee</dc:Subject>
+	<dc:Title>Chimpanzees</dc:Title>
+	<dc:Identifier id="uid">ghBOOK1211212736</dc:Identifier>
+</dc-metadata>
+<x-metadata>
+	<meta name="dtb:multimediaContent" content="text" />
+	<meta name="dtb:multimediaType" content="audioFullText" />
+	<meta name="dtb:producedDate" content="2004-04-13" />
+	<meta name="dtb:producer" content="gh, LLC." />
+	<meta name="dtb:sourceDate" content="2002-01-01" />
+	<meta name="dtb:sourcePublisher" content="ABDO Publishing Company" />
+	<meta name="dtb:sourceTitle" content="Chimpanzees" />
+	<meta name="dtb:totalTime" content="0:14:49.794" />
+	<meta name="ghIndex" content="Chimpanzees.idx" />
+	<meta name="ghVerify" content="3A8C9349E334EDBB09166599DF2FBA9B" />
+	<meta name="gh:generator" content="gh DTB Maker 4.0" />
+</x-metadata>
+</metadata>
+<manifest>
+	<item id="opf" href="Chimpanzees.opf" media-type="text/xml" />
+	<item id="ncx" href="Chimpanzees.ncx" media-type="application/x-dtbncx+xml" />
+	<item id="Text_0" href="Chimpanzees.xml" media-type="application/x-dtbook+xml" />
+	<item id="Smil_0" href="Chimpanzees.smil" media-type="application/smil" />
+	<item id="Misc_0" href="img/page01a.jpg" media-type="image/jpeg" />
+	<item id="Misc_1" href="img/bamboo_short.png" media-type="image/png" />
+	<item id="Misc_2" href="img/bamboo_long.png" media-type="image/png" />
+	<item id="Misc_3" href="img/page05a.jpg" media-type="image/jpeg" />
+	<item id="Misc_5" href="img/page07a.jpg" media-type="image/jpeg" />
+	<item id="Misc_6" href="img/page08a.png" media-type="image/png" />
+	<item id="Misc_8" href="img/page09b.jpg" media-type="image/jpeg" />
+	<item id="Misc_9" href="img/page10a.png" media-type="image/png" />
+	<item id="Misc_11" href="img/page11b.jpg" media-type="image/jpeg" />
+	<item id="Misc_12" href="img/page13a.jpg" media-type="image/jpeg" />
+	<item id="Misc_14" href="img/page15a.jpg" media-type="image/jpeg" />
+	<item id="Misc_16" href="img/page17a.jpg" media-type="image/jpeg" />
+	<item id="Misc_18" href="img/page19a.jpg" media-type="image/jpeg" />
+	<item id="Misc_19" href="img/page21a.jpg" media-type="image/jpeg" />
+	<item id="Misc_23" href="audio/Page01.mp3" media-type="audio/mpeg" />
+	<item id="Misc_24" href="audio/Page02.mp3" media-type="audio/mpeg" />
+	<item id="Misc_25" href="audio/Page03.mp3" media-type="audio/mpeg" />
+	<item id="Misc_26" href="audio/Page04.mp3" media-type="audio/mpeg" />
+	<item id="Misc_27" href="audio/Page05.mp3" media-type="audio/mpeg" />
+	<item id="Misc_28" href="audio/Page06.mp3" media-type="audio/mpeg" />
+	<item id="Misc_29" href="audio/Page07.mp3" media-type="audio/mpeg" />
+	<item id="Misc_30" href="audio/Page08.mp3" media-type="audio/mpeg" />
+	<item id="Misc_31" href="audio/Page09.mp3" media-type="audio/mpeg" />
+	<item id="Misc_32" href="audio/Page10.mp3" media-type="audio/mpeg" />
+	<item id="Misc_33" href="audio/Page11.mp3" media-type="audio/mpeg" />
+	<item id="Misc_34" href="audio/Page12.mp3" media-type="audio/mpeg" />
+	<item id="Misc_35" href="audio/Page13.mp3" media-type="audio/mpeg" />
+	<item id="Misc_36" href="audio/Page14.mp3" media-type="audio/mpeg" />
+	<item id="Misc_37" href="audio/Page15.mp3" media-type="audio/mpeg" />
+	<item id="Misc_38" href="audio/Page16.mp3" media-type="audio/mpeg" />
+	<item id="Misc_39" href="audio/Page17.mp3" media-type="audio/mpeg" />
+	<item id="Misc_40" href="audio/Page18.mp3" media-type="audio/mpeg" />
+	<item id="Misc_41" href="audio/Page19.mp3" media-type="audio/mpeg" />
+	<item id="Misc_42" href="audio/Page20.mp3" media-type="audio/mpeg" />
+	<item id="Misc_43" href="audio/Page21.mp3" media-type="audio/mpeg" />
+	<item id="Misc_44" href="audio/Page22.mp3" media-type="audio/mpeg" />
+	<item id="Misc_45" href="audio/Page23.mp3" media-type="audio/mpeg" />
+	<item id="Misc_46" href="audio/Page24.mp3" media-type="audio/mpeg" />
+	<item id="Misc_47" href="audio/questions/questions.mp3" media-type="audio/mpeg" />
+	<item id="Misc_48" href="audio/questions/01.mp3" media-type="audio/mpeg" />
+	<item id="Misc_49" href="audio/questions/02.mp3" media-type="audio/mpeg" />
+	<item id="Misc_50" href="audio/questions/03.mp3" media-type="audio/mpeg" />
+	<item id="Misc_51" href="audio/questions/04.mp3" media-type="audio/mpeg" />
+	<item id="Misc_52" href="audio/questions/05.mp3" media-type="audio/mpeg" />
+	<item id="Misc_53" href="audio/questions/06.mp3" media-type="audio/mpeg" />
+	<item id="Misc_54" href="audio/questions/07.mp3" media-type="audio/mpeg" />
+	<item id="Misc_55" href="audio/questions/both.alt.mp3" media-type="audio/mpeg" />
+	<item id="Misc_56" href="audio/questions/08.mp3" media-type="audio/mpeg" />
+	<item id="Misc_57" href="audio/questions/09.mp3" media-type="audio/mpeg" />
+	<item id="Misc_58" href="audio/questions/10.mp3" media-type="audio/mpeg" />
+	<item id="resource" href="resources.res" media-type="application/x-dtbresource+xml" />
+</manifest>
+<spine>
+	<itemref idref="Smil_0" />
+</spine>
+</package>
+  		    
+ 			  	 
+  		 	  
+  	 	 		
+  		 	  
+ 					  
+ 	 			  
+  	 				
+ 					  

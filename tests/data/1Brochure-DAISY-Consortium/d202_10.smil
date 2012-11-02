@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE smil PUBLIC "-//W3C//DTD SMIL 1.0//EN" "SMIL10.dtd">
+<smil>
+	<head>
+		<meta name="dc:format" content="Daisy 2.02"/>
+		<meta name="ncc:timeInThisSmil" content="00:01:49.655"/>
+		<meta name="ncc:totalElapsedTime" content="00:09:27.546"/>
+		<layout>
+			<region id="txt-view"/>
+		</layout>
+		<meta name="ncc:generator" content="EasePublisher 2.13 Build 163 # 044FSI210083735"/>
+    <meta name="title" content="The DAISY Standard and DAISY Tools"/>
+    <meta name="dc:title" content="DAISY: A GLOBAL EFFORT TO PROVIDE ACCESSIBLE INFORMATION"/>
+    <meta name="dc:identifier" content="AUTO-UID-5230414073153262592"/>
+  </head>
+	<body>
+		<seq dur="109.655s">
+			<par endsync="last" id="par_96">
+				<text src="DAISYBrochureForStickV3.html#dol_1_10_d2e345" id="txt_96"/>
+				<seq>
+					<audio src="d200018.mp3" clip-begin="npt=0.000s" clip-end="npt=2.314s" id="audio_0001"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_97">
+				<text src="DAISYBrochureForStickV3.html#dol_1_10_id_194" id="txt_97"/>
+				<seq>
+					<audio src="d200018.mp3" clip-begin="npt=2.314s" clip-end="npt=6.134s" id="audio_0002"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_98">
+				<text src="DAISYBrochureForStickV3.html#dol_1_10_id_198" id="txt_98"/>
+				<seq>
+					<audio src="d200018.mp3" clip-begin="npt=6.134s" clip-end="npt=11.034s" id="audio_0003"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_99">
+				<text src="DAISYBrochureForStickV3.html#dol_1_10_id_201" id="txt_99"/>
+				<seq>
+					<audio src="d200018.mp3" clip-begin="npt=11.034s" clip-end="npt=13.414s" id="audio_0004"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_100">
+				<text src="DAISYBrochureForStickV3.html#dol_1_10_id_204" id="txt_100"/>
+				<seq>
+					<audio src="d200018.mp3" clip-begin="npt=13.414s" clip-end="npt=18.637s" id="audio_0005"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_101">
+				<text src="DAISYBrochureForStickV3.html#dol_1_10_id_207" id="txt_101"/>
+				<seq>
+					<audio src="d200018.mp3" clip-begin="npt=18.637s" clip-end="npt=21.112s" id="audio_0006"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_102">
+				<text src="DAISYBrochureForStickV3.html#dol_1_10_id_210" id="txt_102"/>
+				<seq>
+					<audio src="d200018.mp3" clip-begin="npt=21.112s" clip-end="npt=22.794s" id="audio_0007"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_103">
+				<text src="DAISYBrochureForStickV3.html#dol_1_10_id_214" id="txt_103"/>
+				<seq>
+					<audio src="d200018.mp3" clip-begin="npt=22.794s" clip-end="npt=26.658s" id="audio_0008"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_104" system-required="pagenumber-on">
+				<text src="DAISYBrochureForStickV3.html#dol_1_10_page6" id="txt_104"/>
+				<seq>
+					<audio src="d200018.mp3" clip-begin="npt=26.658s" clip-end="npt=27.546s" id="audio_0009"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_105">
+				<text src="DAISYBrochureForStickV3.html#dol_1_10_id_217" id="txt_105"/>
+				<seq>
+					<audio src="d200018.mp3" clip-begin="npt=27.546s" clip-end="npt=34.525s" id="audio_0010"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_106">
+				<text src="DAISYBrochureForStickV3.html#dol_1_10_id_218" id="txt_106"/>
+				<seq>
+					<audio src="d200018.mp3" clip-begin="npt=34.525s" clip-end="npt=42.812s" id="audio_0011"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_107">
+				<text src="DAISYBrochureForStickV3.html#dol_1_10_id_219" id="txt_107"/>
+				<seq>
+					<audio src="d200018.mp3" clip-begin="npt=42.812s" clip-end="npt=50.004s" id="audio_0012"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_108">
+				<text src="DAISYBrochureForStickV3.html#dol_1_10_id_220" id="txt_108"/>
+				<seq>
+					<audio src="d200018.mp3" clip-begin="npt=50.004s" clip-end="npt=53.956s" id="audio_0013"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_109">
+				<text src="DAISYBrochureForStickV3.html#dol_1_10_id_225" id="txt_109"/>
+				<seq>
+					<audio src="d200018.mp3" clip-begin="npt=53.956s" clip-end="npt=57.129s" id="audio_0014"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_110">
+				<text src="DAISYBrochureForStickV3.html#dol_1_10_id_228" id="txt_110"/>
+				<seq>
+					<audio src="d200018.mp3" clip-begin="npt=57.129s" clip-end="npt=60.618s" id="audio_0015"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_111">
+				<text src="DAISYBrochureForStickV3.html#dol_1_10_id_231" id="txt_111"/>
+				<seq>
+					<audio src="d200018.mp3" clip-begin="npt=60.618s" clip-end="npt=64.636s" id="audio_0016"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_112">
+				<text src="DAISYBrochureForStickV3.html#dol_1_10_id_234" id="txt_112"/>
+				<seq>
+					<audio src="d200018.mp3" clip-begin="npt=64.636s" clip-end="npt=70.337s" id="audio_0017"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_113">
+				<text src="DAISYBrochureForStickV3.html#dol_1_10_id_237" id="txt_113"/>
+				<seq>
+					<audio src="d200018.mp3" clip-begin="npt=70.337s" clip-end="npt=74.730s" id="audio_0018"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_114">
+				<text src="DAISYBrochureForStickV3.html#dol_1_10_id_239" id="txt_114"/>
+				<seq>
+					<audio src="d200018.mp3" clip-begin="npt=74.730s" clip-end="npt=82.642s" id="audio_0019"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_115">
+				<text src="DAISYBrochureForStickV3.html#dol_1_10_id_240" id="txt_115"/>
+				<seq>
+					<audio src="d200018.mp3" clip-begin="npt=82.642s" clip-end="npt=90.047s" id="audio_0020"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_116">
+				<text src="DAISYBrochureForStickV3.html#dol_1_10_id_241" id="txt_116"/>
+				<seq>
+					<audio src="d200018.mp3" clip-begin="npt=90.047s" clip-end="npt=97.136s" id="audio_0021"/>
+				</seq>
+			</par>
+			<par endsync="last" id="par_117">
+				<text src="DAISYBrochureForStickV3.html#dol_1_10_id_243" id="txt_117"/>
+				<seq>
+					<audio src="d200018.mp3" clip-begin="npt=97.136s" clip-end="npt=109.655s" id="audio_0022"/>
+				</seq>
+			</par>
+		</seq>
+	</body>
+</smil>
