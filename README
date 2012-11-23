@@ -41,7 +41,7 @@ Kolibre-amis is a branch of the amis2 code base. The Kolibre-amis code base is
 refactored to suit the needs of NÖSS projects as a daisy navigator and parser. 
 The Kolibre-amis component uses Kolibre-xmlreader for parsing XML files. 
 Kolibre-xmlreader provides useful functionality as, caching remote resources 
-and a tidy fallback for cleaning up messy XML files.
+and a tidy fallback for cleaning up messy HTML files.
 
 
 What is AMIS?
