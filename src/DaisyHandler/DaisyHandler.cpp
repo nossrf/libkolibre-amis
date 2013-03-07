@@ -632,6 +632,8 @@ bool DaisyHandler::setupBook()
     autonaviStartTime = time(NULL) + AUTONAVI_DELAY_SECONDS;
 
     readBookInfo();
+    readPageNavPoints();
+    readSectionNavPoints();
 
     // returns true if we have a lastmark, false if we don't
     return ret;
@@ -2954,6 +2956,66 @@ string DaisyHandler::getCurrentPage()
 }
 
 /**
+ * return pointer to a NavNode referenced a by page number
+ */
+amis::NavNode* getNavNode(int pageNumber)
+{
+    amis::NavModel* navModel = NavParse::Instance()->getNavModel();
+    if(navModel != NULL && navModel->hasPages())
+    {
+        amis::PageList* pageList = navModel->getPageList();
+        if(pageList != NULL)
+        {
+            amis::NavNode* navNode = pageList->first();
+            int pageCount = 0;
+            while(navNode != NULL)
+            {
+                if(pageCount == pageNumber)
+                {
+                    return navNode;
+                }
+                navNode = pageList->next();
+                pageCount++;
+            }
+        }
+    }
+    return NULL;
+}
+
+/**
+ * Get the id for a page referenced by a page number
+ *
+ * @return page id on success, empty string on failure
+ */
+std::string DaisyHandler::getPageId(int pageNumber)
+{
+    amis::NavNode* navNode = getNavNode(pageNumber);
+    if(navNode != NULL)
+    {
+        return navNode->getId();
+    }
+    return "";
+}
+
+/**
+ * Get the label for a page referenced by a page number
+ *
+ * @return page name on success, empty string on failure
+ */
+std::string DaisyHandler::getPageLabel(int pageNumber)
+{
+    amis::NavNode* navNode = getNavNode(pageNumber);
+    if(navNode != NULL)
+    {
+        if(navNode->getLabel() != NULL && navNode->getLabel()->hasText())
+        {
+            return navNode->getLabel()->getText()->getTextString();
+        }
+    }
+    return "";
+}
+
+/**
  * Get bookinfo structure for opened book
  *
  * @return Returns the BookInfo for the current book
@@ -3435,6 +3497,101 @@ if                (sscanf(tmp.c_str(), "%d of %d", &mBookInfo.mCurrentSet, &mBoo
         mBookInfo.mSections = countSections(
                 p_nav_model->getNavMap()->getRoot());
     }
+}
+
+void DaisyHandler::readPageNavPoints()
+{
+    mNavPoints.pages.clear();
+
+    LOG4CXX_INFO(amisDaisyHandlerLog, "collecting page navigation points")
+    amis::NavModel* navModel = NavParse::Instance()->getNavModel();
+    if(navModel == NULL)
+    {
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "aborting process since NavModel is NULL");
+        return;
+    }
+
+    if(!navModel->hasPages())
+    {
+        LOG4CXX_INFO(amisDaisyHandlerLog, "NavModel has no pages");
+        return;
+    }
+
+    amis::PageList* pageList = navModel->getPageList();
+    if(pageList != NULL)
+    {
+        amis::NavNode* navNode = pageList->first();
+        while(navNode != NULL)
+        {
+            std::string id = navNode->getId();
+            std::string text = "";
+            if(navNode->getLabel() != NULL && navNode->getLabel()->hasText())
+            {
+                text = navNode->getLabel()->getText()->getTextString();
+            }
+            NavPoints::Page page(id, text, navNode->getPlayOrder(), navNode->getClass());
+            mNavPoints.pages.push_back(page);
+            navNode = pageList->next();
+        }
+    }
+}
+
+void recursiveReadSectionNavPoints(amis::NavPoint* navPoint, std::vector<DaisyHandler::NavPoints::Section>& sections)
+{
+    if(navPoint == NULL) return;
+
+    std::string id = navPoint->getId();
+    if(id != "ROOT")
+    {
+        std::string text = "";
+        if(navPoint->getLabel() != NULL && navPoint->getLabel()->hasText())
+        {
+            text = navPoint->getLabel()->getText()->getTextString();
+        }
+
+        DaisyHandler::NavPoints::Section section(id, text, navPoint->getPlayOrder(), navPoint->getClass(), navPoint->getLevel());
+        sections.push_back(section);
+    }
+
+    // recursively loop through children
+    for(int i=0; i<navPoint->getNumChildren(); ++i)
+    {
+        amis::NavPoint* newNavPoint = navPoint->getChild(i);
+        recursiveReadSectionNavPoints(newNavPoint, sections);
+    }
+}
+
+void DaisyHandler::readSectionNavPoints()
+{
+    mNavPoints.sections.clear();
+
+    LOG4CXX_INFO(amisDaisyHandlerLog, "collecting section navigation points")
+    amis::NavModel* navModel = NavParse::Instance()->getNavModel();
+    if(navModel == NULL)
+    {
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "aborting process since NavModel is NULL");
+        return;
+    }
+
+    amis::NavMap* navMap = navModel->getNavMap();
+    if(navMap == NULL)
+    {
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "aborting process since NavMap is NULL");
+        return;
+    }
+
+    amis::NavPoint* navPoint = navMap->getRoot();
+    recursiveReadSectionNavPoints(navPoint, mNavPoints.sections);
+}
+
+/**
+ * Get NavPoints structure for opened book
+ *
+ * @return navigation points for the book
+ */
+DaisyHandler::NavPoints* DaisyHandler::getNavPoints()
+{
+    return &mNavPoints;
 }
 
 /**

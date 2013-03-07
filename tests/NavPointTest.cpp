@@ -82,6 +82,22 @@ int main(int argc, char *argv[])
     // we have now reachde the last section and sould not be able to jump to the next section
     assert(!DaisyHandler::Instance()->nextSection());
 
+    // get navigation points and jump to each point
+    DaisyHandler::NavPoints* navPoints = DaisyHandler::Instance()->getNavPoints();
+    std::cout << "trying jump to each page by id" << std::endl;
+    for(int i=0; i<navPoints->pages.size(); i++)
+    {
+        std::cout << "jumping to page with id " << navPoints->pages[i].id << " '" << navPoints->pages[i].text << "'" << std::endl;
+        assert(DaisyHandler::Instance()->goToId(navPoints->pages[i].id));
+    }
+    std::cout << "trying jump to each section by id" << std::endl;
+    for(int i=0; i<navPoints->sections.size(); i++)
+    {
+        std::cout << "jumping to section with id " << navPoints->sections[i].id << " '" << navPoints->sections[i].text << "'" << std::endl;
+        assert(DaisyHandler::Instance()->goToId(navPoints->sections[i].id));
+    }
+
+
     // cleanup before exit
     DaisyHandler::Instance()->closeBook();
     DaisyHandler::Instance()->DestroyInstance();

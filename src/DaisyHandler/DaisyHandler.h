@@ -28,6 +28,7 @@
 #include "Media.h"
 
 #include <pthread.h>
+#include <vector>
 
 #ifdef WIN32
 #define DEFAULT_BOOKMARK_PATH "C:\\"
@@ -135,8 +136,7 @@ public:
         bool hasCurrentTime; /**< is current time available */
         struct tm mCurrentTime; /**< the current time struct */
         int mPercentRead; /**< the procent read of the book */
-    } mPosInfo;
-
+    };
     PosInfo *getPosInfo();
 
     /**
@@ -200,10 +200,47 @@ public:
         int mRevisionNumber; /**< the revision date */
         struct tm mRevisionDate; /**< the revision date structure */
 
-    } mBookInfo;
-
-    // Book info
+    };
     BookInfo *getBookInfo();
+
+    /**
+     * A structure containing the navigation points in the book
+     */
+    struct NavPoints
+    {
+        struct Section
+        {
+            std::string id;
+            std::string text;
+            int playOrder;
+            std::string xmlAttrClass;
+            int level;
+            Section(std::string id, std::string text, int order, std::string attr, int level) :
+                id(id),
+                text(text),
+                playOrder(order),
+                xmlAttrClass(attr),
+                level(level)
+            {}
+        };
+        std::vector<Section> sections;
+
+        struct Page
+        {
+            std::string id;
+            std::string text;
+            int playOrder;
+            std::string xmlAttrClass;
+            Page(std::string id, std::string text, int order, std::string attr) :
+                id(id),
+                text(text),
+                playOrder(order),
+                xmlAttrClass(attr)
+            {}
+        };
+        std::vector<Page> pages;
+    };
+    NavPoints* getNavPoints();
 
     // Returns the last error that occurred
     amis::AmisError getLastError();
@@ -232,15 +269,13 @@ public:
     bool deleteCurrentBookmark();
     bool deleteAllBookmarks();
 
-    // Navigation
+    // Phrase Navigation
     bool nextPhrase(bool rewindWhenEndOfBook = false);
     bool previousPhrase();
 
-    // NavPoint Navigation
+    // Section Navigation
     bool nextSection();
     bool previousSection();
-
-    // Jump to beginning and end of book
     bool firstSection(bool skipTitle = false);
     bool lastSection();
 
@@ -255,6 +290,8 @@ public:
     bool lastPage();
     int currentPage(); // According to playorder
     std::string getCurrentPage(); // According to stored value
+    std::string getPageId(int pageNumber);
+    std::string getPageLabel(int pageNumber);
 
     // Debug functions
     void printNavLists();
@@ -317,8 +354,14 @@ private:
 
     void printMediaGroup(SmilMediaGroup*);
 
-    // Refresh data in mBookInfo
+    PosInfo mPosInfo;
+    BookInfo mBookInfo;
+    NavPoints mNavPoints;
+
+    // Refresh data about book
     void readBookInfo();
+    void readPageNavPoints();
+    void readSectionNavPoints();
 
     //return the name of the bmk file
     std::string setUpBookmarks(std::string, std::string);
