@@ -25,7 +25,6 @@
 
 #include "AmisError.h"
 #include "SmilEngine.h"
-#include "Media.h"
 
 #include <pthread.h>
 #include <vector>
@@ -48,6 +47,7 @@ namespace amis
 {
 class BookmarkFile;
 class PositionData;
+class MediaGroup;
 
 // This class encapsulates the Daisy book handling functions
 class DAISYHANDLER_API DaisyHandler
@@ -146,7 +146,6 @@ public:
     {
     	std::string mTitle; /**< The title of the book */
     	std::string mUri; /**< The URI of the book */
-        amis::MediaGroup mpTitle; /**< The title stored as a MediaGroup class */
 
         /**
          * @name Set info?
@@ -300,7 +299,7 @@ public:
     void printNavNodes();
 
     // Info functions
-    bool playTitle(amis::MediaGroup* pMedia);
+    bool playTitle();
 
     void reportGeneralError(AmisError err);
     std::string getFilePath() const;
@@ -308,6 +307,7 @@ public:
 private:
     amis::BookmarkFile* mpBmk;
     amis::PositionData* currentPos;
+    amis::MediaGroup* mpTitle;
     HistoryRecorder* mpHst;
     SmilMediaGroup* mpCurrentMedia;
     amis::AmisError lastError;

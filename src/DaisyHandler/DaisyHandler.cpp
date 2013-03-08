@@ -34,6 +34,7 @@
 #include "BookmarksReader.h"
 #include "BookmarksWriter.h"
 #include "FilePathTools.h"
+#include "Media.h"
 #include "Metadata.h"
 #include "OpfItemExtract.h"
 #include "TitleAuthorParse.h"
@@ -140,6 +141,7 @@ DaisyHandler::DaisyHandler()
     mpHst = NULL;
     mpCurrentMedia = NULL;
     currentPos = new amis::PositionData();
+    mpTitle = NULL;
 
     mbStartAtLastmark = true;
 
@@ -164,6 +166,15 @@ DaisyHandler::DaisyHandler()
  */
 DaisyHandler::~DaisyHandler()
 {
+    // NavParse will take care of destroying mpTitle
+    /*
+    if (mpTitle != NULL)
+    {
+        mpTitle->destroyContents();
+        delete mpTitle;
+    }
+    */
+
     if (mpCurrentMedia != NULL)
     {
         delete mpCurrentMedia;
@@ -365,6 +376,7 @@ bool DaisyHandler::openBook(std::string url)
     }
 
     mFilePath = url;
+    mBookInfo.mUri = url;
 
     //delete old bookmarks
     if (mpBmk != NULL)
@@ -577,12 +589,11 @@ bool DaisyHandler::setupBook()
 
     if (NavParse::Instance()->getNavModel()->getDocTitle() != NULL)
     {
-        TextNode* p_txt = NULL;
-        p_txt = NavParse::Instance()->getNavModel()->getDocTitle()->getText();
-        if (p_txt != NULL)
+        mpTitle = NavParse::Instance()->getNavModel()->getDocTitle();
+        if (mpTitle->getText() != NULL)
         {
-            string title = p_txt->getTextString().c_str();
-            LOG4CXX_INFO(amisDaisyHandlerLog, "Book title: " << title);
+            mBookInfo.mTitle = mpTitle->getText()->getTextString();
+            LOG4CXX_INFO(amisDaisyHandlerLog, "Book title: " << mBookInfo.mTitle);
         }
     }
 
@@ -3044,8 +3055,9 @@ void DaisyHandler::readBookInfo()
     }
 
     LOG4CXX_INFO(amisDaisyHandlerLog, "Getting book information");
-    mBookInfo.mDaisyType = -1;
 
+    // daisy type
+    mBookInfo.mDaisyType = -1;
     mBookInfo.hasDaisyType = false;
     tmp = Metadata::Instance()->getMetadata("dc:format");
     if (tmp.length() != 0)
@@ -3780,35 +3792,36 @@ bool DaisyHandler::escape()
  * @param pMedia Media root
  * @return Returns true if title media was found and played
  */
-bool DaisyHandler::playTitle(MediaGroup *pMedia)
+bool DaisyHandler::playTitle()
 {
-    if (pMedia == NULL)
+    if (mpTitle == NULL)
+    {
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "mpTitle is NULL, maybe something is wrong with the book");
         return false;
+    }
 
     string src;
     string clipBegin;
     string clipEnd;
     string audioref;
 
-    if (pMedia->getNumberOfAudioClips() > 0)
+    if (mpTitle->getNumberOfAudioClips() > 0)
     {
-
-        AudioNode* p_audio = NULL;
-
-        if (pMedia->getNumberOfAudioClips() > 1)
+        if (mpTitle->getNumberOfAudioClips() > 1)
             LOG4CXX_WARN(amisDaisyHandlerLog,
                     "**TITLEAUDIO: This MediaNode has more than 1 audio clip**");
 
-        for (unsigned int i = 0; i < pMedia->getNumberOfAudioClips(); i++)
+        AudioNode* p_audio = NULL;
+        for (unsigned int i = 0; i < mpTitle->getNumberOfAudioClips(); i++)
         {
-            p_audio = pMedia->getAudio(i);
+            p_audio = mpTitle->getAudio(i);
             src = p_audio->getSrc();
             audioref = p_audio->getId();
 
             src = FilePathTools::getAsLocalFilePath(src);
-            clipBegin = stringReplaceAll(pMedia->getAudio(i)->getClipBegin(),
+            clipBegin = stringReplaceAll(mpTitle->getAudio(i)->getClipBegin(),
                     "npt=", "");
-            clipEnd = stringReplaceAll(pMedia->getAudio(i)->getClipEnd(),
+            clipEnd = stringReplaceAll(mpTitle->getAudio(i)->getClipEnd(),
                     "npt=", "");
 
             //double startms = convertToDouble(clipBegin) * 100;
@@ -3816,8 +3829,8 @@ bool DaisyHandler::playTitle(MediaGroup *pMedia)
             long startms = parseTime(clipBegin) / 10;
             long stopms = parseTime(clipEnd) / 10;
 
-            LOG4CXX_WARN(amisDaisyHandlerLog,
-                    "playing " + audioref + src + " from " + clipBegin + " to " + clipEnd.c_str());
+            LOG4CXX_DEBUG(amisDaisyHandlerLog,
+                    "playing " + audioref + src + " from " + clipBegin + " to " + clipEnd);
 
             callPlayFunction(src, (int) startms, (int) stopms);
         }
