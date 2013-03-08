@@ -50,6 +50,7 @@
 // SmilEngine
 #include "BinarySmilSearch.h"
 #include "ContentNode.h"
+#include "SmilEngine.h"
 #include "SmilTreeBuilder.h"
 #include "SpineBuilder.h"
 

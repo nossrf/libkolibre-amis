@@ -22,6 +22,7 @@
 #include <unistd.h>
 #include "Metadata.h"
 #include "DaisyHandler.h"
+#include "SmilEngine.h"
 #include "BinarySmilSearch.h"
 #include "setup_logging.h"
 

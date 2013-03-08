@@ -24,7 +24,6 @@
 #define DAISYHANDLER_H
 
 #include "AmisError.h"
-#include "SmilEngine.h"
 
 #include <pthread.h>
 #include <vector>
@@ -48,6 +47,7 @@ namespace amis
 class BookmarkFile;
 class PositionData;
 class MediaGroup;
+class SmilMediaGroup;
 
 // This class encapsulates the Daisy book handling functions
 class DAISYHANDLER_API DaisyHandler
