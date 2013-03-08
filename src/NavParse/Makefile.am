@@ -40,9 +40,13 @@ libnavparse_la_SOURCES= $(SRCS)
 
 EXTRA_DIST = NavContainer.h \
 			 NavFileReader.h \
-			 NavModel.h \
 			 NavList.h \
+			 NavMap.h \
+			 NavModel.h \
+			 NavNode.h \
 			 NavParse.h \
+			 NavPoint.h \
+			 NavTarget.h \
 			 NccFileReader.h \
 			 NcxFileReader.h \
 			 PageList.h \

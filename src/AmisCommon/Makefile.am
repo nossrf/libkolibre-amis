@@ -40,6 +40,7 @@ libamiscommon_la_SOURCES= $(SRCS)
 EXTRA_DIST = Bookmarks.h \
 			 BookmarksReader.h \
 			 BookmarksWriter.h \
+			 CustomTest.h \
 			 FilePathTools.h \
 			 FileSearch.h \
 			 md5.h \

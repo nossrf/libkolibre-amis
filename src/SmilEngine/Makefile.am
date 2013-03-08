@@ -44,6 +44,7 @@ EXTRA_DIST = BinarySmilSearch.h \
 			 SeqNode.h \
 			 SmilEngine.h \
 			 SmilEngineConstants.h \
+			 SmilMediaGroup.h \
 			 SmilTree.h \
 			 SmilTreeBuilder.h \
 			 Spine.h \

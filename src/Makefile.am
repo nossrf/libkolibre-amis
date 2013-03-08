@@ -19,21 +19,7 @@ AUTOMAKE_OPTIONS = foreign
 
 HDRS = AmisCommon/AmisCommon.h \
 	   AmisCommon/AmisError.h \
-	   AmisCommon/Media.h \
-	   AmisCommon/CustomTest.h \
-	   DaisyHandler/DaisyHandler.h \
-	   NavParse/NavMap.h \
-	   NavParse/NavNode.h \
-	   NavParse/NavPoint.h \
-	   NavParse/PageList.h \
-	   NavParse/NavModel.h \
-	   NavParse/NavContainer.h \
-	   NavParse/PageTarget.h \
-	   NavParse/NavList.h \
-	   NavParse/NavTarget.h \
-	   NavParse/NavParse.h \
-	   SmilEngine/SmilEngine.h \
-	   SmilEngine/SmilMediaGroup.h
+	   DaisyHandler/DaisyHandler.h
 
 lib_LTLIBRARIES = libkolibre-amis.la
 
