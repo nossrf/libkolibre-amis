@@ -29,33 +29,33 @@
  *
  */
 
+// AmisCommon
 #include "Bookmarks.h"
-#include "DaisyHandler.h"
-#include "SpineBuilder.h"
-#include "SmilTreeBuilder.h"
-#include "HistoryRecorder.h"
-
-
-#include "AmisConstants.h"
-#include "FilePathTools.h"
-#include "Metadata.h"
-#include "TitleAuthorParse.h"
 #include "BookmarksReader.h"
 #include "BookmarksWriter.h"
+#include "FilePathTools.h"
+#include "Metadata.h"
 #include "OpfItemExtract.h"
+#include "TitleAuthorParse.h"
 
-#include "NavParse.h"
-
+// DaisyHandler
+#include "AmisConstants.h"
+#include "DaisyHandler.h"
 #include "HistoryRecorder.h"
 
-#include <BinarySmilSearch.h>
+// NavParse
+#include "NavParse.h"
+
+// SmilEngine
+#include "BinarySmilSearch.h"
+#include "ContentNode.h"
+#include "SmilTreeBuilder.h"
+#include "SpineBuilder.h"
 
 #include <locale.h>
 #include <stdlib.h>
 #include <unistd.h>
-
 #include <time.h>
-
 #include <string>
 #include <iostream>
 #include <sstream>
@@ -64,7 +64,6 @@
 #include <vector>
 #include <cassert>
 #include <iterator>
-#include <ContentNode.h>
 #include <log4cxx/logger.h>
 
 // create logger which will become a child to logger kolibre.amis
@@ -3983,8 +3982,8 @@ inline double DaisyHandler::convertToDouble(const std::string& s)
  */
 inline int DaisyHandler::convertToInt(const std::string& s)
 {
-    LOG4CXX_WARN(amisDaisyHandlerLog,
-                    "convertingToInt:" << s );
+    LOG4CXX_DEBUG(amisDaisyHandlerLog,
+            "convertToInt: converting '" << s << "' to integer");
     std::istringstream i(s);
     int x;
     try

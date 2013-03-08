@@ -279,8 +279,9 @@ public:
     bool firstSection(bool skipTitle = false);
     bool lastSection();
 
-    // Jump to id
+    // Jump to
     bool goToId(std::string);
+    bool jumpToSecond(unsigned int seconds);
 
     // Page Navigation
     bool nextPage();
@@ -300,8 +301,6 @@ public:
 
     // Info functions
     bool playTitle(amis::MediaGroup* pMedia);
-
-    bool jumpToSecond(unsigned int seconds);
 
     void reportGeneralError(AmisError err);
     std::string getFilePath() const;
