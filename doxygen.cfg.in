@@ -581,39 +581,11 @@ WARN_LOGFILE           =
 # directories like "/usr/src/myproject". Separate the files or directories
 # with spaces.
 
-INPUT                  = src/AmisCommon/AmisCommon.h \
-                         src/AmisCommon/AmisError.h \
-                         src/AmisCommon/Media.h \
-                         src/AmisCommon/CustomTest.h \
-                         src/DaisyHandler/DaisyHandler.h \
-                         src/SmilEngine/SmilEngine.h \
-                         src/SmilEngine/SmilMediaGroup.h \
-                         src/AmisCommon/AmisError.cpp \
-                         src/AmisCommon/Media.cpp \
-                         src/AmisCommon/CustomTest.cpp \
-                         src/DaisyHandler/DaisyHandler.cpp \
-                         src/SmilEngine/SmilEngine.cpp \
-                         src/SmilEngine/SmilMediaGroup.cpp \
-                         src/NavParse/NavMap.h \
-                         src/NavParse/NavNode.h \
-                         src/NavParse/NavPoint.h \
-                         src/NavParse/NavMap.cpp \
-                         src/NavParse/NavNode.cpp \
-                         src/NavParse/NavPoint.cpp \
-                         src/NavParse/NavContainer.h \
-                         src/NavParse/NavContainer.cpp \
-                         src/NavParse/NavList.h \
-                         src/NavParse/NavList.cpp \
-                         src/NavParse/NavModel.h \
-                         src/NavParse/NavModel.cpp \
-                         src/NavParse/NavTarget.h \
-                         src/NavParse/NavTarget.cpp \
-                         src/NavParse/PageTarget.h \
-                         src/NavParse/PageTarget.cpp \
-                         src/NavParse/NavParse.h \
-                         src/NavParse/NavParse.cpp \
-                         src/NavParse/PageList.cpp \
-                         src/NavParse/PageList.h
+INPUT                  = $(SRCDIR)/src/DaisyHandler/DaisyHandler.h \
+                         $(SRCDIR)/src/DaisyHandler/DaisyHandler.cpp \
+                         $(SRCDIR)/src/AmisCommon/AmisError.h \
+                         $(SRCDIR)/src/AmisCommon/AmisError.cpp \
+                         $(SRCDIR)/src/AmisCommon/AmisCommon.h
 
 # This tag can be used to specify the character encoding of the source files
 # that doxygen parses. Internally doxygen uses the UTF-8 encoding, which is

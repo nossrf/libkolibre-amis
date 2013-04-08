@@ -203,10 +203,13 @@ public:
     BookInfo *getBookInfo();
 
     /**
-     * A structure containing the navigation points in the book
+     * A data type to hold the navigation points in the book
      */
     struct NavPoints
     {
+        /**
+         * A data type for a navigateable section
+         */
         struct Section
         {
             std::string id;
@@ -222,8 +225,14 @@ public:
                 level(level)
             {}
         };
+        /**
+         * Vector to hold navigateable sections
+         */
         std::vector<Section> sections;
 
+        /**
+         * A data type for a navigateable page
+         */
         struct Page
         {
             std::string id;
@@ -237,6 +246,9 @@ public:
                 xmlAttrClass(attr)
             {}
         };
+        /**
+         * Vector to hold navigateable pages
+         */
         std::vector<Page> pages;
     };
     NavPoints* getNavPoints();
