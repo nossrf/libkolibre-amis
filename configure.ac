@@ -81,11 +81,7 @@ dnl -----------------------------------------------
 dnl check for log4cxx
 dnl -----------------------------------------------
 
-PKG_CHECK_MODULES(LOG4CXX, liblog4cxx >= 0.10.0, HAVE_LOG4CXX=yes, HAVE_LOG4CXX=no)
-
-if (test "x$HAVE_LOG4CXX" = "xno") then
-    AC_MSG_ERROR([**liblog4cxx >= 0.10.0 is needed to build libkolibre-narrator **])
-fi
+PKG_CHECK_MODULES(LOG4CXX, liblog4cxx >= 0.10.0)
 
 AC_SUBST(LOG4CXX_CFLAGS)
 AC_SUBST(LOG4CXX_LIBS)
@@ -94,11 +90,7 @@ dnl -----------------------------------------------
 dnl Check for libkolibre-xmlreader
 dnl -----------------------------------------------
 
-PKG_CHECK_MODULES(LIBKOLIBREXMLREADER, libkolibre-xmlreader >= 0.0.1, HAVE_LIBKOLIBREXMLREADER=yes, HAVE_LIBKOLIBREXMLREADER=no)
-if test "x$HAVE_LIBKOLIBREXMLREADER" = "xno"
-then
-  AC_MSG_ERROR([**libkolibre-xmlreader >= 0.0.1 is needed to build libkolibre-amis **])
-fi
+PKG_CHECK_MODULES(LIBKOLIBREXMLREADER, libkolibre-xmlreader >= 0.0.1)
 
 AC_SUBST(LIBKOLIBREXMLREADER_LIBS)
 AC_SUBST(LIBKOLIBREXMLREADER_CFLAGS)
