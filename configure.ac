@@ -109,7 +109,6 @@ AC_FUNC_MALLOC
 AC_CHECK_FUNCS([alarm localeconv memset mkdir select setenv setlocale strdup strerror strstr])
 
 AC_CONFIG_FILES([Makefile
-                 doxygen.cfg
                  libkolibre-amis.pc
                  src/AmisCommon/Makefile
                  src/DaisyHandler/Makefile
