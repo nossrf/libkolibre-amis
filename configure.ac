@@ -87,6 +87,15 @@ AC_SUBST(LOG4CXX_CFLAGS)
 AC_SUBST(LOG4CXX_LIBS)
 
 dnl -----------------------------------------------
+dnl Check for libkolibre-player
+dnl -----------------------------------------------
+
+PKG_CHECK_MODULES(LIBKOLIBREPLAYER, libkolibre-player >= 0.0.1)
+
+AC_SUBST(LIBKOLIBREPLAYER_LIBS)
+AC_SUBST(LIBKOLIBREPLAYER_CFLAGS)
+
+dnl -----------------------------------------------
 dnl Check for libkolibre-xmlreader
 dnl -----------------------------------------------
 

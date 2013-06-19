@@ -21,6 +21,7 @@ SUBDIRS = HandlerTest DaisyTest JumpTest
 
 check_PROGRAMS = md5test binsmilsearch navpointtest jumppagetest playtitle
 TESTS = md5test binsmilsearch.sh navpointtest.sh jumppagetest.sh playtitle.sh
+TESTS = playtitle.sh
 
 md5test_SOURCES = md5test.cpp
 md5test_CXXFLAGS = -I$(top_srcdir)/src/AmisCommon -g
@@ -39,8 +40,8 @@ jumppagetest_CPPFLAGS = -g @LOG4CXX_CFLAGS@ @LIBKOLIBREXMLREADER_CFLAGS@
 jumppagetest_LDADD = -L$(top_builddir)/src/ -lkolibre-amis @LOG4CXX_LIBS@ @LIBKOLIBREXMLREADER_LIBS@
 
 playtitle_SOURCES = PlayTitle.cpp
-playtitle_CPPFLAGS = -g @LOG4CXX_CFLAGS@ @LIBKOLIBREXMLREADER_CFLAGS@
-playtitle_LDADD = -L$(top_builddir)/src/ -lkolibre-amis @LOG4CXX_LIBS@ @LIBKOLIBREXMLREADER_LIBS@
+playtitle_CPPFLAGS = -g @LOG4CXX_CFLAGS@ @LIBKOLIBREXMLREADER_CFLAGS@ @LIBKOLIBREPLAYER_CFLAGS@
+playtitle_LDADD = -L$(top_builddir)/src/ -lkolibre-amis @LOG4CXX_LIBS@ @LIBKOLIBREXMLREADER_LIBS@ @LIBKOLIBREPLAYER_LIBS@
 
 INCLUDES = -I$(top_srcdir)/src/AmisCommon -I$(top_srcdir)/src/DaisyHandler -I$(top_srcdir)/src/NavParse -I$(top_srcdir)/src/SmilEngine
 

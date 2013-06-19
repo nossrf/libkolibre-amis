@@ -20,10 +20,56 @@
 #include <iostream>
 #include <assert.h>
 #include <unistd.h>
+#include <Player.h>
+#include <string>
 #include "DaisyHandler.h"
 #include "setup_logging.h"
 
 using namespace amis;
+
+bool playerMessageSlot( Player::playerMessage message )
+{
+    switch (message)
+    {
+        case Player::PLAYER_ATEOS:
+            Player::Instance()->stop();
+            return false;
+        default:
+            return true;
+    }
+}
+
+bool playerStateSlot( playerState state )
+{
+    return true;
+    /*
+    switch (state)
+    {
+        case INACTIVE:
+        case BUFFERING:
+        case PLAYING:
+        case PAUSING:
+        case STOPPED:
+        case EXITING:
+            return true;
+    }
+
+    return false;
+    */
+}
+
+static bool playAudio(std::string filename, long long startms, long long stopms)
+{
+    std::cout << "open file " << filename << std::endl;
+    //Player::Instance()->doOnPlayerMessage( boost::bind(&playerMessageSlot, this, _1) );
+    //Player::Instance()->doOnPlayerState( boost::bind(&playerStateSlot, this, _1) );
+    Player::Instance()->doOnPlayerMessage(&playerMessageSlot);
+    Player::Instance()->enable(NULL, NULL);
+    Player::Instance()->open(filename, startms, stopms);
+    Player::Instance()->resume();
+    usleep(500000); while (Player::Instance()->isPlaying()) usleep(100000);
+    return true;
+};
 
 int main(int argc, char *argv[])
 {
@@ -33,9 +79,14 @@ int main(int argc, char *argv[])
     }
 
     setup_logging();
+    log4cxx::LoggerPtr amisLogger(log4cxx::Logger::getLogger("kolibre.amis"));
+    amisLogger->setLevel(log4cxx::Level::getFatal());
 
-    if(not DaisyHandler::Instance()->openBook(argv[1])) {
-        std::cout << "Unable to open requested file: " << argv[1] << std::endl;;
+    for (int i=1; i<argc; i++)
+    {
+
+    if(not DaisyHandler::Instance()->openBook(argv[i])) {
+        std::cout << "Unable to open requested file: " << argv[i] << std::endl;;
         exit(1);
     }
 
@@ -44,7 +95,7 @@ int main(int argc, char *argv[])
     }
 
     if(DaisyHandler::Instance()->getState() != DaisyHandler::HANDLER_OPEN) {
-        std::cout << "The file " << argv[1] << " could not be open, please check for errors" << std::endl;
+        std::cout << "The file " << argv[i] << " could not be open, please check for errors" << std::endl;
         DaisyHandler::Instance()->DestroyInstance();
         return 1;
     }
@@ -52,12 +103,18 @@ int main(int argc, char *argv[])
     // setup the book, returns true if the book has a lastmark
     DaisyHandler::Instance()->setupBook();
 
+    DaisyHandler::Instance()->setPlayFunction(playAudio);
+
+    std::cout << "START playing title" << std::endl;
     // play title, returns true if title was played
     assert(DaisyHandler::Instance()->playTitle());
+    std::cout << "STOPPED playing title" << std::endl;
 
     // cleanup before exit
     DaisyHandler::Instance()->closeBook();
+    }
     DaisyHandler::Instance()->DestroyInstance();
+
 
     return 0;
 }
