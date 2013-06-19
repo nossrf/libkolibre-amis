@@ -947,17 +947,14 @@ std::string DaisyHandler::setUpBookmarks(std::string uid, std::string checksum)
     if (mBmkPath != "")
     {
         bookmark_file = mBmkPath;
-
     }
     else if (getenv("BOOKMARK_DIR") != NULL)
     {
         bookmark_file = getenv("BOOKMARK_DIR");
-
     }
-    else if (getenv("KOLIBRE_BOOKMARK_PATH") != NULL)
+    else if (getenv("KOLIBRE_DATA_PATH") != NULL)
     {
-        bookmark_file = getenv("KOLIBRE_BOOKMARK_PATH");
-
+        bookmark_file = getenv("KOLIBRE_DATA_PATH");
     }
     else
     {
