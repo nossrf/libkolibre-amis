@@ -159,7 +159,7 @@ DaisyHandler::DaisyHandler()
     setState(HANDLER_CLOSED);
 
     handlerThreadActive = false;
-
+    currentNaviLevel = PHRASE;
 }
 
 /**

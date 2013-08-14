@@ -30,6 +30,7 @@ using namespace amis;
 HistoryRecorder::HistoryRecorder()
 {
     mCurrentPos = 0;
+    mergeTime = 0;
 }
 
 HistoryRecorder::~HistoryRecorder()
