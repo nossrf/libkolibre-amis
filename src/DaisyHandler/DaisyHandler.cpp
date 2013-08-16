@@ -3993,7 +3993,7 @@ inline double DaisyHandler::convertToDouble(const std::string& s)
  */
 inline int DaisyHandler::convertToInt(const std::string& s)
 {
-    LOG4CXX_DEBUG(amisDaisyHandlerLog,
+    LOG4CXX_TRACE(amisDaisyHandlerLog,
             "convertToInt: converting '" << s << "' to integer");
     std::istringstream i(s);
     int x;
