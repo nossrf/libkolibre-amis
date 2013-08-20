@@ -41,7 +41,7 @@ public:
     BookmarksReader();
     ~BookmarksReader();
 
-    bool openFile(std::string, BookmarkFile*);
+    AmisError openFile(std::string, BookmarkFile*);
 
     //SAX METHODS
     bool startElement(const xmlChar* const, const xmlChar* const,

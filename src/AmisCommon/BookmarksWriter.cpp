@@ -24,7 +24,6 @@
 #include <iostream>
 #include <sstream>
 
-#include <unistd.h>
 #include <libxml/encoding.h>
 #include <libxml/xmlwriter.h>
 
@@ -214,9 +213,9 @@ bool amis::BookmarksWriter::saveFile(string filepath, BookmarkFile* pFile)
 
     // make sure the path to the file exists
     string dir = amis::FilePathTools::getParentDirectory(filepath);
-    if (access(dir.c_str(), 0) == -1)
+    if (not amis::FilePathTools::isDirectory(dir))
     {
-        amis::FilePathTools::_mkdir(dir);
+        amis::FilePathTools::createDirectory(dir);
     }
 
     // write the file
@@ -225,6 +224,7 @@ bool amis::BookmarksWriter::saveFile(string filepath, BookmarkFile* pFile)
     if (rc < 0)
     {
         LOG4CXX_ERROR(amisBmkWriterLog, "Error at xmlSaveFormatFileEnc");
+        xmlFreeDoc(doc);
         return false;
     }
 

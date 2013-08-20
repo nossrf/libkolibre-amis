@@ -61,7 +61,6 @@
 #include <string>
 #include <iostream>
 #include <sstream>
-#include <fstream>
 #include <algorithm>
 #include <vector>
 #include <cassert>
@@ -555,19 +554,18 @@ bool DaisyHandler::setupBook()
         uid = checksum;
 
     //otherwise there's no consistent way to track the bookmark files
-    if (uid.size() > 0)
+    if (uid.size() == 0)
     {
-        //this function also initializes the mpBmk object
-        string bmk_file_name = setUpBookmarks(uid, checksum);
-    }
-    else
-    {
-        LOG4CXX_WARN(amisDaisyHandlerLog,
-                "uid.size()=0, could not set up bookmarks");
+        LOG4CXX_WARN(amisDaisyHandlerLog, "Bookmark setup not possible, unable to determine unique identifier for book");
         err.setCode(amis::NOT_FOUND);
         err.setMessage("Failed to find UID of book");
         err.setSourceModuleName(amis::module_DaisyHandler);
         reportGeneralError(err);
+    }
+    else
+    {
+        //this function also initializes the mpBmk object
+        setupBookmarks(uid, checksum);
     }
 
     LOG4CXX_DEBUG(amisDaisyHandlerLog, "getting navmodel..");
@@ -929,13 +927,12 @@ bool DaisyHandler::setBookmarkPath(std::string path)
 }
 
 /**
- * Set up bookmarks, the filename gets extended the given by uid and checksum
+ * Set up bookmarks, either loads an existing bookmark or creates a new one
  *
- * @param uid Uid to append to file name
- * @param checksum Checksum to append to filename
- * @return Returns true on success
+ * @param uid A unique identifier for the book
+ * @param checksum A MD5 checksum for the book
  */
-std::string DaisyHandler::setUpBookmarks(std::string uid, std::string checksum)
+void DaisyHandler::setupBookmarks(std::string uid, std::string checksum)
 {
     string filesafe_uid = uid + "_" + checksum;
 
@@ -963,17 +960,11 @@ std::string DaisyHandler::setUpBookmarks(std::string uid, std::string checksum)
 
     bookmark_file = amis::FilePathTools::convertSlashesFwd(bookmark_file);
 
-#ifdef WIN32
-    if (bookmark_file[bookmark_file.size() - 1] != '\\')
-    {
-        bookmark_file.append("\\");
-    }
-#else
+
     if (bookmark_file[bookmark_file.size() - 1] != '/')
     {
         bookmark_file.append("/");
     }
-#endif
 
     //replace all / \ , ; : (special chars) with '__' (double underscore)
 
@@ -1016,64 +1007,80 @@ std::string DaisyHandler::setUpBookmarks(std::string uid, std::string checksum)
 
     bookmark_file.append(filesafe_uid);
     bookmark_file.append(".bmk");
-    this->mBmkFilePath = bookmark_file;
+
+    if (amis::FilePathTools::fileIsReadable(bookmark_file))
+    {
+        //create a new bookmark file object
+        amis::BookmarkFile* p_bmk = NULL;
+        p_bmk = new amis::BookmarkFile();
+
+        amis::BookmarksReader reader;
+        AmisError result = reader.openFile(bookmark_file, p_bmk);
+
+        if (result.getCode() == amis::OK)
+        {
+            // Set the current bookmark to the last one added
+            mCurrentBookmark = p_bmk->getNumberOfItems() - 1;
+            p_bmk->setUid(uid);
+
+            // Set mBmkFilePath and mpBmk pointer and return
+            mBmkFilePath = bookmark_file;
+            mpBmk = p_bmk;
+
+            return;
+        }
+
+        if (result.getCode() != amis::NOT_FOUND)
+        {
+            std::string bookmark_file_backup = bookmark_file;
+            bookmark_file_backup.append(".corrupt");
+
+            if (not amis::FilePathTools::renameFile(bookmark_file, bookmark_file_backup))
+            {
+                LOG4CXX_WARN(amisDaisyHandlerLog, "Error creating bookmark file backup");
+            }
+        }
+    }
+
+    LOG4CXX_INFO(amisDaisyHandlerLog, "Creating a new bookmark file");
 
     //create a new bookmark file object
     amis::BookmarkFile* p_bmk = NULL;
     p_bmk = new amis::BookmarkFile();
-    mpBmk = p_bmk;
 
-    //Check if the file already exists
-    fstream fin;
-    fin.open(bookmark_file.c_str(), ios::in);
+    //read the title data from our current book and add it to the file
+    amis::TitleAuthorParse title_parse;
+    amis::MediaGroup* p_title = NULL;
 
-    //if no file was found, create a new one
-    if (!fin.is_open())
+    AmisError err = title_parse.openFile(this->mFilePath);
+    if (err.getCode() == amis::OK)
     {
-        //read the title data from our current book and add it to the file
-        amis::TitleAuthorParse title_parse;
-        amis::MediaGroup* p_title = NULL;
-
-        AmisError err = title_parse.openFile(this->mFilePath);
-        if (err.getCode() == amis::OK)
-        {
-            p_title = title_parse.getTitleInfo();
-        }
-        else
-        {
-            p_title = new amis::MediaGroup();
-
-            amis::TextNode* p_text = NULL;
-            p_text = new amis::TextNode();
-
-            p_text->setTextString("no title");
-        }
-
-        mpBmk->setTitle(p_title);
-        mpBmk->setUid(uid);
-
-        amis::BookmarksWriter writer;
-        writer.saveFile(mBmkFilePath, mpBmk);
+        p_title = title_parse.getTitleInfo();
     }
-    //else, read in data from the existing file
     else
     {
-        fin.close();
-        amis::BookmarksReader* reader = NULL;
-        reader = new amis::BookmarksReader();
+        p_title = new amis::MediaGroup();
 
-        reader->openFile(mBmkFilePath, mpBmk);
+        amis::TextNode* p_text = NULL;
+        p_text = new amis::TextNode();
 
-        // Set the current bookmark to the last one added
-        mCurrentBookmark = mpBmk->getNumberOfItems() - 1;
-
-        mpBmk->setUid(uid);
-
-        delete reader;
+        p_text->setTextString("no title");
     }
 
-    return bookmark_file;
+    p_bmk->setTitle(p_title);
+    p_bmk->setUid(uid);
 
+    amis::BookmarksWriter writer;
+    if (not writer.saveFile(bookmark_file, p_bmk))
+    {
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "Failed to save bookmark file");
+        delete p_bmk;
+        return;
+    }
+
+    // Set mBmkFilePath and mpBmk pointer and return
+    mBmkFilePath = bookmark_file;
+    mpBmk = p_bmk;
 }
 
 /**
@@ -1089,7 +1096,7 @@ bool DaisyHandler::addBookmark()
     if (mpBmk == NULL)
     {
         err.setCode(NOT_SUPPORTED);
-        err.setMessage("Bookmarkfile not open");
+        err.setMessage("BookmarkFile not open");
         reportGeneralError(err);
         return false;
     }
@@ -1195,7 +1202,14 @@ bool DaisyHandler::addBookmark()
     mCurrentBookmark = mpBmk->getNumberOfItems() - 1;
 
     amis::BookmarksWriter writer;
-    writer.saveFile(mBmkFilePath, mpBmk);
+    if (not writer.saveFile(mBmkFilePath, mpBmk))
+    {
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "Failed to save bookmark file");
+        err.setCode(amis::UNDEFINED_ERROR);
+        err.setMessage("Failed to save bookmark file");
+        reportGeneralError(err);
+        return false;
+    }
 
     return true;
 }
@@ -1224,13 +1238,19 @@ bool DaisyHandler::deleteCurrentBookmark()
     {
         mpBmk->deleteItem(idx);
         amis::BookmarksWriter writer;
-        writer.saveFile(mBmkFilePath, mpBmk);
+        if (not writer.saveFile(mBmkFilePath, mpBmk))
+        {
+            LOG4CXX_ERROR(amisDaisyHandlerLog, "Failed to save bookmark file");
+            err.setCode(amis::UNDEFINED_ERROR);
+            err.setMessage("Failed to save bookmark file");
+            reportGeneralError(err);
+            return false;
+        }
 
         if (mCurrentBookmark >= mpBmk->getNumberOfItems())
             mCurrentBookmark = mpBmk->getNumberOfItems() - 1;
 
         return true;
-
     }
     else
     {
@@ -1267,7 +1287,14 @@ bool DaisyHandler::deleteAllBookmarks()
     }
 
     amis::BookmarksWriter writer;
-    writer.saveFile(mBmkFilePath, mpBmk);
+    if (not writer.saveFile(mBmkFilePath, mpBmk))
+    {
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "Failed to save bookmark file");
+        err.setCode(amis::UNDEFINED_ERROR);
+        err.setMessage("Failed to save bookmark file");
+        reportGeneralError(err);
+        return false;
+    }
 
     mCurrentBookmark = -1;
 
@@ -3963,7 +3990,7 @@ long parseTime(string str)
  *
  * @param s String to convert
  * @return Returns the string converted to double
- * @return -1 Returns -1 if conversin failed
+ * @return -1 Returns -1 if conversion failed
  */
 inline double DaisyHandler::convertToDouble(const std::string& s)
 {
@@ -3989,7 +4016,7 @@ inline double DaisyHandler::convertToDouble(const std::string& s)
  *
  * @param s String to convert
  * @return Returns the string converted to integer
- * @return -1 Returns -1 if conversin failed
+ * @return -1 Returns -1 if conversion failed
  */
 inline int DaisyHandler::convertToInt(const std::string& s)
 {
@@ -4115,7 +4142,7 @@ void DaisyHandler::continuePlayingMediaGroup(unsigned int offsetSecond)
         NavNode* p_node = NULL;
 
         p_node = NavParse::Instance()->getNavModel()->getNavMap()->current();
-        if (p_node != NULL && p_node->getPlayOrder() > 0)
+        if (p_node != NULL)
         {
             p_pos->mNcxRef = p_node->getId();
             p_pos->mPlayOrder = p_node->getPlayOrder();
@@ -4126,7 +4153,11 @@ void DaisyHandler::continuePlayingMediaGroup(unsigned int offsetSecond)
             //mpBmk->printPositionData(p_pos);
 
             BookmarksWriter writer;
-            writer.saveFile(mBmkFilePath, mpBmk);
+            if (not writer.saveFile(mBmkFilePath, mpBmk))
+            {
+                // only warn here
+                LOG4CXX_WARN(amisDaisyHandlerLog, "Failed to save bookmark file");
+            }
         }
 
     }

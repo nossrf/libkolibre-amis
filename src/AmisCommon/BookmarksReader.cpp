@@ -57,11 +57,17 @@ amis::BookmarksReader::~BookmarksReader()
 {
 }
 
-bool amis::BookmarksReader::openFile(string filepath, BookmarkFile* pFile)
+amis::AmisError amis::BookmarksReader::openFile(string filepath, BookmarkFile* pFile)
 {
+    mError.setCode(amis::OK);
+    mError.setMessage("");
+    mError.setFilename(filepath);
+
     if (pFile == NULL)
     {
-        return false;
+        mError.setCode(amis::UNDEFINED_ERROR);
+        mError.setMessage("BookmarkFile pointer not set");
+        return mError;
     }
 
     mb_ReturnValue = true;
@@ -72,10 +78,6 @@ bool amis::BookmarksReader::openFile(string filepath, BookmarkFile* pFile)
     const char* cp_file;
     string tmp_string;
     XmlReader parser;
-
-    mError.setCode(amis::OK);
-    mError.setMessage("");
-    mError.setFilename(filepath);
 
     mb_flagGetChars = false;
     // For idcounter
@@ -94,7 +96,7 @@ bool amis::BookmarksReader::openFile(string filepath, BookmarkFile* pFile)
     parser.setContentHandler(this);
     parser.setErrorHandler(this);
 
-    if (!parser.parseXml(filepath.c_str()))
+    if (!parser.parseXml(cp_file))
     {
         const XmlError *e = parser.getLastError();
         if (e)
@@ -112,7 +114,7 @@ bool amis::BookmarksReader::openFile(string filepath, BookmarkFile* pFile)
 
     pFile = mpFile;
 
-    return mb_ReturnValue;
+    return mError;
 }
 
 //--------------------------------------------------

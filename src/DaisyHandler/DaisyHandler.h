@@ -374,8 +374,7 @@ private:
     void readPageNavPoints();
     void readSectionNavPoints();
 
-    //return the name of the bmk file
-    std::string setUpBookmarks(std::string, std::string);
+    void setupBookmarks(std::string, std::string);
     bool selectBookmark(int idx);
 
     bool mbStartAtLastmark;
