@@ -207,7 +207,7 @@ bool amis::BookmarksReader::startElement(const xmlChar* const uri,
         mpCurrentPosData = new amis::PositionData;
         mpCurrentPosData->mbHasCharOffset = false;
         mpCurrentPosData->mbHasTimeOffset = false;
-        mpCurrentPosData->mPlayOrder = 1;
+        mpCurrentPosData->mPlayOrder = -1;
     }
 
     else if (strcmp(element_name, "uri") == 0)
@@ -227,7 +227,7 @@ bool amis::BookmarksReader::startElement(const xmlChar* const uri,
         mb_flagGetChars = true;
     }
 
-    else if (strcmp(element_name, "playorder") == 0)
+    else if (strcmp(element_name, "playOrder") == 0)
     {
         mb_flagGetChars = true;
     }
@@ -252,7 +252,7 @@ bool amis::BookmarksReader::startElement(const xmlChar* const uri,
         mpCurrentPosData = new amis::PositionData;
         mpCurrentPosData->mbHasCharOffset = false;
         mpCurrentPosData->mbHasTimeOffset = false;
-        mpCurrentPosData->mPlayOrder = 1;
+        mpCurrentPosData->mPlayOrder = -1;
 
         amis::Bookmark *p_bmk = (amis::Bookmark*) mpCurrentPosMark;
         int id = stringTo<int>(getAttributeValue("id"));
@@ -277,14 +277,14 @@ bool amis::BookmarksReader::startElement(const xmlChar* const uri,
         mpCurrentPosData = new amis::PositionData;
         mpCurrentPosData->mbHasCharOffset = false;
         mpCurrentPosData->mbHasTimeOffset = false;
-        mpCurrentPosData->mPlayOrder = 1;
+        mpCurrentPosData->mPlayOrder = -1;
     }
     else if (strcmp(element_name, "hiliteEnd") == 0)
     {
         mpCurrentPosData = new amis::PositionData;
         mpCurrentPosData->mbHasCharOffset = false;
         mpCurrentPosData->mbHasTimeOffset = false;
-        mpCurrentPosData->mPlayOrder = 1;
+        mpCurrentPosData->mPlayOrder = -1;
     }
     else
     {
@@ -337,7 +337,7 @@ bool amis::BookmarksReader::endElement(const xmlChar* const uri,
         //std::cout << "BookmarksReader..: got audioRef: '" << mTempChars << "'" << endl;
         mpCurrentPosData->mAudioRef = mTempChars;
     }
-    else if (strcmp(element_name, "playorder") == 0)
+    else if (strcmp(element_name, "playOrder") == 0)
     {
         //std::cout << "BookmarksReader..: got mPlayOrder: '" << mTempChars << "' or " << stringTo<int>(mTempChars) << endl;
         mpCurrentPosData->mPlayOrder = stringTo<int>(mTempChars);

@@ -38,8 +38,7 @@ class AMISCOMMON_API PositionData
 public:
     PositionData()
     {
-        //std::cout << "PositionData::PositionData()" << endl;
-        mPlayOrder = 0;
+        mPlayOrder = -1;
         mUri = "";
         mNcxRef = "";
         mTextRef = "";
