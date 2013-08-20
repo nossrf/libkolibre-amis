@@ -19,12 +19,16 @@ AUTOMAKE_OPTIONS = foreign
 
 SUBDIRS = HandlerTest DaisyTest JumpTest
 
-check_PROGRAMS = md5test binsmilsearch navpointtest jumppagetest playtitle
-TESTS = md5test binsmilsearch.sh navpointtest.sh jumppagetest.sh playtitle.sh
+check_PROGRAMS = md5test bookmarks binsmilsearch navpointtest jumppagetest playtitle
+TESTS = md5test bookmarks binsmilsearch.sh navpointtest.sh jumppagetest.sh playtitle.sh
 
 md5test_SOURCES = md5test.cpp
 md5test_CXXFLAGS = -I$(top_srcdir)/src/AmisCommon -g
 md5test_LDFLAGS = $(top_builddir)/src/AmisCommon/md5.lo
+
+bookmarks_SOURCES = Bookmarks.cpp
+bookmarks_CPPFLAGS = -g @LOG4CXX_CFLAGS@ @LIBKOLIBREXMLREADER_CFLAGS@
+bookmarks_LDADD = -L$(top_builddir)/src/ -lkolibre-amis @LOG4CXX_LIBS@ @LIBKOLIBREXMLREADER_LIBS@
 
 binsmilsearch_SOURCES = BinSmilSearch.cpp
 binsmilsearch_CPPFLAGS = -g @LOG4CXX_CFLAGS@ @LIBKOLIBREXMLREADER_CFLAGS@
