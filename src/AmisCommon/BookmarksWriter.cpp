@@ -95,7 +95,7 @@ bool amis::BookmarksWriter::saveFile(string filepath, BookmarkFile* pFile)
     mpFile = pFile;
     unsigned int i;
 
-    //cout << "BookmarksWriter::saveFile() Writing bookmarks to " << filepath << endl;
+    LOG4CXX_TRACE(amisBmkWriterLog, "Writing bookmarks to " << filepath);
 
     xmlDocPtr doc;
 
@@ -195,7 +195,7 @@ bool amis::BookmarksWriter::saveFile(string filepath, BookmarkFile* pFile)
         return false;
     }
 
-    //cout << "BookmarksWriter::savefile(): Ending document" << endl;
+    LOG4CXX_TRACE(amisBmkWriterLog, "BookmarksWriter::savefile(): Ending document");
     rc = xmlTextWriterEndDocument(xmlwriter);
     if (rc < 0)
     {
@@ -219,7 +219,7 @@ bool amis::BookmarksWriter::saveFile(string filepath, BookmarkFile* pFile)
     }
 
     // write the file
-    //LOG4CXX_DEBUG(amisBmkWriterLog, "writing file to " + filepath);
+    LOG4CXX_DEBUG(amisBmkWriterLog, "writing file to " + filepath);
     rc = xmlSaveFormatFileEnc(filepath.c_str(), doc, ENCODING, 1);
     if (rc < 0)
     {
@@ -251,14 +251,14 @@ int amis::BookmarksWriter::writeTitle(amis::MediaGroup* pTitle)
     if (rc < 0)
         return rc;
 
-    //cout << "BookmarksWriter::writeTitle(): Ending title element" << endl;
+    LOG4CXX_TRACE(amisBmkWriterLog, "Ending title element");
     rc = xmlTextWriterEndElement(xmlwriter);
     return rc;
 }
 
 int amis::BookmarksWriter::writeUid(string uid)
 {
-    //cout << "BookmarksWriter::writeUid(): Writing uid element" << uid << endl;
+    LOG4CXX_TRACE(amisBmkWriterLog, "Writing uid element" << uid);
     return xmlTextWriterWriteFormatElement(xmlwriter, X("uid"), "%s",
             uid.c_str());
 }
@@ -272,7 +272,7 @@ int amis::BookmarksWriter::writeLastmark(amis::PositionData* pLastmark)
 
     int rc;
 
-    //cout << "BookmarksWriter::writeLastmark(): Writing lastmark element" << endl;
+    LOG4CXX_TRACE(amisBmkWriterLog, "Writing lastmark element");
     rc = xmlTextWriterStartElement(xmlwriter, X("lastmark"));
     if (rc < 0)
         return rc;
@@ -281,7 +281,7 @@ int amis::BookmarksWriter::writeLastmark(amis::PositionData* pLastmark)
     if (rc < 0)
         return rc;
 
-    //cout << "BookmarksWriter::writeLastmark(): Finishing lastmark element" << endl;
+    LOG4CXX_TRACE(amisBmkWriterLog, "Finishing lastmark element");
     rc = xmlTextWriterEndElement(xmlwriter);
 
     return rc;
@@ -289,7 +289,7 @@ int amis::BookmarksWriter::writeLastmark(amis::PositionData* pLastmark)
 
 int amis::BookmarksWriter::writeHilite(amis::Hilite* pHilite)
 {
-    //cout << "BookmarksWriter::writeLastmark(): Writing hilite.." << endl;
+    LOG4CXX_TRACE(amisBmkWriterLog, "Writing hilite..");
     int rc;
 
     rc = xmlTextWriterStartElement(xmlwriter, X("hilite"));
@@ -334,7 +334,7 @@ int amis::BookmarksWriter::writeHilite(amis::Hilite* pHilite)
 
 int amis::BookmarksWriter::writeBookmark(amis::Bookmark* pBookmark)
 {
-    //cout << "BookmarksWriter::writeLastmark(): Writing bookmark.." << endl;
+    LOG4CXX_TRACE(amisBmkWriterLog, "Writing bookmark..");
     int rc;
 
     rc = xmlTextWriterStartElement(xmlwriter, X("bookmark"));
@@ -366,7 +366,7 @@ int amis::BookmarksWriter::writeBookmark(amis::Bookmark* pBookmark)
 int amis::BookmarksWriter::writePositionData(amis::PositionData* pData)
 {
     int rc;
-    //cout << "BookmarksWriter::writeLastmark(): Writing positiondata.." << endl;
+    LOG4CXX_TRACE(amisBmkWriterLog, "Writing positiondata..");
 
     rc = xmlTextWriterWriteFormatElement(xmlwriter, X("uri"), "%s",
             X(pData->mUri.c_str()));
@@ -421,11 +421,11 @@ int amis::BookmarksWriter::writeMediaGroup(amis::MediaGroup* pMedia)
 
     int rc;
 
-    //cout << "BookmarksWriter::writeLastmark(): Writing mediagroup.." << endl;
+    LOG4CXX_TRACE(amisBmkWriterLog, "Writing mediagroup..");
 
     if (pMedia->hasText() == true)
     {
-        //cout << "BookmarksWriter::writeMediaGroup(): Writing formatted text element" << endl;
+        LOG4CXX_TRACE(amisBmkWriterLog, "Writing formatted text element");
         string text_content = pMedia->getText()->getTextString();
         rc = xmlTextWriterWriteFormatElement(xmlwriter, X("text"), "%s",
                 X(text_content.c_str()));
@@ -435,33 +435,33 @@ int amis::BookmarksWriter::writeMediaGroup(amis::MediaGroup* pMedia)
 
     if (pMedia->hasAudio() == true)
     {
-        //cout << "BookmarksWriter::writeMediaGroup(): Starting audio elemenet" << endl;
+        LOG4CXX_TRACE(amisBmkWriterLog, "Starting audio elemenet");
         rc = xmlTextWriterStartElement(xmlwriter, X("audio"));
         if (rc < 0)
             return rc;
 
         amis::AudioNode* p_audio_obj = pMedia->getAudio(0);
 
-        //cout << "BookmarksWriter::writeMediaGroup(): Setting attribute src" << endl;
+        LOG4CXX_TRACE(amisBmkWriterLog, "Setting attribute src");
         //add src, clipBegin, and clipEnd attributes to "audio"
         rc = xmlTextWriterWriteFormatAttribute(xmlwriter, X("src"), "%s",
                 X(p_audio_obj->getSrc().c_str()));
         if (rc < 0)
             return rc;
 
-        //cout << "BookmarksWriter::writeMediaGroup(): Setting attribute clipbegin" << endl;
+        LOG4CXX_TRACE(amisBmkWriterLog, "Setting attribute clipbegin");
         rc = xmlTextWriterWriteFormatAttribute(xmlwriter, X("clipBegin"), "%s",
                 X(p_audio_obj->getClipBegin().c_str()));
         if (rc < 0)
             return rc;
 
-        //cout << "BookmarksWriter::writeMediaGroup(): Setting attribute clipend" << endl;
+        LOG4CXX_TRACE(amisBmkWriterLog, "Setting attribute clipend");
         rc = xmlTextWriterWriteFormatAttribute(xmlwriter, X("clipEnd"), "%s",
                 X(p_audio_obj->getClipEnd().c_str()));
         if (rc < 0)
             return rc;
 
-        //cout << "BookmarksWriter::writeMediaGroup(): Ending element audio" << endl;
+        LOG4CXX_DEBUG(amisBmkWriterLog, "Ending element audio");
         rc = xmlTextWriterEndElement(xmlwriter);
         if (rc < 0)
             return rc;
@@ -472,7 +472,7 @@ int amis::BookmarksWriter::writeMediaGroup(amis::MediaGroup* pMedia)
 int amis::BookmarksWriter::writeNote(amis::MediaGroup* pNote)
 {
     int rc;
-    //cout << "BookmarksWriter::writeLastmark(): Writing note.." << endl;
+    LOG4CXX_TRACE(amisBmkWriterLog, "Writing note..");
     rc = xmlTextWriterStartElement(xmlwriter, X("note"));
     if (rc < 0)
         return rc;

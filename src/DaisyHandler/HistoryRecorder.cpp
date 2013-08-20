@@ -23,7 +23,13 @@
 #include "HistoryRecorder.h"
 #include <iostream>
 
+#include <log4cxx/logger.h>
+
 #define MERGE_TIMEOUT 5
+
+// create logger which will become a child to logger kolibre.amis
+log4cxx::LoggerPtr amisHistoryRecorderLog(
+        log4cxx::Logger::getLogger("kolibre.amis.historyrecorder"));
 
 using namespace amis;
 
@@ -35,7 +41,7 @@ HistoryRecorder::HistoryRecorder()
 
 HistoryRecorder::~HistoryRecorder()
 {
-    //cout << "HistoryRecorder::~HistoryRecorder: Deleting browsing history" << endl;
+    LOG4CXX_TRACE(amisHistoryRecorderLog, "Deleting browsing history" );
 
     int sz, i;
 
@@ -66,7 +72,7 @@ void HistoryRecorder::clearTemp()
     if (mTemp.size() == 0)
         return;
 
-    //cout << "HistoryRecorder::clearTemp() clearing temporary items" << endl;
+    LOG4CXX_TRACE(amisHistoryRecorderLog, "clearing temporary items" );
 
     amis::PositionData *p_pos;
 
@@ -103,14 +109,14 @@ bool HistoryRecorder::getPrevious(PositionData **p_pos)
     {
         mCurrentPos--;
         clearTemp();
-        //cout << "HistoryReader::getPrevious(): returning item " << mCurrentPos << endl;
+        LOG4CXX_TRACE(amisHistoryRecorderLog, "returning item " << mCurrentPos );
         *p_pos = mItems[mCurrentPos];
 
         return true;
     }
     else
     {
-        //cout << "HistoryReader::getPrevious(): no previous history item, returning first item" << endl;
+        LOG4CXX_TRACE(amisHistoryRecorderLog, "no previous history item, returning first item" );
         *p_pos = mItems[0];
 
     }
@@ -140,7 +146,7 @@ bool HistoryRecorder::getNext(PositionData **p_pos)
     }
     else
     {
-        //cout << "HistoryReader::getPrevious(): no next history item, returning last item" << endl;
+        LOG4CXX_TRACE(amisHistoryRecorderLog, "no next history item, returning last item" );
         *p_pos = mItems[mItems.size() - 1];
     }
 
@@ -180,8 +186,7 @@ void HistoryRecorder::mergeBranches()
     PositionData *p_pos;
 
     unsigned int i;
-    //cout << "HistoryRecorder::mergeBranches() merging mItems of size " << mItems.size() <<
-    //" with mTemp of size " << mTemp.size() << " at mCurrentPos " << mCurrentPos << endl;
+    LOG4CXX_TRACE(amisHistoryRecorderLog, "merging mItems of size " << mItems.size() << " with mTemp of size " << mTemp.size() << " at mCurrentPos " << mCurrentPos );
 
     // Clear items after current position
     for (i = mItems.size() - 1; i > mCurrentPos; i--)
@@ -192,7 +197,7 @@ void HistoryRecorder::mergeBranches()
         delete p_pos;
     }
 
-    //cout << "finished deleting items" << endl;
+    LOG4CXX_TRACE(amisHistoryRecorderLog, "finished deleting items" );
 
     // Move all remaining items from mTemp to mItems
     for (i = 0; i < mTemp.size(); i++)
@@ -204,7 +209,7 @@ void HistoryRecorder::mergeBranches()
         }
         else
         {
-            //cout << "addming mTemp["<<i<<"]: "<<p_pos->mUri<< endl;
+            LOG4CXX_TRACE(amisHistoryRecorderLog, "addming mTemp["<<i<<"]: "<<p_pos->mUri);
             mItems.push_back(p_pos);
         }
     }
@@ -226,7 +231,7 @@ void HistoryRecorder::addItem(PositionData *pPositionData)
         }
 
         // ..and push the new item back on the mItems 
-        //cout << "HistoryRecorder::addItem(): pushed item onto stack (size:" << mItems.size() <<")"<< endl;
+        LOG4CXX_TRACE(amisHistoryRecorderLog, "pushed item onto stack (size:" << mItems.size() <<")");
 
         //if this is the first item
         if (mItems.size() == 0)
@@ -239,7 +244,7 @@ void HistoryRecorder::addItem(PositionData *pPositionData)
         //delete the item if we dont want it
         else
         {
-            //cout << "HistoryRecorder::addItem(): Item same as previous one, ignoring it" << endl;
+            LOG4CXX_TRACE(amisHistoryRecorderLog, "Item same as previous one, ignoring it" );
             delete pPositionData;
         }
 
@@ -250,7 +255,7 @@ void HistoryRecorder::addItem(PositionData *pPositionData)
     {
         // if we are at the moment browsing the history,
         // push the item to the temporary stack if it's different from the previous one
-        //cout << "HistoryRecorder::addItem(): pushing item onto temporary stack (size:" << mTemp.size() <<")"<< endl;
+        LOG4CXX_TRACE(amisHistoryRecorderLog, "pushing item onto temporary stack (size:" << mTemp.size() <<")");
 
         if (mTemp.size() == 0)
             mTemp.push_back(pPositionData);
@@ -258,7 +263,7 @@ void HistoryRecorder::addItem(PositionData *pPositionData)
             mTemp.push_back(pPositionData);
         else
         {
-            //cout << "HistoryRecorder::addItem(): Item same as previous one, ignoring it" << endl;
+            LOG4CXX_TRACE(amisHistoryRecorderLog, "Item same as previous one, ignoring it" );
             delete pPositionData;
         }
 
@@ -267,18 +272,15 @@ void HistoryRecorder::addItem(PositionData *pPositionData)
 
 void HistoryRecorder::printItems()
 {
-    std::cout << "HistoryRecorder::printItems() mCurrentPos: " << mCurrentPos
-            << std::endl;
+    LOG4CXX_DEBUG(amisHistoryRecorderLog, "mCurrentPos: " << mCurrentPos );
 
     unsigned int i;
-    std::cout << "HistoryRecorder::mItems()" << std::endl;
+    LOG4CXX_DEBUG(amisHistoryRecorderLog, "mItems" );
     for (i = 0; i < mItems.size(); i++)
-        std::cout << "Item " << i << ": " << mItems[i]->mUri << " AudioRef: "
-                << mItems[i]->mAudioRef << std::endl;
+        LOG4CXX_DEBUG(amisHistoryRecorderLog, "Item " << i << ": " << mItems[i]->mUri << " AudioRef: " << mItems[i]->mAudioRef );
 
-    std::cout << "HistoryRecorder::mTemp()" << std::endl;
+    LOG4CXX_DEBUG(amisHistoryRecorderLog, "mTemp" );
     for (i = 0; i < mTemp.size(); i++)
-        std::cout << "TempItem " << i << ": " << mTemp[i]->mUri << " AudioRef: "
-                << mTemp[i]->mAudioRef << std::endl;
+        LOG4CXX_DEBUG(amisHistoryRecorderLog, "TempItem " << i << ": " << mTemp[i]->mUri << " AudioRef: " << mTemp[i]->mAudioRef );
 
 }

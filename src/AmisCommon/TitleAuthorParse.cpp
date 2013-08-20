@@ -232,7 +232,7 @@ bool amis::TitleAuthorParse::startElement(const xmlChar* const namespaceURI,
     const char* element_name = NULL;
     element_name = XmlReader::transcode(qName);
 
-    //cout << "In startelement, name " << element_name << endl;
+    LOG4CXX_TRACE(amisTitleAutorParseLog, "In startelement, name " << element_name );
 
     if (mb_flagFinished == false)
     {
@@ -248,7 +248,7 @@ bool amis::TitleAuthorParse::startElement(const xmlChar* const namespaceURI,
                 std::transform(classval.begin(), classval.end(),
                         classval.begin(), (int (*)(int))tolower);
 
-                        //cout << "classval is " << classval << endl;
+                        LOG4CXX_TRACE(amisTitleAutorParseLog, "classval is " << classval );
                         //if the class="title"
 if(                classval.compare(ATTRVAL_TITLE) == 0)
                 {
@@ -410,7 +410,7 @@ bool amis::TitleAuthorParse::characters(const xmlChar* const characters,
         const char *tmpchars = XmlReader::transcode(characters);
         mTempChars.append(tmpchars, length);
 
-        //cout << "In characters, chars: " << mTempChars << endl;
+        LOG4CXX_TRACE(amisTitleAutorParseLog, "In characters, chars: " << mTempChars );
 
         amis::MediaGroup* p_current_media = NULL;
 
@@ -468,19 +468,19 @@ const char *amis::TitleAuthorParse::getAttributeValue(const char *attributeName)
     //save the attributes list length
     int len = mpAttributes->getLength();
 
-    //cout << "Attributes length: " << len << endl;
+    LOG4CXX_TRACE(amisTitleAutorParseLog, "Attributes length: " << len );
 
     //for-loop through the attributes list until we find a match
     for (int i = 0; i < len; i++)
     {
         current_attribute_name = XmlReader::transcode(mpAttributes->qName(i));
 
-        //cout << "current attrname: " << current_attribute_name << endl;
+        LOG4CXX_TRACE(amisTitleAutorParseLog, "current attrname: " << current_attribute_name );
 
         //comparison if statement
         if (strcmp(current_attribute_name, attributeName) == 0)
         {
-            //cout << "got a match for " << current_attribute_name << ":" << XmlReader::transcode(mpAttributes->value(i)) << endl;
+            LOG4CXX_TRACE(amisTitleAutorParseLog, "got a match for " << current_attribute_name << ":" << XmlReader::transcode(mpAttributes->value(i)) );
 
             //a match has been found, return its value
             return XmlReader::transcode(mpAttributes->value(i));

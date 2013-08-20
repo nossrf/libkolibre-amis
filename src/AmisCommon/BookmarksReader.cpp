@@ -2,7 +2,7 @@
  AmisCommon: common system objects and utility routines
 
  Copyright (C) 2004  DAISY for All Project
- 
+
  Copyright (C) 2012 Kolibre
 
  This library is free software; you can redistribute it and/or
@@ -127,7 +127,7 @@ bool amis::BookmarksReader::startElement(const xmlChar* const uri,
     //get the element name as a string
     element_name = XmlReader::transcode(qname);
 
-    //std::cout << "BookmarksReader..: At element: '" << element_name << "'" << endl;
+    LOG4CXX_TRACE(amisBmkReaderLog, "At element: '" << element_name << "'" );
 
     string tmpstr;
     tmpstr.assign(element_name);
@@ -176,6 +176,7 @@ bool amis::BookmarksReader::startElement(const xmlChar* const uri,
             tmpstr = getAttributeValue("clipEnd");
             p_audio->setClipEnd(tmpstr);
 
+            LOG4CXX_TRACE(amisBmkReaderLog, "Adding title audio clip" );
             mpTitle->addAudioClip(p_audio);
 
         }
@@ -189,7 +190,7 @@ bool amis::BookmarksReader::startElement(const xmlChar* const uri,
             tmpstr = getAttributeValue("clipEnd");
             p_audio->setClipEnd(tmpstr);
 
-            //std::cout << "BookmarksReader..: Adding note audio clip" << endl;
+            LOG4CXX_TRACE(amisBmkReaderLog, "Adding note audio clip" );
             mpCurrentNote->addAudioClip(p_audio);
         }
         else
@@ -203,7 +204,7 @@ bool amis::BookmarksReader::startElement(const xmlChar* const uri,
     }
     else if (strcmp(element_name, "lastmark") == 0)
     {
-        //std::cout << "BookmarksReader..: Found lastmark in bookmark file" << endl;
+        LOG4CXX_TRACE(amisBmkReaderLog, "Found lastmark in bookmark file" );
         mpCurrentPosData = new amis::PositionData;
         mpCurrentPosData->mbHasCharOffset = false;
         mpCurrentPosData->mbHasTimeOffset = false;
@@ -318,57 +319,64 @@ bool amis::BookmarksReader::endElement(const xmlChar* const uri,
     }
     else if (strcmp(element_name, "uri") == 0)
     {
-        std::cout << "BookmarksReader..: got uri: '" << mTempChars << "'"
-                << endl;
+        LOG4CXX_DEBUG(amisBmkReaderLog,
+                "got uri: '" << mTempChars << "'");
+
         mpCurrentPosData->mUri = mTempChars;
     }
     else if (strcmp(element_name, "ncxRef") == 0)
     {
-        //std::cout << "BookmarksReader..: got ncxRef: '" << mTempChars << "'" << endl;
+        LOG4CXX_TRACE(amisBmkReaderLog,
+                "got ncxRef: '" << mTempChars << "'");
         mpCurrentPosData->mNcxRef = mTempChars;
     }
     else if (strcmp(element_name, "textRef") == 0)
     {
-        //std::cout << "BookmarksReader..: got textRef: '" << mTempChars << "'" << endl;
+        LOG4CXX_TRACE(amisBmkReaderLog,
+                "got textRef: '" << mTempChars << "'");
         mpCurrentPosData->mTextRef = mTempChars;
     }
     else if (strcmp(element_name, "audioRef") == 0)
     {
-        //std::cout << "BookmarksReader..: got audioRef: '" << mTempChars << "'" << endl;
+        LOG4CXX_TRACE(amisBmkReaderLog,
+                "got audioRef: '" << mTempChars << "'");
         mpCurrentPosData->mAudioRef = mTempChars;
     }
     else if (strcmp(element_name, "playOrder") == 0)
     {
-        //std::cout << "BookmarksReader..: got mPlayOrder: '" << mTempChars << "' or " << stringTo<int>(mTempChars) << endl;
+        LOG4CXX_TRACE(amisBmkReaderLog,
+                "got mPlayOrder: '" << mTempChars << "' or " << stringTo<int>(mTempChars));
         mpCurrentPosData->mPlayOrder = stringTo<int>(mTempChars);
     }
     else if (strcmp(element_name, "timeOffset") == 0)
     {
-        //std::cout << "BookmarksReader..: got timeoffset: '" << mTempChars << "'" << endl;
+        LOG4CXX_TRACE(amisBmkReaderLog,
+                "got timeoffset: '" << mTempChars << "'");
         mpCurrentPosData->mTimeOffset = mTempChars;
         mpCurrentPosData->mbHasTimeOffset = true;
     }
     else if (strcmp(element_name, "charOffset") == 0)
     {
-        std::cout << "BookmarksReader..: got charoffset: '" << mTempChars << "'"
-                << endl;
+        LOG4CXX_TRACE(amisBmkReaderLog, "got charoffset: '" << mTempChars << "'" );
         mpCurrentPosData->mCharOffset = mTempChars;
         mpCurrentPosData->mbHasCharOffset = true;
     }
     else if (strcmp(element_name, "lastmark") == 0)
     {
-        std::cout << "BookmarksReader..: got lastmark..." << endl;
-        std::cout << "       uri:\t'" << mpCurrentPosData->mUri << "'" << endl;
-        std::cout << "    ncxref:\t'" << mpCurrentPosData->mNcxRef << "'"
-                << endl;
-        std::cout << "   textref:\t'" << mpCurrentPosData->mTextRef << "'"
-                << endl;
-        std::cout << "  audioref:\t'" << mpCurrentPosData->mAudioRef << "'"
-                << endl;
-        std::cout << "timeoffset:\t'" << mpCurrentPosData->mTimeOffset << "'"
-                << endl;
-        std::cout << "charoffset:\t'" << mpCurrentPosData->mCharOffset << "'"
-                << endl;
+        LOG4CXX_DEBUG(amisBmkReaderLog,
+                " got lastmark...");
+        LOG4CXX_DEBUG(amisBmkReaderLog,
+                "       uri:\t'" << mpCurrentPosData->mUri << "'");
+        LOG4CXX_DEBUG(amisBmkReaderLog,
+                "    ncxref:\t'" << mpCurrentPosData->mNcxRef << "'");
+        LOG4CXX_DEBUG(amisBmkReaderLog,
+                "   textref:\t'" << mpCurrentPosData->mTextRef << "'");
+        LOG4CXX_DEBUG(amisBmkReaderLog,
+                "  audioref:\t'" << mpCurrentPosData->mAudioRef << "'");
+        LOG4CXX_DEBUG(amisBmkReaderLog,
+                "timeoffset:\t'" << mpCurrentPosData->mTimeOffset << "'");
+        LOG4CXX_DEBUG(amisBmkReaderLog,
+                "charoffset:\t'" << mpCurrentPosData->mCharOffset << "'");
         mpFile->setLastmark(mpCurrentPosData);
     }
     else if (strcmp(element_name, "text") == 0)
@@ -381,7 +389,9 @@ bool amis::BookmarksReader::endElement(const xmlChar* const uri,
         }
         else if (elmname.compare("title") == 0)
         {
-            //std::cout << "BookmarksReader..: Got title: '" << mTempWChars << "'" << endl;
+            LOG4CXX_TRACE(amisBmkReaderLog,
+                    "Got title: '" << mTempWChars << "'");
+
             mpTitle->getText()->setTextString(mTempWChars);
         }
         else
