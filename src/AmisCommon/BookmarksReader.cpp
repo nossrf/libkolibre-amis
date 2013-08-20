@@ -70,8 +70,6 @@ amis::AmisError amis::BookmarksReader::openFile(string filepath, BookmarkFile* p
         return mError;
     }
 
-    mb_ReturnValue = true;
-
     mpFile = pFile;
 
     //local variables
@@ -441,7 +439,6 @@ bool amis::BookmarksReader::error(const XmlError& e)
 {
     // Not fatal
     //mError.loadXmlError(e);
-    //mb_ReturnValue = false;
     return true;
 }
 
@@ -451,7 +448,6 @@ bool amis::BookmarksReader::error(const XmlError& e)
 bool amis::BookmarksReader::fatalError(const XmlError& e)
 {
     mError.loadXmlError(e);
-    mb_ReturnValue = false;
     return false;
 }
 

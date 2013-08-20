@@ -86,10 +86,6 @@ private:
 
     //the bookmarks file object model
     BookmarkFile* mpFile;
-
-    //the return value
-    bool mb_ReturnValue;
-
 };
 }
 
