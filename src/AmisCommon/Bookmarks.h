@@ -27,7 +27,6 @@
 #include "Media.h"
 #include <string>
 #include <vector>
-#include <iostream>
 
 namespace amis
 {
@@ -51,7 +50,6 @@ public:
     }
     ~PositionData()
     {
-        //std::cout << "PositionData::~PositionData()" << endl;
         mNcxRef = "";
         mUri = "";
         mTimeOffset = "";

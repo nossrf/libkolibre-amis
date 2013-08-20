@@ -22,7 +22,6 @@
 
 //Amis media objects implementation
 #include "Media.h"
-#include <iostream>
 using namespace std;
 
 /*
@@ -333,7 +332,6 @@ amis::MediaGroup::MediaGroup()
 //--------------------------------------------------
 amis::MediaGroup::~MediaGroup()
 {
-//cout<<"media group destructor"<<endl;
     mpAudioNodes.clear();
 }
 
