@@ -69,6 +69,9 @@ public:
     // Setup bookmarks, initial phrase etc..
     bool setupBook();
 
+    // If we continue from a lastmark position
+    bool continueFromLastmark();
+
     // Check if we already have a book opened
     bool bookOpen();
 
@@ -378,6 +381,7 @@ private:
     bool selectBookmark(int idx);
 
     bool mbStartAtLastmark;
+    bool mbContinueFromLastmark;
     bool mbFlagNoSync;
 
     std::string mFilePath;

@@ -149,6 +149,7 @@ DaisyHandler::DaisyHandler():
     mpTitle = NULL;
 
     mbStartAtLastmark = true;
+    mbContinueFromLastmark = false;
 
     naviDirection = FORWARD;
 
@@ -554,11 +555,13 @@ void DaisyHandler::join_threads()
 bool DaisyHandler::setupBook()
 {
     HandlerState currentState = getState();
-    bool ret = false;
 
     join_threads();
     if (currentState != HANDLER_OPEN)
+    {
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "Error while setting up book, handler in wrong state");
         return false;
+    }
 
     AmisError err;
     SmilMediaGroup* pMedia = new SmilMediaGroup;
@@ -652,21 +655,18 @@ bool DaisyHandler::setupBook()
         {
             if (pos_data->mUri.size() > 0)
             {
-                string pos = FilePathTools::goRelativePath(this->mFilePath,
-                        pos_data->mUri);
+                string pos = FilePathTools::goRelativePath(this->mFilePath, pos_data->mUri);
                 string ncxref = pos_data->mNcxRef;
                 string audioref = pos_data->mAudioRef;
                 int playorder = pos_data->mPlayOrder;
 
-                LOG4CXX_INFO(amisDaisyHandlerLog,
-                        "jumping to lastmark pos:" << pos << " ref:" << audioref);
+                LOG4CXX_INFO(amisDaisyHandlerLog, "jumping to lastmark pos:" << pos << " ref:" << audioref);
 
-                ret = loadSmilContent(pos, audioref);
-
-                if (ret == true)
+                if (loadSmilContent(pos, audioref))
                 {
                     // Locate the correct position in the navmap
                     syncNavModel(ncxref, playorder);
+                    mbContinueFromLastmark = true;
                 }
 
             }
@@ -674,13 +674,11 @@ bool DaisyHandler::setupBook()
         else
         {
             playMediaGroup(pMedia);
-            ret = false;
         }
     }
     else
     {
         playMediaGroup(pMedia);
-        ret = false;
     }
 
     currentNaviLevel = PHRASE;
@@ -690,9 +688,18 @@ bool DaisyHandler::setupBook()
     readPageNavPoints();
     readSectionNavPoints();
 
-    // returns true if we have a lastmark, false if we don't
-    return ret;
+    return true;
 
+}
+
+/**
+ * Check if reading continued from a lastmark position
+ *
+ * @return Returns true if reading continued from a lastmark position
+ */
+bool DaisyHandler::continueFromLastmark()
+{
+    return mbContinueFromLastmark;
 }
 
 /**
