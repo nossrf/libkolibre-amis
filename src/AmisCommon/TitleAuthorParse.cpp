@@ -117,10 +117,10 @@ amis::AmisError amis::TitleAuthorParse::openFile(string filepath)
             (int (*)(int))tolower);
 
             //convert the string to lower case before doing a comparison
-std    ::transform(file_ext.begin(), file_ext.end(), file_ext.begin(),
+    std::transform(file_ext.begin(), file_ext.end(), file_ext.begin(),
             (int (*)(int))tolower);
 
-if(    file_name.compare(FILENAME_NCC) == 0)
+    if(file_name.compare(FILENAME_NCC) == 0)
     {
         mFiletype = NCC;
     }
@@ -338,8 +338,9 @@ if(                classval.compare(ATTRVAL_TITLE) == 0)
                 //empty
             }
         }
-
     }
+
+    XmlReader::release(element_name);
 
     return false;
 }
@@ -370,6 +371,9 @@ bool amis::TitleAuthorParse::endElement(const xmlChar* const namespaceURI,
     {
         mb_flagDocTitle = false;
     }
+
+    XmlReader::release(element_name);
+
     return true;
 }
 
@@ -451,7 +455,7 @@ bool amis::TitleAuthorParse::characters(const xmlChar* const characters,
             }
 
         }
-        //XmlReader::release(tmpchars);
+        XmlReader::release(tmpchars);
 
     } //end if mb_flagGetChars = true
     return true;
@@ -460,10 +464,11 @@ bool amis::TitleAuthorParse::characters(const xmlChar* const characters,
 //---------------------------------
 //utility function
 //---------------------------------
-const char *amis::TitleAuthorParse::getAttributeValue(const char *attributeName)
+std::string amis::TitleAuthorParse::getAttributeValue(const char *attributeName)
 {
     //initialize local strings
     const char *current_attribute_name;
+    const char *current_attribute_value;
 
     //save the attributes list length
     int len = mpAttributes->getLength();
@@ -483,9 +488,15 @@ const char *amis::TitleAuthorParse::getAttributeValue(const char *attributeName)
             LOG4CXX_TRACE(amisTitleAutorParseLog, "got a match for " << current_attribute_name << ":" << XmlReader::transcode(mpAttributes->value(i)) );
 
             //a match has been found, return its value
-            return XmlReader::transcode(mpAttributes->value(i));
+            std::string value;
+            current_attribute_value = XmlReader::transcode(mpAttributes->value(i));
+            value = current_attribute_value;
+            XmlReader::release(current_attribute_name);
+            XmlReader::release(current_attribute_value);
+            return value;
         }
     } //end for-loop
 
+    XmlReader::release(current_attribute_name);
     return "";
 }
