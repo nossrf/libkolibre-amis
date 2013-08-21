@@ -483,8 +483,9 @@ bool amis::BookmarksReader::characters(const xmlChar * const chars,
                 || mElementStack[idx].compare("title") == 0)
         {
             //mTempWChars.append((wchar_t*)chars);
-            const char* chardata = XmlReader::transcode(chars, length);
-            mTempWChars.append(chardata);
+
+            const char* chardata = XmlReader::transcode(chars);
+            mTempWChars.append(chardata, length);
             XmlReader::release(chardata);
         }
         else

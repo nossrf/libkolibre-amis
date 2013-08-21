@@ -29,8 +29,9 @@
 
 using namespace amis;
 
-std::string title = "The title of the book";
+std::string title = "The titleÄÖÅ of the book";
 std::string uid = "The uid of the book";
+//std::string title = "䀀öå";
 
 std::string createZeroPaddedString(int value)
 {
@@ -123,7 +124,7 @@ int main(int argc, char *argv[])
     verifyBoomark(bookmarkFile, 1);
 
     // loop and increment values
-    for (int i=0; i<100000; i++)
+    for (int i=0; i<10; i++)
     {
         int playOrder = pPdLast->mPlayOrder;
         playOrder++;
