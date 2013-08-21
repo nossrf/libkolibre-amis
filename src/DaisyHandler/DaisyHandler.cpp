@@ -138,6 +138,7 @@ DaisyHandler::DaisyHandler():
         handlerMutex(), dhInstanceMutex()
 {
     mpBmk = NULL;
+    mFilePath = "";
     mBmkPath = "";
     mCurrentBookmark = -1;
     mCurrentPage = "";
@@ -355,6 +356,8 @@ void DaisyHandler::closeBook()
         mpHst = NULL;
     }
 
+    mFilePath = "";
+
     // Close book
     LOG4CXX_DEBUG(amisDaisyHandlerLog, "closing SmilEngine");
     SmilEngine::Instance()->closeBook();
@@ -396,6 +399,7 @@ bool DaisyHandler::openBook(std::string url)
             reportGeneralError(err);
             return false;
         }
+        break;
     case HANDLER_READY:
         closeBook();
         break;
