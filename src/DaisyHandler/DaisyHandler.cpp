@@ -2776,7 +2776,11 @@ bool DaisyHandler::goToId(std::string id)
     if (err.getCode() != amis::OK)
         return false;
 
-    return loadSmilContent(navPoint->getContent());
+    bool success = loadSmilContent(navPoint->getContent());
+    if(!success)
+        LOG4CXX_WARN(amisDaisyHandlerLog, "Failed to load " << navPoint->getContent());
+
+    return success;
 }
 
 /**
@@ -3785,6 +3789,7 @@ bool DaisyHandler::loadSmilContent(std::string contentUrl, std::string audioRef,
         //some error happened
         LOG4CXX_WARN(amisDaisyHandlerLog, "Error loading " << contentUrl);
         delete pMedia;
+        reportGeneralError(err);
     }
 
     return false;
@@ -4646,11 +4651,14 @@ void DaisyHandler::reportGeneralError(AmisError err)
         LOG4CXX_ERROR(amisDaisyHandlerLog,
                 "NOT_FOUND in " << err.getSourceModuleName() << ": " << err.getMessage() << " while processing " + err.getFilename());
         break;
+    case amis::IO_ERROR:
+        LOG4CXX_ERROR(amisDaisyHandlerLog,
+                "IO_ERROR in " << err.getSourceModuleName() << ": "<< err.getMessage() << " while processing " << err.getFilename());
+        break;
     case amis::NOT_SUPPORTED:
         LOG4CXX_ERROR(amisDaisyHandlerLog,
                 "NOT_SUPPORTED in " << err.getSourceModuleName() << ": " << err.getMessage() << " while processing " + err.getFilename());
         break;
-
     case amis::PARSE_ERROR:
         LOG4CXX_ERROR(amisDaisyHandlerLog,
                 "PARSE_ERROR in " << err.getSourceModuleName() << ": " << err.getMessage() << " while processing " + err.getFilename());
