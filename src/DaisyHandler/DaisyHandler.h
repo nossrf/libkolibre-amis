@@ -86,7 +86,7 @@ public:
         HANDLER_READY,  /**< handler is ready */
         HANDLER_ERROR   /**< the handler is in error state */
     };
-    HandlerState getState() const;
+    HandlerState getState();
     void setState(HandlerState);
 
     // Function gets called when daisyhandler wants to play audio
@@ -314,7 +314,7 @@ public:
     bool playTitle();
 
     void reportGeneralError(AmisError err);
-    std::string getFilePath() const;
+    std::string getFilePath();
 
 private:
     amis::BookmarkFile* mpBmk;
@@ -393,18 +393,22 @@ protected:
     time_t autonaviStartTime;
     NaviLevel currentNaviLevel;
 
+    int lockMutex(pthread_mutex_t *mutex);
+    int unlockMutex(pthread_mutex_t *mutex);
     bool updateNaviLevel(NaviLevel newLevel);
 
     // Threading used when opening a book
     pthread_t handlerThread;
     bool handlerThreadActive;
-    pthread_mutex_t *handlerMutex;
-    pthread_mutex_t *callbackMutex;
 
+    pthread_mutex_t dhInstanceMutex;
+    pthread_mutex_t handlerMutex;
+    pthread_mutexattr_t attr;
 private:
     static DaisyHandler* pinstance;
     std::string tmToTimeString(struct tm timeInfo);
     std::string tmToDateString(struct tm timeInfo);
+
 };
 
 }

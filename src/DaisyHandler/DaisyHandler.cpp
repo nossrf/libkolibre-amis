@@ -66,6 +66,7 @@
 #include <cassert>
 #include <iterator>
 #include <log4cxx/logger.h>
+#include <errno.h>
 
 // create logger which will become a child to logger kolibre.amis
 log4cxx::LoggerPtr amisDaisyHandlerLog(
@@ -98,7 +99,9 @@ std::string stringReplaceAll(string haystack, string needle, string replace)
 
 amis::DaisyHandler* DaisyHandler::pinstance = 0;
 
+namespace amis {
 void *open_thread(void *handler);
+}
 
 // Local helper functions
 int currentSection(NavPoint* root, const int currentPlayOrder, bool& found);
@@ -131,7 +134,8 @@ void DaisyHandler::DestroyInstance()
 /**
  * DaisyHandler constructor
  */
-DaisyHandler::DaisyHandler()
+DaisyHandler::DaisyHandler():
+        handlerMutex(), dhInstanceMutex()
 {
     mpBmk = NULL;
     mBmkPath = "";
@@ -152,8 +156,11 @@ DaisyHandler::DaisyHandler()
     OOPlayFunction = NULL;
     OOPlayFunctionData = NULL;
 
-    handlerMutex = (pthread_mutex_t *) malloc(sizeof(pthread_mutex_t));
-    pthread_mutex_init(handlerMutex, NULL);
+    //Uncomment mutexattr to debug deadlocks and errors
+    //pthread_mutexattr_init(&attr);
+    //pthread_mutexattr_settype(&attr, PTHREAD_MUTEX_ERRORCHECK);
+    pthread_mutex_init(&handlerMutex, NULL);
+    pthread_mutex_init(&dhInstanceMutex, NULL);
 
     setState(HANDLER_CLOSED);
 
@@ -174,7 +181,9 @@ DaisyHandler::~DaisyHandler()
         delete mpTitle;
     }
     */
-
+    if(lockMutex(&dhInstanceMutex)){
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex lock failed");
+    }
     if (mpCurrentMedia != NULL)
     {
         delete mpCurrentMedia;
@@ -193,8 +202,6 @@ DaisyHandler::~DaisyHandler()
         mpHst = NULL;
     }
 
-    free(handlerMutex);
-
     //destroy objects!
     //LOG4CXX_DEBUG(amisDaisyHandlerLog, "destorying smilengine");
     SmilEngine::Instance()->DestroyInstance();
@@ -205,6 +212,12 @@ DaisyHandler::~DaisyHandler()
     //LOG4CXX_DEBUG(amisDaisyHandlerLog, "destorying metadata");
     amis::Metadata::Instance()->DestroyInstance();
     delete currentPos;
+    if(unlockMutex(&dhInstanceMutex)){
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+    }
+
+    pthread_mutex_destroy(&handlerMutex);
+    pthread_mutex_destroy(&dhInstanceMutex);
 }
 
 /**
@@ -270,9 +283,13 @@ bool DaisyHandler::callOOPlayFunction(std::string filename, long long startms,
  */
 void DaisyHandler::setState(HandlerState state)
 {
-    pthread_mutex_lock(handlerMutex);
+    if(lockMutex(&handlerMutex)){
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex lock failed");
+    }
     handlerState = state;
-    pthread_mutex_unlock(handlerMutex);
+    if(unlockMutex(&handlerMutex)){
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+    }
 }
 
 /**
@@ -280,12 +297,16 @@ void DaisyHandler::setState(HandlerState state)
  *
  * @return Returns the current state
  */
-DaisyHandler::HandlerState DaisyHandler::getState() const
+DaisyHandler::HandlerState DaisyHandler::getState()
 {
     HandlerState currentState = HANDLER_CLOSED;
-    pthread_mutex_lock(handlerMutex);
+    if(lockMutex(&handlerMutex)){
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex lock failed");
+    }
     currentState = handlerState;
-    pthread_mutex_unlock(handlerMutex);
+    if(unlockMutex(&handlerMutex)){
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+    }
     return currentState;
 }
 
@@ -294,12 +315,16 @@ DaisyHandler::HandlerState DaisyHandler::getState() const
  *
  * @return Returns the file path set in the daisyhandler
  */
-std::string DaisyHandler::getFilePath() const
+std::string DaisyHandler::getFilePath()
 {
 	std::string filename = "";
-    pthread_mutex_lock(handlerMutex);
+    if(lockMutex(&handlerMutex)){
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex lock failed");
+    }
     filename = mFilePath;
-    pthread_mutex_unlock(handlerMutex);
+    if(unlockMutex(&handlerMutex)){
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+    }
     return filename;
 }
 
@@ -308,6 +333,10 @@ std::string DaisyHandler::getFilePath() const
  */
 void DaisyHandler::closeBook()
 {
+    //Deleting everything while still possibly accessing the data will fail
+    if(lockMutex(&dhInstanceMutex)){
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex lock failed");
+    }
     if (mpCurrentMedia != NULL)
     {
         delete mpCurrentMedia;
@@ -333,6 +362,9 @@ void DaisyHandler::closeBook()
     NavParse::Instance()->close();
     LOG4CXX_DEBUG(amisDaisyHandlerLog, "closing Metadata");
     Metadata::Instance()->close();
+    if(unlockMutex(&dhInstanceMutex)){
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+    }
 
     setState(HANDLER_CLOSED);
 }
@@ -378,6 +410,9 @@ bool DaisyHandler::openBook(std::string url)
     mFilePath = url;
     mBookInfo.mUri = url;
 
+    if(lockMutex(&dhInstanceMutex)){
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex lock failed");
+    }
     //delete old bookmarks
     if (mpBmk != NULL)
     {
@@ -394,6 +429,9 @@ bool DaisyHandler::openBook(std::string url)
 
     mpHst = new HistoryRecorder();
 
+    if(unlockMutex(&dhInstanceMutex)){
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+    }
     // check if url is empty
     if (url == "")
     {
@@ -429,7 +467,7 @@ bool DaisyHandler::openBook(std::string url)
  *
  * @param handler A handler pointer
  */
-void *open_thread(void *handler)
+void *amis::open_thread(void *handler)
 {
     DaisyHandler *h = (DaisyHandler *) handler;
 
@@ -442,6 +480,9 @@ void *open_thread(void *handler)
     // load the smil tree
     LOG4CXX_DEBUG(amisDaisyHandlerLog,
             "openthread: opening " << filename << " in smilengine");
+    if(!h->lockMutex(&h->dhInstanceMutex)){
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex lock failed");
+    }
     err = SmilEngine::Instance()->openBook(filename, pMedia);
 
     if (err.getCode() != amis::OK)
@@ -449,7 +490,9 @@ void *open_thread(void *handler)
         h->setState(DaisyHandler::HANDLER_ERROR);
         h->reportGeneralError(err);
         pthread_exit(NULL);
-
+        if(!h->unlockMutex(&h->dhInstanceMutex)){
+            LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+        }
         return NULL;
     }
 
@@ -468,20 +511,19 @@ void *open_thread(void *handler)
     LOG4CXX_DEBUG(amisDaisyHandlerLog,
             "openthread: opening " << filename << " in navparse");
     err = NavParse::Instance()->open(filename);
-
+    if(!h->unlockMutex(&h->dhInstanceMutex)){
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+    }
     if (err.getCode() != amis::OK)
     {
         h->setState(DaisyHandler::HANDLER_ERROR);
         h->reportGeneralError(err);
 
-        pthread_exit(NULL);
         return NULL;
-
     }
 
     h->setState(DaisyHandler::HANDLER_OPEN);
 
-    pthread_exit(NULL);
     return NULL;
 }
 
@@ -656,9 +698,15 @@ bool DaisyHandler::setupBook()
  */
 bool DaisyHandler::nextHistory()
 {
+    if(lockMutex(&dhInstanceMutex)){
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex lock failed");
+    }
     if (mpHst == NULL)
     {
         LOG4CXX_WARN(amisDaisyHandlerLog, "mpHst == NULL");
+        if(unlockMutex(&dhInstanceMutex)){
+            LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+        }
         return false;
     }
 
@@ -680,8 +728,13 @@ bool DaisyHandler::nextHistory()
             // Locate the correct position in the navmap
             syncNavModel(p_pos->mNcxRef, p_pos->mPlayOrder);
         }
-
+        if(unlockMutex(&dhInstanceMutex)){
+            LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+        }
         return (ret1 && ret2);
+    }
+    if(unlockMutex(&dhInstanceMutex)){
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
     }
     return false;
 }
@@ -694,9 +747,15 @@ bool DaisyHandler::nextHistory()
  */
 bool DaisyHandler::previousHistory()
 {
+    if(lockMutex(&dhInstanceMutex)){
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex lock failed");
+    }
     if (mpHst == NULL)
     {
         LOG4CXX_WARN(amisDaisyHandlerLog, "mpHst == NULL");
+        if(unlockMutex(&dhInstanceMutex)){
+            LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+        }
         return false;
     }
 
@@ -718,8 +777,13 @@ bool DaisyHandler::previousHistory()
             // Locate the correct position in the navmap
             syncNavModel(p_pos->mNcxRef, p_pos->mPlayOrder);
         }
-
+        if(unlockMutex(&dhInstanceMutex)){
+            LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+        }
         return (ret1 && ret2);
+    }
+    if(unlockMutex(&dhInstanceMutex)){
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
     }
     return false;
 }
@@ -763,6 +827,9 @@ bool DaisyHandler::loadLastHistory()
  */
 void DaisyHandler::printHistory()
 {
+    if(lockMutex(&dhInstanceMutex)){
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex lock failed");
+    }
     if (mpHst == NULL)
     {
         LOG4CXX_WARN(amisDaisyHandlerLog, "mpHst == NULL");
@@ -770,6 +837,9 @@ void DaisyHandler::printHistory()
     }
 
     mpHst->printItems();
+    if(unlockMutex(&dhInstanceMutex)){
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+    }
 }
 
 /**
@@ -1377,12 +1447,17 @@ bool DaisyHandler::nextBookmark()
 {
     AmisError err;
     err.setSourceModuleName(module_DaisyHandler);
-
+    if(lockMutex(&dhInstanceMutex)){
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex lock failed");
+    }
     if (mpBmk == NULL)
     {
         err.setCode(NOT_SUPPORTED);
         err.setMessage("Bookmarkfile not open");
         reportGeneralError(err);
+        if(unlockMutex(&dhInstanceMutex)){
+            LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+        }
         return false;
     }
 
@@ -1391,6 +1466,9 @@ bool DaisyHandler::nextBookmark()
         err.setCode(NOT_FOUND);
         err.setMessage("No bookmarks found");
         reportGeneralError(err);
+        if(unlockMutex(&dhInstanceMutex)){
+            LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+        }
         return false;
     }
 
@@ -1403,6 +1481,9 @@ bool DaisyHandler::nextBookmark()
     if (mCurrentBookmark < mpBmk->getNumberOfItems() - 1)
     {
         mCurrentBookmark++;
+        if(unlockMutex(&dhInstanceMutex)){
+            LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+        }
         return selectBookmark(mCurrentBookmark);
     }
     else
@@ -1410,10 +1491,14 @@ bool DaisyHandler::nextBookmark()
         err.setCode(NOT_FOUND);
         err.setMessage("Could not go to next bookmark");
         reportGeneralError(err);
-
+        if(unlockMutex(&dhInstanceMutex)){
+            LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+        }
         return selectBookmark(mCurrentBookmark);
     }
-
+    if(unlockMutex(&dhInstanceMutex)){
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+    }
     return false;
 
 }
@@ -1427,12 +1512,17 @@ bool DaisyHandler::previousBookmark()
 {
     AmisError err;
     err.setSourceModuleName(module_DaisyHandler);
-
+    if(lockMutex(&dhInstanceMutex)){
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex lock failed");
+    }
     if (mpBmk == NULL)
     {
         err.setCode(NOT_SUPPORTED);
         err.setMessage("Bookmarkfile not open");
         reportGeneralError(err);
+        if(unlockMutex(&dhInstanceMutex)){
+            LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+        }
         return false;
     }
 
@@ -1441,6 +1531,9 @@ bool DaisyHandler::previousBookmark()
         err.setCode(NOT_FOUND);
         err.setMessage("No bookmarks found");
         reportGeneralError(err);
+        if(unlockMutex(&dhInstanceMutex)){
+            LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+        }
         return false;
     }
 
@@ -1456,6 +1549,9 @@ bool DaisyHandler::previousBookmark()
     if (mCurrentBookmark > 0)
     {
         mCurrentBookmark--;
+        if(unlockMutex(&dhInstanceMutex)){
+            LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+        }
         return selectBookmark(mCurrentBookmark);
     }
     else
@@ -1464,9 +1560,15 @@ bool DaisyHandler::previousBookmark()
         err.setMessage("Could not go to previous bookmark");
         reportGeneralError(err);
 
+        if(unlockMutex(&dhInstanceMutex)){
+            LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+        }
         return selectBookmark(mCurrentBookmark);
     }
 
+    if(unlockMutex(&dhInstanceMutex)){
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+    }
     return false;
 }
 
@@ -1888,7 +1990,6 @@ void DaisyHandler::printNaviPos()
 bool DaisyHandler::updateNaviLevel(NaviLevel newLevel)
 {
     NaviLevel updatedLevel = currentNaviLevel;
-
     switch (currentNaviLevel)
     {
     case H1:
@@ -2034,7 +2135,6 @@ bool DaisyHandler::updateNaviLevel(NaviLevel newLevel)
     default:
         break;
     }
-
     if (updatedLevel != currentNaviLevel)
     {
         // Check if we are currently navigating manually
@@ -2112,9 +2212,16 @@ bool DaisyHandler::lastSection()
     // Remember when we last changed sections manually
     autonaviStartTime = time(NULL) + AUTONAVI_DELAY_SECONDS;
 
+    if(lockMutex(&dhInstanceMutex)){
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex lock failed");
+    }
     p_nav_model = NavParse::Instance()->getNavModel();
-    if (p_nav_model == NULL)
+    if (p_nav_model == NULL){
+        if(unlockMutex(&dhInstanceMutex)){
+            LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+        }
         return false;
+    }
 
     // Get the first node
     p_node = (NavPoint*) p_nav_model->getNavMap()->last();
@@ -2123,7 +2230,14 @@ bool DaisyHandler::lastSection()
     {
         //LOG4CXX_DEBUG(amisDaisyHandlerLog, "Got node");
         string content_url = p_node->getContent();
+        if(unlockMutex(&dhInstanceMutex)){
+            LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+        }
         return loadSmilContent(content_url);
+    }
+
+    if(unlockMutex(&dhInstanceMutex)){
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
     }
 
     // Preset the error code in case we fail to find next node
@@ -2146,7 +2260,9 @@ bool DaisyHandler::nextPhrase(bool rewindWhenEndOfBook)
 {
     SmilMediaGroup* pMedia = NULL;
     pMedia = new SmilMediaGroup();
-
+    if(lockMutex(&dhInstanceMutex)){
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex lock failed");
+    }
     // Remember the current navi direction
     naviDirection = FORWARD;
 
@@ -2175,10 +2291,16 @@ bool DaisyHandler::nextPhrase(bool rewindWhenEndOfBook)
 
             if (errZ.getCode() == OK)
             {
+                if(unlockMutex(&dhInstanceMutex)){
+                    LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+                }
                 return playMediaGroup(pMediaZ);
             }
         }
 
+        if(unlockMutex(&dhInstanceMutex)){
+            LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+        }
         // Store the error
         reportGeneralError(err);
 
@@ -2187,8 +2309,14 @@ bool DaisyHandler::nextPhrase(bool rewindWhenEndOfBook)
     }
     else
     {
+        if(unlockMutex(&dhInstanceMutex)){
+            LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+        }
         // If we have a weird node try the next one
         return playMediaGroup(pMedia);
+    }
+    if(unlockMutex(&dhInstanceMutex)){
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
     }
 
     delete pMedia;
@@ -2209,6 +2337,9 @@ bool DaisyHandler::previousPhrase()
     naviDirection = BACKWARD;
 
     AmisError err;
+    if(lockMutex(&dhInstanceMutex)){
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex lock failed");
+    }
     string currentSmilFile = SmilEngine::Instance()->getSmilSourcePath();
     err = SmilEngine::Instance()->previous(pMedia);
 
@@ -2230,9 +2361,14 @@ bool DaisyHandler::previousPhrase()
         {
             syncPosInfo();
         }
+        if(unlockMutex(&dhInstanceMutex)){
+            LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+        }
         return playMediaGroup(pMedia);
     }
-
+    if(unlockMutex(&dhInstanceMutex)){
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+    }
     delete pMedia;
     return false;
 }
@@ -2251,6 +2387,10 @@ bool DaisyHandler::nextSection()
     int mMaxDepth = 0;
     int mCurrentDepth = 0;
     int mCurrentPlayOrder = 0;
+
+    if(lockMutex(&dhInstanceMutex)){
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex lock failed");
+    }
 
     // Remember the current navi direction
     naviDirection = FORWARD;
@@ -2280,12 +2420,20 @@ bool DaisyHandler::nextSection()
         break;
     default:
         LOG4CXX_ERROR(amisDaisyHandlerLog, "Could not get current depth");
+        if(unlockMutex(&dhInstanceMutex)){
+            LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+        }
         return false;
     }
 
+
     p_nav_model = NavParse::Instance()->getNavModel();
-    if (p_nav_model == NULL)
+    if (p_nav_model == NULL){
+        if(unlockMutex(&dhInstanceMutex)){
+            LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+        }
         return false;
+    }
 
     // Get the maximum depth
     mMaxDepth = p_nav_model->getNavMap()->getMaxDepth();
@@ -2312,9 +2460,13 @@ bool DaisyHandler::nextSection()
                 && p_node->getPlayOrder() > mCurrentPlayOrder)
         {
             string content_url = p_node->getContent();
-            LOG4CXX_DEBUG(amisDaisyHandlerLog, "Got node " << content_url);
 
-            return loadSmilContent(content_url);
+            LOG4CXX_DEBUG(amisDaisyHandlerLog, "Got node " << content_url);
+            bool res = loadSmilContent(content_url);
+            if(unlockMutex(&dhInstanceMutex)){
+                LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+            }
+            return res;
         }
 
         LOG4CXX_DEBUG(amisDaisyHandlerLog, "Going to next node");
@@ -2336,6 +2488,10 @@ bool DaisyHandler::nextSection()
          delete pMedia;
          }*/
 
+    }
+
+    if(unlockMutex(&dhInstanceMutex)){
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
     }
 
     AmisError err;
@@ -2360,7 +2516,9 @@ bool DaisyHandler::previousSection()
     NavPoint* p_prev_node = NULL;
     NavPoint* p_current_node = NULL;
     NavModel* p_nav_model = NULL;
-
+    if(lockMutex(&dhInstanceMutex)){
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex lock failed");
+    }
     // Remember the current navi direction
     naviDirection = BACKWARD;
 
@@ -2393,12 +2551,20 @@ bool DaisyHandler::previousSection()
         break;
     default:
         LOG4CXX_ERROR(amisDaisyHandlerLog, "Could not get current depth");
+        if(unlockMutex(&dhInstanceMutex)){
+            LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+        }
         return false;
     }
 
+
     p_nav_model = NavParse::Instance()->getNavModel();
-    if (p_nav_model == NULL)
+    if (p_nav_model == NULL){
+        if(unlockMutex(&dhInstanceMutex)){
+            LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+        }
         return false;
+    }
 
     // Get the maximum depth
     mMaxDepth = p_nav_model->getNavMap()->getMaxDepth();
@@ -2435,8 +2601,12 @@ bool DaisyHandler::previousSection()
 
                 LOG4CXX_DEBUG(amisDaisyHandlerLog, "Got node " << content_url);
 
-                if (p_prev_node != p_current_node)
+                if (p_prev_node != p_current_node){
+                    if(unlockMutex(&dhInstanceMutex)){
+                        LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+                    }
                     return result;
+                }
                 else
                     break;
 
@@ -2466,6 +2636,10 @@ bool DaisyHandler::previousSection()
         loadSmilContent(content_url);
     }
 
+    if(unlockMutex(&dhInstanceMutex)){
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+    }
+
     AmisError err;
     err.setCode(amis::AT_BEGINNING);
     err.setMessage("could not go to previous section");
@@ -2486,6 +2660,9 @@ bool DaisyHandler::previousSection()
 bool DaisyHandler::nextInNavList(int idx)
 {
     NavModel* p_model = NULL;
+    if(lockMutex(&dhInstanceMutex)){
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex lock failed");
+    }
     p_model = NavParse::Instance()->getNavModel();
 
     AmisError err;
@@ -2516,6 +2693,9 @@ bool DaisyHandler::nextInNavList(int idx)
 
             string content_url = p_navt->getContent();
             p_model->updatePlayOrder(p_navt->getPlayOrder());
+            if(unlockMutex(&dhInstanceMutex)){
+                LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+            }
             return loadSmilContent(content_url);
         }
 
@@ -2525,6 +2705,11 @@ bool DaisyHandler::nextInNavList(int idx)
         err.setCode(amis::UNDEFINED_ERROR);
         err.setMessage("navlist out of range " + idx);
     }
+
+    if(unlockMutex(&dhInstanceMutex)){
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+    }
+
     // Store the error
     reportGeneralError(err);
 
@@ -2540,8 +2725,17 @@ bool DaisyHandler::nextInNavList(int idx)
 bool DaisyHandler::prevInNavList(int idx)
 {
     NavModel* p_model = NULL;
+    if(lockMutex(&dhInstanceMutex)){
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex lock failed");
+    }
     p_model = NavParse::Instance()->getNavModel();
 
+    if(!p_model){
+        if(unlockMutex(&dhInstanceMutex)){
+            LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+        }
+        return false;
+    }
     AmisError err;
 
     // Remember the current navi direction
@@ -2570,6 +2764,9 @@ bool DaisyHandler::prevInNavList(int idx)
 
             string content_url = p_navt->getContent();
             p_model->updatePlayOrder(p_navt->getPlayOrder());
+            if(unlockMutex(&dhInstanceMutex)){
+                LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+            }
             return loadSmilContent(content_url);
         }
 
@@ -2579,7 +2776,9 @@ bool DaisyHandler::prevInNavList(int idx)
         err.setCode(amis::UNDEFINED_ERROR);
         err.setMessage("navlist out of range " + idx);
     }
-
+    if(unlockMutex(&dhInstanceMutex)){
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+    }
     // Store the error
     reportGeneralError(err);
 
@@ -2595,6 +2794,9 @@ bool DaisyHandler::prevInNavList(int idx)
 bool DaisyHandler::nextPage()
 {
     NavModel* p_model = NULL;
+    if(lockMutex(&dhInstanceMutex)){
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex lock failed");
+    }
     p_model = NavParse::Instance()->getNavModel();
 
     // Remember if we hit the last page on previous call
@@ -2633,8 +2835,12 @@ bool DaisyHandler::nextPage()
             p_model->updatePlayOrder(p_page->getPlayOrder());
             bool ret = loadSmilContent(content_url);
 
-            if (ret == false)
+            if (ret == false){
+                if(unlockMutex(&dhInstanceMutex)){
+                    LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+                }
                 return ret;
+            }
 
             // check if this is the last page
             if (p_last_page != NULL && p_page == p_last_page)
@@ -2651,6 +2857,9 @@ bool DaisyHandler::nextPage()
             else
                 gotlastpageonlastcall = false;
 
+            if(unlockMutex(&dhInstanceMutex)){
+                LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+            }
             return ret;
 
         }
@@ -2667,6 +2876,9 @@ bool DaisyHandler::nextPage()
         err.setMessage("book does not have pages");
     }
 
+    if(unlockMutex(&dhInstanceMutex)){
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+    }
     // Store the error
     reportGeneralError(err);
 
@@ -2681,6 +2893,9 @@ bool DaisyHandler::nextPage()
 bool DaisyHandler::previousPage()
 {
     NavModel* p_model = NULL;
+    if(lockMutex(&dhInstanceMutex)){
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex lock failed");
+    }
     p_model = NavParse::Instance()->getNavModel();
 
     // Remember if we hit the first page on previous call
@@ -2721,8 +2936,12 @@ bool DaisyHandler::previousPage()
             p_model->updatePlayOrder(p_page->getPlayOrder());
             bool ret = loadSmilContent(content_url);
 
-            if (ret == false)
+            if (ret == false){
+                if(unlockMutex(&dhInstanceMutex)){
+                    LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+                }
                 return ret;
+            }
 
             // check if this is the last page
             if (p_first_page != NULL && p_page == p_first_page)
@@ -2738,7 +2957,9 @@ bool DaisyHandler::previousPage()
             }
             else
                 gotfirstpageonlastcall = false;
-
+            if(unlockMutex(&dhInstanceMutex)){
+                LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+            }
             return ret;
         }
         else
@@ -2751,6 +2972,9 @@ bool DaisyHandler::previousPage()
     {
         err.setCode(amis::NOT_SUPPORTED);
         err.setMessage("book does not have pages");
+    }
+    if(unlockMutex(&dhInstanceMutex)){
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
     }
 
     // Store the error
@@ -2767,16 +2991,31 @@ bool DaisyHandler::previousPage()
  */
 bool DaisyHandler::goToId(std::string id)
 {
+    if(lockMutex(&dhInstanceMutex)){
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex lock failed");
+    }
     NavModel* p_model = NavParse::Instance()->getNavModel();
-    if (p_model == NULL)
+    if (p_model == NULL){
+        if(unlockMutex(&dhInstanceMutex)){
+            LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+        }
         return false;
+    }
 
     NavPoint* navPoint;
     AmisError err = p_model->goToId(id, navPoint);
-    if (err.getCode() != amis::OK)
+    if (err.getCode() != amis::OK){
+        if(unlockMutex(&dhInstanceMutex)){
+            LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+        }
         return false;
+    }
+
 
     bool success = loadSmilContent(navPoint->getContent());
+    if(unlockMutex(&dhInstanceMutex)){
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+    }
     if(!success)
         LOG4CXX_WARN(amisDaisyHandlerLog, "Failed to load " << navPoint->getContent());
 
@@ -2797,6 +3036,9 @@ bool DaisyHandler::goToPage(std::string page_name)
     err.setCode(amis::NOT_FOUND);
     err.setMessage("page not found (" + page_name + ")");
 
+    if(lockMutex(&dhInstanceMutex)){
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex lock failed");
+    }
     if (page_name.size() > 0)
     {
         NavModel* p_model = NULL;
@@ -2817,6 +3059,9 @@ bool DaisyHandler::goToPage(std::string page_name)
 
                 string content_url = p_page->getContent();
                 p_model->updatePlayOrder(p_page->getPlayOrder());
+                if(unlockMutex(&dhInstanceMutex)){
+                    LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+                }
                 return loadSmilContent(content_url);
 
             }
@@ -2826,6 +3071,9 @@ bool DaisyHandler::goToPage(std::string page_name)
             err.setCode(amis::NOT_SUPPORTED);
             err.setMessage("book does not have pages");
         }
+    }
+    if(unlockMutex(&dhInstanceMutex)){
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
     }
 
     // Store the error
@@ -2887,6 +3135,9 @@ bool DaisyHandler::lastPage()
     err.setCode(amis::NOT_FOUND);
     err.setMessage("error when jumping to last page");
 
+    if(lockMutex(&dhInstanceMutex)){
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex lock failed");
+    }
     NavModel* p_model = NavParse::Instance()->getNavModel();
     if (p_model != NULL && p_model->hasPages() == true)
     {
@@ -2898,6 +3149,9 @@ bool DaisyHandler::lastPage()
             {
                 LOG4CXX_DEBUG(amisDaisyHandlerLog, "Going to last page " << pageTarget->getPlayOrder());
                 p_model->updatePlayOrder(pageTarget->getPlayOrder());
+                if(unlockMutex(&dhInstanceMutex)){
+                    LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+                }
                 return loadSmilContent(pageTarget->getContent());
             }
         }
@@ -2906,6 +3160,9 @@ bool DaisyHandler::lastPage()
     {
         err.setCode(amis::NOT_SUPPORTED);
         err.setMessage("book does not have pages");
+    }
+    if(unlockMutex(&dhInstanceMutex)){
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
     }
 
     // Store the error
@@ -3824,8 +4081,14 @@ bool DaisyHandler::escape()
  */
 bool DaisyHandler::playTitle()
 {
+    if(lockMutex(&dhInstanceMutex)){
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex lock failed");
+    }
     if (mpTitle == NULL)
     {
+        if(unlockMutex(&dhInstanceMutex)){
+            LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+        }
         LOG4CXX_ERROR(amisDaisyHandlerLog, "mpTitle is NULL, maybe something is wrong with the book");
         return false;
     }
@@ -3864,10 +4127,14 @@ bool DaisyHandler::playTitle()
 
             callPlayFunction(src, (int) startms, (int) stopms);
         }
-
+        if(unlockMutex(&dhInstanceMutex)){
+            LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+        }
         return true;
     }
-
+    if(unlockMutex(&dhInstanceMutex)){
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
+    }
     return false;
 }
 
@@ -5131,4 +5398,52 @@ std::string DaisyHandler::tmToDateString(struct tm timeInfo)
         dateString << timeInfo.tm_mday;
     }
     return dateString.str();
+}
+
+int DaisyHandler::lockMutex(pthread_mutex_t *mutex)
+{
+    LOG4CXX_TRACE(amisDaisyHandlerLog, "Locking mutex");
+    int result = pthread_mutex_lock(mutex);
+
+    switch (result){
+    case 0:
+        break;
+    case EINVAL:
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "The value specified by mutex does not refer to an initialized mutex object");
+        break;
+    case EAGAIN:
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "The mutex could not be acquired because the maximum number of recursive locks for mutex has been exceeded");
+        break;
+    case EDEADLK:
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "The current thread already owns the mutex");
+        break;
+    default:
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "Unlock failed with error number" << result);
+    }
+    assert(result == 0);
+    return result;
+}
+
+int DaisyHandler::unlockMutex(pthread_mutex_t *mutex)
+{
+    LOG4CXX_TRACE(amisDaisyHandlerLog, "Unlocking mutex");
+    int result = pthread_mutex_unlock(mutex);
+
+    switch (result){
+    case 0:
+        break;
+    case EINVAL:
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "The value specified by mutex does not refer to an initialized mutex object");
+        break;
+    case EAGAIN:
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "The mutex could not be acquired because the maximum number of recursive locks for mutex has been exceeded");
+        break;
+    case EPERM:
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "The current thread does not own the mutex");
+        break;
+    default:
+        LOG4CXX_ERROR(amisDaisyHandlerLog, "Unlock failed with error number" << result);
+    }
+
+    return result;
 }
