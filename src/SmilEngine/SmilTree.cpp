@@ -96,6 +96,13 @@ amis::AmisError SmilTree::goFirst(amis::SmilMediaGroup* pMedia)
     LOG4CXX_TRACE(amisSmilTreeLog, "Constructor" );
 
     amis::AmisError err;
+
+    if(!mpRoot){
+        LOG4CXX_ERROR(amisSmilTreeLog, "Skipping command because mpRoot is null" );
+        err.setCode(amis::NOT_INITIALIZED);
+        return err;
+    }
+
     //local variables
     amis::ErrorCode result;
     string playback_data;
@@ -147,6 +154,12 @@ amis::AmisError SmilTree::goLast(amis::SmilMediaGroup* pMedia)
 
     amis::AmisError err;
 
+    if(!mpRoot){
+        LOG4CXX_ERROR(amisSmilTreeLog, "Skipping command because mpRoot is null" );
+        err.setCode(amis::NOT_INITIALIZED);
+        return err;
+    }
+
     //local variables
     amis::ErrorCode result;
     string playback_data;
@@ -193,14 +206,23 @@ amis::AmisError SmilTree::goLast(amis::SmilMediaGroup* pMedia)
 //--------------------------------------------------
 amis::AmisError SmilTree::goNext(amis::SmilMediaGroup* pMedia)
 {
+    LOG4CXX_TRACE(amisSmilTreeLog, "goNext" );
+
     amis::AmisError err;
+
+    if(!mpRoot){
+        LOG4CXX_ERROR(amisSmilTreeLog, "Skipping command because mpRoot is null" );
+        err.setCode(amis::NOT_INITIALIZED);
+        return err;
+    }
+
     //local variables
     amis::ErrorCode result;
     string playback_data;
 
     mbCouldEscape = false;
 
-    LOG4CXX_TRACE(amisSmilTreeLog, "goNext" );
+
 
     //if the tree is at the beginning, we should go to the first node
     if (mTreeStatus == amis::AT_BEGINNING)
@@ -260,6 +282,12 @@ amis::AmisError SmilTree::goPrevious(amis::SmilMediaGroup* pMedia)
     LOG4CXX_TRACE(amisSmilTreeLog, "goPrevious" );
 
     amis::AmisError err;
+
+    if(!mpRoot){
+        LOG4CXX_ERROR(amisSmilTreeLog, "Skipping command because mpRoot is null" );
+        err.setCode(amis::NOT_INITIALIZED);
+        return err;
+    }
 
     //local variables
     amis::ErrorCode result;
@@ -449,8 +477,14 @@ bool SmilTree::mustSkipOrEscapeNode(Node* pNode)
     string sys_skip_option;
     string node_skip_option;
 
-    if (pNode == NULL)
+    if (pNode == NULL){
         return return_value;
+    }
+
+    if (mpSkipOptions == NULL){
+        LOG4CXX_ERROR(amisSmilTreeLog, "mpSkipOptions not initialized!");
+        return return_value;
+    }
 
     len = mpSkipOptions->size();
 
@@ -526,9 +560,16 @@ void SmilTree::setPotentialEscapeNode(Node* pNode)
 amis::AmisError SmilTree::goToId(string id, amis::SmilMediaGroup* pMedia)
 {
 
-    LOG4CXX_TRACE(amisSmilTreeLog, "goToIdEmpty" );
+    LOG4CXX_TRACE(amisSmilTreeLog, "goToId" );
 
     amis::AmisError err;
+
+    if(!mpRoot){
+        LOG4CXX_ERROR(amisSmilTreeLog, "Skipping command because mpRoot is null" );
+        err.setCode(amis::NOT_INITIALIZED);
+        return err;
+    }
+
     err.setCode(amis::OK);
 
     string playback_data;
