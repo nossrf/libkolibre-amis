@@ -23,6 +23,7 @@
 
 //SYSTEM INCLUDES
 #include <string>
+#include <pthread.h>
 //#include <xmlreaderc/sax2/DefaultHandler.hpp>
 
 //PROJECT INCLUDES
@@ -102,6 +103,7 @@ private:
     SmilTree* mpSmilTree;
 
     //!list of open nodes in the tree (nodes to which children can be added)
+    pthread_mutex_t dataMutex;
     std::vector<Node*> mOpenNodes;
 
     //!type of file
