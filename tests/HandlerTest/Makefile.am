@@ -15,15 +15,20 @@
 # You should have received a copy of the GNU Lesser General Public License
 # along with kolibre-amis. If not, see <http://www.gnu.org/licenses/>.
 
-check_PROGRAMS = handlertest
-#TESTS = handlertest.sh
+check_PROGRAMS = handlertest handlertestunit
+TESTS = handlertestunit.sh
 
 handlertest_SOURCES = HandlerTest.cpp FakePlayer.cpp
 handlertest_LDADD = @LIBKOLIBREXMLREADER_LIBS@ $(top_builddir)/src/libkolibre-amis.la
-handlertest_LDFLAGS = -lpthread
-handlertest_CPPFLAGS = @LIBKOLIBREXMLREADER_CFLAGS@ -I$(top_srcdir)/src -I$(top_srcdir)/src/AmisCommon -I$(top_srcdir)/src/SmilEngine -I$(top_srcdir)/src/NavParse -I$(top_srcdir)/src/DaisyHandler -g 
+
+handlertestunit_SOURCES = HandlerTestUnit.cpp FakePlayer.cpp
+handlertestunit_LDADD = @LIBKOLIBREXMLREADER_LIBS@ $(top_builddir)/src/libkolibre-amis.la
+
+AM_LDFLAGS = -lpthread @LOG4CXX_LIBS@
+AM_CPPFLAGS = @LIBKOLIBREXMLREADER_CFLAGS@ -I$(top_srcdir)/src -I$(top_srcdir)/src/AmisCommon -I$(top_srcdir)/src/SmilEngine -I$(top_srcdir)/src/NavParse -I$(top_srcdir)/src/DaisyHandler -g 
 
 EXTRA_DIST = FakePlayer.h \
 			 runbt \
 			 run \
-			 handlertest.sh
+			 handlertest.sh \
+			 handlertestunit.sh 
