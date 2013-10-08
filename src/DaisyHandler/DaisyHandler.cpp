@@ -489,10 +489,10 @@ void *amis::open_thread(void *handler)
     {
         h->setState(DaisyHandler::HANDLER_ERROR);
         h->reportGeneralError(err);
-        pthread_exit(NULL);
         if(!h->unlockMutex(&h->dhInstanceMutex)){
             LOG4CXX_ERROR(amisDaisyHandlerLog, "mutex unlock failed");
         }
+        pthread_exit(NULL);
         return NULL;
     }
 
