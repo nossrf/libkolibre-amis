@@ -130,8 +130,9 @@ enum ErrorCode
     NOT_FOUND = -400,
     NOT_SUPPORTED = -500,
     PARSE_ERROR = -600,
-    PERMISSION_ERROR = -800,
-    NOT_INITIALIZED = -700
+    PERMISSION_ERROR = -700,
+    IO_ERROR = -800,
+    NOT_INITIALIZED = -900,
 };
 
 }

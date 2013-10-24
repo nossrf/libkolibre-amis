@@ -69,6 +69,9 @@ public:
     // Setup bookmarks, initial phrase etc..
     bool setupBook();
 
+    // If we continue from a lastmark position
+    bool continueFromLastmark();
+
     // Check if we already have a book opened
     bool bookOpen();
 
@@ -86,7 +89,7 @@ public:
         HANDLER_READY,  /**< handler is ready */
         HANDLER_ERROR   /**< the handler is in error state */
     };
-    HandlerState getState() const;
+    HandlerState getState();
     void setState(HandlerState);
 
     // Function gets called when daisyhandler wants to play audio
@@ -314,7 +317,7 @@ public:
     bool playTitle();
 
     void reportGeneralError(AmisError err);
-    std::string getFilePath() const;
+    std::string getFilePath();
 
 private:
     amis::BookmarkFile* mpBmk;
@@ -374,11 +377,11 @@ private:
     void readPageNavPoints();
     void readSectionNavPoints();
 
-    //return the name of the bmk file
-    std::string setUpBookmarks(std::string, std::string);
+    void setupBookmarks(std::string, std::string);
     bool selectBookmark(int idx);
 
     bool mbStartAtLastmark;
+    bool mbContinueFromLastmark;
     bool mbFlagNoSync;
 
     std::string mFilePath;
@@ -394,18 +397,22 @@ protected:
     time_t autonaviStartTime;
     NaviLevel currentNaviLevel;
 
+    int lockMutex(pthread_mutex_t *mutex);
+    int unlockMutex(pthread_mutex_t *mutex);
     bool updateNaviLevel(NaviLevel newLevel);
 
     // Threading used when opening a book
     pthread_t handlerThread;
     bool handlerThreadActive;
-    pthread_mutex_t *handlerMutex;
-    pthread_mutex_t *callbackMutex;
 
+    pthread_mutex_t dhInstanceMutex;
+    pthread_mutex_t handlerMutex;
+    pthread_mutexattr_t attr;
 private:
     static DaisyHandler* pinstance;
     std::string tmToTimeString(struct tm timeInfo);
     std::string tmToDateString(struct tm timeInfo);
+
 };
 
 }

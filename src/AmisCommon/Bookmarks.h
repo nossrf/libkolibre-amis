@@ -27,7 +27,6 @@
 #include "Media.h"
 #include <string>
 #include <vector>
-#include <iostream>
 
 namespace amis
 {
@@ -38,8 +37,7 @@ class AMISCOMMON_API PositionData
 public:
     PositionData()
     {
-        //std::cout << "PositionData::PositionData()" << endl;
-        mPlayOrder = 0;
+        mPlayOrder = -1;
         mUri = "";
         mNcxRef = "";
         mTextRef = "";
@@ -52,7 +50,6 @@ public:
     }
     ~PositionData()
     {
-        //std::cout << "PositionData::~PositionData()" << endl;
         mNcxRef = "";
         mUri = "";
         mTimeOffset = "";

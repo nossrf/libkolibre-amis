@@ -106,7 +106,7 @@ public:
 
 private:
     //!utility function
-    const char *getAttributeValue(const char *);
+    std::string getAttributeValue(const char *);
 
     //!pointer to attributes collection for node being currently processed
     const XmlAttributes* mpAttributes;

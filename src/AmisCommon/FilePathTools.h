@@ -53,9 +53,16 @@ public:
     static std::string convertSlashesBkw(std::string);
     //!get the parent directory.  input can be a file or directory path.
     static std::string getParentDirectory(std::string);
+    //!check if path is a directory
+    static bool isDirectory(std::string);
     //!create a directory
-    static bool _mkdir(std::string);
-
+    static bool createDirectory(std::string);
+    //!check if a file exists and is readable
+    static bool fileIsReadable(std::string);
+    //!check if a file exists and is writable
+    static bool fileIsWriteable(std::string);
+    //!rename file
+    static bool renameFile(std::string, std::string);
 };
 }
 #endif

@@ -41,7 +41,7 @@ public:
     BookmarksReader();
     ~BookmarksReader();
 
-    bool openFile(std::string, BookmarkFile*);
+    AmisError openFile(std::string, BookmarkFile*);
 
     //SAX METHODS
     bool startElement(const xmlChar* const, const xmlChar* const,
@@ -86,10 +86,6 @@ private:
 
     //the bookmarks file object model
     BookmarkFile* mpFile;
-
-    //the return value
-    bool mb_ReturnValue;
-
 };
 }
 

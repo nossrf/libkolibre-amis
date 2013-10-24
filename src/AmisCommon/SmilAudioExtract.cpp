@@ -40,10 +40,12 @@ log4cxx::LoggerPtr amisSmilAudioExtractLog(
 
 using namespace std;
 
+namespace amis {
+
 //--------------------------------------------------
 //constructor
 //--------------------------------------------------
-amis::SmilAudioExtract::SmilAudioExtract()
+SmilAudioExtract::SmilAudioExtract()
 {
     mError.setSourceModuleName(amis::module_AmisCommon);
 }
@@ -51,7 +53,7 @@ amis::SmilAudioExtract::SmilAudioExtract()
 //--------------------------------------------------
 //destructor
 //--------------------------------------------------
-amis::SmilAudioExtract::~SmilAudioExtract()
+SmilAudioExtract::~SmilAudioExtract()
 {
 }
 
@@ -61,7 +63,7 @@ amis::SmilAudioExtract::~SmilAudioExtract()
  the full path to a smil file with an id target on the end
  */
 //--------------------------------------------------
-amis::AmisError amis::SmilAudioExtract::getAudioAtId(string filepath,
+amis::AmisError SmilAudioExtract::getAudioAtId(string filepath,
         amis::AudioNode** pAudioInfo)
 {
     //local variables
@@ -117,7 +119,7 @@ amis::AmisError amis::SmilAudioExtract::getAudioAtId(string filepath,
 //--------------------------------------------------
 //! (SAX Event) analyze the element type and collect data to build a node
 //--------------------------------------------------
-bool amis::SmilAudioExtract::startElement(const xmlChar* const uri,
+bool SmilAudioExtract::startElement(const xmlChar* const uri,
         const xmlChar* const localname, const xmlChar* const qname,
         const XmlAttributes& attributes)
 {
@@ -194,7 +196,7 @@ bool amis::SmilAudioExtract::startElement(const xmlChar* const uri,
 //--------------------------------------------------
 //! (SAX Event) close this element so that no additional child nodes are added to it in the Smil Tree
 //--------------------------------------------------
-bool amis::SmilAudioExtract::endElement(const xmlChar* const uri,
+bool SmilAudioExtract::endElement(const xmlChar* const uri,
         const xmlChar* const localname, const xmlChar* const qname)
 {
     //local variable
@@ -220,7 +222,7 @@ bool amis::SmilAudioExtract::endElement(const xmlChar* const uri,
 //--------------------------------------------------
 //! (SAX Event) error
 //--------------------------------------------------
-bool amis::SmilAudioExtract::error(const XmlError& e)
+bool SmilAudioExtract::error(const XmlError& e)
 {
     //mError.setException(e);
     return true;
@@ -229,7 +231,7 @@ bool amis::SmilAudioExtract::error(const XmlError& e)
 //--------------------------------------------------
 //! (SAX Event) fatal error
 //--------------------------------------------------
-bool amis::SmilAudioExtract::fatalError(const XmlError& e)
+bool SmilAudioExtract::fatalError(const XmlError& e)
 {
     mError.loadXmlError(e);
     return false;
@@ -238,7 +240,7 @@ bool amis::SmilAudioExtract::fatalError(const XmlError& e)
 //--------------------------------------------------
 //! (SAX Event) warning
 //--------------------------------------------------
-bool amis::SmilAudioExtract::warning(const XmlError& e)
+bool SmilAudioExtract::warning(const XmlError& e)
 {
     //ignore, it's non-fatal
     return true;
@@ -247,7 +249,7 @@ bool amis::SmilAudioExtract::warning(const XmlError& e)
 //---------------------------------
 //utility function
 //---------------------------------
-string amis::SmilAudioExtract::getAttributeValue(string attributeName)
+string SmilAudioExtract::getAttributeValue(string attributeName)
 {
     //initialize local strings
     const char* current_attribute_name;
@@ -281,4 +283,6 @@ string amis::SmilAudioExtract::getAttributeValue(string attributeName)
     //return the value of the requested attribute
     //if the attribute does not exist, this function returns an empty string
     return return_value;
+}
+
 }

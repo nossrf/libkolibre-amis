@@ -90,7 +90,8 @@ void SmilEngine::DestroyInstance()
 /**
  * Default constructor
  */
-SmilEngine::SmilEngine()
+SmilEngine::SmilEngine():
+        mSkipOptions()
 {
     //initialize member variables
     mSpineBuilder = new SpineBuilder();

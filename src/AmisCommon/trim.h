@@ -42,7 +42,7 @@ inline std::string trim(const std::string& s)
     std::string::size_type pos = trimmed.find("\n");
     while (pos != std::string::npos)
     {
-        //std::cout << "removing endl at pos " << pos << endl;
+        //LOG4CXX_TRACE(amisTrimLog, "removing endl at pos " << pos );
         trimmed = trimmed.replace(pos, 1, " ");
         pos = trimmed.find("\n");
     }
@@ -51,7 +51,7 @@ inline std::string trim(const std::string& s)
     pos = trimmed.find("  ");
     while (pos != std::string::npos)
     {
-        //std::cout << "removing double space at pos " << pos << endl;
+        //LOG4CXX_TRACE(amisTrimLog, "removing double space at pos " << pos );
         trimmed = trimmed.replace(pos, 2, " ");
         pos = trimmed.find("  ");
     }
@@ -73,7 +73,7 @@ inline std::string strim(const std::string& s)
     std::string::size_type pos = trimmed.find("\n");
     while (pos != std::string::npos)
     {
-        //std::cout << "removing endl at pos " << pos << endl;
+        //LOG4CXX_TRACE(amisTrimLog, "removing endl at pos " << pos );
         trimmed = trimmed.replace(pos, 1, " ");
         pos = trimmed.find("\n");
     }
@@ -82,7 +82,7 @@ inline std::string strim(const std::string& s)
     pos = trimmed.find("  ");
     while (pos != std::string::npos)
     {
-        //std::cout << "removing double space at pos " << pos << endl;
+        //LOG4CXX_TRACE(amisTrimLog, "removing double space at pos " << pos );
         trimmed = trimmed.replace(pos, 2, " ");
         pos = trimmed.find("  ");
     }

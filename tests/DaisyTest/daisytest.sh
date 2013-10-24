@@ -4,13 +4,13 @@ set -x
 set -e
 
 if [ -x /usr/bin/gdb ]; then
-  PREFIX="libtool --mode=execute gdb -return-child-result -x ${srcdir:-.}/run --args"
+  PREFIX="libtool --mode=execute gdb -batch --return-child-result -x ${srcdir:-.}/run --args"
 fi
 
 $PREFIX ./daisytest ${srcdir:-.}/../data/Mountains_skip/ncc.html
 
 if [ -x /usr/bin/gdb ]; then
-  PREFIX="libtool --mode=execute gdb -return-child-result -x ${srcdir:-.}/run --args"
+  PREFIX="libtool --mode=execute gdb -batch --return-child-result -x ${srcdir:-.}/run --args"
 fi
 
 $PREFIX ./daisytest ${srcdir:-.}/../data/Theory_behind_players_kate/ncc.html

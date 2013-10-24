@@ -25,14 +25,15 @@
 #include <map>
 #include <iostream>
 
-//#include <vector>
 #include "FilePathTools.h"
-#include <sys/stat.h>
-#include <sys/types.h>
 
 #ifdef WIN32
 #include <windows.h>
 #include <io.h>
+#else
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <fstream>
 #endif
 
 
@@ -351,23 +352,147 @@ string amis::FilePathTools::getParentDirectory(const string filepath)
     return file_path;
 }
 
-bool amis::FilePathTools::_mkdir(const string filepath)
+bool amis::FilePathTools::isDirectory(const string filepath)
 {
-    string file_path = convertSlashesFwd(filepath);
-
-    //if filepath is just a path of folders (ends in a slash), remove the slash
-    if (file_path[file_path.length() - 1] == '/')
-    {
-        file_path = file_path.substr(0, file_path.length() - 1);
-    }
-
+    bool isDirectory = false;
 #ifdef WIN32
-    if (mkdir(file_path.c_str()))
-        return true;
+    string _path = convertSlashesBkw(filepath);
+
+    int numchars = MultiByteToWideChar(CP_UTF8, MB_ERR_INVALID_CHARS, _path.c_str(), -1, NULL, 0);
+    if(numchars) {
+        wchar_t *_wpath = (wchar_t*) malloc(numchars * sizeof(wchar_t));
+        if (MultiByteToWideChar(CP_UTF8, 0, _path.c_str(), -1, _wpath, numchars) != 0)
+        {
+            DWORD dwAttrib = GetFileAttributesW(_wpath);
+            isDirectory = (dwAttrib != INVALID_FILE_ATTRIBUTES &&
+                    (dwAttrib & FILE_ATTRIBUTE_DIRECTORY) );
+        }
+        free(_wpath);
+    }
 #else
-    if(mkdir(file_path.c_str(), S_IRWXU | S_IRGRP | S_IXGRP | S_IROTH | S_IXOTH)) return true;
+    isDirectory = fstream( filepath.c_str(), fstream::in ).is_open();
 #endif
 
-    return false;
+    return isDirectory;
 }
 
+
+bool amis::FilePathTools::createDirectory(const string filepath)
+{
+    bool success = false;
+#ifdef WIN32
+    string _path = convertSlashesBkw(filepath);
+
+    //if filepath is just a path of folders (ends in a slash), remove the slash
+    if (_path[_path.length() - 1] == '\\') {
+        _path = _path.substr(0, _path.length() - 1);
+    }
+
+    int numchars = MultiByteToWideChar(CP_UTF8, MB_ERR_INVALID_CHARS, _path.c_str(), -1, NULL, 0);
+    if(numchars) {
+        wchar_t *_wpath = (wchar_t*) malloc(numchars * sizeof(wchar_t));
+        if (MultiByteToWideChar(CP_UTF8, 0, _path.c_str(), -1, _wpath, numchars) != 0)
+        {
+            success = CreateDirectoryW(_wpath, NULL);
+        }
+        free(_wpath);
+    }
+#else
+    string _path = convertSlashesFwd(filepath);
+
+    //if filepath is just a path of folders (ends in a slash), remove the slash
+    if (_path[_path.length() - 1] == '/') {
+        _path = _path.substr(0, _path.length() - 1);
+    }
+
+    success = (mkdir(_path.c_str(), S_IRWXU | S_IRGRP | S_IXGRP | S_IROTH | S_IXOTH) == 0);
+#endif
+    return success;
+}
+
+bool amis::FilePathTools::fileIsReadable(const string filepath)
+{
+    bool isReadable = false;
+#ifdef WIN32
+    string _path = convertSlashesBkw(filepath);
+
+    int numchars = MultiByteToWideChar(CP_UTF8, MB_ERR_INVALID_CHARS, _path.c_str(), -1, NULL, 0);
+    if(numchars) {
+        wchar_t *_wpath = (wchar_t*) malloc(numchars * sizeof(wchar_t));
+        if (MultiByteToWideChar(CP_UTF8, 0, _path.c_str(), -1, _wpath, numchars) != 0)
+        {
+            DWORD dwAttrib = GetFileAttributesW(_wpath);
+            isReadable = (dwAttrib != INVALID_FILE_ATTRIBUTES);
+        }
+        free(_wpath);
+    }
+#else
+    isReadable = fstream( filepath.c_str(), fstream::in ).is_open();
+#endif
+    return isReadable;
+}
+
+bool amis::FilePathTools::fileIsWriteable(const string filepath)
+{
+    bool isWriteable = false;
+#ifdef WIN32
+    string _path = convertSlashesBkw(filepath);
+
+    int numchars = MultiByteToWideChar(CP_UTF8, MB_ERR_INVALID_CHARS, _path.c_str(), -1, NULL, 0);
+    if(numchars) {
+        wchar_t *_wpath = (wchar_t*) malloc(numchars * sizeof(wchar_t));
+        if (MultiByteToWideChar(CP_UTF8, 0, _path.c_str(), -1, _wpath, numchars) != 0)
+        {
+            DWORD dwAttrib = GetFileAttributesW(_wpath);
+            isWriteable = (dwAttrib != INVALID_FILE_ATTRIBUTES &&
+                    !(dwAttrib & FILE_ATTRIBUTE_READONLY) );
+        }
+        free(_wpath);
+    }
+#else
+    isWriteable =  fstream( filepath.c_str(), fstream::out ).is_open();
+#endif
+    return isWriteable;
+}
+
+bool amis::FilePathTools::renameFile(const string oldname, const string newname)
+{
+    bool success = false;
+#ifdef WIN32
+    string _oldname = convertSlashesBkw(oldname);
+    wchar_t *_woldname = NULL;
+    string _newname = convertSlashesBkw(newname);
+    wchar_t *_wnewname = NULL;
+
+    int numchars;
+
+    numchars = MultiByteToWideChar(CP_UTF8, MB_ERR_INVALID_CHARS, _oldname.c_str(), -1, NULL, 0);
+    if(numchars) {
+        _woldname = (wchar_t*) malloc(numchars * sizeof(wchar_t));
+        if (MultiByteToWideChar(CP_UTF8, 0, _oldname.c_str(), -1, _woldname, numchars) == 0)
+        {
+            free(_woldname);
+            return false;
+        }
+    }
+
+    numchars = MultiByteToWideChar(CP_UTF8, MB_ERR_INVALID_CHARS, _newname.c_str(), -1, NULL, 0);
+    if(numchars) {
+        _wnewname = (wchar_t*) malloc(numchars * sizeof(wchar_t));
+        if (MultiByteToWideChar(CP_UTF8, 0, _oldname.c_str(), -1, _wnewname, numchars) == 0)
+        {
+            free(_woldname);
+            free(_wnewname);
+            return false;
+        }
+    }
+
+    success = MoveFileW(_woldname, _wnewname);
+
+    free(_woldname);
+    free(_wnewname);
+#else
+    success = (rename( oldname.c_str() , newname.c_str() ) == 0);
+#endif
+    return success;
+}

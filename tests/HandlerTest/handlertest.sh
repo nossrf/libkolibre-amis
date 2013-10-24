@@ -1,3 +1,8 @@
-./handlertest
-#gdb -x runbt --args .libs/lt-handlertest /tmp/daisy_books/klee_wyck/ncc.html
-gdb -x runbt --args .libs/lt-handlertest /mnt/daisy/at\ ratt\ at\ gott\ ma\ bra/ncc.html
+#!/bin/sh
+
+if [ -x /usr/bin/gdb ]; then
+    PREFIX="libtool --mode=execute gdb --return-child-result -batch -x ${srcdir:-.}/runbt --args"
+fi
+
+
+$PREFIX ./handlertest ${srcdir:-.}/../data/Theory_behind_players_kate/ncc.html

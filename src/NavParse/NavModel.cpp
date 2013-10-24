@@ -92,6 +92,20 @@ NavModel::~NavModel()
 
     delete mpPageList;
 
+    sz = mpSmilCustomTest.size();
+
+    //delete smil custom tests
+    for (i = sz - 1; i >= 0; i--)
+    {
+        amis::CustomTest *p_custom_test = NULL;
+        p_custom_test = mpSmilCustomTest[i];
+        mpNavLists.pop_back();
+        if (p_custom_test != NULL)
+        {
+            delete p_custom_test;
+        }
+    }
+
     if (mpDocTitle != NULL)
         delete mpDocTitle;
 

@@ -33,6 +33,7 @@
 #include "DaisyHandler.h"
 
 #include "FakePlayer.h"
+#include "../setup_logging.h"
 //#include "Input.h"
 
 using namespace amis;

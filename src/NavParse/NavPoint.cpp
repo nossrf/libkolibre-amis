@@ -88,7 +88,7 @@ NavPoint::~NavPoint()
  */
 void NavPoint::resetChildCount()
 {
-    LOG4CXX_DEBUG( amisNavPointLog,
+    LOG4CXX_TRACE( amisNavPointLog,
             "node " << getPlayOrder() << ": Resetting childcount");
     mChildCount = -1;
 }
@@ -101,13 +101,13 @@ void NavPoint::resetChildCount()
  */
 NavPoint* NavPoint::next()
 {
-    LOG4CXX_DEBUG( amisNavPointLog,
+    LOG4CXX_TRACE( amisNavPointLog,
             "node " << getPlayOrder() << ": NavPoint* NavPoint::next() childcount: " << mChildCount);
 
     if (mChildCount < mNumChildren - 1)
     {
         mChildCount++;
-        LOG4CXX_DEBUG( amisNavPointLog,
+        LOG4CXX_TRACE( amisNavPointLog,
                 "node " << getPlayOrder() << ": Returning child: " << mChildCount+1 << "(" << mNumChildren << ")");
         NavPoint* ptmp = getChild(mChildCount);
         ptmp->resetChildCount();
@@ -115,17 +115,17 @@ NavPoint* NavPoint::next()
     }
     else
     {
-        //we are leaving this branch so reset the child count
+        // we are leaving this branch so reset the child count
         this->resetChildCount();
         if (mpParent != NULL)
         {
-            LOG4CXX_DEBUG( amisNavPointLog,
+            LOG4CXX_TRACE( amisNavPointLog,
                     "node " << getPlayOrder() << ": Returning parents next node");
             return mpParent->next();
         }
         else
         {
-            LOG4CXX_DEBUG( amisNavPointLog,
+            LOG4CXX_TRACE( amisNavPointLog,
                     "node " << getPlayOrder() << ": Returning NULL");
             return NULL;
         }
@@ -141,14 +141,14 @@ NavPoint* NavPoint::next()
  */
 NavPoint* NavPoint::previous()
 {
-    LOG4CXX_DEBUG( amisNavPointLog,
+    LOG4CXX_TRACE( amisNavPointLog,
             "node " << getPlayOrder() << ": NavPoint* NavPoint::previous() childcount: " << mChildCount);
 
     if (mChildCount > 0)
     {
         mChildCount--;
 
-        LOG4CXX_DEBUG( amisNavPointLog,
+        LOG4CXX_TRACE( amisNavPointLog,
                 "node " << getPlayOrder() << ": Returning child: " << mChildCount+1 << "(" << mNumChildren << ")");
         NavPoint* ptmp = getChild(mChildCount);
         ptmp->resetChildCount();
@@ -157,14 +157,14 @@ NavPoint* NavPoint::previous()
     }
     else if (mChildCount == 0)
     {
-        LOG4CXX_DEBUG( amisNavPointLog,
+        LOG4CXX_TRACE( amisNavPointLog,
                 "node " << getPlayOrder() << ": No previous child, returning NULL");
         this->resetChildCount();
         return NULL;
     }
     else
     {
-        //we are leaving this branch so reset the child count	
+        // we are leaving this branch so reset the child count
         this->resetChildCount();
         if (mpParent != NULL)
         {
@@ -173,13 +173,13 @@ NavPoint* NavPoint::previous()
             {
                 if (ptmp->getNumChildren() > 0)
                 {
-                    LOG4CXX_DEBUG( amisNavPointLog,
+                    LOG4CXX_TRACE( amisNavPointLog,
                             "node " << getPlayOrder() << ": Returning parents previous last child");
                     return ptmp->getChild(ptmp->getNumChildren() - 1);
                 }
                 else
                 {
-                    LOG4CXX_DEBUG( amisNavPointLog,
+                    LOG4CXX_TRACE( amisNavPointLog,
                             "node " << getPlayOrder() << ": Returning parents previous");
                     return ptmp;
                 }

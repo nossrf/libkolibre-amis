@@ -26,6 +26,7 @@
 #include <cstring>
 #include <algorithm>
 
+
 //PROJECT INCLUDES
 #include "FilePathTools.h"
 #include "AmisError.h"
@@ -54,8 +55,10 @@ using namespace std;
 //--------------------------------------------------
 //Default constructor
 //--------------------------------------------------
-SmilTreeBuilder::SmilTreeBuilder()
+SmilTreeBuilder::SmilTreeBuilder():
+        mOpenNodes(), mMetaList(), dataMutex()
 {
+    pthread_mutex_init (&dataMutex, NULL);
     mSmilSourceFile = "";
     mFiletype = 0;
     mDaisyVersion = 0;
@@ -131,25 +134,21 @@ amis::AmisError SmilTreeBuilder::createSmilTree(SmilTree *pSmilTree,
     mpSmilTree->setCouldEscape(false);
 
     //remove anything from mOpenNodes NodeList
-    Node* tmpnode = NULL;
-    unsigned int sz = mOpenNodes.size();
-
-    for (i = sz - 1; i >= 0; i--)
+    pthread_mutex_lock(&dataMutex);
+    while (mOpenNodes.size()>0)
     {
-        tmpnode = mOpenNodes[i];
+        delete mOpenNodes.back();
+        mOpenNodes.back() = NULL;
         mOpenNodes.pop_back();
-        delete tmpnode;
-
     }
-
+    pthread_mutex_unlock(&dataMutex);
     //remove any stored metadata
     amis::MetaItem *tmp_ptr;
-    sz = mMetaList.size();
-    for (i = sz - 1; i >= 0; i--)
+
+    while (mMetaList.size()>0)
     {
-        tmp_ptr = mMetaList[i];
+        delete mMetaList.back();
         mMetaList.pop_back();
-        delete tmp_ptr;
     }
     mMetaList.clear();
 
@@ -436,7 +435,9 @@ void SmilTreeBuilder::processNode(const xmlChar * qname,
                 mpSmilTree->setRoot(p_root);
 
                 //add the root to the open nodes list
+                pthread_mutex_lock(&dataMutex);
                 mOpenNodes.push_back((Node* const ) p_root);
+                pthread_mutex_unlock(&dataMutex);
 
                 //add pNodeData as a child of the root
                 p_root->addChild(p_node_data);
@@ -445,7 +446,9 @@ void SmilTreeBuilder::processNode(const xmlChar * qname,
                 //seqs also go on this list, but we have already determined this is not a seq
                 if (p_node_data->getTypeOfNode() == PAR)
                 {
+                    pthread_mutex_lock(&dataMutex);
                     mOpenNodes.push_back((Node* const ) p_node_data);
+                    pthread_mutex_unlock(&dataMutex);
                 }
 
             } //end if new node is not a seq
@@ -467,7 +470,9 @@ void SmilTreeBuilder::processNode(const xmlChar * qname,
                 }
 
                 //put the new node on the open nodes list
+                pthread_mutex_lock(&dataMutex);
                 mOpenNodes.push_back((Node* const ) p_node_data);
+                pthread_mutex_unlock(&dataMutex);
             }
 
         } //end if tree is empty
@@ -476,8 +481,10 @@ void SmilTreeBuilder::processNode(const xmlChar * qname,
         else
         {
             //get the last item from the open nodes list and set it as the parent for this node
+            pthread_mutex_lock(&dataMutex);
             len = mOpenNodes.size();
             p_parent = mOpenNodes[len - 1];
+            pthread_mutex_unlock(&dataMutex);
 
             //record link data for this node
             //only content nodes may be nested beneath a link node
@@ -495,7 +502,9 @@ void SmilTreeBuilder::processNode(const xmlChar * qname,
             //add to the open nodes list if it's a time container (par or seq)
             if (p_node_data->getCategoryOfNode() == TIME_CONTAINER)
             {
+                pthread_mutex_lock(&dataMutex);
                 mOpenNodes.push_back((Node* const ) p_node_data);
+                pthread_mutex_unlock(&dataMutex);
             }
 
         } //end 
@@ -520,7 +529,9 @@ bool SmilTreeBuilder::endElement(const xmlChar * uri, const xmlChar * localname,
     if (strcmp(element_name, TAG_SEQ) == 0
             || strcmp(element_name, TAG_PAR) == 0)
     {
+        pthread_mutex_lock(&dataMutex);
         mOpenNodes.pop_back();
+        pthread_mutex_unlock(&dataMutex);
     }
 
     else if (strcmp(element_name, TAG_A) == 0)

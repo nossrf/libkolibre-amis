@@ -99,16 +99,20 @@ void amis::AmisError::loadXmlError(const XmlError &e)
             break;
 
         case XML_IO_ENOENT:
-        case XML_IO_EIO:
-        default:
             LOG4CXX_ERROR(amisAmisErrorLog, "NOT_FOUND");
             setCode(NOT_FOUND);
+            break;
+        case XML_IO_EIO:
+        case XML_IO_EFAULT:
+        default:
+            LOG4CXX_ERROR(amisAmisErrorLog, "IO_ERROR");
+            setCode(IO_ERROR);
             break;
         }
         break;
     case XML_FROM_HTTP:
-        LOG4CXX_ERROR(amisAmisErrorLog, "NOT_FOUND");
-        setCode(NOT_FOUND);
+        LOG4CXX_ERROR(amisAmisErrorLog, "IO_ERROR");
+        setCode(IO_ERROR);
         break;
     default:
         LOG4CXX_ERROR(amisAmisErrorLog, "UNDEFINED_ERROR");

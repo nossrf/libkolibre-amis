@@ -32,7 +32,8 @@
 
 FakePlayer::FakePlayer()
 {
-    mStartms = mStopms = mCurms = 0;
+    mStartms = mCurms = 0;
+    mStopms = 1;
     mFilename = "";
     reopen = false;
     printdelaycount = 0;
@@ -40,6 +41,7 @@ FakePlayer::FakePlayer()
     EOSFunction = NULL;
 
     playerMutex = (pthread_mutex_t *) std::malloc(sizeof(pthread_mutex_t));
+    pthread_mutex_init(playerMutex, NULL);
     setState(NOT_INITIALIZED);
 
 }
